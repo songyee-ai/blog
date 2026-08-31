@@ -46,9 +46,19 @@ $body = $body.Replace('{{DATE}}',    $Date)
 $body = $body.Replace('{{LESSON}}',  [string]$Lesson)
 $body = $body.Replace('{{TAGS}}',    $tagList)
 $body = $body.Replace('{{SUMMARY}}', $Summary)
+$body = $body.Replace('{{SLUG}}',    $Slug)
 
 # BOM 없는 UTF-8로 저장 (Jekyll이 BOM을 싫어합니다)
 [System.IO.File]::WriteAllText($target, $body, (New-Object System.Text.UTF8Encoding($false)))
 
 Write-Host "새 글을 만들었습니다:" -ForegroundColor Green
 Write-Host "  $target"
+
+# 이미지 폴더 미리 생성
+$imgDir = Join-Path $root ("assets\images\{0}" -f $Slug)
+if (-not (Test-Path $imgDir)) {
+    New-Item -ItemType Directory -Path $imgDir -Force | Out-Null
+    New-Item -ItemType File -Path (Join-Path $imgDir ".gitkeep") -Force | Out-Null
+}
+Write-Host "이미지는 이 폴더에 넣으세요:" -ForegroundColor Cyan
+Write-Host "  $imgDir"
