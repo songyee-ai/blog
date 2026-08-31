@@ -1,0 +1,67 @@
+# ── 사이트 기본 정보 ──────────────────────────────────────────────
+title: "AI Agent 학습 기록"
+tagline: "AI Agent 수업에서 배운 것을 기록합니다"
+description: >-
+  AI Agent 수업에서 배운 개념, 실습 코드, 막혔던 지점과 해결 과정을
+  회차별로 정리하는 학습 블로그입니다.
+author: 김송이
+lang: ko
+timezone: Asia/Seoul
+
+# GitHub Pages 배포 주소: https://songyee-ai.github.io/blog
+url: "https://songyee-ai.github.io"
+baseurl: "/blog"
+
+# ── 테마 ─────────────────────────────────────────────────────────
+theme: minima
+minima:
+  skin: dark
+  social_links:
+    - platform: github
+      user_url: "https://github.com/songyee-ai"
+
+header_pages:
+  - about.md
+  - archive.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+paginate: 10
+paginate_path: "/page:num/"
+
+# ── 포스트 공통 설정 ─────────────────────────────────────────────
+# 모든 글이 같은 레이아웃/작성자/설정을 자동으로 물려받습니다.
+# 개별 글에서 front matter로 덮어쓸 수 있습니다.
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: 김송이
+      categories: ["AI Agent 수업"]
+      comments: false
+
+permalink: /:year/:month/:day/:title/
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - scripts
+  - _templates
+  - README.md
+  - CONTRIBUTING.md
