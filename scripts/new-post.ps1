@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     템플릿(_templates/post-template.md)을 그대로 복사해 새 포스트를 만듭니다.
 

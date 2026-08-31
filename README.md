@@ -132,3 +132,36 @@ bundle exec jekyll serve
 → http://localhost:4000/blog
 
 없어도 됩니다. push하면 GitHub Pages가 대신 빌드합니다.
+
+---
+
+## 문제가 생겼을 때
+
+### `이 시스템에서 스크립트를 실행할 수 없으므로 ...` (UnauthorizedAccess)
+
+Windows가 기본적으로 `.ps1` 실행을 막고 있어서 나는 오류입니다. 한 번만 아래를 실행하면 됩니다.
+관리자 권한은 필요 없고, 내 계정에만 적용됩니다.
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+```
+
+정책을 바꾸지 않고 이번만 실행하려면:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\new-post.ps1 -Title "제목" -Lesson 2 -Slug "slug"
+```
+
+### 스크립트 안내 메시지의 한글이 깨져 보일 때
+
+`scripts/new-post.ps1`은 **BOM 있는 UTF-8**로 저장해야 합니다.
+Windows PowerShell 5.1은 BOM이 없으면 `.ps1`을 ANSI(CP949)로 읽어 한글이 깨집니다.
+반대로 `_posts/`의 글 파일은 **BOM 없는 UTF-8**이어야 합니다 (Jekyll이 BOM을 처리하지 못함).
+스크립트가 이 두 규칙을 알아서 지키므로, 글 파일을 다른 편집기로 저장할 때만 주의하세요.
+
+### 글을 push했는데 사이트에 안 보일 때
+
+1. [Actions 탭](https://github.com/songyee-ai/blog/actions)에서 빌드 실패 여부 확인
+2. 파일이 `_posts/`에 있고 이름이 `YYYY-MM-DD-슬러그.md` 형식인지 확인
+3. front matter의 `---` 두 줄이 그대로 있는지 확인
+4. 브라우저 강력 새로고침 (`Ctrl+Shift+R`) — 캐시 때문일 수 있습니다
