@@ -14,11 +14,11 @@ baseurl: "/blog"
 
 # ── 테마 ─────────────────────────────────────────────────────────
 theme: minima
-minima:
-  skin: dark
-  social_links:
-    - platform: github
-      user_url: "https://github.com/songyee-ai"
+
+# GitHub Pages가 쓰는 minima 2.5.1은 skin/social_links 배열을 지원하지 않습니다.
+# 푸터 링크는 아래 방식으로만 표시됩니다.
+github_username: songyee-ai
+email: songyee.ai@gmail.com
 
 header_pages:
   - about.md
