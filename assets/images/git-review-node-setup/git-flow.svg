@@ -11,7 +11,7 @@
     </marker>
   </defs>
 
-  <rect width="900" height="560" fill="#ffffff"/>
+  <rect width="900" height="560" fill="none"/>
 
   <!-- ================= 상단: 로컬 3단계 + 원격 ================= -->
   <text x="30" y="34" font-size="16" font-weight="700" fill="#1f2328">1. 기본 흐름 — 내 컴퓨터에서 GitHub까지</text>
