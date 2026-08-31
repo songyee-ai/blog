@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="Git 명령이 데이터를 옮기는 경로: 로컬 3단계, 원격 저장소, fork와 Pull Request">
+  <defs>
+    <marker id="ar-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0969da"/>
+    </marker>
+    <marker id="ar-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1a7f37"/>
+    </marker>
+    <marker id="ar-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8250df"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="560" fill="#ffffff"/>
+
+  <!-- ================= 상단: 로컬 3단계 + 원격 ================= -->
+  <text x="30" y="34" font-size="16" font-weight="700" fill="#1f2328">1. 기본 흐름 — 내 컴퓨터에서 GitHub까지</text>
+  <text x="30" y="55" font-size="13" fill="#57606a">명령마다 "무엇이 어디로 옮겨지는지"가 다르다.</text>
+
+  <!-- 로컬 컨테이너 -->
+  <rect x="30" y="78" width="440" height="182" rx="10" fill="#f6f8fa" stroke="#0969da" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="46" y="100" font-size="13" font-weight="700" fill="#0969da">내 컴퓨터 (Local)</text>
+
+  <!-- 로컬 박스 3개 -->
+  <rect x="48" y="118" width="110" height="76" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="103" y="147" font-size="13" font-weight="700" fill="#1f2328" text-anchor="middle">작업 폴더</text>
+  <text x="103" y="166" font-size="10.5" fill="#57606a" text-anchor="middle">Working Dir</text>
+  <text x="103" y="181" font-size="10.5" fill="#57606a" text-anchor="middle">파일을 고치는 곳</text>
+
+  <rect x="200" y="118" width="110" height="76" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="255" y="147" font-size="13" font-weight="700" fill="#1f2328" text-anchor="middle">스테이징</text>
+  <text x="255" y="166" font-size="10.5" fill="#57606a" text-anchor="middle">Staging Area</text>
+  <text x="255" y="181" font-size="10.5" fill="#57606a" text-anchor="middle">기록할 것만 담기</text>
+
+  <rect x="344" y="118" width="110" height="76" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="399" y="147" font-size="13" font-weight="700" fill="#1f2328" text-anchor="middle">로컬 저장소</text>
+  <text x="399" y="166" font-size="10.5" fill="#57606a" text-anchor="middle">.git</text>
+  <text x="399" y="181" font-size="10.5" fill="#57606a" text-anchor="middle">역사가 쌓이는 곳</text>
+
+  <line x1="160" y1="156" x2="196" y2="156" stroke="#0969da" stroke-width="2" marker-end="url(#ar-blue)"/>
+  <text x="178" y="112" font-size="12" font-weight="700" fill="#0969da" text-anchor="middle">git add</text>
+
+  <line x1="312" y1="156" x2="340" y2="156" stroke="#0969da" stroke-width="2" marker-end="url(#ar-blue)"/>
+  <text x="326" y="112" font-size="12" font-weight="700" fill="#0969da" text-anchor="middle">git commit</text>
+
+  <!-- diff 안내 -->
+  <path d="M103,200 L103,212 L255,212 L255,200" fill="none" stroke="#57606a" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="179" y="232" font-size="11.5" fill="#57606a" text-anchor="middle">git diff — 이 사이의 차이를 보여준다</text>
+  <text x="179" y="249" font-size="11.5" fill="#57606a" text-anchor="middle">(--staged: 담은 것과 기록된 것 비교)</text>
+
+  <!-- 원격 컨테이너 -->
+  <rect x="590" y="78" width="280" height="182" rx="10" fill="#f6f8fa" stroke="#1a7f37" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="606" y="100" font-size="13" font-weight="700" fill="#1a7f37">GitHub (Remote)</text>
+
+  <rect x="610" y="118" width="240" height="76" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="730" y="147" font-size="13" font-weight="700" fill="#1f2328" text-anchor="middle">원격 저장소 (origin)</text>
+  <text x="730" y="167" font-size="10.5" fill="#57606a" text-anchor="middle">인터넷에 있는 같은 저장소.</text>
+  <text x="730" y="182" font-size="10.5" fill="#57606a" text-anchor="middle">여기에 올라가야 블로그가 배포된다.</text>
+
+  <text x="730" y="232" font-size="11.5" fill="#57606a" text-anchor="middle">Git = 버전 관리 도구 (내 컴퓨터)</text>
+  <text x="730" y="249" font-size="11.5" fill="#57606a" text-anchor="middle">GitHub = 그것을 올려두는 서비스 (남과 공유)</text>
+
+  <!-- push / pull -->
+  <line x1="458" y1="138" x2="606" y2="138" stroke="#1a7f37" stroke-width="2" marker-end="url(#ar-green)"/>
+  <text x="532" y="129" font-size="12" font-weight="700" fill="#1a7f37" text-anchor="middle">git push</text>
+
+  <line x1="606" y1="174" x2="458" y2="174" stroke="#1a7f37" stroke-width="2" marker-end="url(#ar-green)"/>
+  <text x="532" y="192" font-size="12" font-weight="700" fill="#1a7f37" text-anchor="middle">git pull</text>
+
+  <!-- 구분선 -->
+  <line x1="30" y1="288" x2="870" y2="288" stroke="#d0d7de" stroke-width="1"/>
+
+  <!-- ================= 하단: fork / PR ================= -->
+  <text x="30" y="322" font-size="16" font-weight="700" fill="#1f2328">2. 협업 흐름 — 남의 저장소에 참여할 때</text>
+  <text x="30" y="343" font-size="13" fill="#57606a">권한이 없는 저장소는 직접 push할 수 없다. 그래서 복사해 와서, 요청을 보낸다.</text>
+
+  <rect x="48" y="370" width="180" height="72" rx="8" fill="#ffffff" stroke="#8250df" stroke-width="1.5"/>
+  <text x="138" y="398" font-size="13" font-weight="700" fill="#1f2328" text-anchor="middle">원본 저장소</text>
+  <text x="138" y="418" font-size="10.5" fill="#57606a" text-anchor="middle">upstream</text>
+  <text x="138" y="433" font-size="10.5" fill="#57606a" text-anchor="middle">내 권한이 없는 남의 것</text>
+
+  <rect x="340" y="370" width="190" height="72" rx="8" fill="#ffffff" stroke="#8250df" stroke-width="1.5"/>
+  <text x="435" y="398" font-size="13" font-weight="700" fill="#1f2328" text-anchor="middle">내 계정의 복사본</text>
+  <text x="435" y="418" font-size="10.5" fill="#57606a" text-anchor="middle">my origin (fork 결과)</text>
+  <text x="435" y="433" font-size="10.5" fill="#57606a" text-anchor="middle">여기는 내가 push 가능</text>
+
+  <rect x="650" y="370" width="180" height="72" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="740" y="398" font-size="13" font-weight="700" fill="#1f2328" text-anchor="middle">내 컴퓨터</text>
+  <text x="740" y="418" font-size="10.5" fill="#57606a" text-anchor="middle">git clone 으로 내려받아</text>
+  <text x="740" y="433" font-size="10.5" fill="#57606a" text-anchor="middle">여기서 작업한다</text>
+
+  <line x1="232" y1="406" x2="336" y2="406" stroke="#8250df" stroke-width="2" marker-end="url(#ar-purple)"/>
+  <text x="284" y="364" font-size="12" font-weight="700" fill="#8250df" text-anchor="middle">fork</text>
+
+  <line x1="534" y1="406" x2="646" y2="406" stroke="#8250df" stroke-width="2" marker-end="url(#ar-purple)"/>
+  <text x="590" y="364" font-size="12" font-weight="700" fill="#8250df" text-anchor="middle">git clone</text>
+
+  <!-- PR 곡선 -->
+  <path d="M435,446 L435,496 L138,496 L138,446" fill="none" stroke="#8250df" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#ar-purple)"/>
+  <rect x="196" y="482" width="182" height="28" rx="6" fill="#ffffff"/>
+  <text x="287" y="501" font-size="12" font-weight="700" fill="#8250df" text-anchor="middle">Pull Request (PR)</text>
+  <text x="287" y="534" font-size="11.5" fill="#57606a" text-anchor="middle">파일이 아니라 "합쳐 달라는 제안"이 전달된다.</text>
+  <text x="700" y="534" font-size="11.5" fill="#57606a" text-anchor="middle">원본 주인이 diff를 보고 승인하면 merge된다.</text>
+</svg>
