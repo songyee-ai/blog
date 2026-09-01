@@ -3,7 +3,7 @@ layout: post
 title: "AI Agent 학습 기록을 시작합니다"
 date: 2026-08-31 +0900
 lesson: 1
-categories: ["AI Agent 수업"]
+category: review
 tags: ["오리엔테이션", "Agent"]
 summary: "블로그를 열고, 모든 글에 쓸 작성 템플릿을 정했다."
 ---

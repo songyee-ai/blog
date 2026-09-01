@@ -3,7 +3,7 @@ layout: post
 title: "PATH, 프로세스와 스레드, 그리고 동기·비동기"
 date: 2026-09-01 +0900
 lesson: 3
-categories: ["AI Agent 수업"]
+category: review
 tags: ["환경변수", "PATH", "프로세스", "스레드", "CPU", "동기비동기", "웹기초"]
 summary: "설치한 도구가 어떻게 인식되는지(PATH)부터 프로그램이 실제로 실행되는 구조(프로세스·스레드·CPU)까지, 눈에 안 보이는 층을 훑었다."
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Git·GitHub 복습과 바이브 코딩 작업대 만들기"
 date: 2026-08-31 +0900
 lesson: 2
-categories: ["AI Agent 수업"]
+category: review
 tags: ["Git", "GitHub", "PowerShell", "Node.js", "npm", "Claude Code"]
 summary: "Git·GitHub 용어를 퀴즈로 점검하고, 블로그 배포와 바이브 코딩을 위한 작업대(PowerShell·Node.js·npm)를 세웠다."
 ---

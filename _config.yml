@@ -21,8 +21,11 @@ github_username: songyee-ai
 email: songyee.ai@gmail.com
 
 header_pages:
-  - about.md
+  - review.md
+  - glossary.md
+  - build.md
   - archive.md
+  - about.md
 
 plugins:
   - jekyll-feed
@@ -43,8 +46,24 @@ defaults:
     values:
       layout: "post"
       author: 김송이
-      categories: ["AI Agent 수업"]
       comments: false
+  # 하위 폴더별 기본 category — front matter에 빠뜨렸을 때의 안전망입니다.
+  # 실제 진실은 각 글의 front matter에 있는 category 값입니다.
+  - scope:
+      path: "_posts/review"
+      type: "posts"
+    values:
+      category: "review"
+  - scope:
+      path: "_posts/glossary"
+      type: "posts"
+    values:
+      category: "glossary"
+  - scope:
+      path: "_posts/build"
+      type: "posts"
+    values:
+      category: "build"
 
 permalink: /:year/:month/:day/:title/
 
