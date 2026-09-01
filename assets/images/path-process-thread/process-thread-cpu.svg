@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" width="900" height="580" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="프로세스는 메모리를 분리하고 스레드는 공유하며, 커널이 스레드를 코어에 배분하는 구조">
+  <defs>
+    <marker id="t-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+    <marker id="t-ar-o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#bc4c00"/>
+    </marker>
+  </defs>
+  <rect width="900" height="580" fill="none"/>
+
+  <text x="30" y="34" font-size="16" font-weight="700" fill="#1f2328">1. 프로세스는 나뉘고, 스레드는 나눠 쓴다</text>
+
+  <!-- 프로세스 1 -->
+  <rect x="30" y="56" width="380" height="212" rx="10" fill="#f6f8fa" stroke="#0969da" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="46" y="79" font-size="12.5" font-weight="700" fill="#0969da">프로세스 1 — 탭 A</text>
+
+  <rect x="48" y="92" width="106" height="52" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="101" y="123" font-size="11.5" fill="#1f2328" text-anchor="middle">스레드</text>
+  <rect x="166" y="92" width="106" height="52" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="219" y="123" font-size="11.5" fill="#1f2328" text-anchor="middle">스레드</text>
+  <rect x="284" y="92" width="106" height="52" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="337" y="123" font-size="11.5" fill="#1f2328" text-anchor="middle">스레드</text>
+
+  <line x1="101" y1="148" x2="101" y2="184" stroke="#57606a" stroke-width="1.5" marker-end="url(#t-ar)"/>
+  <line x1="219" y1="148" x2="219" y2="184" stroke="#57606a" stroke-width="1.5" marker-end="url(#t-ar)"/>
+  <line x1="337" y1="148" x2="337" y2="184" stroke="#57606a" stroke-width="1.5" marker-end="url(#t-ar)"/>
+
+  <rect x="48" y="190" width="342" height="60" rx="6" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="219" y="214" font-size="12" font-weight="700" fill="#0969da" text-anchor="middle">이 프로세스의 메모리</text>
+  <text x="219" y="235" font-size="10.5" fill="#57606a" text-anchor="middle">안에 있는 스레드끼리는 같은 데이터를 함께 본다</text>
+
+  <!-- 격리 벽 -->
+  <line x1="450" y1="60" x2="450" y2="264" stroke="#cf222e" stroke-width="2.5" stroke-dasharray="8 5"/>
+  <rect x="414" y="146" width="72" height="34" rx="6" fill="#ffffff"/>
+  <text x="450" y="162" font-size="11" font-weight="700" fill="#cf222e" text-anchor="middle">차단</text>
+  <text x="450" y="175" font-size="9.5" fill="#cf222e" text-anchor="middle">메모리 분리</text>
+
+  <!-- 프로세스 2 -->
+  <rect x="490" y="56" width="380" height="212" rx="10" fill="#f6f8fa" stroke="#8250df" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="506" y="79" font-size="12.5" font-weight="700" fill="#8250df">프로세스 2 — 탭 B</text>
+
+  <rect x="508" y="92" width="164" height="52" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="590" y="123" font-size="11.5" fill="#1f2328" text-anchor="middle">스레드</text>
+  <rect x="686" y="92" width="164" height="52" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="768" y="123" font-size="11.5" fill="#1f2328" text-anchor="middle">스레드</text>
+
+  <line x1="590" y1="148" x2="590" y2="184" stroke="#57606a" stroke-width="1.5" marker-end="url(#t-ar)"/>
+  <line x1="768" y1="148" x2="768" y2="184" stroke="#57606a" stroke-width="1.5" marker-end="url(#t-ar)"/>
+
+  <rect x="508" y="190" width="342" height="60" rx="6" fill="#fbefff" stroke="#8250df" stroke-width="1.5"/>
+  <text x="679" y="214" font-size="12" font-weight="700" fill="#8250df" text-anchor="middle">이 프로세스의 메모리</text>
+  <text x="679" y="235" font-size="10.5" fill="#57606a" text-anchor="middle">옆 프로세스는 이 안을 들여다볼 수 없다</text>
+
+  <text x="450" y="292" font-size="12" fill="#1f2328" text-anchor="middle">그래서 탭 하나가 멈춰도 다른 탭은 살아 있다. 대신 같은 프로세스 안에서는 서로 영향을 준다.</text>
+
+  <line x1="30" y1="316" x2="870" y2="316" stroke="#d0d7de"/>
+
+  <!-- 하단: 커널과 CPU -->
+  <text x="30" y="352" font-size="16" font-weight="700" fill="#1f2328">2. 그 스레드들을 누가, 어디에 배분하는가</text>
+
+  <rect x="30" y="378" width="200" height="92" rx="8" fill="#fff8c5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="130" y="406" font-size="13" font-weight="700" fill="#bc4c00" text-anchor="middle">커널</text>
+  <text x="130" y="428" font-size="10.5" fill="#57606a" text-anchor="middle">운영체제의 핵심.</text>
+  <text x="130" y="445" font-size="10.5" fill="#57606a" text-anchor="middle">어떤 스레드에 CPU를</text>
+  <text x="130" y="462" font-size="10.5" fill="#57606a" text-anchor="middle">얼마나 줄지 결정한다</text>
+
+  <line x1="238" y1="424" x2="286" y2="424" stroke="#bc4c00" stroke-width="2" marker-end="url(#t-ar-o)"/>
+
+  <rect x="296" y="358" width="574" height="150" rx="10" fill="#f6f8fa" stroke="#57606a" stroke-width="1.5"/>
+  <text x="312" y="380" font-size="12.5" font-weight="700" fill="#1f2328">CPU — 실제로 계산하는 곳</text>
+
+  <rect x="316" y="392" width="252" height="98" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="442" y="414" font-size="12" font-weight="700" fill="#1f2328" text-anchor="middle">코어 1 (실제 일꾼)</text>
+  <rect x="332" y="426" width="106" height="48" rx="6" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="385" y="447" font-size="10" fill="#0969da" text-anchor="middle">논리 프로세서</text>
+  <text x="385" y="462" font-size="10" fill="#0969da" text-anchor="middle">(스레드) 1</text>
+  <rect x="446" y="426" width="106" height="48" rx="6" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="499" y="447" font-size="10" fill="#0969da" text-anchor="middle">논리 프로세서</text>
+  <text x="499" y="462" font-size="10" fill="#0969da" text-anchor="middle">(스레드) 2</text>
+
+  <rect x="596" y="392" width="252" height="98" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="722" y="414" font-size="12" font-weight="700" fill="#1f2328" text-anchor="middle">코어 2 (실제 일꾼)</text>
+  <rect x="612" y="426" width="106" height="48" rx="6" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="665" y="447" font-size="10" fill="#0969da" text-anchor="middle">논리 프로세서</text>
+  <text x="665" y="462" font-size="10" fill="#0969da" text-anchor="middle">(스레드) 3</text>
+  <rect x="726" y="426" width="106" height="48" rx="6" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="779" y="447" font-size="10" fill="#0969da" text-anchor="middle">논리 프로세서</text>
+  <text x="779" y="462" font-size="10" fill="#0969da" text-anchor="middle">(스레드) 4</text>
+
+  <text x="30" y="536" font-size="12" fill="#1f2328">코어 2개인데 논리 프로세서가 4개로 보이는 이유: 일꾼 한 명이 <tspan font-weight="700">일감 줄을 두 개</tspan> 받아, 한쪽이 대기하는 틈에 다른 쪽을 처리하기 때문.</text>
+  <text x="30" y="558" font-size="12" fill="#57606a">일꾼이 두 배가 된 것은 아니므로 성능도 두 배가 되지는 않는다.</text>
+</svg>
