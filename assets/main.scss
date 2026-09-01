@@ -4,6 +4,12 @@
 
 @import "{{ site.theme }}";
 
+/* minima가 정의하는 변수들. !default 이므로 테마에 이미 있으면 무시되고,
+   변수명이 달라져도 빌드가 깨지지 않도록 하는 안전망입니다. */
+$brand-color:      #2a7ae2 !default;
+$grey-color:       #828282 !default;
+$grey-color-dark:  #4d4d4d !default;
+
 /* ── 이미지 ─────────────────────────────────────────── */
 .post-figure {
   margin: 1.8em auto;
@@ -36,4 +42,289 @@
   display: table;
   width: 100%;
   font-size: 0.92em;
+}
+
+/* ══════════════════════════════════════════════════════
+   카테고리 개편 관련 스타일
+   minima 변수를 덮지 않도록 모두 클래스 스코프 안에만 씁니다.
+   ══════════════════════════════════════════════════════ */
+
+/* ── 카테고리 배지 ──────────────────────────────────── */
+.cat-badge {
+  display: inline-block;
+  padding: 0.1em 0.5em;
+  margin-right: 0.4em;
+  border-radius: 4px;
+  font-size: 0.72em;
+  font-weight: 600;
+  line-height: 1.7;
+  vertical-align: middle;
+  color: #fff;
+  white-space: nowrap;
+
+  &.cat-review   { background: #57606a; }
+  &.cat-glossary { background: #8250df; }
+  &.cat-build    { background: #1a7f37; }
+}
+
+/* ── 목록 공통 ──────────────────────────────────────── */
+.entry-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.entry {
+  padding: 0.9em 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+
+  &:last-child { border-bottom: 0; }
+}
+
+.entry-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4em;
+}
+
+.lesson-no {
+  font-size: 0.78em;
+  font-weight: 700;
+  color: $brand-color;
+  white-space: nowrap;
+}
+
+.entry-title {
+  font-weight: 600;
+}
+
+.entry-date {
+  font-size: 0.8em;
+  color: $grey-color;
+  white-space: nowrap;
+}
+
+.entry-summary {
+  margin: 0.35em 0 0;
+  font-size: 0.92em;
+  color: $grey-color-dark;
+  line-height: 1.6;
+}
+
+.entry-tags {
+  margin: 0.4em 0 0;
+}
+
+.tag {
+  display: inline-block;
+  margin-right: 0.3em;
+  padding: 0.05em 0.45em;
+  border: 1px solid rgba(128, 128, 128, 0.35);
+  border-radius: 3px;
+  font-size: 0.75em;
+  color: $grey-color;
+}
+
+.empty-note {
+  padding: 1.2em 0;
+  color: $grey-color;
+  font-style: italic;
+}
+
+.section-more {
+  margin-top: 0.6em;
+  font-size: 0.9em;
+}
+
+/* ── 홈 ─────────────────────────────────────────────── */
+.home-section {
+  margin-top: 2.4em;
+
+  > h2 {
+    margin-bottom: 0.5em;
+    font-size: 1.25em;
+  }
+}
+
+.start-here {
+  li { margin-bottom: 0.3em; }
+}
+
+.term-inline {
+  line-height: 2.1;
+}
+
+/* ── 용어 사전 ──────────────────────────────────────── */
+.glossary-count {
+  color: $grey-color;
+  font-size: 0.9em;
+}
+
+.table-scroll {
+  overflow-x: auto;
+  margin-bottom: 1.6em;
+}
+
+.glossary-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92em;
+
+  th, td {
+    padding: 0.6em 0.8em;
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th { background: rgba(128, 128, 128, 0.08); }
+
+  td:first-child {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  small {
+    font-weight: 400;
+    color: $grey-color;
+  }
+}
+
+/* 용어 링크 — 일반 링크와 구분되도록 점선 밑줄 */
+.term-link {
+  text-decoration: none;
+  border-bottom: 1px dotted $brand-color;
+
+  &:hover { border-bottom-style: solid; }
+}
+
+/* ── 작업물 카드 ────────────────────────────────────── */
+.build-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.2em;
+  margin-top: 1.4em;
+}
+
+.build-card {
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.build-thumb {
+  display: block;
+
+  img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+    border: 0;
+  }
+}
+
+.build-body {
+  padding: 0.9em 1em 1.1em;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.build-title {
+  margin: 0 0 0.35em;
+  font-size: 1.05em;
+  line-height: 1.4;
+}
+
+.build-status {
+  display: inline-block;
+  margin-left: 0.4em;
+  padding: 0.05em 0.45em;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  border-radius: 3px;
+  font-size: 0.68em;
+  font-weight: 400;
+  color: $grey-color;
+  vertical-align: middle;
+}
+
+.build-summary {
+  margin: 0 0 0.6em;
+  font-size: 0.9em;
+  color: $grey-color-dark;
+  line-height: 1.6;
+}
+
+.build-stack {
+  margin: 0 0 0.7em;
+}
+
+.stack-badge {
+  display: inline-block;
+  margin: 0 0.3em 0.3em 0;
+  padding: 0.05em 0.45em;
+  background: rgba(128, 128, 128, 0.12);
+  border-radius: 3px;
+  font-size: 0.75em;
+  color: $grey-color-dark;
+}
+
+.build-actions {
+  margin: 0 0 0.5em;
+}
+
+.btn-demo,
+.btn-repo {
+  display: inline-block;
+  margin: 0 0.4em 0.4em 0;
+  padding: 0.35em 0.9em;
+  border-radius: 5px;
+  font-size: 0.85em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-demo {
+  background: $brand-color;
+  color: #fff;
+
+  &:hover { text-decoration: none; opacity: 0.88; }
+}
+
+.btn-repo {
+  border: 1px solid rgba(128, 128, 128, 0.45);
+  color: $grey-color-dark;
+
+  &:hover { text-decoration: none; border-color: $brand-color; }
+}
+
+.build-more {
+  margin: auto 0 0;
+  font-size: 0.88em;
+}
+
+/* ── 모바일 ─────────────────────────────────────────── */
+@media screen and (max-width: 600px) {
+  .build-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .entry-head {
+    gap: 0.3em;
+  }
+
+  .entry-summary { font-size: 0.88em; }
+
+  .glossary-table {
+    font-size: 0.85em;
+
+    th, td { padding: 0.45em 0.55em; }
+  }
+
+  .home-section > h2 { font-size: 1.15em; }
 }

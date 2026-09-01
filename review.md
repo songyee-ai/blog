@@ -1,21 +1,17 @@
 ---
 layout: page
-title: 전체 목록
-permalink: /archive/
+title: 강의 리뷰
+permalink: /review/
 ---
 
-모든 글을 최신순으로 모아둔 목록입니다. 종류별로 보려면 상단 메뉴를 이용하세요.
+수업 회차 순서대로 정렬되어 있습니다. 위에서부터 읽으시면 됩니다.
 
-{% assign posts = site.posts | sort: "date" | reverse %}
+{% assign reviews = site.categories.review | sort: "lesson" %}
+{% if reviews.size > 0 %}
 <ul class="entry-list">
-{% for post in posts %}
+{% for post in reviews %}
   <li class="entry">
     <div class="entry-head">
-      {% case post.category %}
-        {% when 'review' %}<span class="cat-badge cat-review">리뷰</span>
-        {% when 'glossary' %}<span class="cat-badge cat-glossary">용어</span>
-        {% when 'build' %}<span class="cat-badge cat-build">작업물</span>
-      {% endcase %}
       {% if post.lesson and post.lesson > 0 %}<span class="lesson-no">{{ post.lesson }}회차</span>{% endif %}
       <a class="entry-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
       <time class="entry-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
@@ -27,3 +23,6 @@ permalink: /archive/
   </li>
 {% endfor %}
 </ul>
+{% else %}
+<p class="empty-note">아직 등록된 강의 리뷰가 없습니다.</p>
+{% endif %}
