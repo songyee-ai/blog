@@ -1,0 +1,10 @@
+{%- comment -%}
+용어 이름으로 용어 글을 찾아 링크를 겁니다. 아직 글이 없으면 텍스트만 출력합니다.
+사용법: {% include term.html name="프로세스" %}
+{%- endcomment -%}
+{%- assign t = site.categories.glossary | where: "term", include.name | first -%}
+{%- if t -%}
+<a class="term-link" href="{{ t.url | relative_url }}">{{ include.name }}</a>
+{%- else -%}
+{{ include.name }}
+{%- endif -%}
