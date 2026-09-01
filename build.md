@@ -11,7 +11,10 @@ permalink: /build/
 <div class="build-grid">
 {% for post in builds %}
   <article class="build-card">
-    {% if post.thumbnail and post.thumbnail != "" %}
+    {%- comment -%} 파일이 실제로 있을 때만 이미지를 그립니다. 깨진 이미지 아이콘 방지. {%- endcomment -%}
+    {% assign thumb_ok = false %}
+    {% if post.thumbnail and post.thumbnail != "" %}{% assign tf = site.static_files | where: "path", post.thumbnail | first %}{% if tf %}{% assign thumb_ok = true %}{% endif %}{% endif %}
+    {% if thumb_ok %}
     <a href="{{ post.url | relative_url }}" class="build-thumb">
       <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }} 미리보기" loading="lazy">
     </a>

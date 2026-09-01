@@ -3,7 +3,7 @@ layout: post
 title: "{{TITLE}}"
 date: {{DATE}} +0900
 lesson: {{LESSON}}            # 수업 회차 (숫자)
-categories: ["AI Agent 수업"]
+category: review
 tags: [{{TAGS}}]
 summary: "{{SUMMARY}}"        # 목록에 보이는 한 줄 요약
 ---
