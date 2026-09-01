@@ -6,7 +6,9 @@ permalink: /review/
 
 수업 회차 순서대로 정렬되어 있습니다. 위에서부터 읽으시면 됩니다.
 
-{% assign reviews = site.categories.review | sort: "lesson" %}
+{% assign reviews = site.categories.review %}
+{% unless reviews %}{% assign reviews = "" | split: "," %}{% endunless %}
+{% assign reviews = reviews | sort: "lesson" %}
 {% if reviews.size > 0 %}
 <ul class="entry-list">
 {% for post in reviews %}

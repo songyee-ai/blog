@@ -9,7 +9,9 @@ AI Agent 수업에서 배운 것을 세 가지로 나눠 기록합니다 — **�
 <section class="home-section">
 <h2>처음 오셨나요?</h2>
 <ul class="start-here">
-  {% assign first = site.categories.review | sort: "lesson" | first %}
+  {% assign rv = site.categories.review %}
+  {% unless rv %}{% assign rv = "" | split: "," %}{% endunless %}
+  {% assign first = rv | sort: "lesson" | first %}
   {% if first %}
   <li><a href="{{ first.url | relative_url }}">1회차부터 순서대로 읽기</a> — 수업을 처음부터 따라갑니다</li>
   {% endif %}
@@ -20,7 +22,9 @@ AI Agent 수업에서 배운 것을 세 가지로 나눠 기록합니다 — **�
 
 <section class="home-section">
 <h2>최근 강의 리뷰</h2>
-{% assign reviews = site.categories.review | sort: "lesson" | reverse %}
+{% assign reviews = site.categories.review %}
+{% unless reviews %}{% assign reviews = "" | split: "," %}{% endunless %}
+{% assign reviews = reviews | sort: "lesson" | reverse %}
 {% if reviews.size > 0 %}
 <ul class="entry-list">
 {% for post in reviews limit: 5 %}
@@ -41,7 +45,9 @@ AI Agent 수업에서 배운 것을 세 가지로 나눠 기록합니다 — **�
 
 <section class="home-section">
 <h2>최근 정리한 용어</h2>
-{% assign terms = site.categories.glossary | sort: "date" | reverse %}
+{% assign terms = site.categories.glossary %}
+{% unless terms %}{% assign terms = "" | split: "," %}{% endunless %}
+{% assign terms = terms | sort: "date" | reverse %}
 {% if terms.size > 0 %}
 <p class="term-inline">
 {% for post in terms limit: 6 %}<a class="term-link" href="{{ post.url | relative_url }}">{{ post.term | default: post.title }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}
@@ -54,7 +60,9 @@ AI Agent 수업에서 배운 것을 세 가지로 나눠 기록합니다 — **�
 
 <section class="home-section">
 <h2>최근 작업물</h2>
-{% assign builds = site.categories.build | sort: "date" | reverse %}
+{% assign builds = site.categories.build %}
+{% unless builds %}{% assign builds = "" | split: "," %}{% endunless %}
+{% assign builds = builds | sort: "date" | reverse %}
 {% if builds.size > 0 %}
 <ul class="entry-list">
 {% for post in builds limit: 2 %}

@@ -6,7 +6,11 @@ permalink: /build/
 
 수업 중에 만든 것들입니다. 직접 해보고, 만드는 과정도 함께 읽을 수 있습니다.
 
-{% assign builds = site.categories.build | sort: "date" | reverse %}
+{%- comment -%} 글이 0개면 site.categories.build 가 nil 이므로 빈 배열로 바꿔 둡니다.
+     nil 에 sort 를 걸면 "Cannot sort a null object" 로 빌드가 실패합니다. {%- endcomment -%}
+{% assign builds = site.categories.build %}
+{% unless builds %}{% assign builds = "" | split: "," %}{% endunless %}
+{% assign builds = builds | sort: "date" | reverse %}
 {% if builds.size > 0 %}
 <div class="build-grid">
 {% for post in builds %}

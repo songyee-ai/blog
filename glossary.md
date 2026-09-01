@@ -7,6 +7,7 @@ permalink: /glossary/
 수업에서 만난 용어를 하나씩 정리합니다. 분야별로 묶고, 분야 안에서는 가나다순입니다.
 
 {% assign all_terms = site.categories.glossary %}
+{% unless all_terms %}{% assign all_terms = "" | split: "," %}{% endunless %}
 {% if all_terms.size > 0 %}
 
 <p class="glossary-count">현재 {{ all_terms | size }}개</p>
