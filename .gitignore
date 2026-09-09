@@ -5,3 +5,12 @@ Gemfile.lock
 vendor/
 .bundle/
 .sass-cache/
+
+# 도구가 만드는 작업 상태 폴더 (커밋 대상 아님)
+.omc/
+
+# 편집기·OS
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
