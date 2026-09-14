@@ -1,0 +1,50 @@
+<svg viewBox="0 0 760 346" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="26" font-size="15" font-weight="700" fill="#1f2328">타이머는 조 전체가 함께 쓴다 — 남은 시간을 각자 세지 않는다</text>
+  <text x="24" y="48" font-size="12" fill="#57606a">한 명이 일시정지하면 모두 멈춘다. 그러려면 "지금 몇 분 남았나"를 각자의 화면이 계산하면 안 된다.</text>
+
+  <!-- server box -->
+  <rect x="266" y="70" width="228" height="96" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="380" y="92" font-size="12" font-weight="700" fill="#1f2328" text-anchor="middle">서버에 적히는 것</text>
+  <text x="380" y="114" font-size="11" fill="#57606a" text-anchor="middle">언제 시작했나 · 언제 멈췄나</text>
+  <text x="380" y="132" font-size="11" fill="#57606a" text-anchor="middle">학습 몇 분 · 쉬는 시간 몇 분</text>
+  <text x="380" y="154" font-size="10.5" fill="#1a7f37" text-anchor="middle">남은 시간은 여기서 계산해 내려준다</text>
+
+  <!-- three phones -->
+  <g>
+    <rect x="40" y="196" width="150" height="104" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="115" y="218" font-size="11.5" font-weight="700" fill="#1f2328" text-anchor="middle">시간지키미</text>
+    <text x="115" y="240" font-size="14" font-weight="700" fill="#0969da" text-anchor="middle">24 : 13</text>
+    <text x="115" y="262" font-size="10" fill="#57606a" text-anchor="middle">버튼 네 개</text>
+    <text x="115" y="278" font-size="10" fill="#57606a" text-anchor="middle">넘기기 · 시간 다시 정하기</text>
+    <text x="115" y="292" font-size="10" fill="#57606a" text-anchor="middle">일시정지 · 오늘 학습 끝내기</text>
+  </g>
+  <g>
+    <rect x="305" y="196" width="150" height="104" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+    <text x="380" y="218" font-size="11.5" font-weight="700" fill="#1f2328" text-anchor="middle">다른 조원</text>
+    <text x="380" y="240" font-size="14" font-weight="700" fill="#0969da" text-anchor="middle">24 : 13</text>
+    <text x="380" y="262" font-size="10" fill="#57606a" text-anchor="middle">버튼 두 개</text>
+    <text x="380" y="278" font-size="10" fill="#57606a" text-anchor="middle">오늘의 역할 보기</text>
+    <text x="380" y="292" font-size="10" fill="#57606a" text-anchor="middle">일시정지</text>
+  </g>
+  <g>
+    <rect x="570" y="196" width="150" height="104" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+    <text x="645" y="218" font-size="11.5" font-weight="700" fill="#1f2328" text-anchor="middle">또 다른 조원</text>
+    <text x="645" y="240" font-size="14" font-weight="700" fill="#0969da" text-anchor="middle">24 : 13</text>
+    <text x="645" y="266" font-size="10" fill="#57606a" text-anchor="middle">늦게 들어와도</text>
+    <text x="645" y="282" font-size="10" fill="#57606a" text-anchor="middle">같은 숫자가 보인다</text>
+  </g>
+
+  <g stroke="#1a7f37" stroke-width="1.6" fill="none">
+    <path d="M300 168 L130 190"/>
+    <path d="M380 168 L380 190"/>
+    <path d="M460 168 L630 190"/>
+  </g>
+  <g fill="#1a7f37">
+    <path d="M130 190 l9 -3 l-2 8 z"/><path d="M380 190 l-5 -8 l10 0 z"/><path d="M630 190 l-9 -3 l2 8 z"/>
+  </g>
+  <text x="228" y="166" font-size="9.5" fill="#1a7f37" text-anchor="middle">3초마다 확인</text>
+  <text x="534" y="166" font-size="9.5" fill="#1a7f37" text-anchor="middle">3초마다 확인</text>
+
+  <rect x="24" y="314" width="712" height="24" rx="8" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="40" y="330" font-size="11.5" fill="#57606a">각자 세면 화면마다 숫자가 어긋나고, 늦게 들어온 사람은 처음부터 다시 센다. 그래서 <tspan font-weight="700">"시작한 시각"만 서버에 적고 나머지는 계산</tspan>했다.</text>
+</svg>

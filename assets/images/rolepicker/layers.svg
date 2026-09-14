@@ -1,0 +1,51 @@
+<svg viewBox="0 0 760 392" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="26" font-size="15" font-weight="700" fill="#1f2328">프론트와 백엔드를 붙인다는 건, 어디까지 내려가는지를 정하는 일이었다</text>
+  <text x="24" y="48" font-size="12" fill="#57606a">브라우저는 데이터베이스를 직접 만지지 않는다. 사이에 서버가 한 겹 있고, 비밀 열쇠는 그 안에서만 산다.</text>
+
+  <!-- browser -->
+  <rect x="24" y="72" width="200" height="112" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="40" y="94" font-size="12" font-weight="700" fill="#1f2328">브라우저 — 조원의 폰</text>
+  <text x="40" y="116" font-size="11" fill="#57606a"><tspan font-weight="700">front/</tspan> 화면과 버튼</text>
+  <text x="40" y="136" font-size="11" fill="#57606a">여기 있는 건 누구나 볼 수 있다.</text>
+  <text x="40" y="152" font-size="11" fill="#57606a">그래서 비밀값을 두지 않는다.</text>
+  <text x="40" y="172" font-size="10.5" fill="#0969da">주소는 app/ 이 정한다 (껍데기만)</text>
+
+  <path d="M232 118 L286 118" stroke="#57606a" stroke-width="1.6"/>
+  <path d="M286 118 l-9 -4 l0 8 z" fill="#57606a"/>
+  <text x="259" y="110" font-size="10" fill="#57606a" text-anchor="middle">요청</text>
+  <path d="M286 146 L232 146" stroke="#57606a" stroke-width="1.6"/>
+  <path d="M232 146 l9 -4 l0 8 z" fill="#57606a"/>
+  <text x="259" y="162" font-size="10" fill="#57606a" text-anchor="middle">필요한 값만</text>
+
+  <!-- server -->
+  <rect x="294" y="72" width="212" height="112" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="310" y="94" font-size="12" font-weight="700" fill="#1f2328">서버 — API 9개</text>
+  <text x="310" y="116" font-size="11" fill="#57606a"><tspan font-weight="700">back/</tspan> 배정 · DB 접근 · 검사</text>
+  <text x="310" y="136" font-size="11" fill="#57606a">비밀 열쇠는 이 폴더 밖으로</text>
+  <text x="310" y="152" font-size="11" fill="#57606a">나가지 않는다.</text>
+  <text x="310" y="172" font-size="10.5" fill="#1a7f37">경계가 지켜지는지 검사로 확인한다</text>
+
+  <path d="M514 118 L568 118" stroke="#57606a" stroke-width="1.6"/>
+  <path d="M568 118 l-9 -4 l0 8 z" fill="#57606a"/>
+  <path d="M568 146 L514 146" stroke="#57606a" stroke-width="1.6"/>
+  <path d="M514 146 l9 -4 l0 8 z" fill="#57606a"/>
+
+  <!-- db -->
+  <rect x="576" y="72" width="160" height="112" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="592" y="94" font-size="12" font-weight="700" fill="#1f2328">데이터베이스</text>
+  <text x="592" y="116" font-size="11" fill="#57606a">조 · 조원 · 배정 기록</text>
+  <text x="592" y="132" font-size="11" fill="#57606a">타이머 세션</text>
+  <text x="592" y="156" font-size="10.5" fill="#cf222e">밖에서 오는 접근은</text>
+  <text x="592" y="172" font-size="10.5" fill="#cf222e">전부 막아 뒀다</text>
+
+  <rect x="24" y="200" width="712" height="76" rx="8" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="40" y="220" font-size="12" font-weight="700" fill="#1f2328">폴더를 넷으로 나눈 이유</text>
+  <text x="40" y="240" font-size="11.5" fill="#57606a"><tspan font-weight="700">app/</tspan> 주소록 — 주소가 폴더 이름에서 나오는 구조라 없앨 수 없다. 대신 로직을 두지 않고 껍데기만 남겼다.</text>
+  <text x="40" y="258" font-size="11.5" fill="#57606a"><tspan font-weight="700">front/</tspan> 화면 · <tspan font-weight="700">back/</tspan> 서버 · <tspan font-weight="700">shared/</tspan> 양쪽이 같이 쓰는 날짜·시간 계산. 어디를 고치면 어디가 움직이는지가 폴더만 봐도 보인다.</text>
+
+  <rect x="24" y="288" width="712" height="88" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="308" font-size="12" font-weight="700" fill="#1f2328">공개 배포 전에 막은 두 곳</text>
+  <text x="40" y="328" font-size="11.5" fill="#57606a">① <tspan font-weight="700">조 만들기 요청 제한</tspan> — 로그인이 없어 누구나 조를 만들 수 있다. 그대로 두면 자동 프로그램이 조를 계속 만들어</text>
+  <text x="54" y="344" font-size="11.5" fill="#57606a">데이터베이스를 채울 수 있었다. 한 곳에서 한 시간에 20개까지. (21번 시도 → 20개 생성, 1개 차단)</text>
+  <text x="40" y="364" font-size="11.5" fill="#57606a">② <tspan font-weight="700">조 화면을 검색엔진에서 제외</tspan> — 링크가 곧 열쇠라, 링크가 새는 것과 검색으로 찾히는 것은 차원이 다르다.</text>
+</svg>

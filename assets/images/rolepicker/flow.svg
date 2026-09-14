@@ -1,0 +1,52 @@
+<svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="26" font-size="15" font-weight="700" fill="#1f2328">화면 여섯 개 — 링크 하나로 조원 전원이 같은 흐름을 탄다</text>
+  <text x="24" y="48" font-size="12" fill="#57606a">로그인이 없다. 조를 만들면 나오는 링크가 곧 열쇠이자 주소다.</text>
+
+  <rect x="24" y="70" width="128" height="86" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="40" y="90" font-size="11.5" font-weight="700" fill="#1f2328">첫 화면</text>
+  <text x="40" y="110" font-size="10.5" fill="#57606a">새 조 만들기</text>
+  <text x="40" y="126" font-size="10.5" fill="#57606a">또는 최근 조 열기</text>
+  <text x="40" y="146" font-size="10" fill="#0969da">잃어버리면 코드로</text>
+
+  <path d="M158 113 l10 8 l-10 8" fill="none" stroke="#57606a" stroke-width="1.5"/>
+
+  <rect x="176" y="70" width="128" height="86" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="192" y="90" font-size="11.5" font-weight="700" fill="#1f2328">조원 확인</text>
+  <text x="192" y="110" font-size="10.5" fill="#57606a">오늘 누가 왔나</text>
+  <text x="192" y="126" font-size="10.5" fill="#57606a">못 온 사람은</text>
+  <text x="192" y="142" font-size="10.5" fill="#57606a">지우지 말고 <tspan font-weight="700">빈자리</tspan></text>
+
+  <path d="M310 113 l10 8 l-10 8" fill="none" stroke="#57606a" stroke-width="1.5"/>
+
+  <rect x="328" y="70" width="128" height="86" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="344" y="90" font-size="11.5" font-weight="700" fill="#1f2328">오늘의 역할</text>
+  <text x="344" y="110" font-size="10.5" fill="#57606a">이끄미 · 시간지키미</text>
+  <text x="344" y="126" font-size="10.5" fill="#57606a">하루 한 번만 뽑힌다</text>
+  <text x="344" y="146" font-size="10" fill="#1a7f37">마음에 안 들면 다시 뽑기</text>
+
+  <path d="M462 113 l10 8 l-10 8" fill="none" stroke="#57606a" stroke-width="1.5"/>
+
+  <rect x="480" y="70" width="128" height="86" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="496" y="90" font-size="11.5" font-weight="700" fill="#1f2328">학습 시간 정하기</text>
+  <text x="496" y="110" font-size="10.5" fill="#57606a">학습·쉬는 시간을</text>
+  <text x="496" y="126" font-size="10.5" fill="#57606a">조원이 함께 정한다</text>
+
+  <path d="M614 113 l10 8 l-10 8" fill="none" stroke="#57606a" stroke-width="1.5"/>
+
+  <rect x="632" y="70" width="104" height="86" rx="8" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="648" y="90" font-size="11.5" font-weight="700" fill="#1f2328">타이머</text>
+  <text x="648" y="110" font-size="10.5" fill="#57606a">한 명이 누르면</text>
+  <text x="648" y="126" font-size="10.5" fill="#57606a">전원 화면이</text>
+  <text x="648" y="142" font-size="10.5" fill="#57606a">같이 움직인다</text>
+
+  <path d="M392 158 L392 184" stroke="#57606a" stroke-width="1.5" fill="none"/>
+  <path d="M392 190 l-5 -8 l10 0 z" fill="#57606a"/>
+  <rect x="300" y="192" width="184" height="60" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="316" y="212" font-size="11.5" font-weight="700" fill="#1f2328">지난 기록</text>
+  <text x="316" y="230" font-size="10.5" fill="#57606a">누가 몇 번 맡았는지 한 표에.</text>
+  <text x="316" y="246" font-size="10.5" fill="#57606a">"고루 돌았다"가 눈에 보여야 한다</text>
+
+  <rect x="24" y="268" width="712" height="46" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="288" font-size="11.5" fill="#57606a">설치도 로그인도 없다. 조 링크를 채팅방에 한 번 올리면 그날부터 쓴다. 대신 <tspan font-weight="700">링크를 아는 사람은 누구나 뽑고 고칠 수 있다</tspan> —</text>
+  <text x="40" y="306" font-size="11.5" fill="#57606a">이건 편의와 맞바꾼 것이라, 조 화면은 검색엔진에서 빼고 안내 문구로 분명히 적었다.</text>
+</svg>

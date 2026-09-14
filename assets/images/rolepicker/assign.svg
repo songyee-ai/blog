@@ -1,0 +1,65 @@
+<svg viewBox="0 0 760 372" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="26" font-size="15" font-weight="700" fill="#1f2328">공정한 랜덤 — 완전한 랜덤이 아니라 "고루 돌아가는" 랜덤</text>
+  <text x="24" y="48" font-size="12" fill="#57606a">이 서비스의 핵심 가치는 랜덤이 아니라, 고루 돌아갔다는 것이 눈에 보이는 것이었다.</text>
+
+  <rect x="24" y="70" width="158" height="118" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="90" font-size="11.5" font-weight="700" fill="#1f2328">① 오늘 온 사람</text>
+  <text x="40" y="112" font-size="11" fill="#57606a">빈자리는 빠진다</text>
+  <text x="40" y="132" font-size="11" fill="#57606a">이미 다른 역할을 맡은</text>
+  <text x="40" y="148" font-size="11" fill="#57606a">사람도 빠진다</text>
+  <text x="40" y="170" font-size="10.5" fill="#0969da">한 사람이 두 역할을 겸하지 않게</text>
+
+  <path d="M188 125 l10 8 l-10 8" fill="none" stroke="#57606a" stroke-width="1.5"/>
+
+  <rect x="206" y="70" width="158" height="118" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="222" y="90" font-size="11.5" font-weight="700" fill="#1f2328">② 최근에 맡은 사람 제외</text>
+  <text x="222" y="112" font-size="11" fill="#57606a">쿨다운 <tspan font-weight="700">3일</tspan></text>
+  <text x="222" y="134" font-size="11" fill="#57606a">그래서 후보가 0명이 되면</text>
+  <text x="222" y="150" font-size="11" fill="#57606a">하루씩 줄여 가며 다시 찾고,</text>
+  <text x="222" y="166" font-size="11" fill="#57606a">그래도 없으면 쿨다운을 푼다</text>
+
+  <path d="M370 125 l10 8 l-10 8" fill="none" stroke="#57606a" stroke-width="1.5"/>
+
+  <rect x="388" y="70" width="158" height="118" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="404" y="90" font-size="11.5" font-weight="700" fill="#1f2328">③ 오래 안 맡은 만큼 가중치</text>
+  <text x="404" y="112" font-size="11" fill="#57606a">가중치 = 그 역할을</text>
+  <text x="404" y="128" font-size="11" fill="#57606a">마지막으로 맡은 날로부터</text>
+  <text x="404" y="144" font-size="11" fill="#57606a">지난 일수</text>
+  <text x="404" y="168" font-size="11" fill="#1a7f37">한 번도 안 맡았으면 <tspan font-weight="700">999</tspan></text>
+
+  <path d="M552 125 l10 8 l-10 8" fill="none" stroke="#57606a" stroke-width="1.5"/>
+
+  <rect x="570" y="70" width="166" height="118" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="586" y="90" font-size="11.5" font-weight="700" fill="#1f2328">④ 가중치대로 뽑기</text>
+  <text x="586" y="112" font-size="11" fill="#57606a">여기서만 난수를 쓴다.</text>
+  <text x="586" y="132" font-size="11" fill="#57606a">난수도 인자로 받아서</text>
+  <text x="586" y="148" font-size="11" fill="#57606a">테스트에서는 고정한다 —</text>
+  <text x="586" y="168" font-size="11" fill="#57606a">그래서 수만 번 돌려볼 수 있다</text>
+
+  <rect x="24" y="206" width="358" height="150" rx="8" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="40" y="226" font-size="12" font-weight="700" fill="#1f2328">설계안을 고친 곳 — 다시 뽑기</text>
+  <text x="40" y="248" font-size="11.5" fill="#57606a">설계안에는 "같은 방식으로 한 번 더 돌린다"고만</text>
+  <text x="40" y="264" font-size="11.5" fill="#57606a">적혀 있었다. 그대로 만들어 돌려 보니</text>
+  <text x="40" y="288" font-size="13" font-weight="700" fill="#cf222e">5명 조에서 49%가 같은 사람이 다시 나왔다</text>
+  <text x="40" y="310" font-size="11.5" fill="#57606a">쿨다운을 거치고 나면 후보가 평균 2.3명뿐이라서다.</text>
+  <text x="40" y="326" font-size="11.5" fill="#57606a">버튼을 눌러도 아무 일도 안 한 것처럼 보인다.</text>
+  <text x="40" y="346" font-size="11.5" font-weight="700" fill="#1a7f37">→ 그 역할에 한해 직전 당첨자를 후보에서 뺐다</text>
+
+  <rect x="398" y="206" width="338" height="150" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="414" y="226" font-size="12" font-weight="700" fill="#1f2328">2주를 200번 시뮬레이션한 결과</text>
+  <text x="414" y="244" font-size="10.5" fill="#57606a">이끄미를 맡은 횟수의 최대 − 최소 차이</text>
+
+  <text x="414" y="272" font-size="10.5" fill="#57606a">인원</text>
+  <text x="510" y="272" font-size="10.5" fill="#57606a">산수적 최선</text>
+  <text x="620" y="272" font-size="10.5" fill="#57606a">최선 달성</text>
+  <line x1="414" y1="280" x2="720" y2="280" stroke="#d0d7de"/>
+  <text x="414" y="300" font-size="11" fill="#1f2328">5명</text>
+  <text x="510" y="300" font-size="11" fill="#57606a">1</text>
+  <text x="620" y="300" font-size="11" font-weight="700" fill="#1a7f37">162 / 200</text>
+  <text x="414" y="320" font-size="11" fill="#1f2328">7명</text>
+  <text x="510" y="320" font-size="11" fill="#57606a">0</text>
+  <text x="620" y="320" font-size="11" fill="#57606a">28 / 200</text>
+  <text x="414" y="340" font-size="11" fill="#1f2328">12명</text>
+  <text x="510" y="340" font-size="11" fill="#57606a">1</text>
+  <text x="620" y="340" font-size="11" font-weight="700" fill="#1a7f37">199 / 200</text>
+</svg>
