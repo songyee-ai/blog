@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="900" height="340" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="숫자를 담는 그릇의 모양은 방 하나인 스칼라, 한 층인 벡터, 한 동인 행렬, 여러 동인 텐서로 나뉘며 주소를 대는 데 필요한 정보의 개수가 곧 차원이다">
+  <style>
+    .frame { fill:#f6f8fa; stroke:#d0d7de; stroke-width:1.5; }
+    .name  { fill:#57606a; font-size:14px; font-weight:700; }
+    .dim   { fill:#57606a; font-size:10.5px; }
+    .cell  { fill:#ffffff; stroke:#d0d7de; stroke-width:1.3; }
+    .meta  { fill:#57606a; font-size:10.5px; }
+    .on .frame { fill:#ddf4ff; stroke:#0969da; stroke-width:2.5; }
+    .on .name  { fill:#0969da; }
+    .on .dim   { fill:#0969da; font-weight:700; }
+    .on .cell  { fill:#0969da; stroke:#0969da; }
+    .on .meta  { fill:#1f2328; }
+  </style>
+
+  <text x="30" y="30" font-size="15" font-weight="700" fill="#1f2328">숫자를 담는 그릇의 모양</text>
+  <text x="30" y="50" font-size="10.5" fill="#57606a">아파트로 생각하면 맞다. 방 하나 → 한 층 → 한 동 → 여러 동. 방을 찾아가는 데 필요한 정보의 개수가 곧 차원이다.</text>
+
+  <g class="p s-scalar">
+    <rect class="frame" x="30" y="64" width="196" height="200" rx="10"/>
+    <text class="name" x="128" y="92" text-anchor="middle">스칼라</text>
+    <text class="dim"  x="128" y="112" text-anchor="middle">0차원 · 방 하나</text>
+    <rect class="cell" x="115" y="150" width="26" height="26" rx="3"/>
+    <text class="meta" x="128" y="212" text-anchor="middle">주소가 필요 없다</text>
+    <text class="meta" x="128" y="234" text-anchor="middle">온도 23 · 확률 0.95</text>
+  </g>
+
+  <g class="p s-vector on">
+    <rect class="frame" x="244" y="64" width="196" height="200" rx="10"/>
+    <text class="name" x="342" y="92" text-anchor="middle">벡터</text>
+    <text class="dim"  x="342" y="112" text-anchor="middle">1차원 · 한 층</text>
+    <rect class="cell" x="293" y="150" width="20" height="20" rx="3"/>
+    <rect class="cell" x="319" y="150" width="20" height="20" rx="3"/>
+    <rect class="cell" x="345" y="150" width="20" height="20" rx="3"/>
+    <rect class="cell" x="371" y="150" width="20" height="20" rx="3"/>
+    <text class="meta" x="342" y="212" text-anchor="middle">몇 번째?</text>
+    <text class="meta" x="342" y="234" text-anchor="middle">임베딩 · 로짓</text>
+  </g>
+
+  <g class="p s-matrix">
+    <rect class="frame" x="458" y="64" width="196" height="200" rx="10"/>
+    <text class="name" x="556" y="92" text-anchor="middle">행렬</text>
+    <text class="dim"  x="556" y="112" text-anchor="middle">2차원 · 한 동</text>
+    <rect class="cell" x="512" y="132" width="18" height="18" rx="2"/><rect class="cell" x="535" y="132" width="18" height="18" rx="2"/><rect class="cell" x="558" y="132" width="18" height="18" rx="2"/><rect class="cell" x="581" y="132" width="18" height="18" rx="2"/>
+    <rect class="cell" x="512" y="155" width="18" height="18" rx="2"/><rect class="cell" x="535" y="155" width="18" height="18" rx="2"/><rect class="cell" x="558" y="155" width="18" height="18" rx="2"/><rect class="cell" x="581" y="155" width="18" height="18" rx="2"/>
+    <rect class="cell" x="512" y="178" width="18" height="18" rx="2"/><rect class="cell" x="535" y="178" width="18" height="18" rx="2"/><rect class="cell" x="558" y="178" width="18" height="18" rx="2"/><rect class="cell" x="581" y="178" width="18" height="18" rx="2"/>
+    <text class="meta" x="556" y="212" text-anchor="middle">몇 행 몇 열?</text>
+    <text class="meta" x="556" y="234" text-anchor="middle">흑백 사진 한 장</text>
+  </g>
+
+  <g class="p s-tensor">
+    <rect class="frame" x="672" y="64" width="196" height="200" rx="10"/>
+    <text class="name" x="770" y="92" text-anchor="middle">텐서</text>
+    <text class="dim"  x="770" y="112" text-anchor="middle">N차원 · 여러 동</text>
+    <g opacity="0.45">
+      <rect class="cell" x="724" y="128" width="14" height="14" rx="2"/><rect class="cell" x="742" y="128" width="14" height="14" rx="2"/><rect class="cell" x="760" y="128" width="14" height="14" rx="2"/><rect class="cell" x="778" y="128" width="14" height="14" rx="2"/>
+      <rect class="cell" x="724" y="146" width="14" height="14" rx="2"/><rect class="cell" x="742" y="146" width="14" height="14" rx="2"/><rect class="cell" x="760" y="146" width="14" height="14" rx="2"/><rect class="cell" x="778" y="146" width="14" height="14" rx="2"/>
+      <rect class="cell" x="724" y="164" width="14" height="14" rx="2"/><rect class="cell" x="742" y="164" width="14" height="14" rx="2"/><rect class="cell" x="760" y="164" width="14" height="14" rx="2"/><rect class="cell" x="778" y="164" width="14" height="14" rx="2"/>
+    </g>
+    <rect class="cell" x="736" y="140" width="14" height="14" rx="2"/><rect class="cell" x="754" y="140" width="14" height="14" rx="2"/><rect class="cell" x="772" y="140" width="14" height="14" rx="2"/><rect class="cell" x="790" y="140" width="14" height="14" rx="2"/>
+    <rect class="cell" x="736" y="158" width="14" height="14" rx="2"/><rect class="cell" x="754" y="158" width="14" height="14" rx="2"/><rect class="cell" x="772" y="158" width="14" height="14" rx="2"/><rect class="cell" x="790" y="158" width="14" height="14" rx="2"/>
+    <rect class="cell" x="736" y="176" width="14" height="14" rx="2"/><rect class="cell" x="754" y="176" width="14" height="14" rx="2"/><rect class="cell" x="772" y="176" width="14" height="14" rx="2"/><rect class="cell" x="790" y="176" width="14" height="14" rx="2"/>
+    <text class="meta" x="770" y="212" text-anchor="middle">그 이상</text>
+    <text class="meta" x="770" y="234" text-anchor="middle">사진 여러 장 · 영상</text>
+  </g>
+
+  <line x1="30" y1="288" x2="870" y2="288" stroke="#d0d7de" stroke-width="1"/>
+  <text x="30" y="314" font-size="11" fill="#1f2328"><tspan font-weight="700">텐서는 이 넷을 아우르는 말이다.</tspan> 스칼라는 0차원 텐서, 벡터는 1차원 텐서, 행렬은 2차원 텐서다.</text>
+</svg>
