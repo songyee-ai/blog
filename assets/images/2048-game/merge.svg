@@ -1,0 +1,69 @@
+<svg viewBox="0 0 760 358" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="26" font-size="15" font-weight="700" fill="#1f2328">병합의 한 수 — 합쳐진 타일은 바로 지우면 안 된다</text>
+  <text x="24" y="48" font-size="12" fill="#57606a">설계안에는 "사라지는 쪽 id를 제거"라고 적었지만, 즉시 지우면 두 타일이 겹쳐지는 장면이 아예 보이지 않는다.</text>
+
+  <!-- panel 1 -->
+  <rect x="24" y="70" width="224" height="154" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="92" font-size="11.5" font-weight="700" fill="#1f2328">0ms · 왼쪽 밀기 직전</text>
+  <g>
+    <rect x="40" y="104" width="192" height="52" rx="6" fill="#e6e2dc"/>
+    <rect x="46" y="110" width="40" height="40" rx="5" fill="#efe5da"/>
+    <text x="66" y="136" font-size="15" font-weight="700" fill="#7a6a58" text-anchor="middle">4</text>
+    <text x="66" y="150" font-size="7.5" fill="#57606a" text-anchor="middle">id 3</text>
+    <rect x="92" y="110" width="40" height="40" rx="5" fill="#f1eee9"/>
+    <rect x="138" y="110" width="40" height="40" rx="5" fill="#efe5da"/>
+    <text x="158" y="136" font-size="15" font-weight="700" fill="#7a6a58" text-anchor="middle">4</text>
+    <text x="158" y="150" font-size="7.5" fill="#57606a" text-anchor="middle">id 7</text>
+    <rect x="184" y="110" width="40" height="40" rx="5" fill="#f1eee9"/>
+  </g>
+  <text x="40" y="180" font-size="10.5" fill="#57606a">타일마다 고유 id가 있다.</text>
+  <text x="40" y="198" font-size="10.5" fill="#57606a">그래서 "어느 타일이 어디서</text>
+  <text x="40" y="216" font-size="10.5" fill="#57606a">어디로 갔는지"를 안다</text>
+
+  <path d="M256 146 l10 8 l-10 8" fill="none" stroke="#57606a" stroke-width="1.5"/>
+
+  <!-- panel 2 -->
+  <rect x="274" y="70" width="224" height="154" rx="8" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="290" y="92" font-size="11.5" font-weight="700" fill="#1f2328">0 → 130ms · 이동 중</text>
+  <g>
+    <rect x="290" y="104" width="192" height="52" rx="6" fill="#e6e2dc"/>
+    <rect x="296" y="110" width="40" height="40" rx="5" fill="#f2cdaa"/>
+    <text x="316" y="136" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">8</text>
+    <text x="316" y="150" font-size="7.5" fill="#7a6a58" text-anchor="middle">id 3</text>
+    <rect x="322" y="117" width="40" height="40" rx="5" fill="#efe5da" opacity="0.8" stroke="#9a6700" stroke-dasharray="3 2"/>
+    <text x="342" y="143" font-size="14" font-weight="700" fill="#9a6700" text-anchor="middle">4</text>
+    <text x="342" y="169" font-size="7.5" fill="#9a6700" text-anchor="middle">id 7 · dying</text>
+    <rect x="342" y="110" width="40" height="40" rx="5" fill="#f1eee9"/>
+    <rect x="388" y="110" width="40" height="40" rx="5" fill="#f1eee9"/>
+    <rect x="434" y="110" width="40" height="40" rx="5" fill="#f1eee9"/>
+  </g>
+  <text x="290" y="180" font-size="10.5" fill="#57606a">살아남는 타일이 기존 id를 갖고</text>
+  <text x="290" y="198" font-size="10.5" fill="#57606a">값만 8이 된다. 사라지는 타일은</text>
+  <text x="290" y="216" font-size="10.5" fill="#57606a">dying 상태로 같은 칸까지 미끄러진다</text>
+
+  <path d="M506 146 l10 8 l-10 8" fill="none" stroke="#57606a" stroke-width="1.5"/>
+
+  <!-- panel 3 -->
+  <rect x="524" y="70" width="212" height="154" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="540" y="92" font-size="11.5" font-weight="700" fill="#1f2328">150ms · 정리 후</text>
+  <g>
+    <rect x="540" y="104" width="180" height="52" rx="6" fill="#e6e2dc"/>
+    <rect x="546" y="110" width="38" height="40" rx="5" fill="#f2cdaa"/>
+    <text x="565" y="136" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">8</text>
+    <text x="565" y="150" font-size="7.5" fill="#7a6a58" text-anchor="middle">id 3</text>
+    <rect x="590" y="110" width="38" height="40" rx="5" fill="#f1eee9"/>
+    <rect x="634" y="110" width="38" height="40" rx="5" fill="#f1eee9"/>
+    <rect x="678" y="110" width="38" height="40" rx="5" fill="#efe5da" stroke="#1a7f37"/>
+    <text x="697" y="136" font-size="15" font-weight="700" fill="#7a6a58" text-anchor="middle">2</text>
+    <text x="697" y="150" font-size="7.5" fill="#1a7f37" text-anchor="middle">새 타일</text>
+  </g>
+  <text x="540" y="180" font-size="10.5" fill="#57606a">dying 타일을 지우고, 새 타일은</text>
+  <text x="540" y="198" font-size="10.5" fill="#57606a">이동이 80% 진행된 뒤에 등장시킨다.</text>
+  <text x="540" y="216" font-size="10.5" fill="#57606a">동시에 뜨면 어느 게 새 건지 모른다</text>
+
+  <rect x="24" y="244" width="712" height="94" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="266" font-size="12" font-weight="700" fill="#1f2328">여기서 딸려 온 규칙 셋</text>
+  <text x="40" y="288" font-size="11.5" fill="#57606a">· 한 번의 이동에서 각 타일은 최대 한 번만 합쳐진다. 합친 타일에 잠금을 걸어 둔다 — 4 4 4 4 는 8 8 이고, 16 이면 버그다.</text>
+  <text x="40" y="308" font-size="11.5" fill="#57606a">· 격자가 실제로 바뀌었을 때만 새 타일이 생긴다. 벽에 붙은 방향으로 밀었는데 타일이 늘어나면 억울한 게임이 된다.</text>
+  <text x="40" y="330" font-size="11.5" fill="#57606a">· 애니메이션은 클래스 토글이 아니라 Web Animations API로. 클래스 방식은 연속으로 병합될 때 다시 재생되지 않는다.</text>
+</svg>

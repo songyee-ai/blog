@@ -1,0 +1,72 @@
+<svg viewBox="0 0 760 436" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="26" font-size="15" font-weight="700" fill="#1f2328">만들기 전 스케치 — 설계안에 적어 둔 화면</text>
+  <text x="24" y="48" font-size="12" fill="#57606a">"세로 한 화면에 다 들어가야 한다"가 첫 줄이었다. 그 아래는 전부 이 한 줄을 지키기 위한 조건이다.</text>
+
+  <!-- phone frame -->
+  <rect x="24" y="68" width="268" height="344" rx="16" fill="#f6f8fa" stroke="#d0d7de"/>
+
+  <!-- header -->
+  <text x="44" y="106" font-size="20" font-weight="700" fill="#57606a">2048</text>
+  <rect x="164" y="84" width="50" height="34" rx="6" fill="#eaeef2" stroke="#d0d7de"/>
+  <text x="189" y="98" font-size="8" fill="#57606a" text-anchor="middle">점수</text>
+  <text x="189" y="112" font-size="11" font-weight="700" fill="#1f2328" text-anchor="middle">0</text>
+  <rect x="220" y="84" width="50" height="34" rx="6" fill="#eaeef2" stroke="#d0d7de"/>
+  <text x="245" y="98" font-size="8" fill="#57606a" text-anchor="middle">최고</text>
+  <text x="245" y="112" font-size="11" font-weight="700" fill="#1f2328" text-anchor="middle">0</text>
+
+  <!-- hint + buttons -->
+  <text x="44" y="140" font-size="9" fill="#57606a">같은 숫자를 합쳐 2048을</text>
+  <rect x="164" y="128" width="48" height="22" rx="6" fill="#ffffff" stroke="#8c959f"/>
+  <text x="188" y="143" font-size="9" fill="#1f2328" text-anchor="middle">되돌리기</text>
+  <rect x="218" y="128" width="52" height="22" rx="6" fill="#8c959f"/>
+  <text x="244" y="143" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">새 게임</text>
+
+  <!-- board -->
+  <rect x="44" y="162" width="226" height="226" rx="10" fill="#e6e2dc" stroke="#d0d7de"/>
+  <g fill="#f1eee9">
+    <rect x="55" y="173" width="48" height="48" rx="6"/><rect x="109" y="173" width="48" height="48" rx="6"/>
+    <rect x="163" y="173" width="48" height="48" rx="6"/><rect x="217" y="173" width="48" height="48" rx="6"/>
+    <rect x="55" y="227" width="48" height="48" rx="6"/><rect x="109" y="227" width="48" height="48" rx="6"/>
+    <rect x="163" y="227" width="48" height="48" rx="6"/><rect x="217" y="227" width="48" height="48" rx="6"/>
+    <rect x="55" y="281" width="48" height="48" rx="6"/><rect x="109" y="281" width="48" height="48" rx="6"/>
+    <rect x="163" y="281" width="48" height="48" rx="6"/><rect x="217" y="281" width="48" height="48" rx="6"/>
+    <rect x="55" y="335" width="48" height="48" rx="6"/><rect x="109" y="335" width="48" height="48" rx="6"/>
+    <rect x="163" y="335" width="48" height="48" rx="6"/><rect x="217" y="335" width="48" height="48" rx="6"/>
+  </g>
+  <!-- sample tiles -->
+  <rect x="55" y="227" width="48" height="48" rx="6" fill="#efe5da"/>
+  <text x="79" y="257" font-size="17" font-weight="700" fill="#7a6a58" text-anchor="middle">2</text>
+  <rect x="163" y="281" width="48" height="48" rx="6" fill="#f2cdaa"/>
+  <text x="187" y="311" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">8</text>
+  <rect x="217" y="335" width="48" height="48" rx="6" fill="#eda18c"/>
+  <text x="241" y="365" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">32</text>
+
+  <!-- annotations -->
+  <line x1="292" y1="101" x2="336" y2="101" stroke="#8c959f" stroke-width="1.2"/>
+  <rect x="336" y="82" width="400" height="42" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="352" y="100" font-size="11.5" font-weight="700" fill="#1f2328">상단 바 — 타이틀 + 점수/최고 박스 두 개</text>
+  <text x="352" y="116" font-size="11" fill="#57606a">최고 점수는 영속 저장. 판이 끝나도 남아야 한다</text>
+
+  <line x1="292" y1="139" x2="336" y2="139" stroke="#8c959f" stroke-width="1.2"/>
+  <rect x="336" y="132" width="400" height="42" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="352" y="150" font-size="11.5" font-weight="700" fill="#1f2328">안내문 한 줄 + 새 게임 버튼</text>
+  <text x="352" y="166" font-size="11" fill="#57606a">설명서 없이 첫 화면에서 조작법이 읽혀야 한다</text>
+
+  <line x1="292" y1="230" x2="336" y2="230" stroke="#8c959f" stroke-width="1.2"/>
+  <rect x="336" y="182" width="400" height="76" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="352" y="200" font-size="11.5" font-weight="700" fill="#1f2328">4×4 보드 — 정사각형 고정(aspect-ratio: 1)</text>
+  <text x="352" y="218" font-size="11" fill="#57606a">회색 배경판 위에 빈 칸 16개를 먼저 깔고,</text>
+  <text x="352" y="234" font-size="11" fill="#57606a">타일은 그 위에 절대 위치로 얹는다.</text>
+  <text x="352" y="250" font-size="11" fill="#57606a">값이 커지면 색이 진해지고 폰트는 작아진다</text>
+
+  <rect x="336" y="266" width="400" height="76" rx="8" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="352" y="284" font-size="11.5" font-weight="700" fill="#1f2328">설계안이 지목한 유일한 설계 포인트</text>
+  <text x="352" y="302" font-size="11" fill="#57606a">보드를 숫자 16칸 배열로만 들면 "어느 타일이 어디서</text>
+  <text x="352" y="318" font-size="11" fill="#57606a">어디로 갔는지"를 알 수 없어 이동 애니메이션을</text>
+  <text x="352" y="334" font-size="11" fill="#57606a">만들 수 없다 → 타일마다 고유 id를 준다</text>
+
+  <rect x="336" y="350" width="400" height="62" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="352" y="368" font-size="11.5" font-weight="700" fill="#1f2328">모바일에서 챙길 것</text>
+  <text x="352" y="386" font-size="11" fill="#57606a">touch-action: none 이 없으면 스와이프마다 페이지가</text>
+  <text x="352" y="402" font-size="11" fill="#57606a">스크롤된다. 방향 판정 임계값은 30px</text>
+</svg>

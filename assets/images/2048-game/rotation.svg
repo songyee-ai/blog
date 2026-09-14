@@ -1,0 +1,65 @@
+<svg viewBox="0 0 760 372" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="26" font-size="15" font-weight="700" fill="#1f2328">방향은 네 개, 로직은 하나 — 격자를 돌려서 재사용한다</text>
+  <text x="24" y="48" font-size="12" fill="#57606a">상·하·좌·우를 각각 구현하면 코드도 네 벌, 버그도 네 배가 된다.</text>
+
+  <!-- step 1 -->
+  <rect x="24" y="70" width="168" height="176" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="40" y="92" font-size="11.5" font-weight="700" fill="#1f2328">1. 들어온 방향</text>
+  <text x="40" y="120" font-size="11.5" fill="#1f2328">← 왼쪽</text><text x="150" y="120" font-size="11.5" font-weight="700" fill="#0969da" text-anchor="end">k = 0</text>
+  <text x="40" y="146" font-size="11.5" fill="#1f2328">↓ 아래</text><text x="150" y="146" font-size="11.5" font-weight="700" fill="#0969da" text-anchor="end">k = 1</text>
+  <text x="40" y="172" font-size="11.5" fill="#1f2328">→ 오른쪽</text><text x="150" y="172" font-size="11.5" font-weight="700" fill="#0969da" text-anchor="end">k = 2</text>
+  <text x="40" y="198" font-size="11.5" fill="#1f2328">↑ 위</text><text x="150" y="198" font-size="11.5" font-weight="700" fill="#0969da" text-anchor="end">k = 3</text>
+  <text x="40" y="226" font-size="10.5" fill="#57606a">k = 격자를 돌리는 횟수</text>
+
+  <path d="M200 158 l10 8 l-10 8" fill="none" stroke="#57606a" stroke-width="1.5"/>
+
+  <!-- step 2 -->
+  <rect x="218" y="70" width="238" height="176" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="234" y="92" font-size="11.5" font-weight="700" fill="#1f2328">2. 좌표를 k번 돌려서 읽는다</text>
+
+  <g>
+    <rect x="238" y="108" width="84" height="84" rx="6" fill="#eaeef2" stroke="#d0d7de"/>
+    <g fill="#ffffff" stroke="#d0d7de">
+      <rect x="244" y="114" width="17" height="17"/><rect x="263" y="114" width="17" height="17"/><rect x="282" y="114" width="17" height="17"/><rect x="301" y="114" width="17" height="17"/>
+      <rect x="244" y="133" width="17" height="17"/><rect x="263" y="133" width="17" height="17"/><rect x="282" y="133" width="17" height="17"/><rect x="301" y="133" width="17" height="17"/>
+      <rect x="244" y="152" width="17" height="17"/><rect x="263" y="152" width="17" height="17"/><rect x="282" y="152" width="17" height="17"/><rect x="301" y="152" width="17" height="17"/>
+      <rect x="244" y="171" width="17" height="17"/><rect x="263" y="171" width="17" height="17"/><rect x="282" y="171" width="17" height="17"/><rect x="301" y="171" width="17" height="17"/>
+    </g>
+    <path d="M280 200 v14" stroke="#0969da" stroke-width="2"/>
+    <path d="M274 206 l6 8 l6 -8" fill="none" stroke="#0969da" stroke-width="2"/>
+    <text x="280" y="230" font-size="10.5" fill="#0969da" text-anchor="middle">실제 방향 (예: 위)</text>
+  </g>
+
+  <path d="M330 150 l10 8 l-10 8" fill="none" stroke="#57606a" stroke-width="1.5"/>
+  <text x="352" y="146" font-size="10.5" fill="#57606a">back(r, c, k)</text>
+
+  <g>
+    <rect x="352" y="108" width="84" height="84" rx="6" fill="#eaeef2" stroke="#d0d7de"/>
+    <g fill="#ffffff" stroke="#d0d7de">
+      <rect x="358" y="114" width="17" height="17"/><rect x="377" y="114" width="17" height="17"/><rect x="396" y="114" width="17" height="17"/><rect x="415" y="114" width="17" height="17"/>
+      <rect x="358" y="133" width="17" height="17"/><rect x="377" y="133" width="17" height="17"/><rect x="396" y="133" width="17" height="17"/><rect x="415" y="133" width="17" height="17"/>
+      <rect x="358" y="152" width="17" height="17"/><rect x="377" y="152" width="17" height="17"/><rect x="396" y="152" width="17" height="17"/><rect x="415" y="152" width="17" height="17"/>
+      <rect x="358" y="171" width="17" height="17"/><rect x="377" y="171" width="17" height="17"/><rect x="396" y="171" width="17" height="17"/><rect x="415" y="171" width="17" height="17"/>
+    </g>
+    <path d="M348 152 h-14" stroke="#1a7f37" stroke-width="2"/>
+    <path d="M340 146 l-8 6 l8 6" fill="none" stroke="#1a7f37" stroke-width="2"/>
+    <text x="394" y="230" font-size="10.5" fill="#1a7f37" text-anchor="middle">언제나 "왼쪽으로"</text>
+  </g>
+
+  <path d="M464 158 l10 8 l-10 8" fill="none" stroke="#57606a" stroke-width="1.5"/>
+
+  <!-- step 3 -->
+  <rect x="482" y="70" width="254" height="176" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="498" y="92" font-size="11.5" font-weight="700" fill="#1f2328">3. 한 줄을 왼쪽으로 미는 로직 — 하나</text>
+  <text x="498" y="118" font-size="11" fill="#57606a">① 빈 칸을 없애 한쪽으로 몬다</text>
+  <text x="498" y="140" font-size="11" fill="#57606a">② 인접한 같은 값을 합친다</text>
+  <text x="498" y="162" font-size="11" fill="#57606a">③ 합친 타일은 잠근다(locked)</text>
+  <text x="514" y="182" font-size="10.5" fill="#1a7f37">4 4 4 4 → 8 8 (16이면 버그)</text>
+  <text x="498" y="208" font-size="11" fill="#57606a">④ 결과 좌표를 다시 k번 되돌려</text>
+  <text x="514" y="226" font-size="11" fill="#57606a">원래 격자 좌표로 기록</text>
+
+  <rect x="24" y="266" width="712" height="84" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="288" font-size="12" font-weight="700" fill="#1f2328">덤으로 얻은 것 — 게임 오버 판정</text>
+  <text x="40" y="310" font-size="11.5" fill="#57606a">이 계산 함수(planMove)는 상태를 건드리지 않고 결과만 돌려준다. 그래서 "빈 칸이 없고, 네 방향 모두 돌려봐도</text>
+  <text x="40" y="328" font-size="11.5" fill="#57606a">격자가 그대로일 때"라는 게임 오버 판정에 그대로 다시 쓰인다. 판정용 코드를 따로 쓰지 않았다.</text>
+</svg>
