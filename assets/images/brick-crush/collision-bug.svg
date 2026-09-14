@@ -1,0 +1,48 @@
+<svg viewBox="0 0 760 392" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="26" font-size="15" font-weight="700" fill="#1f2328">설계안대로 만들었는데 생긴 버그 — 틈으로 들어온 공이 벽돌을 통과했다</text>
+  <text x="24" y="48" font-size="12" fill="#57606a">"겹침이 작은 축을 뒤집어라"는 맞는 규칙이었다. 다만 뒤집을 게 없는 경우가 있었다.</text>
+
+  <!-- before -->
+  <rect x="24" y="68" width="344" height="230" rx="8" fill="#ffebe9" stroke="#cf222e"/>
+  <text x="40" y="90" font-size="11.5" font-weight="700" fill="#1f2328">수정 전 — 벽돌 2개를 그냥 지나간다</text>
+
+  <rect x="78" y="106" width="104" height="30" rx="5" fill="#7dd3fc"/>
+  <rect x="204" y="106" width="104" height="30" rx="5" fill="#7dd3fc"/>
+  <text x="193" y="102" font-size="9" fill="#cf222e" text-anchor="middle">틈</text>
+  <line x1="193" y1="106" x2="193" y2="136" stroke="#cf222e" stroke-dasharray="3 2"/>
+
+  <circle cx="193" cy="186" r="7" fill="#1f2328"/>
+  <path d="M193 176 L193 96" stroke="#cf222e" stroke-width="1.8" stroke-dasharray="5 4"/>
+  <path d="M193 92 l5 9 l-10 0 z" fill="#cf222e"/>
+  <text x="208" y="168" font-size="10" fill="#cf222e">vx = 0, vy &lt; 0 (수직 진입)</text>
+
+  <text x="40" y="216" font-size="11" fill="#57606a">겹침을 재 보면 좌우(overlapX)가 위아래(overlapY)보다 작다.</text>
+  <text x="40" y="234" font-size="11" fill="#57606a">규칙대로 <tspan font-family="monospace">vx = -vx</tspan> 를 실행 — 그런데 vx가 0이다.</text>
+  <text x="40" y="256" font-size="11.5" font-weight="700" fill="#cf222e">0을 뒤집어도 0. 반사가 아예 일어나지 않는다.</text>
+  <text x="40" y="276" font-size="11" fill="#57606a">공은 방향 그대로 올라가 벽돌 두 개를 통과했다.</text>
+
+  <path d="M380 178 l10 8 l-10 8" fill="none" stroke="#57606a" stroke-width="1.5"/>
+
+  <!-- after -->
+  <rect x="398" y="68" width="338" height="230" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="414" y="90" font-size="11.5" font-weight="700" fill="#1f2328">수정 후 — 그 축으로 실제 접근 중일 때만 뒤집는다</text>
+
+  <rect x="452" y="106" width="104" height="30" rx="5" fill="#7dd3fc"/>
+  <rect x="578" y="106" width="104" height="30" rx="5" fill="#7dd3fc"/>
+  <circle cx="567" cy="176" r="7" fill="#1f2328"/>
+  <path d="M567 166 L567 142" stroke="#1a7f37" stroke-width="1.8"/>
+  <path d="M567 140 l5 9 l-10 0 z" fill="#1a7f37"/>
+  <path d="M567 150 L600 186" stroke="#1a7f37" stroke-width="1.8" stroke-dasharray="4 3"/>
+  <path d="M600 186 l-9 -2 l3 8 z" fill="#1a7f37"/>
+  <text x="614" y="166" font-size="10" fill="#1a7f37">vy가 반전되어 튕겨 나온다</text>
+
+  <text x="414" y="216" font-size="11" fill="#57606a">좌우로 <tspan font-weight="700">다가가고 있는지</tspan>를 먼저 확인한다.</text>
+  <text x="414" y="234" font-size="11" fill="#57606a">수직으로 들어왔으면 좌우로는 접근 중이 아니므로,</text>
+  <text x="414" y="252" font-size="11" fill="#57606a">겹침이 작든 말든 위아래(vy)를 뒤집는다.</text>
+  <text x="414" y="276" font-size="11.5" font-weight="700" fill="#1a7f37">겹침의 크기만 보지 말고, 어느 쪽으로 오는 중인지도 본다.</text>
+
+  <rect x="24" y="312" width="712" height="66" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="332" font-size="12" font-weight="700" fill="#1f2328">이 버그를 잡은 방법</text>
+  <text x="40" y="354" font-size="11.5" fill="#57606a">눈으로 플레이해서는 거의 안 보인다. 공을 벽돌 사이 틈 정확히 아래에 놓고 수직으로 쏘는 상황을 코드로 만들어</text>
+  <text x="40" y="370" font-size="11.5" fill="#57606a">수백 번 반복했더니 드러났다. "재현 조건을 코드로 만들어 반복한다" — 이게 이 작업물에서 제일 크게 배운 것.</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg viewBox="0 0 760 368" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="26" font-size="15" font-weight="700" fill="#1f2328">패들 반사는 물리가 아니라 위치로 결정한다</text>
+  <text x="24" y="48" font-size="12" fill="#57606a">입사각 = 반사각으로 만들면 공이 수평에 갇히고, 플레이어가 조준할 방법도 사라진다.</text>
+
+  <!-- left: wrong -->
+  <rect x="24" y="68" width="230" height="196" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="88" font-size="11.5" font-weight="700" fill="#57606a">물리대로 (입사각 = 반사각)</text>
+  <path d="M60 110 L130 176" stroke="#8c959f" stroke-width="1.6" fill="none"/>
+  <path d="M130 176 L200 110" stroke="#8c959f" stroke-width="1.6" fill="none" stroke-dasharray="4 3"/>
+  <path d="M196 114 l6 -6 l1 9 z" fill="#8c959f"/>
+  <rect x="100" y="180" width="60" height="8" rx="4" fill="#8c959f"/>
+  <text x="139" y="214" font-size="11" fill="#57606a" text-anchor="middle">어디를 맞든 들어온 각도 그대로</text>
+  <text x="139" y="232" font-size="11" fill="#cf222e" text-anchor="middle">→ 공이 수평에 가깝게 갇히고</text>
+  <text x="139" y="250" font-size="11" fill="#cf222e" text-anchor="middle">→ 조준이라는 개념이 없다</text>
+
+  <!-- right: chosen -->
+  <rect x="274" y="68" width="462" height="196" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="290" y="88" font-size="11.5" font-weight="700" fill="#1f2328">맞은 지점으로 각도를 정한다 — 최대 60도</text>
+
+  <rect x="400" y="190" width="210" height="10" rx="5" fill="#1a7f37"/>
+  <line x1="505" y1="186" x2="505" y2="204" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="400" y="220" font-size="10" font-weight="700" fill="#1a7f37" text-anchor="middle">-1</text>
+  <text x="452" y="220" font-size="10" fill="#57606a" text-anchor="middle">-0.5</text>
+  <text x="505" y="220" font-size="10" font-weight="700" fill="#1a7f37" text-anchor="middle">0</text>
+  <text x="558" y="220" font-size="10" fill="#57606a" text-anchor="middle">0.5</text>
+  <text x="610" y="220" font-size="10" font-weight="700" fill="#1a7f37" text-anchor="middle">1</text>
+  <text x="505" y="240" font-size="10.5" fill="#57606a" text-anchor="middle">패들 중심에서 얼마나 떨어져 맞았나 (-1 ~ 1)</text>
+
+  <g stroke="#1a7f37" stroke-width="1.8" fill="none">
+    <path d="M400 188 L330 148"/>
+    <path d="M452 188 L404 122"/>
+    <path d="M505 188 L505 108"/>
+    <path d="M558 188 L606 122"/>
+    <path d="M610 188 L680 148"/>
+  </g>
+  <g fill="#1a7f37">
+    <path d="M330 148 l9 1 l-5 7 z"/><path d="M404 122 l7 5 l-8 4 z"/>
+    <path d="M505 108 l5 8 l-10 0 z"/><path d="M606 122 l-7 5 l8 4 z"/>
+    <path d="M680 148 l-9 1 l5 7 z"/>
+  </g>
+  <text x="322" y="140" font-size="10" font-weight="700" fill="#1a7f37" text-anchor="end">-60°</text>
+  <text x="398" y="114" font-size="10" fill="#1a7f37" text-anchor="end">-30°</text>
+  <text x="505" y="100" font-size="10" fill="#1a7f37" text-anchor="middle">0°</text>
+  <text x="612" y="114" font-size="10" fill="#1a7f37">30°</text>
+  <text x="688" y="140" font-size="10" font-weight="700" fill="#1a7f37">60°</text>
+
+  <rect x="24" y="276" width="712" height="80" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="296" font-size="12" font-weight="700" fill="#1f2328">여기서 두 가지가 한꺼번에 해결된다</text>
+  <text x="40" y="318" font-size="11.5" fill="#57606a">· <tspan font-weight="700">조준이 실력이 된다</tspan> — 패들 끝으로 받으면 크게 꺾이고, 가운데로 받으면 곧게 올라간다. 벽돌깨기의 실력 요소는 사실 이것뿐이다.</text>
+  <text x="40" y="340" font-size="11.5" fill="#57606a">· <tspan font-weight="700">속도가 흔들리지 않는다</tspan> — 방향만 각도로 정하고 빠르기는 speed 스칼라로 따로 들고 있어서, 반사할 때마다 속도가 미묘하게 변하지 않는다.</text>
+</svg>

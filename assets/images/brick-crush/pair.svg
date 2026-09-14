@@ -1,0 +1,36 @@
+<svg viewBox="0 0 760 286" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="26" font-size="15" font-weight="700" fill="#1f2328">페어프로그래밍 — 둘이 한 대를 만든다</text>
+  <text x="24" y="48" font-size="12" fill="#57606a">마이크와 화면을 공유한 채, 정해진 시간마다 역할을 바꿔 가며 진행했다.</text>
+
+  <!-- navigator -->
+  <rect x="24" y="68" width="316" height="148" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="44" y="92" font-size="12.5" font-weight="700" fill="#1f2328">네비게이터 (Navigator)</text>
+  <text x="44" y="112" font-size="11" fill="#57606a">무엇을 만들지, 어디로 갈지를 말한다</text>
+  <text x="44" y="136" font-size="11" fill="#57606a">· 규칙과 아이템 구성을 제안</text>
+  <text x="44" y="154" font-size="11" fill="#57606a">· 놓친 조건을 짚어 줌</text>
+  <text x="44" y="172" font-size="11" fill="#57606a">· 나온 결과를 옆에서 같이 본다</text>
+  <rect x="44" y="184" width="152" height="22" rx="11" fill="#0969da"/>
+  <text x="120" y="199" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">이 작업물에서는 팀원</text>
+
+  <!-- arrows -->
+  <path d="M348 116 L404 116" stroke="#57606a" stroke-width="1.6"/>
+  <path d="M404 116 l-9 -4 l0 8 z" fill="#57606a"/>
+  <text x="376" y="106" font-size="10" fill="#57606a" text-anchor="middle">제안</text>
+  <path d="M404 168 L348 168" stroke="#57606a" stroke-width="1.6"/>
+  <path d="M348 168 l9 -4 l0 8 z" fill="#57606a"/>
+  <text x="376" y="186" font-size="10" fill="#57606a" text-anchor="middle">결과 공유</text>
+
+  <!-- driver -->
+  <rect x="412" y="68" width="324" height="148" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="432" y="92" font-size="12.5" font-weight="700" fill="#1f2328">드라이버 (Driver)</text>
+  <text x="432" y="112" font-size="11" fill="#57606a">키보드를 잡고 실제로 만든다</text>
+  <text x="432" y="136" font-size="11" fill="#57606a">· 제안을 설계안(PRD) 문장으로 정리</text>
+  <text x="432" y="154" font-size="11" fill="#57606a">· 하네스에 넣고 나온 결과를 확인</text>
+  <text x="432" y="172" font-size="11" fill="#57606a">· 화면을 공유해 과정을 같이 본다</text>
+  <rect x="432" y="184" width="120" height="22" rx="11" fill="#1a7f37"/>
+  <text x="492" y="199" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">이 작업물에서는 나</text>
+
+  <rect x="24" y="230" width="712" height="46" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="250" font-size="11.5" fill="#57606a">역할은 일정 시간마다 교대한다. 아래 기록은 <tspan font-weight="700">내가 드라이버였던 구간</tspan>이라, 키보드 앞에서 일어난 일만 남아 있다.</text>
+  <text x="40" y="268" font-size="11.5" fill="#57606a">말로 오간 제안과 지적은 기록에 남지 않는다는 것도 페어프로그래밍의 특징이었다.</text>
+</svg>

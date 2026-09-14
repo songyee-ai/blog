@@ -1,0 +1,67 @@
+<svg viewBox="0 0 760 444" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="26" font-size="15" font-weight="700" fill="#1f2328">만들기 전 스케치 — 세로 한 화면, 엄지 하나로</text>
+  <text x="24" y="48" font-size="12" fill="#57606a">"모바일에서 편한 조작이 이 게임의 성패를 가른다"가 설계안의 첫 문장이었다.</text>
+
+  <!-- phone frame -->
+  <rect x="24" y="68" width="250" height="360" rx="16" fill="#f6f8fa" stroke="#d0d7de"/>
+
+  <!-- HUD -->
+  <rect x="38" y="82" width="222" height="30" rx="6" fill="#eaeef2" stroke="#d0d7de"/>
+  <text x="52" y="102" font-size="11" fill="#cf222e">♥ ♥ ♥</text>
+  <text x="149" y="101" font-size="10" font-weight="700" fill="#0969da" text-anchor="middle">STAGE 1</text>
+  <text x="246" y="97" font-size="9" font-weight="700" fill="#1f2328" text-anchor="end">0</text>
+  <text x="246" y="108" font-size="7.5" fill="#57606a" text-anchor="end">BEST 0</text>
+
+  <!-- play area -->
+  <rect x="38" y="118" width="222" height="228" rx="8" fill="#eaeef2" stroke="#d0d7de"/>
+  <g fill="#7dd3fc">
+    <rect x="46" y="128" width="38" height="13" rx="3"/><rect x="88" y="128" width="38" height="13" rx="3"/>
+    <rect x="130" y="128" width="38" height="13" rx="3"/><rect x="172" y="128" width="38" height="13" rx="3"/>
+    <rect x="214" y="128" width="38" height="13" rx="3"/>
+    <rect x="46" y="146" width="38" height="13" rx="3"/><rect x="88" y="146" width="38" height="13" rx="3"/>
+    <rect x="172" y="146" width="38" height="13" rx="3"/><rect x="214" y="146" width="38" height="13" rx="3"/>
+  </g>
+  <rect x="130" y="146" width="38" height="13" rx="3" fill="#94a3b8"/>
+  <rect x="88" y="164" width="38" height="13" rx="3" fill="#ef4444"/>
+  <rect x="130" y="164" width="38" height="13" rx="3" fill="#3b82f6"/>
+  <rect x="172" y="164" width="38" height="13" rx="3" fill="#3b82f6"/>
+
+  <line x1="38" y1="255" x2="260" y2="255" stroke="#0969da" stroke-dasharray="4 3" stroke-opacity="0.6"/>
+  <text x="149" y="272" font-size="8.5" fill="#0969da" text-anchor="middle">벽돌은 위 60%까지만</text>
+  <circle cx="160" cy="300" r="4" fill="#1f2328"/>
+  <rect x="128" y="330" width="52" height="7" rx="3.5" fill="#8c959f"/>
+
+  <!-- pad -->
+  <rect x="38" y="352" width="222" height="62" rx="8" fill="#eaeef2" stroke="#d0d7de" stroke-dasharray="4 3"/>
+  <text x="149" y="380" font-size="9" fill="#57606a" text-anchor="middle">조작 여백 — 여기도 잡으면 반응</text>
+  <text x="149" y="398" font-size="9" fill="#57606a" text-anchor="middle">손가락이 공을 가리지 않게</text>
+
+  <!-- annotations -->
+  <line x1="274" y1="97" x2="316" y2="97" stroke="#8c959f" stroke-width="1.2"/>
+  <rect x="316" y="80" width="420" height="36" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="332" y="96" font-size="11.5" font-weight="700" fill="#1f2328">HUD 한 줄 — 목숨 하트 3개 · 스테이지 · 점수/최고</text>
+  <text x="332" y="110" font-size="11" fill="#57606a">최고 점수만 localStorage에 저장한다</text>
+
+  <line x1="274" y1="200" x2="316" y2="200" stroke="#8c959f" stroke-width="1.2"/>
+  <rect x="316" y="126" width="420" height="94" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="332" y="144" font-size="11.5" font-weight="700" fill="#1f2328">플레이 영역 — 폭 전체, 세로 비율 3:4</text>
+  <text x="332" y="162" font-size="11" fill="#57606a">벽돌은 위쪽 60%에만 배치. 아래 40%는 공이 노는 공간.</text>
+  <text x="332" y="178" font-size="11" fill="#57606a">이 여백이 없으면 반응할 시간이 없어 짜증만 남는다</text>
+  <text x="332" y="198" font-size="11" fill="#57606a">벽돌 색 = 내구도(하늘 1 · 파랑 2 · 보라 3),</text>
+  <text x="332" y="214" font-size="11" fill="#57606a">회색은 강철(파괴 불가), 붉은색은 폭탄</text>
+
+  <line x1="274" y1="382" x2="316" y2="382" stroke="#8c959f" stroke-width="1.2"/>
+  <rect x="316" y="230" width="420" height="112" rx="8" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="332" y="248" font-size="11.5" font-weight="700" fill="#1f2328">조작 — 이 게임의 성패를 가르는 곳</text>
+  <text x="332" y="266" font-size="11" fill="#57606a">· 화면 어디를 잡아도 패들이 반응. 패들을 짚을 필요 없다</text>
+  <text x="332" y="284" font-size="11" fill="#57606a">· 절대 위치가 아니라 <tspan font-weight="700">상대 이동</tspan>. 왼쪽 끝을 터치했다고</text>
+  <text x="344" y="300" font-size="11" fill="#57606a">패들이 순간이동하면 안 된다</text>
+  <text x="332" y="316" font-size="11" fill="#57606a">· 감도 1.5배 — 엄지 하나로 화면 끝에서 끝까지</text>
+  <text x="332" y="334" font-size="11" fill="#57606a">· touch-action: none 없으면 드래그마다 페이지가 스크롤된다</text>
+
+  <rect x="316" y="352" width="420" height="82" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="332" y="370" font-size="11.5" font-weight="700" fill="#1f2328">설계안에 미리 적어 둔 "반드시 막아야 할 함정 3가지"</text>
+  <text x="332" y="388" font-size="11" fill="#57606a">① 터널링 — 빠른 공이 한 프레임에 벽돌을 뛰어넘는다</text>
+  <text x="332" y="406" font-size="11" fill="#57606a">② 수평 갇힘 — 공이 벽 사이를 영원히 왕복한다</text>
+  <text x="332" y="424" font-size="11" fill="#57606a">③ 프레임 의존 — 120Hz 기기에서 두 배로 빨라진다</text>
+</svg>

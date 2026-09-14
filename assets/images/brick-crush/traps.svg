@@ -1,0 +1,56 @@
+<svg viewBox="0 0 760 356" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="26" font-size="15" font-weight="700" fill="#1f2328">먼저 적어 둔 함정 3가지와, 각각을 막은 방법</text>
+  <text x="24" y="48" font-size="12" fill="#57606a">"이렇게 되면 틀린 것"을 설계안에 미리 적어 두면 그대로 검사 항목이 된다.</text>
+
+  <!-- 1 tunneling -->
+  <rect x="24" y="68" width="230" height="206" rx="8" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="40" y="88" font-size="11.5" font-weight="700" fill="#1f2328">① 터널링</text>
+  <rect x="46" y="100" width="80" height="18" rx="4" fill="#7dd3fc"/>
+  <rect x="142" y="100" width="80" height="18" rx="4" fill="#7dd3fc"/>
+  <circle cx="86" cy="150" r="5" fill="#1f2328"/>
+  <path d="M86 144 L86 94" stroke="#cf222e" stroke-width="1.6" stroke-dasharray="14 6"/>
+  <path d="M86 90 l4 8 l-9 0 z" fill="#cf222e"/>
+  <text x="132" y="140" font-size="9.5" fill="#cf222e">한 프레임에</text>
+  <text x="132" y="153" font-size="9.5" fill="#cf222e">벽돌을 뛰어넘음</text>
+  <line x1="40" y1="168" x2="238" y2="168" stroke="#9a6700" stroke-opacity="0.35"/>
+  <text x="40" y="188" font-size="11" fill="#57606a">한 번에 옮기지 않고 <tspan font-weight="700">반지름의 0.6배</tspan></text>
+  <text x="40" y="204" font-size="11" fill="#57606a">단위로 잘라 이동 + 판정을 반복한다.</text>
+  <text x="40" y="220" font-size="11" fill="#57606a">속도 상한(430)도 함께 둔다.</text>
+  <text x="40" y="244" font-size="10" fill="#1a7f37">검증: 속도 430 · 600 · 1200에서</text>
+  <text x="40" y="260" font-size="10" fill="#1a7f37">각 1000회 이상 시행 → 통과 0건</text>
+
+  <!-- 2 horizontal -->
+  <rect x="266" y="68" width="230" height="206" rx="8" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="282" y="88" font-size="11.5" font-weight="700" fill="#1f2328">② 수평 갇힘</text>
+  <rect x="288" y="100" width="8" height="58" rx="3" fill="#8c959f"/>
+  <rect x="466" y="100" width="8" height="58" rx="3" fill="#8c959f"/>
+  <path d="M302 128 L460 128" stroke="#cf222e" stroke-width="1.6"/>
+  <path d="M460 128 l-9 -4 l0 8 z" fill="#cf222e"/>
+  <path d="M302 128 l9 -4 l0 8 z" fill="#cf222e"/>
+  <text x="381" y="150" font-size="9.5" fill="#cf222e" text-anchor="middle">영원히 좌우로만 왕복</text>
+  <line x1="282" y1="168" x2="480" y2="168" stroke="#9a6700" stroke-opacity="0.35"/>
+  <text x="282" y="188" font-size="11" fill="#57606a">세로 속도가 전체 속도의 <tspan font-weight="700">20%</tspan></text>
+  <text x="282" y="204" font-size="11" fill="#57606a">아래로 내려가면 강제로 끌어올린다.</text>
+  <text x="282" y="220" font-size="11" fill="#57606a">공이 벽 사이에 갇히지 않는다.</text>
+  <text x="282" y="244" font-size="10" fill="#1a7f37">검증: 세로 속도를 0.4로 강제하니</text>
+  <text x="282" y="260" font-size="10" fill="#1a7f37">43으로 자동 교정됨</text>
+
+  <!-- 3 frame -->
+  <rect x="508" y="68" width="228" height="206" rx="8" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="524" y="88" font-size="11.5" font-weight="700" fill="#1f2328">③ 프레임 의존</text>
+  <text x="524" y="110" font-size="10" fill="#57606a">60Hz 기기</text>
+  <rect x="524" y="116" width="88" height="13" rx="3" fill="#8c959f" opacity="0.5"/>
+  <text x="524" y="146" font-size="10" fill="#57606a">120Hz 기기</text>
+  <rect x="524" y="152" width="176" height="13" rx="3" fill="#cf222e" opacity="0.45"/>
+  <text x="524" y="150" font-size="9.5" fill="#cf222e" opacity="0"> </text>
+  <line x1="524" y1="168" x2="720" y2="168" stroke="#9a6700" stroke-opacity="0.35"/>
+  <text x="524" y="188" font-size="11" fill="#57606a">프레임당 고정값으로 움직이면</text>
+  <text x="524" y="204" font-size="11" fill="#57606a">두 배로 빨라진다. 프레임 사이</text>
+  <text x="524" y="220" font-size="11" fill="#57606a"><tspan font-weight="700">경과 시간</tspan>으로 이동량을 계산한다.</text>
+  <text x="524" y="244" font-size="10" fill="#1a7f37">검증: 120Hz 2프레임 vs</text>
+  <text x="524" y="260" font-size="10" fill="#1a7f37">60Hz 1프레임 이동량 차이 0.0000</text>
+
+  <rect x="24" y="288" width="712" height="52" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="308" font-size="12" font-weight="700" fill="#1f2328">셋 다 "돌려보면 멀쩡해 보이는" 종류의 버그다</text>
+  <text x="40" y="328" font-size="11.5" fill="#57606a">느린 기기에서, 특정 속도에서, 특정 각도에서만 나타난다. 그래서 만든 다음에 찾는 게 아니라 만들기 전에 이름을 붙여 뒀다.</text>
+</svg>
