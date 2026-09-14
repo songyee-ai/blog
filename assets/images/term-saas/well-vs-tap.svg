@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 370" width="900" height="370" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="우물을 직접 파는 방식과 수도를 빌려 쓰는 방식의 차이, 그리고 집을 직접 짓는 온프레미스에서 빈 땅을 빌리는 IaaS 뼈대만 선 집을 빌리는 PaaS 가구까지 갖춘 집에 입주하는 SaaS로 갈수록 편해지는 층위">
+  <defs>
+    <marker id="ss-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+  </defs>
+
+  <text x="30" y="30" font-size="15" font-weight="700" fill="#1f2328">직접 파느냐, 빌려 쓰느냐</text>
+
+  <rect x="30" y="50" width="400" height="140" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="50" y="76" font-size="13" font-weight="700" fill="#57606a">마당에 우물을 판다</text>
+  <text x="50" y="96" font-size="11.5" font-weight="700" fill="#1f2328">직접 사서 설치 · 온프레미스</text>
+  <text x="50" y="122" font-size="11" fill="#1a7f37">＋ 한 번 파면 내 것이다</text>
+  <text x="50" y="144" font-size="11" fill="#cf222e">－ 파는 데 큰돈이 든다</text>
+  <text x="50" y="164" font-size="11" fill="#cf222e">－ 물이 흐려지면 내가 고친다</text>
+  <text x="50" y="182" font-size="11" fill="#cf222e">－ 겨울에 얼면 내가 녹인다</text>
+
+  <rect x="470" y="50" width="400" height="140" rx="10" fill="#f6f8fa" stroke="#0969da" stroke-width="2"/>
+  <text x="490" y="76" font-size="13" font-weight="700" fill="#57606a">수도꼭지를 돌린다</text>
+  <text x="490" y="96" font-size="11.5" font-weight="700" fill="#0969da">SaaS — 빌려 쓴다</text>
+  <text x="490" y="122" font-size="11" fill="#1a7f37">＋ 설치가 없다. 접속하면 끝</text>
+  <text x="490" y="144" font-size="11" fill="#1a7f37">＋ 관리는 수도회사가 한다</text>
+  <text x="490" y="164" font-size="11" fill="#1f2328">＝ 대신 <tspan font-weight="700">쓴 만큼</tspan> 돈을 낸다</text>
+  <text x="490" y="182" font-size="10.5" fill="#bc4c00">　 많이 틀면 많이 나온다</text>
+
+  <line x1="30" y1="212" x2="870" y2="212" stroke="#d0d7de" stroke-width="1"/>
+  <text x="30" y="240" font-size="13" font-weight="700" fill="#1f2328">그런데 "어디까지" 빌리느냐가 또 나뉜다</text>
+
+  <rect x="30" y="256" width="174" height="80" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="117" y="280" font-size="12.5" font-weight="700" fill="#57606a" text-anchor="middle">온프레미스</text>
+  <text x="117" y="300" font-size="11" fill="#57606a" text-anchor="middle">집을 직접 짓는다</text>
+  <text x="117" y="322" font-size="10.5" fill="#57606a" text-anchor="middle">우리 회사 서버</text>
+
+  <rect x="230" y="256" width="196" height="80" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="328" y="280" font-size="12.5" font-weight="700" fill="#1f2328" text-anchor="middle">IaaS</text>
+  <text x="328" y="300" font-size="11" fill="#57606a" text-anchor="middle">빈 땅을 빌린다</text>
+  <text x="328" y="322" font-size="10.5" fill="#57606a" text-anchor="middle">AWS EC2</text>
+
+  <rect x="452" y="256" width="196" height="80" rx="8" fill="#fff8c5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="550" y="280" font-size="12.5" font-weight="700" fill="#bc4c00" text-anchor="middle">PaaS</text>
+  <text x="550" y="300" font-size="11" fill="#57606a" text-anchor="middle">뼈대만 선 집을 빌린다</text>
+  <text x="550" y="322" font-size="10.5" fill="#57606a" text-anchor="middle">Vercel · 5회차에서 쓴 것</text>
+
+  <rect x="674" y="256" width="196" height="80" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+  <text x="772" y="280" font-size="12.5" font-weight="700" fill="#0969da" text-anchor="middle">SaaS</text>
+  <text x="772" y="300" font-size="11" fill="#57606a" text-anchor="middle">가구까지 갖춘 집에 입주</text>
+  <text x="772" y="322" font-size="10.5" fill="#57606a" text-anchor="middle">Notion · Claude API</text>
+
+  <line x1="30" y1="348" x2="870" y2="348" stroke="#57606a" stroke-width="1.2" marker-end="url(#ss-ar)"/>
+  <text x="34" y="366" font-size="10.5" fill="#57606a">내 마음대로 바꿀 수 있다</text>
+  <text x="866" y="366" font-size="10.5" fill="#57606a" text-anchor="end">편하다. 대신 바꿀 여지는 적다</text>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" width="900" height="330" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="부품을 하나씩 만드는 방식은 마지막 단계 전까지 아무도 탈 수 없지만 스케이트보드에서 자동차로 키우는 방식은 매 단계마다 이동할 수 있다">
+  <defs>
+    <marker id="mv-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#cf222e"/></marker>
+    <marker id="mv-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1a7f37"/></marker>
+  </defs>
+
+  <text x="30" y="30" font-size="15" font-weight="700" fill="#1f2328">같은 목적지, 두 가지 순서</text>
+  <text x="30" y="50" font-size="10.5" fill="#57606a">목표는 "이동한다". 기준은 기능의 개수가 아니라, 매 단계에서 흐름이 끝까지 가느냐다.</text>
+
+  <!-- 잘못된 방식 -->
+  <text x="30" y="86" font-size="12.5" font-weight="700" fill="#cf222e">✗ 부품부터 만든다</text>
+
+  <rect x="30" y="98" width="172" height="54" rx="8" fill="#ffebe9" stroke="#cf222e" stroke-width="1.5"/>
+  <text x="116" y="121" font-size="12" font-weight="700" fill="#1f2328" text-anchor="middle">바퀴</text>
+  <text x="116" y="140" font-size="10" fill="#cf222e" text-anchor="middle">못 탄다</text>
+  <line x1="202" y1="125" x2="228" y2="125" stroke="#cf222e" stroke-width="1.8" marker-end="url(#mv-r)"/>
+
+  <rect x="230" y="98" width="172" height="54" rx="8" fill="#ffebe9" stroke="#cf222e" stroke-width="1.5"/>
+  <text x="316" y="121" font-size="12" font-weight="700" fill="#1f2328" text-anchor="middle">차축</text>
+  <text x="316" y="140" font-size="10" fill="#cf222e" text-anchor="middle">못 탄다</text>
+  <line x1="402" y1="125" x2="428" y2="125" stroke="#cf222e" stroke-width="1.8" marker-end="url(#mv-r)"/>
+
+  <rect x="430" y="98" width="172" height="54" rx="8" fill="#ffebe9" stroke="#cf222e" stroke-width="1.5"/>
+  <text x="516" y="121" font-size="12" font-weight="700" fill="#1f2328" text-anchor="middle">차체</text>
+  <text x="516" y="140" font-size="10" fill="#cf222e" text-anchor="middle">못 탄다</text>
+  <line x1="602" y1="125" x2="628" y2="125" stroke="#cf222e" stroke-width="1.8" marker-end="url(#mv-r)"/>
+
+  <rect x="630" y="98" width="172" height="54" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="716" y="121" font-size="12" font-weight="700" fill="#1f2328" text-anchor="middle">자동차</text>
+  <text x="716" y="140" font-size="10" fill="#1a7f37" text-anchor="middle">드디어 탄다</text>
+
+  <text x="814" y="130" font-size="10.5" fill="#cf222e">석 달 뒤에야</text>
+  <text x="814" y="146" font-size="10.5" fill="#cf222e">처음 알게 된다</text>
+
+  <!-- 올바른 방식 -->
+  <text x="30" y="196" font-size="12.5" font-weight="700" fill="#1a7f37">✓ 매번 굴러가는 것을 만든다</text>
+
+  <rect x="30" y="208" width="172" height="54" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="116" y="231" font-size="12" font-weight="700" fill="#1f2328" text-anchor="middle">스케이트보드</text>
+  <text x="116" y="250" font-size="10" fill="#1a7f37" text-anchor="middle">느려도 데려다준다</text>
+  <line x1="202" y1="235" x2="228" y2="235" stroke="#1a7f37" stroke-width="1.8" marker-end="url(#mv-g)"/>
+
+  <rect x="230" y="208" width="172" height="54" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="316" y="231" font-size="12" font-weight="700" fill="#1f2328" text-anchor="middle">킥보드</text>
+  <text x="316" y="250" font-size="10" fill="#1a7f37" text-anchor="middle">더 빨라졌다</text>
+  <line x1="402" y1="235" x2="428" y2="235" stroke="#1a7f37" stroke-width="1.8" marker-end="url(#mv-g)"/>
+
+  <rect x="430" y="208" width="172" height="54" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="516" y="231" font-size="12" font-weight="700" fill="#1f2328" text-anchor="middle">자전거</text>
+  <text x="516" y="250" font-size="10" fill="#1a7f37" text-anchor="middle">더 멀리 간다</text>
+  <line x1="602" y1="235" x2="628" y2="235" stroke="#1a7f37" stroke-width="1.8" marker-end="url(#mv-g)"/>
+
+  <rect x="630" y="208" width="172" height="54" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="716" y="231" font-size="12" font-weight="700" fill="#1f2328" text-anchor="middle">자동차</text>
+  <text x="716" y="250" font-size="10" fill="#1a7f37" text-anchor="middle">같은 목적지</text>
+
+  <text x="814" y="230" font-size="10.5" fill="#1a7f37">첫날부터</text>
+  <text x="814" y="246" font-size="10.5" fill="#1a7f37">배우기 시작한다</text>
+
+  <!-- 하단 -->
+  <line x1="30" y1="284" x2="870" y2="284" stroke="#d0d7de" stroke-width="1"/>
+  <text x="30" y="310" font-size="11" fill="#1f2328"><tspan font-weight="700">타이어는 자동차의 축소판이지만 MVP가 아니다.</tspan> 잘 만들어도 그걸로는 아무 데도 못 가기 때문이다.</text>
+</svg>
