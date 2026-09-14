@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="메뉴판을 손가락으로 가리키는 방식이 GUI이고 말로 자세히 주문하는 방식이 CLI이며, 명령은 명령 하위명령 인자 옵션으로 이루어진다">
+  <text x="30" y="30" font-size="15" font-weight="700" fill="#1f2328">같은 식당, 주문하는 두 가지 방법</text>
+
+  <!-- GUI -->
+  <rect x="30" y="50" width="400" height="176" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="50" y="76" font-size="13" font-weight="700" fill="#57606a">메뉴판을 손가락으로 가리키기</text>
+  <text x="50" y="96" font-size="11.5" font-weight="700" fill="#1f2328">GUI — 버튼과 아이콘을 클릭</text>
+
+  <rect x="50" y="110" width="360" height="34" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="68" y="132" font-size="12" fill="#1f2328">🍲 김치찌개</text>
+  <text x="392" y="132" font-size="12" fill="#0969da" text-anchor="end">👆</text>
+
+  <text x="50" y="170" font-size="11" fill="#1a7f37">＋ 배울 게 없다. 바로 쓸 수 있다</text>
+  <text x="50" y="192" font-size="11" fill="#cf222e">－ 메뉴판에 없는 건 시킬 수 없다</text>
+  <text x="50" y="212" font-size="10.5" fill="#57606a">"밥 곱빼기로" 를 전달할 방법이 없다</text>
+
+  <!-- CLI -->
+  <rect x="470" y="50" width="400" height="176" rx="10" fill="#f6f8fa" stroke="#0969da" stroke-width="2"/>
+  <text x="490" y="76" font-size="13" font-weight="700" fill="#57606a">말로 주문하기</text>
+  <text x="490" y="96" font-size="11.5" font-weight="700" fill="#0969da">CLI — 글자로 명령</text>
+
+  <rect x="490" y="110" width="360" height="34" rx="6" fill="#1f2328" stroke="#1f2328" stroke-width="1.5"/>
+  <text x="508" y="132" font-size="11.5" fill="#dafbe1">&gt; 김치찌개 1 --밥=곱빼기 --덜맵게</text>
+
+  <text x="490" y="170" font-size="11" fill="#cf222e">－ 뭐라고 말해야 하는지 알아야 한다</text>
+  <text x="490" y="192" font-size="11" fill="#1a7f37">＋ 세밀한 요구를 한 번에 정확히 전달</text>
+  <text x="490" y="212" font-size="10.5" fill="#57606a">AI는 클릭은 못 해도 이건 칠 수 있다</text>
+
+  <!-- 명령 구조 -->
+  <line x1="30" y1="252" x2="870" y2="252" stroke="#d0d7de" stroke-width="1"/>
+  <text x="30" y="282" font-size="13" font-weight="700" fill="#1f2328">명령은 암호가 아니라 문장이다</text>
+
+  <text x="60" y="322" font-size="19" font-family="monospace" fill="#1f2328">pip</text>
+  <text x="142" y="322" font-size="19" font-family="monospace" fill="#8250df">install</text>
+  <text x="290" y="322" font-size="19" font-family="monospace" fill="#0969da">langchain</text>
+  <text x="486" y="322" font-size="19" font-family="monospace" fill="#bc4c00">--upgrade</text>
+
+  <line x1="80" y1="332" x2="80" y2="346" stroke="#57606a" stroke-width="1"/>
+  <line x1="185" y1="332" x2="185" y2="346" stroke="#8250df" stroke-width="1"/>
+  <line x1="348" y1="332" x2="348" y2="346" stroke="#0969da" stroke-width="1"/>
+  <line x1="570" y1="332" x2="570" y2="346" stroke="#bc4c00" stroke-width="1"/>
+
+  <text x="80" y="362" font-size="11.5" font-weight="700" fill="#1f2328" text-anchor="middle">명령</text>
+  <text x="185" y="362" font-size="11.5" font-weight="700" fill="#8250df" text-anchor="middle">하위명령</text>
+  <text x="348" y="362" font-size="11.5" font-weight="700" fill="#0969da" text-anchor="middle">인자</text>
+  <text x="570" y="362" font-size="11.5" font-weight="700" fill="#bc4c00" text-anchor="middle">옵션</text>
+
+  <text x="672" y="318" font-size="11" fill="#57606a">누구에게 · 무엇을 ·</text>
+  <text x="672" y="336" font-size="11" fill="#57606a">대상은 · 어떻게</text>
+  <text x="672" y="360" font-size="10.5" fill="#57606a">이 구조가 보이면 처음 보는</text>
+  <text x="672" y="376" font-size="10.5" fill="#57606a">명령도 뼈대는 읽힌다</text>
+</svg>
