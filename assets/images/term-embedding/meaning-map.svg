@@ -1,0 +1,50 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="뜻을 좌표로 바꾸면 과일은 한쪽에 탈것은 다른 쪽에 모이고, 좌표끼리 더하고 빼면 왕에서 남자를 빼고 여자를 더하면 여왕 근처에 도착한다">
+  <defs>
+    <marker id="em-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8250df"/></marker>
+  </defs>
+
+  <text x="30" y="30" font-size="15" font-weight="700" fill="#1f2328">뜻에 좌표를 붙이면</text>
+  <text x="30" y="50" font-size="10.5" fill="#57606a">지도가 장소를 숫자로 바꿔 거리를 계산하게 만들듯, 임베딩은 뜻을 숫자로 바꿔 가깝고 먼 것을 계산하게 만든다.</text>
+
+  <rect x="30" y="66" width="410" height="290" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="48" y="90" font-size="12" font-weight="700" fill="#1f2328">뜻의 지도 — 비슷한 것끼리 모인다</text>
+
+  <line x1="70" y1="330" x2="420" y2="330" stroke="#d0d7de" stroke-width="1.2"/>
+  <line x1="70" y1="330" x2="70" y2="106" stroke="#d0d7de" stroke-width="1.2"/>
+
+  <circle cx="140" cy="150" r="6" fill="#1a7f37"/><text x="152" y="154" font-size="11" fill="#1f2328">사과</text>
+  <circle cx="170" cy="176" r="6" fill="#1a7f37"/><text x="182" y="180" font-size="11" fill="#1f2328">배</text>
+  <circle cx="128" cy="192" r="6" fill="#1a7f37"/><text x="140" y="196" font-size="11" fill="#1f2328">바나나</text>
+  <text x="110" y="230" font-size="10" fill="#1a7f37">과일 — 서로 가깝다</text>
+
+  <circle cx="330" cy="268" r="6" fill="#0969da"/><text x="252" y="272" font-size="11" fill="#1f2328" text-anchor="end">자동차</text>
+  <circle cx="360" cy="292" r="6" fill="#0969da"/><text x="282" y="296" font-size="11" fill="#1f2328" text-anchor="end">기차</text>
+  <text x="262" y="318" font-size="10" fill="#0969da">탈것 — 과일과는 멀다</text>
+
+  <line x1="146" y1="156" x2="322" y2="262" stroke="#57606a" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="48" y="348" font-size="10" fill="#57606a">두 점 사이의 거리가 곧 뜻의 차이다</text>
+
+  <rect x="470" y="66" width="400" height="136" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="488" y="90" font-size="12" font-weight="700" fill="#1f2328">좌표는 이렇게 생겼다</text>
+  <text x="488" y="116" font-size="11" fill="#1f2328">사과　　<tspan font-family="monospace">[0.8, 0.2, 0.9, ...]</tspan></text>
+  <text x="488" y="138" font-size="11" fill="#1f2328">배　　　<tspan font-family="monospace">[0.7, 0.3, 0.9, ...]</tspan></text>
+  <text x="488" y="160" font-size="11" fill="#1f2328">자동차　<tspan font-family="monospace">[0.1, 0.9, 0.1, ...]</tspan></text>
+  <text x="488" y="186" font-size="10.5" fill="#57606a">지도는 2차원. 뜻의 지도는 768 ~ 3072차원이다.</text>
+
+  <rect x="470" y="216" width="400" height="140" rx="10" fill="#ffffff" stroke="#8250df" stroke-width="2"/>
+  <text x="488" y="240" font-size="12" font-weight="700" fill="#8250df">좌표끼리 더하고 빼면 뜻도 더해지고 빠진다</text>
+
+  <text x="488" y="272" font-size="12.5" fill="#1f2328">왕</text>
+  <text x="516" y="272" font-size="12.5" fill="#8250df">−</text>
+  <text x="536" y="272" font-size="12.5" fill="#1f2328">남자</text>
+  <text x="578" y="272" font-size="12.5" fill="#8250df">+</text>
+  <text x="598" y="272" font-size="12.5" fill="#1f2328">여자</text>
+  <line x1="642" y1="267" x2="678" y2="267" stroke="#8250df" stroke-width="1.5" marker-end="url(#em-ar)"/>
+  <text x="690" y="272" font-size="12.5" font-weight="700" fill="#8250df">여왕</text>
+
+  <text x="488" y="302" font-size="12.5" fill="#1f2328">서울 − 한국 + 일본</text>
+  <line x1="642" y1="297" x2="678" y2="297" stroke="#8250df" stroke-width="1.5" marker-end="url(#em-ar)"/>
+  <text x="690" y="302" font-size="12.5" font-weight="700" fill="#8250df">도쿄</text>
+
+  <text x="488" y="334" font-size="10.5" fill="#57606a">숫자 안에 뜻이 담겨 있다는 증거다.</text>
+</svg>

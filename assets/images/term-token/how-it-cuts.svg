@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="글자 단위로 자르면 문장이 너무 길어지고 단어 단위로 자르면 사전이 무한히 커지므로 자주 쓰는 조각만 모아 자르며 한국어는 영어보다 토큰을 두세 배 많이 쓴다">
+  <text x="30" y="30" font-size="15" font-weight="700" fill="#1f2328">어디서 자를 것인가</text>
+  <text x="30" y="50" font-size="10.5" fill="#57606a">극단 두 가지가 다 안 되기 때문에 중간을 택했다. 자주 쓰는 조각만 모아 둔 사전으로 자른다.</text>
+
+  <rect x="30" y="66" width="840" height="52" rx="8" fill="#ffebe9" stroke="#cf222e" stroke-width="1.5"/>
+  <text x="48" y="88" font-size="11.5" font-weight="700" fill="#cf222e">✗ 글자 하나씩</text>
+  <text x="150" y="88" font-size="11" fill="#1f2328">u · n · b · e · l · i · e · v · a · b · l · e</text>
+  <text x="48" y="108" font-size="10.5" fill="#57606a">사전은 작아지지만 문장이 너무 길어진다. 12토큰.</text>
+
+  <rect x="30" y="128" width="840" height="52" rx="8" fill="#ffebe9" stroke="#cf222e" stroke-width="1.5"/>
+  <text x="48" y="150" font-size="11.5" font-weight="700" fill="#cf222e">✗ 단어 통째로</text>
+  <text x="150" y="150" font-size="11" fill="#1f2328">unbelievable</text>
+  <text x="48" y="170" font-size="10.5" fill="#57606a">1토큰으로 짧지만, 세상 모든 단어·오타·고유명사를 사전에 담을 수 없다.</text>
+
+  <rect x="30" y="190" width="840" height="60" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="2"/>
+  <text x="48" y="214" font-size="11.5" font-weight="700" fill="#1a7f37">✓ 자주 쓰는 조각으로 (BPE)</text>
+  <rect x="212" y="200" width="52" height="24" rx="4" fill="#ffffff" stroke="#1a7f37" stroke-width="1.3"/>
+  <text x="238" y="217" font-size="11" fill="#1f2328" text-anchor="middle">un</text>
+  <rect x="270" y="200" width="72" height="24" rx="4" fill="#ffffff" stroke="#1a7f37" stroke-width="1.3"/>
+  <text x="306" y="217" font-size="11" fill="#1f2328" text-anchor="middle">believ</text>
+  <rect x="348" y="200" width="60" height="24" rx="4" fill="#ffffff" stroke="#1a7f37" stroke-width="1.3"/>
+  <text x="378" y="217" font-size="11" fill="#1f2328" text-anchor="middle">able</text>
+  <text x="424" y="217" font-size="10.5" fill="#57606a">3토큰</text>
+  <text x="48" y="240" font-size="10.5" fill="#57606a">조각을 재활용한다. believer · unbelievably도 같은 조각으로 만들어진다.</text>
+
+  <line x1="30" y1="272" x2="870" y2="272" stroke="#d0d7de" stroke-width="1"/>
+  <text x="30" y="298" font-size="12.5" font-weight="700" fill="#1f2328">그래서 언어마다 값이 다르다</text>
+
+  <rect x="30" y="310" width="405" height="52" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="48" y="332" font-size="11" fill="#1f2328">"Hello, how are you?"</text>
+  <text x="48" y="352" font-size="11" fill="#1a7f37">약 6토큰 　·　 1토큰 ≈ 4글자</text>
+
+  <rect x="465" y="310" width="405" height="52" rx="8" fill="#fff8c5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="483" y="332" font-size="11" fill="#1f2328">"안녕하세요, 어떻게 지내세요?"</text>
+  <text x="483" y="352" font-size="11" fill="#bc4c00">약 15토큰 　·　 1토큰 ≈ 1~2글자</text>
+</svg>

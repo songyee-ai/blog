@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="로짓이라는 원점수를 지수 함수로 양수화하고 전체 합으로 나누면 확률이 되며 온도를 낮추면 격차가 벌어지고 높이면 좁아진다">
+  <defs>
+    <marker id="sm-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+  </defs>
+
+  <text x="30" y="30" font-size="15" font-weight="700" fill="#1f2328">점수를 확률로 바꾸는 두 단계</text>
+
+  <rect x="30" y="48" width="232" height="150" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="48" y="72" font-size="12" font-weight="700" fill="#1f2328">로짓 (원점수)</text>
+  <text x="48" y="90" font-size="10" fill="#57606a">그냥 숫자. 음수도 있다</text>
+  <text x="48" y="118" font-size="11.5" fill="#1f2328">좋다　<tspan font-family="monospace">8.2</tspan></text>
+  <text x="48" y="140" font-size="11.5" fill="#1f2328">덥다　<tspan font-family="monospace">6.1</tspan></text>
+  <text x="48" y="162" font-size="11.5" fill="#1f2328">이상　<tspan font-family="monospace">3.4</tspan></text>
+  <text x="48" y="184" font-size="11.5" fill="#1f2328">바나나　<tspan font-family="monospace">-4.7</tspan></text>
+
+  <line x1="266" y1="123" x2="304" y2="123" stroke="#57606a" stroke-width="1.5" marker-end="url(#sm-ar)"/>
+  <text x="285" y="114" font-size="9.5" fill="#57606a" text-anchor="middle">① exp</text>
+
+  <rect x="306" y="48" width="252" height="150" rx="8" fill="#fff8c5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="324" y="72" font-size="12" font-weight="700" fill="#bc4c00">지수 함수를 지나면</text>
+  <text x="324" y="90" font-size="10" fill="#57606a">전부 양수가 되고 격차가 벌어진다</text>
+  <text x="324" y="122" font-size="11" fill="#1f2328">음수 문제 해결 — 득표수에 -3표는 없다</text>
+  <text x="324" y="148" font-size="11" fill="#1f2328">1등을 더 밀어준다</text>
+  <text x="324" y="172" font-size="10.5" fill="#57606a">이게 이름의 soft-<tspan font-weight="700">max</tspan>다</text>
+
+  <line x1="562" y1="123" x2="600" y2="123" stroke="#57606a" stroke-width="1.5" marker-end="url(#sm-ar)"/>
+  <text x="581" y="114" font-size="9.5" fill="#57606a" text-anchor="middle">② ÷합</text>
+
+  <rect x="602" y="48" width="268" height="150" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="2"/>
+  <text x="620" y="72" font-size="12" font-weight="700" fill="#1a7f37">확률</text>
+  <text x="620" y="90" font-size="10" fill="#57606a">다 더하면 1.0</text>
+  <text x="620" y="118" font-size="11.5" fill="#1f2328">좋다　<tspan font-weight="700">84%</tspan></text>
+  <text x="620" y="140" font-size="11.5" fill="#1f2328">덥다　<tspan font-weight="700">11%</tspan></text>
+  <text x="620" y="162" font-size="11.5" fill="#1f2328">이상　<tspan font-weight="700">4%</tspan></text>
+  <text x="620" y="184" font-size="11.5" fill="#1f2328">바나나　<tspan font-weight="700">0.0001%</tspan></text>
+
+  <line x1="30" y1="222" x2="870" y2="222" stroke="#d0d7de" stroke-width="1"/>
+  <text x="30" y="248" font-size="12.5" font-weight="700" fill="#1f2328">온도 — 소프트맥스에 넣기 전에 로짓을 나누는 숫자 하나</text>
+  <text x="30" y="268" font-size="10.5" fill="#57606a">창의성 스위치가 아니다. 1등과 나머지의 격차를 벌리거나 좁힐 뿐이다.</text>
+
+  <rect x="30" y="282" width="270" height="98" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="48" y="304" font-size="11.5" font-weight="700" fill="#1f2328">온도 0.2 — 낮음</text>
+  <rect x="48" y="314" width="198" height="14" rx="3" fill="#0969da"/><text x="254" y="325" font-size="10" fill="#57606a">86%</text>
+  <rect x="48" y="332" width="28" height="14" rx="3" fill="#0969da" opacity="0.5"/><text x="254" y="343" font-size="10" fill="#57606a">12%</text>
+  <rect x="48" y="350" width="5" height="14" rx="2" fill="#0969da" opacity="0.3"/><text x="254" y="361" font-size="10" fill="#57606a">2%</text>
+  <text x="48" y="376" font-size="10" fill="#57606a">뻔하지만 안정적 — 에이전트는 보통 여기</text>
+
+  <rect x="315" y="282" width="270" height="98" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="333" y="304" font-size="11.5" font-weight="700" fill="#1f2328">온도 1.0 — 그대로</text>
+  <rect x="333" y="314" width="152" height="14" rx="3" fill="#1a7f37"/><text x="539" y="325" font-size="10" fill="#57606a">66%</text>
+  <rect x="333" y="332" width="55" height="14" rx="3" fill="#1a7f37" opacity="0.5"/><text x="539" y="343" font-size="10" fill="#57606a">24%</text>
+  <rect x="333" y="350" width="23" height="14" rx="3" fill="#1a7f37" opacity="0.3"/><text x="539" y="361" font-size="10" fill="#57606a">10%</text>
+  <text x="333" y="376" font-size="10" fill="#57606a">균형</text>
+
+  <rect x="600" y="282" width="270" height="98" rx="8" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="618" y="304" font-size="11.5" font-weight="700" fill="#1f2328">온도 1.5 — 높음</text>
+  <rect x="618" y="314" width="115" height="14" rx="3" fill="#bc4c00"/><text x="824" y="325" font-size="10" fill="#57606a">50%</text>
+  <rect x="618" y="332" width="69" height="14" rx="3" fill="#bc4c00" opacity="0.5"/><text x="824" y="343" font-size="10" fill="#57606a">30%</text>
+  <rect x="618" y="350" width="46" height="14" rx="3" fill="#bc4c00" opacity="0.3"/><text x="824" y="361" font-size="10" fill="#57606a">20%</text>
+  <text x="618" y="376" font-size="10" fill="#57606a">다양하지만 틀릴 확률도 같이 오른다</text>
+</svg>
