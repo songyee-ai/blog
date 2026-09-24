@@ -1,0 +1,55 @@
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">만들려던 것 — 캐릭터 한 장 + 자세 한 장 → 그 자세의 캐릭터</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">Colab 무료 T4 한 대에서, ComfyUI를 화면 없이 HTTP API로만 돌린다.</text>
+
+  <!-- 입력 -->
+  <rect x="24" y="72" width="150" height="54" rx="8" fill="#f6f8fa" stroke="#57606a"/>
+  <text x="99" y="96" font-size="12" font-weight="700" fill="#1f2328" text-anchor="middle">캐릭터 사진</text>
+  <text x="99" y="114" font-size="10.5" fill="#57606a" text-anchor="middle">꽃무늬 셔츠 입은 흰 개</text>
+
+  <rect x="24" y="142" width="150" height="54" rx="8" fill="#f6f8fa" stroke="#57606a"/>
+  <text x="99" y="166" font-size="12" font-weight="700" fill="#1f2328" text-anchor="middle">포즈 참조 사진</text>
+  <text x="99" y="184" font-size="10.5" fill="#57606a" text-anchor="middle">머리 위 하트 · 손하트</text>
+
+  <rect x="24" y="212" width="150" height="54" rx="8" fill="#f6f8fa" stroke="#57606a"/>
+  <text x="99" y="236" font-size="12" font-weight="700" fill="#1f2328" text-anchor="middle">프롬프트</text>
+  <text x="99" y="254" font-size="10.5" fill="#57606a" text-anchor="middle">배경 · 화풍 · 자세 설명</text>
+
+  <!-- OpenPose -->
+  <rect x="204" y="142" width="130" height="54" rx="8" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="269" y="166" font-size="12" font-weight="700" fill="#9a6700" text-anchor="middle">OpenPose</text>
+  <text x="269" y="184" font-size="10.5" fill="#57606a" text-anchor="middle">관절 → 스켈레톤</text>
+
+  <!-- ReferenceLatent -->
+  <rect x="364" y="72" width="170" height="124" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="449" y="98" font-size="12" font-weight="700" fill="#0969da" text-anchor="middle">참조 이미지 조건</text>
+  <text x="449" y="116" font-size="10.5" fill="#57606a" text-anchor="middle">(ReferenceLatent)</text>
+  <text x="449" y="146" font-size="10.5" fill="#1f2328" text-anchor="middle">첫째 참조 = 캐릭터</text>
+  <text x="449" y="164" font-size="10.5" fill="#1f2328" text-anchor="middle">둘째 참조 = 스켈레톤</text>
+  <text x="449" y="186" font-size="10" fill="#cf222e" text-anchor="middle">ControlNet 대신 (아래 참고)</text>
+
+  <!-- FLUX -->
+  <rect x="564" y="72" width="172" height="124" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="650" y="98" font-size="12" font-weight="700" fill="#1a7f37" text-anchor="middle">FLUX.2-klein-4B</text>
+  <text x="650" y="116" font-size="10.5" fill="#57606a" text-anchor="middle">4비트 양자화 · 2.6GB</text>
+  <text x="650" y="146" font-size="10.5" fill="#1f2328" text-anchor="middle">잡음에서 6걸음</text>
+  <text x="650" y="164" font-size="10.5" fill="#1f2328" text-anchor="middle">시드 42 고정</text>
+  <text x="650" y="186" font-size="10.5" font-weight="700" fill="#1a7f37" text-anchor="middle">→ 결과 이미지</text>
+
+  <g stroke="#57606a" stroke-width="1.5" fill="none">
+    <path d="M176 99 L360 99"/>
+    <path d="M176 169 L200 169"/>
+    <path d="M336 169 L360 169"/>
+    <path d="M176 239 L650 239 L650 200"/>
+    <path d="M536 134 L560 134"/>
+  </g>
+  <g fill="#57606a">
+    <polygon points="364,99 355,94 355,104"/>
+    <polygon points="204,169 195,164 195,174"/>
+    <polygon points="364,169 355,164 355,174"/>
+    <polygon points="650,197 645,206 655,206"/>
+    <polygon points="564,134 555,129 555,139"/>
+  </g>
+
+  <text x="24" y="288" font-size="11" fill="#57606a">과제는 ControlNet 포즈 조건이었지만, 이 4B 모델용 가중치가 없어 모델이 기본 지원하는 참조 이미지 조건으로 돌렸다.</text>
+</svg>
