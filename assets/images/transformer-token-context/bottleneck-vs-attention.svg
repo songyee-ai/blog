@@ -1,0 +1,55 @@
+<svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">벡터 하나에 욱여넣기 vs 매번 다시 돌아보기</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">"나는 학교에 간다"를 번역하는 두 방식. 원문이 길어질수록 차이가 커진다.</text>
+
+  <!-- 왼쪽: 병목 -->
+  <rect x="24" y="68" width="348" height="222" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="92" font-size="12.5" font-weight="700" fill="#cf222e">seq2seq — 좁은 문 하나</text>
+
+  <rect x="52" y="108" width="80" height="32" rx="6" fill="#ffffff" stroke="#57606a"/>
+  <text x="92" y="129" font-size="11.5" fill="#1f2328" text-anchor="middle">나는</text>
+  <rect x="158" y="108" width="80" height="32" rx="6" fill="#ffffff" stroke="#57606a"/>
+  <text x="198" y="129" font-size="11.5" fill="#1f2328" text-anchor="middle">학교에</text>
+  <rect x="264" y="108" width="80" height="32" rx="6" fill="#ffffff" stroke="#57606a"/>
+  <text x="304" y="129" font-size="11.5" fill="#1f2328" text-anchor="middle">간다</text>
+
+  <path d="M92 140 L186 178" stroke="#57606a" stroke-width="1.5" fill="none"/>
+  <path d="M198 140 L198 176" stroke="#57606a" stroke-width="1.5" fill="none"/>
+  <path d="M304 140 L210 178" stroke="#57606a" stroke-width="1.5" fill="none"/>
+
+  <rect x="168" y="178" width="60" height="30" rx="6" fill="#ffe3e3" stroke="#cf222e"/>
+  <text x="198" y="198" font-size="11" font-weight="700" fill="#cf222e" text-anchor="middle">벡터 1개</text>
+  <text x="240" y="198" font-size="10.5" fill="#cf222e">← 전부 여기로</text>
+
+  <path d="M198 208 L198 234" stroke="#57606a" stroke-width="1.5" fill="none"/>
+  <polygon points="198,240 193,231 203,231" fill="#57606a"/>
+
+  <rect x="118" y="242" width="160" height="32" rx="6" fill="#ffffff" stroke="#57606a"/>
+  <text x="198" y="263" font-size="11.5" fill="#1f2328" text-anchor="middle">I go to school</text>
+
+  <!-- 오른쪽: 어텐션 -->
+  <rect x="388" y="68" width="348" height="222" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="404" y="92" font-size="12.5" font-weight="700" fill="#1a7f37">어텐션 — 원문을 다시 펼쳐 본다</text>
+
+  <rect x="416" y="108" width="80" height="32" rx="6" fill="#ffffff" stroke="#57606a"/>
+  <text x="456" y="129" font-size="11.5" fill="#1f2328" text-anchor="middle">나는</text>
+  <rect x="522" y="108" width="80" height="32" rx="6" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="562" y="129" font-size="11.5" font-weight="700" fill="#1a7f37" text-anchor="middle">학교에</text>
+  <rect x="628" y="108" width="80" height="32" rx="6" fill="#ffffff" stroke="#57606a"/>
+  <text x="668" y="129" font-size="11.5" fill="#1f2328" text-anchor="middle">간다</text>
+
+  <path d="M456 140 L548 214" stroke="#57606a" stroke-width="1" stroke-opacity="0.6" fill="none"/>
+  <path d="M562 140 L562 212" stroke="#1a7f37" stroke-width="5" fill="none"/>
+  <path d="M668 140 L576 214" stroke="#57606a" stroke-width="1.5" stroke-opacity="0.7" fill="none"/>
+
+  <text x="438" y="182" font-size="10.5" fill="#57606a">10%</text>
+  <text x="572" y="182" font-size="10.5" font-weight="700" fill="#1a7f37">80%</text>
+  <text x="668" y="182" font-size="10.5" fill="#57606a">10%</text>
+
+  <rect x="498" y="214" width="128" height="32" rx="6" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="562" y="235" font-size="11.5" fill="#0969da" text-anchor="middle">지금 쓸 단어: school</text>
+
+  <text x="562" y="270" font-size="10.5" fill="#57606a" text-anchor="middle">단어를 하나 쓸 때마다 어디를 볼지 새로 정한다</text>
+
+  <text x="24" y="316" font-size="11.5" fill="#1f2328">왼쪽은 <tspan font-weight="700">3분 연설을 한 문장으로 요약해 통역</tspan>하는 셈이고, 오른쪽은 <tspan font-weight="700">통역할 때마다 원고를 다시 보는</tspan> 셈이다.</text>
+</svg>
