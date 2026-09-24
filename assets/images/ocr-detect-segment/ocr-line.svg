@@ -1,0 +1,40 @@
+<svg viewBox="0 0 760 290" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">OCR 조립 라인 — 앞에서 빠뜨린 건 뒤에서 못 채운다</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">급식 배식 줄처럼 정거장마다 자기 일만 하고 다음으로 넘긴다. 화살표는 한 방향이다.</text>
+
+  <rect x="24" y="70" width="164" height="112" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="106" y="94" font-size="12.5" font-weight="700" fill="#0969da" text-anchor="middle">① 전처리</text>
+  <text x="106" y="116" font-size="10.5" fill="#1f2328" text-anchor="middle">기울기 바로잡기</text>
+  <text x="106" y="132" font-size="10.5" fill="#1f2328" text-anchor="middle">흑백으로 확정하기</text>
+  <text x="106" y="148" font-size="10.5" fill="#1f2328" text-anchor="middle">얼룩 지우기</text>
+  <text x="106" y="170" font-size="10" fill="#57606a" text-anchor="middle">→ 깨끗한 흑백 그림</text>
+
+  <rect x="208" y="70" width="164" height="112" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="290" y="94" font-size="12.5" font-weight="700" fill="#0969da" text-anchor="middle">② 검출</text>
+  <text x="290" y="116" font-size="10.5" fill="#1f2328" text-anchor="middle">글자가 어디 있나</text>
+  <text x="290" y="132" font-size="10.5" fill="#1f2328" text-anchor="middle">줄 · 단어 상자 찾기</text>
+  <text x="290" y="170" font-size="10" fill="#57606a" text-anchor="middle">→ 좌표 붙은 상자들</text>
+
+  <rect x="392" y="70" width="164" height="112" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="474" y="94" font-size="12.5" font-weight="700" fill="#0969da" text-anchor="middle">③ 인식</text>
+  <text x="474" y="116" font-size="10.5" fill="#1f2328" text-anchor="middle">그 조각이 무슨 글자인가</text>
+  <text x="474" y="132" font-size="10.5" fill="#1f2328" text-anchor="middle">상자 → 문자열</text>
+  <text x="474" y="170" font-size="10" fill="#57606a" text-anchor="middle">→ 문자열 + 점수</text>
+
+  <rect x="576" y="70" width="160" height="112" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="656" y="94" font-size="12.5" font-weight="700" fill="#9a6700" text-anchor="middle">④ 레이아웃</text>
+  <text x="656" y="116" font-size="10.5" fill="#1f2328" text-anchor="middle">제목 · 표 · 항목과 값</text>
+  <text x="656" y="132" font-size="10.5" fill="#1f2328" text-anchor="middle">문자열 → 구조</text>
+  <text x="656" y="170" font-size="10" fill="#9a6700" text-anchor="middle">가장 자주 무너지는 곳</text>
+
+  <g fill="#57606a">
+    <polygon points="204,126 194,120 194,132"/>
+    <polygon points="388,126 378,120 378,132"/>
+    <polygon points="572,126 562,120 562,132"/>
+  </g>
+
+  <rect x="24" y="198" width="712" height="78" rx="10" fill="#ffe3e3" stroke="#cf222e"/>
+  <text x="40" y="222" font-size="12" font-weight="700" fill="#cf222e">작은 실수가 번지는 방식</text>
+  <text x="40" y="242" font-size="11" fill="#1f2328">기울기 1도 어긋남 → 상자가 두 줄에 걸침 → 두 줄이 섞인 문자열 → <tspan font-weight="700">금액 칸에 부가세가 들어감</tspan></text>
+  <text x="40" y="262" font-size="11" fill="#1f2328">정거장마다 98%씩 성공한다고 치면 0.98 × 0.98 × 0.98 × 0.98 ≈ <tspan font-weight="700">92.2%</tspan> — 100장 중 약 8장 (단순화한 가정)</text>
+</svg>

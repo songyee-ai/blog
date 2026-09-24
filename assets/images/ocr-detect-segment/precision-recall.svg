@@ -1,0 +1,43 @@
+<svg viewBox="0 0 760 350" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">술래잡기로 보는 정밀도와 재현율</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">숨은 친구 10명, 술래가 "찾았다!"를 12번 외쳤고 그중 8번이 진짜였다.</text>
+
+  <rect x="24" y="66" width="340" height="150" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <!-- 진짜 찾음 8 -->
+  <g fill="#1a7f37">
+    <circle cx="52" cy="98" r="9"/><circle cx="78" cy="98" r="9"/><circle cx="104" cy="98" r="9"/><circle cx="130" cy="98" r="9"/>
+    <circle cx="52" cy="124" r="9"/><circle cx="78" cy="124" r="9"/><circle cx="104" cy="124" r="9"/><circle cx="130" cy="124" r="9"/>
+  </g>
+  <text x="152" y="115" font-size="11" fill="#1a7f37">맞게 찾음 8 (TP)</text>
+  <!-- 헛짚음 4 -->
+  <g fill="none" stroke="#cf222e" stroke-width="2">
+    <circle cx="52" cy="158" r="9"/><circle cx="78" cy="158" r="9"/><circle cx="104" cy="158" r="9"/><circle cx="130" cy="158" r="9"/>
+  </g>
+  <text x="152" y="162" font-size="11" fill="#cf222e">헛짚음 4 — 커튼이었다 (FP)</text>
+  <!-- 놓침 2 -->
+  <g fill="#9a6700"><circle cx="52" cy="192" r="9"/><circle cx="78" cy="192" r="9"/></g>
+  <text x="152" y="196" font-size="11" fill="#9a6700">못 찾음 2 — 아직 숨어 있다 (FN)</text>
+
+  <rect x="380" y="66" width="356" height="70" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="396" y="90" font-size="12.5" font-weight="700" fill="#0969da">정밀도 = TP / (TP + FP) = 8 / 12 ≈ 0.67</text>
+  <text x="396" y="112" font-size="11" fill="#1f2328">"찾았다!" 중에 진짜였던 비율</text>
+  <text x="396" y="128" font-size="10.5" fill="#57606a">헛짚을수록 떨어진다</text>
+
+  <rect x="380" y="146" width="356" height="70" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="396" y="170" font-size="12.5" font-weight="700" fill="#1a7f37">재현율 = TP / (TP + FN) = 8 / 10 = 0.8</text>
+  <text x="396" y="192" font-size="11" fill="#1f2328">숨은 친구 중에 찾아낸 비율</text>
+  <text x="396" y="208" font-size="10.5" fill="#57606a">놓칠수록 떨어진다</text>
+
+  <!-- 임계값 -->
+  <rect x="24" y="230" width="712" height="104" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="254" font-size="12.5" font-weight="700" fill="#1f2328">"찾았다!"라고 외칠 기준(임계값)은 정책이다</text>
+  <line x1="60" y1="284" x2="700" y2="284" stroke="#57606a" stroke-width="2"/>
+  <text x="60" y="302" font-size="10.5" fill="#57606a">낮게</text>
+  <text x="700" y="302" font-size="10.5" fill="#57606a" text-anchor="end">높게</text>
+  <circle cx="180" cy="284" r="7" fill="#cf222e"/>
+  <text x="180" y="272" font-size="11" font-weight="700" fill="#cf222e" text-anchor="middle">CT 암 판단</text>
+  <text x="180" y="322" font-size="10.5" fill="#1f2328" text-anchor="middle">조금만 의심돼도 추가 검사로 — 놓치지 않기</text>
+  <circle cx="580" cy="284" r="7" fill="#0969da"/>
+  <text x="580" y="272" font-size="11" font-weight="700" fill="#0969da" text-anchor="middle">스팸 필터</text>
+  <text x="580" y="322" font-size="10.5" fill="#1f2328" text-anchor="middle">아주 확실할 때만 거른다 — 정상 메일 지키기</text>
+</svg>
