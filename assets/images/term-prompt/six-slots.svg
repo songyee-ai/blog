@@ -1,0 +1,61 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="그림 한 장을 주문하는 주문서에는 피사체, 동작, 카메라, 조명, 환경, 스타일 여섯 칸이 있다. 피사체와 환경만 적은 열여섯 단어 프롬프트에서는 나머지 네 칸이 비고, 모델이 그 칸을 학습 데이터에서 가장 흔했던 값으로 채운다. 예를 들어 시선을 안 적으면 인물이 카메라를 본다">
+  <defs>
+    <marker id="pr-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#bc4c00"/></marker>
+  </defs>
+
+  <!-- 머리글 -->
+  <text x="30" y="36" font-size="16" font-weight="700" fill="#57606a">주문서 칸</text>
+  <text x="180" y="36" font-size="16" font-weight="700" fill="#0969da">내가 적은 것</text>
+  <text x="500" y="36" font-size="16" font-weight="700" fill="#bc4c00">모델이 대신 정한 것</text>
+
+  <!-- 1 피사체 (적음) -->
+  <rect x="30" y="56" width="130" height="50" rx="8" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="95" y="87" font-size="15" font-weight="700" fill="#57606a" text-anchor="middle">피사체</text>
+  <rect x="180" y="56" width="270" height="50" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="198" y="87" font-size="14" fill="#0969da">안전모를 쓴 작업자</text>
+
+  <!-- 2 동작 (빔) -->
+  <rect x="30" y="118" width="130" height="50" rx="8" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="95" y="149" font-size="15" font-weight="700" fill="#57606a" text-anchor="middle">동작</text>
+  <rect x="180" y="118" width="270" height="50" rx="8" fill="none" stroke="#8c959f" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="198" y="149" font-size="14" fill="#8c959f">(비워 둠)</text>
+  <line x1="458" y1="143" x2="492" y2="143" stroke="#bc4c00" stroke-width="2" marker-end="url(#pr-ar)"/>
+  <rect x="500" y="118" width="230" height="50" rx="8" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="518" y="149" font-size="14" fill="#bc4c00">카메라를 똑바로 본다</text>
+
+  <!-- 3 카메라 (빔) -->
+  <rect x="30" y="180" width="130" height="50" rx="8" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="95" y="211" font-size="15" font-weight="700" fill="#57606a" text-anchor="middle">카메라</text>
+  <rect x="180" y="180" width="270" height="50" rx="8" fill="none" stroke="#8c959f" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="198" y="211" font-size="14" fill="#8c959f">(비워 둠)</text>
+  <line x1="458" y1="205" x2="492" y2="205" stroke="#bc4c00" stroke-width="2" marker-end="url(#pr-ar)"/>
+  <rect x="500" y="180" width="230" height="50" rx="8" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="518" y="211" font-size="14" fill="#bc4c00">정면, 가운데 구도</text>
+
+  <!-- 4 조명 (빔) -->
+  <rect x="30" y="242" width="130" height="50" rx="8" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="95" y="273" font-size="15" font-weight="700" fill="#57606a" text-anchor="middle">조명</text>
+  <rect x="180" y="242" width="270" height="50" rx="8" fill="none" stroke="#8c959f" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="198" y="273" font-size="14" fill="#8c959f">(비워 둠)</text>
+  <line x1="458" y1="267" x2="492" y2="267" stroke="#bc4c00" stroke-width="2" marker-end="url(#pr-ar)"/>
+  <rect x="500" y="242" width="230" height="50" rx="8" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="518" y="273" font-size="14" fill="#bc4c00">밋밋한 정면광</text>
+
+  <!-- 5 환경 (적음) -->
+  <rect x="30" y="304" width="130" height="50" rx="8" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="95" y="335" font-size="15" font-weight="700" fill="#57606a" text-anchor="middle">환경</text>
+  <rect x="180" y="304" width="270" height="50" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="198" y="335" font-size="14" fill="#0969da">공장 안 점검 라인</text>
+
+  <!-- 6 스타일 (빔) -->
+  <rect x="30" y="366" width="130" height="50" rx="8" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="95" y="397" font-size="15" font-weight="700" fill="#57606a" text-anchor="middle">스타일</text>
+  <rect x="180" y="366" width="270" height="50" rx="8" fill="none" stroke="#8c959f" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="198" y="397" font-size="14" fill="#8c959f">(비워 둠)</text>
+  <line x1="458" y1="391" x2="492" y2="391" stroke="#bc4c00" stroke-width="2" marker-end="url(#pr-ar)"/>
+  <rect x="500" y="366" width="230" height="50" rx="8" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="518" y="397" font-size="14" fill="#bc4c00">어디서 본 듯한 평범한 사진</text>
+
+  <!-- 아래 설명 -->
+  <text x="380" y="452" font-size="14" fill="#57606a" text-anchor="middle">빈 칸은 결정을 모델에게 넘긴 것이다. 그 자리에는 학습 데이터에서 가장 흔했던 값이 들어간다</text>
+</svg>
