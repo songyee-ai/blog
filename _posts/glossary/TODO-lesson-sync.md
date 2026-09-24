@@ -33,6 +33,7 @@
 | 9 | 2026-09-09 | `code-peer-review-and-recap` |
 | 10 | 2026-09-10 | `how-machines-learn` |
 | 11 | 2026-09-11 | `transformer-token-context` |
+| 12 | 2026-09-14 | `local-llm-ollama` |
 
 ## 참고 — 원본 정리 노트
 

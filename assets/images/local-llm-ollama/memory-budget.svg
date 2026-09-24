@@ -1,0 +1,33 @@
+<svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">그래픽카드 메모리는 하나, 채우는 건 둘</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">8B 모델(4비트, 가중치 약 4.6GB)을 8GB 카드에 올릴 때. 대화가 길어질수록 KV 캐시가 자란다.</text>
+
+  <!-- 한계선 x: 0GB=150, 8GB=150+8*60=630 -->
+  <line x1="630" y1="66" x2="630" y2="226" stroke="#cf222e" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="630" y="240" font-size="10.5" fill="#cf222e" text-anchor="middle">8GB 한계</text>
+
+  <text x="24" y="94" font-size="11.5" fill="#1f2328">짧은 대화 (4K)</text>
+  <rect x="150" y="78" width="276" height="26" rx="4" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="288" y="96" font-size="10.5" fill="#0969da" text-anchor="middle">가중치 4.6GB</text>
+  <rect x="426" y="78" width="31" height="26" rx="4" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="468" y="96" font-size="10.5" fill="#1a7f37">약 5.1GB · 여유</text>
+
+  <text x="24" y="144" font-size="11.5" fill="#1f2328">긴 문서 (32K)</text>
+  <rect x="150" y="128" width="276" height="26" rx="4" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="288" y="146" font-size="10.5" fill="#0969da" text-anchor="middle">가중치 4.6GB</text>
+  <rect x="426" y="128" width="251" height="26" rx="4" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="528" y="146" font-size="10.5" fill="#9a6700" text-anchor="middle">KV 캐시 4.2GB</text>
+  <text x="684" y="146" font-size="10.5" font-weight="700" fill="#cf222e">8.8GB</text>
+
+  <text x="24" y="194" font-size="11.5" fill="#1f2328">넘치면</text>
+  <rect x="150" y="178" width="480" height="26" rx="4" fill="#f6f8fa" stroke="#57606a"/>
+  <text x="390" y="196" font-size="10.5" fill="#57606a" text-anchor="middle">GPU에 올라간 몫</text>
+  <rect x="630" y="178" width="92" height="26" rx="4" fill="#ffe3e3" stroke="#cf222e"/>
+  <text x="676" y="196" font-size="10.5" fill="#cf222e" text-anchor="middle">CPU로 밀려남</text>
+  <text x="150" y="222" font-size="10.5" fill="#57606a">1%만 밀려나도 속도가 꺾인다 — 초당 수십 토큰이 한 자릿수로</text>
+
+  <!-- 내 노트북 -->
+  <rect x="24" y="254" width="712" height="62" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="278" font-size="12.5" font-weight="700" fill="#1f2328">내 노트북은 이 그림의 바깥이었다</text>
+  <text x="40" y="298" font-size="11.5" fill="#1f2328">본체 RAM을 나눠 쓰는 내장 그래픽이라 <tspan font-weight="700">전용 VRAM 0MB</tspan>. 올려 보니 qwen3:0.6b는 <tspan font-weight="700">100% CPU</tspan>로 초당 41.7토큰.</text>
+</svg>

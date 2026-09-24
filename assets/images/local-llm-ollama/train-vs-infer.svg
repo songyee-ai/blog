@@ -1,0 +1,29 @@
+<svg viewBox="0 0 760 350" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">만들 때와 쓸 때, 숫자 하나가 차지하는 자리</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">파라미터(학습된 숫자) 하나당 메모리. 쓰기만 할 때는 첫 칸만 있으면 된다.</text>
+
+  <!-- 학습 -->
+  <rect x="24" y="66" width="712" height="104" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="90" font-size="12.5" font-weight="700" fill="#cf222e">학습 — 요리책을 쓰는 일</text>
+  <rect x="40" y="102" width="72" height="34" rx="6" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="76" y="124" font-size="11" fill="#0969da" text-anchor="middle">사본 2B</text>
+  <rect x="116" y="102" width="144" height="34" rx="6" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="188" y="124" font-size="11" fill="#0969da" text-anchor="middle">정밀 사본 4B</text>
+  <rect x="264" y="102" width="288" height="34" rx="6" fill="#ffe3e3" stroke="#cf222e"/>
+  <text x="408" y="124" font-size="11" fill="#cf222e" text-anchor="middle">걸음 폭 기록(옵티마이저) 8B</text>
+  <rect x="556" y="102" width="144" height="34" rx="6" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="628" y="124" font-size="11" fill="#9a6700" text-anchor="middle">기울기 4B</text>
+  <text x="40" y="158" font-size="11.5" fill="#1f2328">합계 <tspan font-weight="700">18바이트 이상</tspan> + 중간 계산값 · 7B 모델이면 <tspan font-weight="700">126GB 위로</tspan> → 데이터센터의 일</text>
+
+  <!-- 추론 -->
+  <rect x="24" y="182" width="712" height="84" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="206" font-size="12.5" font-weight="700" fill="#1a7f37">추론 — 요리책을 보고 한 끼 만드는 일</text>
+  <rect x="40" y="218" width="72" height="34" rx="6" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="76" y="240" font-size="11" fill="#1a7f37" text-anchor="middle">사본 2B</text>
+  <text x="128" y="240" font-size="11.5" fill="#1f2328">합계 <tspan font-weight="700">2바이트대</tspan> · 7B 모델이면 <tspan font-weight="700">14GB 남짓</tspan> — 약 9분의 1</text>
+
+  <!-- 양자화 -->
+  <rect x="24" y="278" width="712" height="56" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="40" y="302" font-size="12.5" font-weight="700" fill="#0969da">그래도 14GB는 노트북에 크다 → 양자화로 한 번 더 줄인다</text>
+  <text x="40" y="322" font-size="11.5" fill="#1f2328">Llama 3.1 8B 기준 <tspan font-weight="700">14.96GB → 4.57GB (Q4_K_M)</tspan>, 시험 점수 평균은 0.46%만 하락</text>
+</svg>
