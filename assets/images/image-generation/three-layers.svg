@@ -1,0 +1,19 @@
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">만든 그림을 써도 되는지 — 세 겹으로 본다</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">"가중치가 공개돼 있다"와 "마음대로 써도 된다"는 다른 말이다.</text>
+
+  <rect x="24" y="66" width="712" height="66" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="40" y="90" font-size="12.5" font-weight="700" fill="#0969da">① 모델 라이선스 — 직접 내려받아 돌릴 때</text>
+  <text x="40" y="112" font-size="11" fill="#1f2328">Apache 2.0 · MIT면 상업 이용 가능. <tspan font-weight="700">FLUX.2-klein 4B는 Apache 2.0, 같은 이름의 9B는 비상업.</tspan></text>
+  <text x="40" y="126" font-size="10.5" fill="#57606a">제약이 가중치에 걸리는지, 만든 그림에 걸리는지도 따로 본다</text>
+
+  <rect x="24" y="142" width="712" height="66" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="40" y="166" font-size="12.5" font-weight="700" fill="#9a6700">② 서비스 약관 — 남의 서버를 쓸 때</text>
+  <text x="40" y="188" font-size="11" fill="#1f2328">그림의 권리는 누구에게 있나 · 내가 넣은 입력을 서비스가 어떻게 쓰나 · 회사 규모 조건이 있나</text>
+  <text x="40" y="202" font-size="10.5" fill="#57606a">참조 이미지를 넣는 순간 그 이미지는 남의 서버로 올라간다</text>
+
+  <rect x="24" y="218" width="712" height="66" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="40" y="242" font-size="12.5" font-weight="700" fill="#1a7f37">③ 저작권법 — 그 위에</text>
+  <text x="40" y="264" font-size="11" fill="#1f2328">사람 손이 거의 안 간 산출물의 저작권은 <tspan font-weight="700">인정받기 어렵다는 쪽으로 정리되는 중</tspan>, 학습 데이터 소송은 <tspan font-weight="700">아직 진행 중</tspan></text>
+  <text x="40" y="278" font-size="10.5" fill="#57606a">약관에 "당신 소유"라고 적혀 있어도, 법이 인정하지 않는 권리는 줄 수 없다</text>
+</svg>

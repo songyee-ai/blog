@@ -1,0 +1,48 @@
+<svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">그림 한 장에는 정해야 할 칸이 여섯 개 있다</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">비워 둔 칸은 모델이 채운다 — 내 의도가 아니라 학습 데이터에서 가장 흔했던 값으로.</text>
+
+  <g font-size="12">
+    <rect x="24" y="66" width="112" height="70" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="80" y="92" font-weight="700" fill="#0969da" text-anchor="middle">피사체</text>
+    <text x="80" y="114" font-size="10.5" fill="#57606a" text-anchor="middle">누가, 몇 명</text>
+    <rect x="146" y="66" width="112" height="70" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="202" y="92" font-weight="700" fill="#0969da" text-anchor="middle">동작</text>
+    <text x="202" y="114" font-size="10.5" fill="#57606a" text-anchor="middle">무엇을, 어디서 끝나나</text>
+    <rect x="268" y="66" width="112" height="70" rx="8" fill="#fff8c5" stroke="#9a6700"/>
+    <text x="324" y="92" font-weight="700" fill="#9a6700" text-anchor="middle">카메라</text>
+    <text x="324" y="114" font-size="10.5" fill="#57606a" text-anchor="middle">샷 · 각도 · 렌즈</text>
+    <rect x="390" y="66" width="112" height="70" rx="8" fill="#fff8c5" stroke="#9a6700"/>
+    <text x="446" y="92" font-weight="700" fill="#9a6700" text-anchor="middle">조명</text>
+    <text x="446" y="114" font-size="10.5" fill="#57606a" text-anchor="middle">빛이 어디서</text>
+    <rect x="512" y="66" width="112" height="70" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="568" y="92" font-weight="700" fill="#1a7f37" text-anchor="middle">환경</text>
+    <text x="568" y="114" font-size="10.5" fill="#57606a" text-anchor="middle">어디, 언제</text>
+    <rect x="634" y="66" width="102" height="70" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="685" y="92" font-weight="700" fill="#1a7f37" text-anchor="middle">스타일</text>
+    <text x="685" y="114" font-size="10.5" fill="#57606a" text-anchor="middle">사진? 그림?</text>
+  </g>
+
+  <!-- 3/16/67 단어 -->
+  <rect x="24" y="152" width="712" height="162" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="176" font-size="12.5" font-weight="700" fill="#1f2328">같은 모델 · 같은 시드 · 문장만 바꿨다</text>
+
+  <text x="40" y="206" font-size="12" font-weight="700" fill="#cf222e">3단어</text>
+  <g fill="#0969da"><rect x="110" y="195" width="18" height="14" rx="3"/></g>
+  <g fill="none" stroke="#d0d7de"><rect x="132" y="195" width="18" height="14" rx="3"/><rect x="154" y="195" width="18" height="14" rx="3"/><rect x="176" y="195" width="18" height="14" rx="3"/><rect x="198" y="195" width="18" height="14" rx="3"/><rect x="220" y="195" width="18" height="14" rx="3"/></g>
+  <text x="256" y="206" font-size="11" fill="#1f2328">"a factory worker" → 정중앙에 서서 카메라를 본다. 가장 흔한 그림</text>
+
+  <text x="40" y="242" font-size="12" font-weight="700" fill="#9a6700">16단어</text>
+  <g fill="#0969da"><rect x="110" y="231" width="18" height="14" rx="3"/></g>
+  <rect x="132" y="231" width="18" height="14" rx="3" fill="none" stroke="#d0d7de"/>
+  <g fill="none" stroke="#d0d7de"><rect x="154" y="231" width="18" height="14" rx="3"/><rect x="176" y="231" width="18" height="14" rx="3"/></g>
+  <g fill="#1a7f37"><rect x="198" y="231" width="18" height="14" rx="3"/></g>
+  <rect x="220" y="231" width="18" height="14" rx="3" fill="none" stroke="#d0d7de"/>
+  <text x="256" y="242" font-size="11" fill="#1f2328">안전모와 점검 라인이 생겼지만 여전히 카메라를 본다 — 시선을 안 적었다</text>
+
+  <text x="40" y="278" font-size="12" font-weight="700" fill="#1a7f37">67단어</text>
+  <g><rect x="110" y="267" width="18" height="14" rx="3" fill="#0969da"/><rect x="132" y="267" width="18" height="14" rx="3" fill="#0969da"/><rect x="154" y="267" width="18" height="14" rx="3" fill="#9a6700"/><rect x="176" y="267" width="18" height="14" rx="3" fill="#9a6700"/><rect x="198" y="267" width="18" height="14" rx="3" fill="#1a7f37"/><rect x="220" y="267" width="18" height="14" rx="3" fill="#1a7f37"/></g>
+  <text x="256" y="278" font-size="11" fill="#1f2328">몸을 숙이고 난간에 손, 왼쪽 창빛, 흐린 배경 — 전부 적은 대로</text>
+
+  <text x="40" y="304" font-size="11" fill="#57606a">프롬프트는 <tspan font-weight="700" fill="#1f2328">길어서가 아니라 빠진 칸이 없어서</tspan> 좋아진다.</text>
+</svg>
