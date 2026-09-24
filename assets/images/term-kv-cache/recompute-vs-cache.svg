@@ -1,0 +1,66 @@
+<svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="왼쪽은 캐시 없이 새 단어를 쓸 때마다 앞 단어를 전부 다시 계산해 네 단어에 10칸을 계산한다. 오른쪽은 KV 캐시로 앞 단어의 값을 메모장에서 꺼내 쓰고 새 단어 한 칸만 계산해 4칸이면 되지만, 메모장이 단어 수만큼 자란다">
+  <!-- 왼쪽: 캐시 없이 -->
+  <rect x="20" y="20" width="350" height="360" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="40" y="50" font-size="16" font-weight="700" fill="#bc4c00">캐시 없이 — 매번 처음부터</text>
+  <text x="40" y="74" font-size="13" fill="#57606a">새 단어를 쓸 때마다 앞 단어를 전부 다시 계산</text>
+
+  <g font-size="13" fill="#1f2328">
+    <text x="40" y="123">1번째</text>
+    <text x="40" y="173">2번째</text>
+    <text x="40" y="223">3번째</text>
+    <text x="40" y="273">4번째</text>
+  </g>
+  <g fill="#ffd8b5" stroke="#bc4c00" stroke-width="1.2">
+    <rect x="130" y="98" width="48" height="36" rx="5"/>
+    <rect x="130" y="148" width="48" height="36" rx="5"/><rect x="184" y="148" width="48" height="36" rx="5"/>
+    <rect x="130" y="198" width="48" height="36" rx="5"/><rect x="184" y="198" width="48" height="36" rx="5"/><rect x="238" y="198" width="48" height="36" rx="5"/>
+    <rect x="130" y="248" width="48" height="36" rx="5"/><rect x="184" y="248" width="48" height="36" rx="5"/><rect x="238" y="248" width="48" height="36" rx="5"/><rect x="292" y="248" width="48" height="36" rx="5"/>
+  </g>
+  <g font-size="13" fill="#1f2328" text-anchor="middle">
+    <text x="154" y="121">오늘</text>
+    <text x="154" y="171">오늘</text><text x="208" y="171">날씨</text>
+    <text x="154" y="221">오늘</text><text x="208" y="221">날씨</text><text x="262" y="221">참</text>
+    <text x="154" y="271">오늘</text><text x="208" y="271">날씨</text><text x="262" y="271">참</text><text x="316" y="271">좋다</text>
+  </g>
+  <rect x="40" y="306" width="14" height="14" rx="3" fill="#ffd8b5" stroke="#bc4c00"/>
+  <text x="62" y="318" font-size="13" fill="#57606a">= 계산한 칸</text>
+  <text x="40" y="348" font-size="14" font-weight="700" fill="#bc4c00">계산 1 + 2 + 3 + 4 = 10칸</text>
+  <text x="40" y="368" font-size="13" fill="#57606a">문장이 길수록 점점 느려진다</text>
+
+  <!-- 오른쪽: KV 캐시 -->
+  <rect x="390" y="20" width="350" height="360" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="410" y="50" font-size="16" font-weight="700" fill="#0969da">KV 캐시 — 메모해 두고 꺼내 쓰기</text>
+  <text x="410" y="74" font-size="13" fill="#57606a">앞 단어의 K·V는 메모장에서 꺼내 쓴다</text>
+
+  <g font-size="13" fill="#1f2328">
+    <text x="410" y="123">1번째</text>
+    <text x="410" y="173">2번째</text>
+    <text x="410" y="223">3번째</text>
+    <text x="410" y="273">4번째</text>
+  </g>
+  <!-- 꺼내 쓴 칸 (회색) -->
+  <g fill="#f6f8fa" stroke="#8c959f" stroke-width="1.2" stroke-dasharray="4 3">
+    <rect x="500" y="148" width="48" height="36" rx="5"/>
+    <rect x="500" y="198" width="48" height="36" rx="5"/><rect x="554" y="198" width="48" height="36" rx="5"/>
+    <rect x="500" y="248" width="48" height="36" rx="5"/><rect x="554" y="248" width="48" height="36" rx="5"/><rect x="608" y="248" width="48" height="36" rx="5"/>
+  </g>
+  <!-- 새로 계산한 칸 (파랑) -->
+  <g fill="#b6e3ff" stroke="#0969da" stroke-width="1.2">
+    <rect x="500" y="98" width="48" height="36" rx="5"/>
+    <rect x="554" y="148" width="48" height="36" rx="5"/>
+    <rect x="608" y="198" width="48" height="36" rx="5"/>
+    <rect x="662" y="248" width="48" height="36" rx="5"/>
+  </g>
+  <g font-size="13" text-anchor="middle">
+    <text x="524" y="121" fill="#1f2328">오늘</text>
+    <text x="524" y="171" fill="#57606a">오늘</text><text x="578" y="171" fill="#1f2328">날씨</text>
+    <text x="524" y="221" fill="#57606a">오늘</text><text x="578" y="221" fill="#57606a">날씨</text><text x="632" y="221" fill="#1f2328">참</text>
+    <text x="524" y="271" fill="#57606a">오늘</text><text x="578" y="271" fill="#57606a">날씨</text><text x="632" y="271" fill="#57606a">참</text><text x="686" y="271" fill="#1f2328">좋다</text>
+  </g>
+  <rect x="410" y="306" width="14" height="14" rx="3" fill="#b6e3ff" stroke="#0969da"/>
+  <text x="432" y="318" font-size="13" fill="#57606a">= 새로 계산</text>
+  <rect x="530" y="306" width="14" height="14" rx="3" fill="#f6f8fa" stroke="#8c959f" stroke-dasharray="3 2"/>
+  <text x="552" y="318" font-size="13" fill="#57606a">= 메모장에서 꺼냄</text>
+  <text x="410" y="348" font-size="14" font-weight="700" fill="#0969da">계산 4칸 · 대신 메모장 4칸 차지</text>
+  <text x="410" y="368" font-size="13" fill="#57606a">메모장은 토큰 수만큼 자란다 = 메모리</text>
+</svg>

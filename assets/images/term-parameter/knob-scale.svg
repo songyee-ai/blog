@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="760" height="440" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="학습으로 맞춰지는 숫자인 파라미터의 개수를 비교한다. 코코아 레시피와 카페 매출 모델은 2개, qwen3:0.6b는 6억 개, Llama 3.1 8B는 80억 개, 대형 언어모델은 수천억 개다">
+  <text x="24" y="30" font-size="16" font-weight="700" fill="#57606a">조절 손잡이가 몇 개인가 — 파라미터 개수</text>
+  <text x="24" y="52" font-size="13" fill="#57606a">막대 길이는 자릿수(0이 몇 개인가) 기준이다</text>
+
+  <!-- row 1 -->
+  <rect x="20" y="68" width="720" height="58" rx="8" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.2"/>
+  <text x="36" y="92" font-size="14" font-weight="700" fill="#953800">코코아 레시피 (예시)</text>
+  <text x="36" y="112" font-size="12.5" fill="#1f2328">가루 몇 숟갈, 우유 몇 ml</text>
+  <rect x="260" y="86" width="12" height="22" rx="3" fill="#bc4c00"/>
+  <text x="282" y="102" font-size="14" font-weight="700" fill="#953800">2개</text>
+
+  <!-- row 2 -->
+  <rect x="20" y="134" width="720" height="58" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.2"/>
+  <text x="36" y="158" font-size="14" font-weight="700" fill="#0550ae">카페 매출 선형모델</text>
+  <text x="36" y="178" font-size="12.5" fill="#1f2328">10회차 · 노트북에서 즉시</text>
+  <rect x="260" y="152" width="12" height="22" rx="3" fill="#0969da"/>
+  <text x="282" y="168" font-size="14" font-weight="700" fill="#0550ae">2개</text>
+
+  <!-- row 3 -->
+  <rect x="20" y="200" width="720" height="58" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.2"/>
+  <text x="36" y="224" font-size="14" font-weight="700" fill="#0550ae">qwen3:0.6b</text>
+  <text x="36" y="244" font-size="12.5" fill="#1f2328">내 노트북 · 파일 522MB</text>
+  <rect x="260" y="218" width="273" height="22" rx="3" fill="#0969da"/>
+  <text x="543" y="234" font-size="14" font-weight="700" fill="#0550ae">6억 개</text>
+
+  <!-- row 4 -->
+  <rect x="20" y="266" width="720" height="58" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.2"/>
+  <text x="36" y="290" font-size="14" font-weight="700" fill="#0550ae">Llama 3.1 8B</text>
+  <text x="36" y="310" font-size="12.5" fill="#1f2328">FP16 파일 14.96GB</text>
+  <rect x="260" y="284" width="307" height="22" rx="3" fill="#0969da"/>
+  <text x="577" y="300" font-size="14" font-weight="700" fill="#0550ae">80억 개</text>
+
+  <!-- row 5 -->
+  <rect x="20" y="332" width="720" height="58" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.2"/>
+  <text x="36" y="356" font-size="14" font-weight="700" fill="#0550ae">대형 언어모델</text>
+  <text x="36" y="376" font-size="12.5" fill="#1f2328">학습에 GPU 수백~수천 대</text>
+  <rect x="260" y="350" width="356" height="22" rx="3" fill="#0969da"/>
+  <text x="626" y="366" font-size="14" font-weight="700" fill="#0550ae">수천억 개</text>
+
+  <text x="24" y="420" font-size="13.5" font-weight="700" fill="#1a7f37">파일 크기 ≈ 파라미터 개수 × 한 개당 바이트 (FP16이면 2바이트)</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="760" height="440" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="같은 값을 눈금 65,536개짜리 자와 눈금 16개짜리 자로 재면, 성긴 자에서는 가장 가까운 눈금으로 반올림되어 조금 달라지지만 저장 공간은 4분의 1이 된다">
+  <defs>
+    <marker id="qz-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#bc4c00"/></marker>
+  </defs>
+
+  <text x="24" y="30" font-size="16" font-weight="700" fill="#57606a">같은 값을 서로 다른 자로 잰다</text>
+
+  <!-- FP16 ruler -->
+  <rect x="20" y="46" width="720" height="118" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="40" y="72" font-size="15" font-weight="700" fill="#0550ae">FP16 — 눈금 65,536개, 값 하나에 2바이트</text>
+  <text x="40" y="92" font-size="13" fill="#1f2328">그림은 눈금을 줄여 그렸다. 실제로는 훨씬 촘촘하다</text>
+  <line x1="40" y1="120" x2="720" y2="120" stroke="#0969da" stroke-width="1.5"/>
+  <line x1="40" y1="114" x2="720" y2="114" stroke="#0969da" stroke-width="12" stroke-dasharray="1 4"/>
+  <line x1="392" y1="104" x2="392" y2="130" stroke="#0550ae" stroke-width="3"/>
+  <text x="392" y="150" font-size="14" font-weight="700" fill="#0550ae" text-anchor="middle">0.0731 그대로 저장</text>
+
+  <!-- 4bit ruler -->
+  <rect x="20" y="180" width="720" height="132" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="40" y="206" font-size="15" font-weight="700" fill="#953800">4비트 — 눈금 16개, 값 하나에 0.5바이트</text>
+  <text x="40" y="226" font-size="13" fill="#1f2328">원래 값은 가장 가까운 눈금으로 끌려간다</text>
+  <line x1="40" y1="262" x2="720" y2="262" stroke="#bc4c00" stroke-width="1.5"/>
+  <line x1="40" y1="254" x2="722" y2="254" stroke="#bc4c00" stroke-width="16" stroke-dasharray="2 43.33"/>
+  <line x1="392" y1="240" x2="392" y2="270" stroke="#0550ae" stroke-width="2" stroke-dasharray="3 3"/>
+  <line x1="386" y1="238" x2="404" y2="238" stroke="#bc4c00" stroke-width="2" marker-end="url(#qz-ar)"/>
+  <circle cx="402.7" cy="254" r="5" fill="#bc4c00"/>
+  <text x="402" y="294" font-size="14" font-weight="700" fill="#953800" text-anchor="middle">0.0745로 반올림해 저장 (오차 0.0014)</text>
+
+  <!-- result cards -->
+  <rect x="20" y="330" width="228" height="96" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="38" y="358" font-size="14" font-weight="700" fill="#116329">크기는 4분의 1</text>
+  <text x="38" y="382" font-size="13" fill="#1f2328">2바이트 → 0.5바이트</text>
+  <text x="38" y="404" font-size="13" fill="#1f2328">7B면 14GB → 약 3.5GB</text>
+
+  <rect x="266" y="330" width="228" height="96" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="284" y="358" font-size="14" font-weight="700" fill="#116329">실제 파일 (Llama 3.1 8B)</text>
+  <text x="284" y="382" font-size="13" fill="#1f2328">FP16 14.96GB</text>
+  <text x="284" y="404" font-size="13" fill="#1f2328">Q4_K_M 4.57GB</text>
+
+  <rect x="512" y="330" width="228" height="96" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="530" y="358" font-size="14" font-weight="700" fill="#116329">잃은 것</text>
+  <text x="530" y="382" font-size="13" fill="#1f2328">벤치마크 평균 0.46% 하락</text>
+  <text x="530" y="404" font-size="13" fill="#1f2328">MMLU 1.07점 하락</text>
+</svg>

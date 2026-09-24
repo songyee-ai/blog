@@ -1,0 +1,58 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="Ollama 명령 일곱 개가 어디에 작용하는지 보여 준다. pull은 공개 모델 진열장에서 내 디스크로 모델을 받고, run은 디스크의 모델을 메모리에 올려 대화한다. list, show, rm은 디스크의 모델을 보고 지우고, ps와 stop은 메모리에 올라간 모델을 확인하고 내린다. 태그 끝이 -cloud면 계산이 밖의 서버에서 이루어진다">
+  <defs>
+    <marker id="ol-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0969da"/></marker>
+  </defs>
+
+  <!-- 1. 진열장 -->
+  <rect x="20" y="20" width="200" height="320" rx="10" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="40" y="50" font-size="15" font-weight="700" fill="#1f2328">공개 모델 진열장</text>
+  <text x="40" y="72" font-size="13" fill="#57606a">ollama.com 라이브러리</text>
+  <g font-size="13" fill="#1f2328">
+    <rect x="40" y="94" width="160" height="34" rx="6" fill="#ffffff" stroke="#d0d7de"/><text x="56" y="116">qwen3:0.6b</text>
+    <rect x="40" y="138" width="160" height="34" rx="6" fill="#ffffff" stroke="#d0d7de"/><text x="56" y="160">llama3.2:3b</text>
+    <rect x="40" y="182" width="160" height="34" rx="6" fill="#ffffff" stroke="#d0d7de"/><text x="56" y="204">… 크기별 태그</text>
+  </g>
+  <text x="40" y="250" font-size="13" fill="#57606a">이름 뒤 :0.6b 같은</text>
+  <text x="40" y="270" font-size="13" fill="#57606a">꼬리표가 태그(크기·종류)</text>
+
+  <!-- 2. 내 디스크 -->
+  <rect x="280" y="20" width="200" height="320" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="300" y="50" font-size="15" font-weight="700" fill="#1a7f37">내 디스크</text>
+  <text x="300" y="72" font-size="13" fill="#57606a">받아 둔 모델 (꺼져 있음)</text>
+  <rect x="300" y="94" width="160" height="34" rx="6" fill="#ffffff" stroke="#1a7f37"/><text x="316" y="116" font-size="13" fill="#1f2328">qwen3:0.6b</text>
+  <g>
+    <rect x="300" y="150" width="160" height="52" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="316" y="172" font-size="14" font-weight="700" fill="#1a7f37">list</text>
+    <text x="316" y="192" font-size="13" fill="#57606a">받아 둔 목록 보기</text>
+    <rect x="300" y="212" width="160" height="52" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="316" y="234" font-size="14" font-weight="700" fill="#1a7f37">show</text>
+    <text x="316" y="254" font-size="13" fill="#57606a">구조·최대 컨텍스트</text>
+    <rect x="300" y="274" width="160" height="52" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="316" y="296" font-size="14" font-weight="700" fill="#1a7f37">rm</text>
+    <text x="316" y="316" font-size="13" fill="#57606a">디스크에서 지우기</text>
+  </g>
+
+  <!-- 3. 내 메모리 -->
+  <rect x="540" y="20" width="200" height="320" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="560" y="50" font-size="15" font-weight="700" fill="#bc4c00">내 메모리</text>
+  <text x="560" y="72" font-size="13" fill="#57606a">지금 돌고 있는 모델</text>
+  <rect x="560" y="94" width="160" height="34" rx="6" fill="#ffffff" stroke="#bc4c00"/><text x="576" y="116" font-size="13" fill="#1f2328">qwen3:0.6b 대화 중</text>
+  <g>
+    <rect x="560" y="150" width="160" height="52" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="576" y="172" font-size="14" font-weight="700" fill="#bc4c00">ps</text>
+    <text x="576" y="192" font-size="13" fill="#57606a">크기·CPU/GPU 비율</text>
+    <rect x="560" y="212" width="160" height="52" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="576" y="234" font-size="14" font-weight="700" fill="#bc4c00">stop</text>
+    <text x="576" y="254" font-size="13" fill="#57606a">메모리에서 내리기</text>
+  </g>
+
+  <!-- 화살표 -->
+  <line x1="222" y1="111" x2="276" y2="111" stroke="#0969da" stroke-width="2" marker-end="url(#ol-ar)"/>
+  <text x="250" y="100" font-size="14" font-weight="700" fill="#0969da" text-anchor="middle">pull</text>
+  <line x1="482" y1="111" x2="536" y2="111" stroke="#0969da" stroke-width="2" marker-end="url(#ol-ar)"/>
+  <text x="510" y="100" font-size="14" font-weight="700" fill="#0969da" text-anchor="middle">run</text>
+
+  <!-- -cloud 경고 -->
+  <rect x="20" y="356" width="720" height="48" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="40" y="385" font-size="13" fill="#1f2328">태그 끝이 <tspan font-weight="700" fill="#0969da">-cloud</tspan>면 명령은 같아도 계산은 밖의 서버에서 — 로그인을 요구하면 밖으로 나가는 길</text>
+</svg>
