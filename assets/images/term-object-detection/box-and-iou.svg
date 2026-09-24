@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="760" height="440" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="왼쪽은 사람 한 명에 주황 박스와 person 0.87 이름표가 붙은 탐지 결과, 오른쪽은 예측 박스와 정답 박스가 겹친 넓이로 IoU 0.53을 계산하는 그림">
+  <!-- 왼쪽: 탐지 결과 한 건 -->
+  <rect x="20" y="16" width="350" height="408" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="38" y="44" font-size="16" font-weight="700" fill="#1f2328">① 탐지가 내놓는 것</text>
+
+  <rect x="38" y="60" width="314" height="222" rx="6" fill="#ddf4ff" stroke="#d0d7de" stroke-width="1"/>
+  <rect x="38" y="232" width="314" height="50" fill="#d8dee4"/>
+  <!-- 사람 -->
+  <circle cx="195" cy="128" r="18" fill="#57606a"/>
+  <rect x="175" y="150" width="40" height="66" rx="10" fill="#57606a"/>
+  <line x1="185" y1="214" x2="181" y2="252" stroke="#57606a" stroke-width="9" stroke-linecap="round"/>
+  <line x1="205" y1="214" x2="209" y2="252" stroke="#57606a" stroke-width="9" stroke-linecap="round"/>
+  <!-- 박스 -->
+  <rect x="160" y="102" width="70" height="158" fill="none" stroke="#bc4c00" stroke-width="3"/>
+  <rect x="160" y="78" width="112" height="24" fill="#bc4c00"/>
+  <text x="168" y="95" font-size="14" font-weight="700" fill="#ffffff">person 0.87</text>
+  <circle cx="160" cy="102" r="4.5" fill="#0969da"/>
+  <circle cx="230" cy="260" r="4.5" fill="#0969da"/>
+  <text x="150" y="124" font-size="13" fill="#0969da" text-anchor="end">(x1, y1)</text>
+  <text x="240" y="256" font-size="13" fill="#0969da">(x2, y2)</text>
+
+  <text x="38" y="314" font-size="14" fill="#1f2328"><tspan font-weight="700" fill="#bc4c00">label</tspan>　무엇인가 → person</text>
+  <text x="38" y="340" font-size="14" fill="#1f2328"><tspan font-weight="700" fill="#0969da">box</tspan>　어디인가 → x1, y1, x2, y2</text>
+  <text x="38" y="366" font-size="14" fill="#1f2328"><tspan font-weight="700" fill="#1a7f37">score</tspan>　얼마나 확신하나 → 0.87</text>
+  <text x="38" y="402" font-size="13" fill="#57606a">0.87은 "87% 확률로 사람"이라는 뜻이 아니다</text>
+
+  <!-- 오른쪽: IoU -->
+  <rect x="390" y="16" width="350" height="408" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="408" y="44" font-size="16" font-weight="700" fill="#1f2328">② 맞았는지 재는 자, IoU</text>
+
+  <rect x="452" y="100" width="160" height="104" fill="#dafbe1" stroke="#1a7f37" stroke-width="2.5"/>
+  <rect x="420" y="86" width="160" height="104" fill="#ddf4ff" fill-opacity="0.55" stroke="#0969da" stroke-width="2.5" stroke-dasharray="7 4"/>
+  <rect x="452" y="100" width="128" height="90" fill="#fb8f44" fill-opacity="0.45"/>
+  <text x="420" y="78" font-size="13" font-weight="700" fill="#0969da">예측 200×130</text>
+  <text x="612" y="222" font-size="13" font-weight="700" fill="#1a7f37" text-anchor="end">정답 200×130</text>
+  <text x="516" y="150" font-size="13" font-weight="700" fill="#953800" text-anchor="middle">겹침 160×112</text>
+
+  <text x="408" y="256" font-size="14" font-weight="700" fill="#1f2328">IoU = 겹친 ÷ (예측 + 정답 − 겹친)</text>
+  <text x="408" y="282" font-size="13" fill="#1f2328">= 17,920 ÷ (26,000 + 26,000 − 17,920)</text>
+  <text x="408" y="306" font-size="13" fill="#1f2328">= 17,920 ÷ 34,080 ≈ <tspan font-weight="700" font-size="15">0.53</tspan></text>
+
+  <rect x="408" y="324" width="150" height="32" rx="16" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="483" y="345" font-size="13" font-weight="700" fill="#1a7f37" text-anchor="middle">기준 0.5 → 정답</text>
+  <rect x="572" y="324" width="150" height="32" rx="16" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="647" y="345" font-size="13" font-weight="700" fill="#bc4c00" text-anchor="middle">기준 0.75 → 오답</text>
+  <text x="408" y="386" font-size="13" fill="#57606a">같은 박스도 기준을 어디에 두느냐에 따라</text>
+  <text x="408" y="406" font-size="13" fill="#57606a">채점이 뒤집힌다. 기준은 사람이 정한다</text>
+</svg>

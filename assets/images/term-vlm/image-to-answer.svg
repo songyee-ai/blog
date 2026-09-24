@@ -1,0 +1,61 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="VLM은 사진을 작은 조각인 패치로 나누고, 비전 인코더가 조각마다 특징 숫자를 만든다. 연결 모듈이 이 특징을 언어 모델이 쓸 수 있게 이어 주고, 언어 모델은 질문과 함께 해석해 답을 쓴다. 연결 방식에는 projector, cross-attention, Q-Former가 있다. 답의 형식은 JSON 등으로 고정할 수 있지만 형식을 지켰다고 내용이 맞는 것은 아니다">
+  <defs>
+    <marker id="vlm-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0969da"/></marker>
+  </defs>
+
+  <!-- 1. 사진 → 패치 -->
+  <rect x="20" y="20" width="160" height="240" rx="10" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="40" y="48" font-size="15" font-weight="700" fill="#1f2328">사진</text>
+  <text x="40" y="70" font-size="13" fill="#57606a">작은 조각(패치)으로</text>
+  <g fill="#ddf4ff" stroke="#0969da" stroke-width="1">
+    <rect x="46" y="88" width="34" height="34"/><rect x="80" y="88" width="34" height="34"/><rect x="114" y="88" width="34" height="34"/>
+    <rect x="46" y="122" width="34" height="34"/><rect x="80" y="122" width="34" height="34"/><rect x="114" y="122" width="34" height="34"/>
+    <rect x="46" y="156" width="34" height="34"/><rect x="80" y="156" width="34" height="34"/><rect x="114" y="156" width="34" height="34"/>
+  </g>
+  <text x="40" y="222" font-size="13" fill="#57606a">조각 하나를</text>
+  <text x="40" y="242" font-size="13" fill="#57606a">토큰 하나처럼</text>
+
+  <!-- 2. 비전 인코더 -->
+  <rect x="206" y="20" width="160" height="240" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="226" y="48" font-size="15" font-weight="700" fill="#0969da">비전 인코더</text>
+  <text x="226" y="80" font-size="13" fill="#57606a">조각마다</text>
+  <text x="226" y="100" font-size="13" fill="#57606a">특징 숫자(벡터)</text>
+  <text x="226" y="120" font-size="13" fill="#57606a">를 만든다</text>
+  <text x="226" y="160" font-size="13" fill="#1f2328">[0.2, -1.1, …]</text>
+  <text x="226" y="182" font-size="13" fill="#1f2328">[0.7, 0.3, …]</text>
+  <text x="226" y="204" font-size="13" fill="#1f2328">…</text>
+
+  <!-- 3. 연결 모듈 -->
+  <rect x="392" y="20" width="160" height="240" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="412" y="48" font-size="15" font-weight="700" fill="#bc4c00">연결 모듈</text>
+  <text x="412" y="76" font-size="13" fill="#57606a">방식은 여럿</text>
+  <rect x="408" y="92" width="128" height="40" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="472" y="117" font-size="13" fill="#1f2328" text-anchor="middle">projector</text>
+  <rect x="408" y="142" width="128" height="40" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="472" y="167" font-size="13" fill="#1f2328" text-anchor="middle">cross-attention</text>
+  <rect x="408" y="192" width="128" height="40" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="472" y="217" font-size="13" fill="#1f2328" text-anchor="middle">Q-Former</text>
+
+  <!-- 4. 언어 모델 -->
+  <rect x="578" y="20" width="162" height="240" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="598" y="48" font-size="15" font-weight="700" fill="#1a7f37">언어 모델</text>
+  <text x="598" y="80" font-size="13" fill="#57606a">질문과 함께</text>
+  <text x="598" y="100" font-size="13" fill="#57606a">해석해서</text>
+  <text x="598" y="120" font-size="13" fill="#57606a">답을 쓴다</text>
+  <rect x="594" y="146" width="130" height="92" rx="6" fill="#ffffff" stroke="#1a7f37"/>
+  <text x="606" y="170" font-size="13" fill="#1f2328">질문 "갑은 누구?"</text>
+  <text x="606" y="196" font-size="13" fill="#1f2328">답 {"갑":</text>
+  <text x="606" y="218" font-size="13" fill="#1f2328">  "발주자"}</text>
+
+  <!-- 화살표 -->
+  <line x1="182" y1="140" x2="203" y2="140" stroke="#0969da" stroke-width="2" marker-end="url(#vlm-ar)"/>
+  <line x1="368" y1="140" x2="389" y2="140" stroke="#0969da" stroke-width="2" marker-end="url(#vlm-ar)"/>
+  <line x1="554" y1="140" x2="575" y2="140" stroke="#0969da" stroke-width="2" marker-end="url(#vlm-ar)"/>
+
+  <!-- 경고 -->
+  <rect x="20" y="284" width="720" height="118" rx="8" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="40" y="312" font-size="14" font-weight="700" fill="#bc4c00">질문은 열려 있어도, 답의 모양은 정해 줄 수 있다</text>
+  <text x="40" y="338" font-size="13" fill="#57606a">문장 · Markdown · JSON처럼 형식을 고정할 수 있다</text>
+  <text x="40" y="362" font-size="13" fill="#57606a">하지만 형식을 지켰다 ≠ 내용이 맞다 — 안 보이는 자리를 그럴듯하게 채울 수 있다(환각)</text>
+  <text x="40" y="386" font-size="13" fill="#57606a">두 번 같은 답이 나와도(재현성) 그게 정답(정확성)이라는 뜻은 아니다</text>
+</svg>

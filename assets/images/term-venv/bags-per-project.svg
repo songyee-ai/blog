@@ -1,0 +1,34 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="왼쪽은 전역 설치로, 컴퓨터 하나에 모든 프로젝트의 패키지를 한꺼번에 넣어서 OCR이 원하는 버전과 YOLO가 원하는 버전이 부딪친다. 오른쪽은 가상환경으로, 프로젝트마다 폴더 안에 따로 도구 상자를 두어 서로 다른 버전이 같이 살 수 있다. uv venv로 상자를 만들고 uv pip install -r로 채우며, activate로 들어가고 deactivate로 나온다. deactivate는 삭제가 아니다">
+  <!-- 왼쪽: 전역 설치 -->
+  <rect x="20" y="20" width="340" height="270" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="40" y="50" font-size="15" font-weight="700" fill="#bc4c00">전역 설치 — 가방 하나에 전부</text>
+  <text x="40" y="74" font-size="13" fill="#57606a">컴퓨터 전체가 한 상자를 같이 쓴다</text>
+  <rect x="40" y="94" width="300" height="130" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="58" y="122" font-size="13" fill="#1f2328">OCR 실습: 패키지 A 버전 1이 필요</text>
+  <text x="58" y="148" font-size="13" fill="#1f2328">YOLO 실습: 패키지 A 버전 2가 필요</text>
+  <text x="58" y="186" font-size="14" font-weight="700" fill="#bc4c00">한 칸에 하나만 들어간다</text>
+  <text x="58" y="208" font-size="13" fill="#57606a">나중에 깐 쪽이 앞의 것을 덮어쓴다</text>
+  <text x="40" y="258" font-size="13" fill="#57606a">한 실습을 고치면 다른 실습이 깨진다</text>
+
+  <!-- 오른쪽: 가상환경 -->
+  <rect x="400" y="20" width="340" height="270" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="420" y="50" font-size="15" font-weight="700" fill="#1a7f37">가상환경 — 과목별 가방</text>
+  <text x="420" y="74" font-size="13" fill="#57606a">프로젝트 폴더마다 도구 상자를 따로</text>
+  <rect x="420" y="94" width="142" height="130" rx="8" fill="#ffffff" stroke="#1a7f37"/>
+  <text x="436" y="120" font-size="14" font-weight="700" fill="#1a7f37">OCR용 상자</text>
+  <text x="436" y="146" font-size="13" fill="#1f2328">Python</text>
+  <text x="436" y="168" font-size="13" fill="#1f2328">패키지 A v1</text>
+  <text x="436" y="190" font-size="13" fill="#1f2328">OCR 도구들</text>
+  <rect x="578" y="94" width="142" height="130" rx="8" fill="#ffffff" stroke="#1a7f37"/>
+  <text x="594" y="120" font-size="14" font-weight="700" fill="#1a7f37">YOLO용 상자</text>
+  <text x="594" y="146" font-size="13" fill="#1f2328">Python</text>
+  <text x="594" y="168" font-size="13" fill="#1f2328">패키지 A v2</text>
+  <text x="594" y="190" font-size="13" fill="#1f2328">YOLO 도구들</text>
+  <text x="420" y="258" font-size="13" fill="#57606a">서로 다른 버전이 부딪치지 않는다</text>
+
+  <!-- 명령 -->
+  <rect x="20" y="310" width="720" height="92" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="40" y="338" font-size="13" fill="#1f2328"><tspan font-weight="700" fill="#0969da">uv venv</tspan> 상자 만들기  ·  <tspan font-weight="700" fill="#0969da">uv pip install -r 목록.txt</tspan> 상자 채우기</text>
+  <text x="40" y="364" font-size="13" fill="#1f2328"><tspan font-weight="700" fill="#0969da">activate</tspan> 이 터미널이 그 상자를 쓰게  ·  <tspan font-weight="700" fill="#0969da">deactivate</tspan> 상자에서 나오기</text>
+  <text x="40" y="388" font-size="13" fill="#57606a">deactivate는 가방을 내려놓는 것이지 버리는 것(삭제)이 아니다</text>
+</svg>

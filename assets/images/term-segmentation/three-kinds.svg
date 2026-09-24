@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="하늘과 도로와 사람 셋이 있는 같은 장면을 세 가지로 칠한다. 시맨틱은 하늘 도로를 칠하고 사람 셋을 모두 빨강 하나로, 인스턴스는 사람마다 빨강 파랑 초록으로 다르게 칠하고 배경은 비워 두며, 파놉틱은 사람을 개체별로 나누면서 하늘과 도로까지 빈틈없이 칠한다">
+  <defs>
+    <pattern id="sg-empty" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#d0d7de" stroke-width="2"/>
+    </pattern>
+  </defs>
+
+  <!-- 1. 시맨틱 -->
+  <rect x="20" y="16" width="230" height="348" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="36" y="44" font-size="16" font-weight="700" fill="#1f2328">시맨틱 <tspan font-size="13" font-weight="400" fill="#57606a">semantic</tspan></text>
+  <rect x="36" y="60" width="198" height="96" fill="#b6e3ff"/>
+  <rect x="36" y="156" width="198" height="54" fill="#afb8c1"/>
+  <text x="44" y="78" font-size="13" fill="#0a3069">하늘</text>
+  <text x="44" y="202" font-size="13" fill="#24292f">도로</text>
+  <circle cx="82" cy="112" r="11" fill="#cf222e"/><rect x="70" y="125" width="24" height="52" rx="7" fill="#cf222e"/>
+  <circle cx="135" cy="112" r="11" fill="#cf222e"/><rect x="123" y="125" width="24" height="52" rx="7" fill="#cf222e"/>
+  <circle cx="188" cy="112" r="11" fill="#cf222e"/><rect x="176" y="125" width="24" height="52" rx="7" fill="#cf222e"/>
+  <text x="36" y="240" font-size="14" font-weight="700" fill="#cf222e">종류만 칠한다</text>
+  <text x="36" y="266" font-size="13" fill="#1f2328">사람 셋이 한 가지 색</text>
+  <text x="36" y="290" font-size="13" fill="#1f2328">몇 명인지 못 센다</text>
+  <text x="36" y="314" font-size="13" fill="#1f2328">하늘·도로는 칠한다</text>
+  <text x="36" y="338" font-size="13" fill="#57606a">종류별 넓이 재기엔 충분</text>
+
+  <!-- 2. 인스턴스 -->
+  <rect x="265" y="16" width="230" height="348" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="281" y="44" font-size="16" font-weight="700" fill="#1f2328">인스턴스 <tspan font-size="13" font-weight="400" fill="#57606a">instance</tspan></text>
+  <rect x="281" y="60" width="198" height="150" fill="url(#sg-empty)" stroke="#d0d7de" stroke-width="1" stroke-dasharray="5 4"/>
+  <rect x="289" y="66" width="100" height="22" rx="4" fill="#f6f8fa"/>
+  <text x="293" y="82" font-size="13" fill="#57606a">배경은 비워 둠</text>
+  <circle cx="327" cy="112" r="11" fill="#cf222e"/><rect x="315" y="125" width="24" height="52" rx="7" fill="#cf222e"/>
+  <circle cx="380" cy="112" r="11" fill="#0550ae"/><rect x="368" y="125" width="24" height="52" rx="7" fill="#0550ae"/>
+  <circle cx="433" cy="112" r="11" fill="#1a7f37"/><rect x="421" y="125" width="24" height="52" rx="7" fill="#1a7f37"/>
+  <text x="327" y="198" font-size="13" font-weight="700" fill="#cf222e" text-anchor="middle">1</text>
+  <text x="380" y="198" font-size="13" font-weight="700" fill="#0550ae" text-anchor="middle">2</text>
+  <text x="433" y="198" font-size="13" font-weight="700" fill="#1a7f37" text-anchor="middle">3</text>
+  <text x="281" y="240" font-size="14" font-weight="700" fill="#0550ae">개체마다 따로 칠한다</text>
+  <text x="281" y="266" font-size="13" fill="#1f2328">사람1 · 사람2 · 사람3</text>
+  <text x="281" y="290" font-size="13" fill="#1f2328">몇 명인지 센다</text>
+  <text x="281" y="314" font-size="13" fill="#1f2328">하늘·도로는 다루지 않는다</text>
+  <text x="281" y="338" font-size="13" fill="#57606a">한 명씩 넓이·경계를 잰다</text>
+
+  <!-- 3. 파놉틱 -->
+  <rect x="510" y="16" width="230" height="348" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="526" y="44" font-size="16" font-weight="700" fill="#1f2328">파놉틱 <tspan font-size="13" font-weight="400" fill="#57606a">panoptic</tspan></text>
+  <rect x="526" y="60" width="198" height="96" fill="#b6e3ff"/>
+  <rect x="526" y="156" width="198" height="54" fill="#afb8c1"/>
+  <text x="534" y="78" font-size="13" fill="#0a3069">하늘</text>
+  <text x="534" y="202" font-size="13" fill="#24292f">도로</text>
+  <circle cx="572" cy="112" r="11" fill="#cf222e"/><rect x="560" y="125" width="24" height="52" rx="7" fill="#cf222e"/>
+  <circle cx="625" cy="112" r="11" fill="#0550ae"/><rect x="613" y="125" width="24" height="52" rx="7" fill="#0550ae"/>
+  <circle cx="678" cy="112" r="11" fill="#1a7f37"/><rect x="666" y="125" width="24" height="52" rx="7" fill="#1a7f37"/>
+  <text x="526" y="240" font-size="14" font-weight="700" fill="#1a7f37">둘을 합친다</text>
+  <text x="526" y="266" font-size="13" fill="#1f2328">사람은 개체별로 나누고</text>
+  <text x="526" y="290" font-size="13" fill="#1f2328">하늘·도로도 빠짐없이</text>
+  <text x="526" y="314" font-size="13" fill="#1f2328">빈 픽셀이 하나도 없다</text>
+  <text x="526" y="338" font-size="13" fill="#57606a">대신 라벨 비용이 가장 크다</text>
+</svg>
