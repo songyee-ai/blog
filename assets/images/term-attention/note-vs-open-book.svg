@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="760" height="400" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="어텐션 이전에는 원문 전체를 쪽지 한 장 크기의 벡터 하나에 욱여넣고 번역했다. 어텐션은 원문을 펼쳐 둔 채, 번역 단어를 하나 만들 때마다 원문의 모든 단어에 가중치를 매겨 다시 본다">
+  <defs>
+    <marker id="at-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#bc4c00"/></marker>
+  </defs>
+
+  <!-- 왼쪽: 쪽지 한 장 -->
+  <rect x="20" y="20" width="350" height="360" rx="10" fill="#fff8f0" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="40" y="50" font-size="16" font-weight="700" fill="#bc4c00">이전 — 쪽지 한 장에 요약</text>
+  <text x="40" y="74" font-size="13" fill="#57606a">seq2seq의 고정벡터 병목</text>
+
+  <g font-size="13" fill="#1f2328" text-anchor="middle">
+    <rect x="40" y="96" width="70" height="34" rx="6" fill="#ffffff" stroke="#bc4c00"/><text x="75" y="118">I</text>
+    <rect x="120" y="96" width="70" height="34" rx="6" fill="#ffffff" stroke="#bc4c00"/><text x="155" y="118">go</text>
+    <rect x="200" y="96" width="70" height="34" rx="6" fill="#ffffff" stroke="#bc4c00"/><text x="235" y="118">to</text>
+    <rect x="280" y="96" width="70" height="34" rx="6" fill="#ffffff" stroke="#bc4c00"/><text x="315" y="118">school</text>
+  </g>
+  <path d="M40,140 L350,140 L225,200 L165,200 Z" fill="#bc4c00" opacity="0.15"/>
+  <rect x="160" y="200" width="70" height="38" rx="6" fill="#bc4c00"/>
+  <text x="195" y="224" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="700">벡터 1개</text>
+  <line x1="195" y1="242" x2="195" y2="272" stroke="#bc4c00" stroke-width="2" marker-end="url(#at-ar)"/>
+  <rect x="100" y="276" width="190" height="34" rx="6" fill="#ffffff" stroke="#bc4c00"/>
+  <text x="195" y="298" font-size="13" fill="#1f2328" text-anchor="middle">나는 학교에 간다</text>
+  <text x="40" y="340" font-size="14" fill="#1f2328">문장이 길어지면 앞부분이 뭉개진다</text>
+  <text x="40" y="364" font-size="13" fill="#57606a">문이 좁아서 다 못 들어간다</text>
+
+  <!-- 오른쪽: 펼쳐 둔 책 -->
+  <rect x="390" y="20" width="350" height="360" rx="10" fill="#eef6ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="410" y="50" font-size="16" font-weight="700" fill="#0969da">어텐션 — 원문을 펼쳐 두고 다시 보기</text>
+  <text x="410" y="74" font-size="13" fill="#57606a">번역 단어 하나마다 원문 전체에 가중치</text>
+
+  <g font-size="13" fill="#1f2328" text-anchor="middle">
+    <rect x="410" y="108" width="70" height="34" rx="6" fill="#ffffff" stroke="#0969da"/><text x="445" y="130">I</text>
+    <rect x="490" y="108" width="70" height="34" rx="6" fill="#ffffff" stroke="#0969da"/><text x="525" y="130">go</text>
+    <rect x="570" y="108" width="70" height="34" rx="6" fill="#ffffff" stroke="#0969da"/><text x="605" y="130">to</text>
+    <rect x="650" y="108" width="70" height="34" rx="6" fill="#0969da" stroke="#0969da"/><text x="685" y="130" fill="#ffffff" font-weight="700">school</text>
+  </g>
+  <g stroke="#0969da">
+    <line x1="445" y1="144" x2="555" y2="236" stroke-width="1" opacity="0.4"/>
+    <line x1="525" y1="144" x2="560" y2="236" stroke-width="1.5" opacity="0.5"/>
+    <line x1="605" y1="144" x2="570" y2="236" stroke-width="1" opacity="0.4"/>
+    <line x1="685" y1="144" x2="580" y2="236" stroke-width="6" opacity="0.85"/>
+  </g>
+  <g font-size="13" fill="#0969da" text-anchor="middle" font-weight="700">
+    <text x="445" y="101">0.05</text>
+    <text x="525" y="101">0.10</text>
+    <text x="605" y="101">0.05</text>
+    <text x="685" y="101">0.80</text>
+  </g>
+  <rect x="510" y="238" width="110" height="38" rx="6" fill="#0969da"/>
+  <text x="565" y="262" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="700">학교</text>
+  <text x="630" y="262" font-size="13" fill="#57606a">← 지금 만드는 말</text>
+  <text x="410" y="316" font-size="14" fill="#1f2328">길어져도 필요한 원문을 직접 찾아간다</text>
+  <text x="410" y="340" font-size="13" fill="#57606a">가중치는 다 더하면 1 (예시 숫자)</text>
+  <text x="410" y="364" font-size="13" fill="#57606a">다음 단어를 만들 땐 가중치가 새로 매겨진다</text>
+</svg>

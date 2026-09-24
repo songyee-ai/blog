@@ -1,0 +1,40 @@
+<svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="답만 외운 학생은 연습 문제는 100점이지만 새 시험은 40점이고, 풀이를 익힌 학생은 연습 90점 새 시험 85점이다. 두 점수의 벌어짐이 과적합이다">
+  <text x="20" y="30" font-size="16" font-weight="700" fill="#57606a">연습 문제 점수와 새 시험 점수 (예시)</text>
+
+  <!-- 왼쪽 카드: 외운 학생 -->
+  <rect x="20" y="50" width="350" height="280" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="40" y="80" font-size="15" font-weight="700" fill="#bc4c00">답만 외운 학생 = 과적합</text>
+  <text x="40" y="102" font-size="13" fill="#57606a">"3번 답은 ②" 식으로 통째로 기억</text>
+
+  <text x="40" y="142" font-size="13" fill="#1f2328">연습 문제</text>
+  <rect x="120" y="128" width="200" height="20" rx="4" fill="#bc4c00"/>
+  <text x="326" y="143" font-size="13" font-weight="700" fill="#1f2328">100</text>
+
+  <text x="40" y="182" font-size="13" fill="#1f2328">새 시험</text>
+  <rect x="120" y="168" width="80" height="20" rx="4" fill="#bc4c00" opacity="0.45"/>
+  <text x="206" y="183" font-size="13" font-weight="700" fill="#1f2328">40</text>
+
+  <text x="40" y="226" font-size="13" fill="#1f2328">두 점수 차이 <tspan font-weight="700" fill="#bc4c00">60점</tspan></text>
+  <text x="40" y="262" font-size="13" fill="#57606a">문제 숫자만 바뀌어도 무너진다</text>
+  <text x="40" y="286" font-size="13" fill="#57606a">연습 점수만 보면 1등처럼 보인다</text>
+
+  <!-- 오른쪽 카드: 익힌 학생 -->
+  <rect x="390" y="50" width="350" height="280" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="410" y="80" font-size="15" font-weight="700" fill="#1a7f37">풀이를 익힌 학생 = 일반화</text>
+  <text x="410" y="102" font-size="13" fill="#57606a">"이런 모양은 이렇게 푼다"를 기억</text>
+
+  <text x="410" y="142" font-size="13" fill="#1f2328">연습 문제</text>
+  <rect x="490" y="128" width="180" height="20" rx="4" fill="#1a7f37"/>
+  <text x="676" y="143" font-size="13" font-weight="700" fill="#1f2328">90</text>
+
+  <text x="410" y="182" font-size="13" fill="#1f2328">새 시험</text>
+  <rect x="490" y="168" width="170" height="20" rx="4" fill="#1a7f37" opacity="0.6"/>
+  <text x="666" y="183" font-size="13" font-weight="700" fill="#1f2328">85</text>
+
+  <text x="410" y="226" font-size="13" fill="#1f2328">두 점수 차이 <tspan font-weight="700" fill="#1a7f37">5점</tspan></text>
+  <text x="410" y="262" font-size="13" fill="#57606a">처음 보는 문제에도 대응한다</text>
+  <text x="410" y="286" font-size="13" fill="#57606a">연습 점수는 조금 낮아도 괜찮다</text>
+
+  <rect x="20" y="346" width="720" height="40" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="380" y="371" font-size="14" fill="#0969da" text-anchor="middle" font-weight="700">과적합을 알아보는 법: 훈련 점수만 보지 말고, 처음 보는 데이터 점수와의 차이를 본다</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="760" height="400" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="컨텍스트 윈도우는 한 번에 펼쳐 놓는 책상이다. 책상 위를 역할과 목표, 판단 기준, 근거 자료, 출력 형식의 네 칸으로 나눠 쓰고, 책상 밖 책가방 속 자료는 모델이 보지 못한다">
+  <text x="20" y="32" font-size="16" font-weight="700" fill="#57606a">컨텍스트 윈도우 = 한 번에 펼쳐 놓는 책상</text>
+
+  <!-- 책상 -->
+  <rect x="20" y="50" width="560" height="300" rx="12" fill="#fbf6ee" stroke="#9a6700" stroke-width="2"/>
+  <text x="40" y="78" font-size="13" fill="#9a6700">책상 넓이 = 한 번에 올릴 수 있는 토큰 수</text>
+
+  <rect x="40" y="94" width="250" height="110" rx="8" fill="#eef6ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="58" y="122" font-size="15" font-weight="700" fill="#0969da">① 역할 / 목표</text>
+  <text x="58" y="150" font-size="14" fill="#1f2328">무엇을 하는가</text>
+  <text x="58" y="178" font-size="13" fill="#57606a">"환불 검토 보조로서…"</text>
+
+  <rect x="310" y="94" width="250" height="110" rx="8" fill="#fff1e5" stroke="#bc4c00" stroke-width="2"/>
+  <text x="328" y="122" font-size="15" font-weight="700" fill="#bc4c00">② 판단 기준</text>
+  <text x="328" y="150" font-size="14" fill="#1f2328">무엇을 우선하나</text>
+  <text x="328" y="178" font-size="13" fill="#bc4c00">가장 자주 비워 두는 칸</text>
+
+  <rect x="40" y="220" width="250" height="110" rx="8" fill="#f6f8fa" stroke="#57606a" stroke-width="1.5"/>
+  <text x="58" y="248" font-size="15" font-weight="700" fill="#1f2328">③ 근거 자료</text>
+  <text x="58" y="276" font-size="14" fill="#1f2328">무엇을 보고 답하나</text>
+  <text x="58" y="304" font-size="13" fill="#57606a">[자료 A] [자료 B] 번호 붙이기</text>
+
+  <rect x="310" y="220" width="250" height="110" rx="8" fill="#effaf2" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="328" y="248" font-size="15" font-weight="700" fill="#1a7f37">④ 출력 형식</text>
+  <text x="328" y="276" font-size="14" fill="#1f2328">어떻게 내놓나</text>
+  <text x="328" y="304" font-size="13" fill="#57606a">[쟁점] [근거] [위험도]</text>
+
+  <!-- 책가방 -->
+  <rect x="600" y="130" width="140" height="170" rx="16" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="640" y="112" width="60" height="26" rx="10" fill="none" stroke="#8c959f" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="670" y="176" font-size="14" font-weight="700" fill="#57606a" text-anchor="middle">책가방 속</text>
+  <text x="670" y="206" font-size="13" fill="#57606a" text-anchor="middle">책상에 없는</text>
+  <text x="670" y="228" font-size="13" fill="#57606a" text-anchor="middle">자료는</text>
+  <text x="670" y="250" font-size="13" fill="#57606a" text-anchor="middle">못 본다</text>
+
+  <text x="20" y="382" font-size="14" fill="#57606a">책상이 넓다고 숙제가 잘 되는 게 아니다. 무엇을 어디에 놓느냐가 먼저다.</text>
+</svg>
