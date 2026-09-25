@@ -1,0 +1,28 @@
+<svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">요약이 받아쓰기 오류를 숨기는 과정</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">받아쓰기에서 글자 하나가 틀렸다. 요약을 거치면 어색함이 사라져 틀린 줄 모르게 된다.</text>
+
+  <rect x="24" y="66" width="220" height="80" rx="10" fill="none" stroke="#57606a"/>
+  <text x="40" y="90" font-size="12" font-weight="700" fill="#57606a">① 실제로 한 말</text>
+  <text x="40" y="114" font-size="12" fill="#1f2328">출시일을 2주 미루자는</text>
+  <text x="40" y="132" font-size="12" fill="#1f2328"><tspan font-weight="700" fill="#1a7f37">제안</tspan>입니다</text>
+  <text x="252" y="112" font-size="16" fill="#57606a">→</text>
+  <rect x="274" y="66" width="220" height="80" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="290" y="90" font-size="12" font-weight="700" fill="#9a6700">② 받아쓰기 결과</text>
+  <text x="290" y="114" font-size="12" fill="#1f2328">출시일을 2주 미루자는</text>
+  <text x="290" y="132" font-size="12" fill="#1f2328"><tspan font-weight="700" fill="#9a6700">제한</tspan>입니다 ← 어색하다</text>
+  <text x="502" y="112" font-size="16" fill="#57606a">→</text>
+  <text x="526" y="96" font-size="12" font-weight="700" fill="#1f2328">③ 회의록으로 정리</text>
+  <text x="526" y="116" font-size="11" fill="#57606a">시키는 말에 따라</text>
+  <text x="526" y="132" font-size="11" fill="#57606a">결과가 둘로 갈린다</text>
+
+  <rect x="24" y="162" width="712" height="70" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="40" y="186" font-size="12.5" font-weight="700" fill="#9a6700">"회의록으로 정리해 주세요"만 적었을 때</text>
+  <text x="40" y="208" font-size="11.5" fill="#1f2328">어색한 문장이 매끄럽게 다듬어져 흔적이 사라진다. 경고는 없다. 녹취에 없던 날짜까지 지어냈다.</text>
+  <text x="40" y="224" font-size="10.5" fill="#57606a">틀린 정보가 그럴듯해질수록 알아채기 어렵다</text>
+
+  <rect x="24" y="244" width="712" height="70" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="40" y="268" font-size="12.5" font-weight="700" fill="#1a7f37">"의심스러운 곳은 원문 그대로 인용해 표시하세요"를 넣었을 때</text>
+  <text x="40" y="290" font-size="11.5" fill="#1f2328">같은 모델이 틀린 곳을 원문 그대로 인용해 표시했다. 녹취 시각까지 남기면 나중에 그 자리만 다시 들으면 된다.</text>
+  <text x="40" y="306" font-size="10.5" fill="#57606a">잡아 줄지 말지를 운에 맡기지 않으려고 프롬프트에 적는다</text>
+</svg>

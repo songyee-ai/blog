@@ -1,0 +1,27 @@
+<svg viewBox="0 0 760 336" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">Whisper 크기별 한국어 글자 오류율</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">막대가 짧을수록 정확하다. 괄호 안은 내려받기 용량(8비트 판).</text>
+
+  <g font-size="12" fill="#1f2328">
+    <text x="24" y="93">tiny (78MB)</text>
+    <text x="24" y="133">base (148MB)</text>
+    <text x="24" y="173">small (486MB)</text>
+    <text x="24" y="213">medium (1.5GB)</text>
+    <text x="24" y="253">large-v3 (3.1GB)</text>
+    <text x="24" y="302" font-weight="700" fill="#1a7f37">한국어로 다시 배운</text>
+    <text x="24" y="318" font-weight="700" fill="#1a7f37">base (148MB)</text>
+  </g>
+  <rect x="180" y="76" width="402.6" height="24" rx="4" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="592" y="93" font-size="12" fill="#9a6700" font-weight="700">36.6%</text>
+  <rect x="180" y="116" width="446.6" height="24" rx="4" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="636" y="133" font-size="12" fill="#9a6700" font-weight="700">40.6%</text>
+  <rect x="180" y="156" width="192.5" height="24" rx="4" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="382" y="173" font-size="12" fill="#0969da" font-weight="700">17.5%</text>
+  <rect x="180" y="196" width="152.9" height="24" rx="4" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="343" y="213" font-size="12" fill="#0969da" font-weight="700">13.9%</text>
+  <rect x="180" y="236" width="88" height="24" rx="4" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="278" y="253" font-size="12" fill="#0969da" font-weight="700">8.0%</text>
+  <line x1="24" y1="276" x2="736" y2="276" stroke="#8c959f" stroke-dasharray="4 4"/>
+  <rect x="180" y="294" width="95.7" height="24" rx="4" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="286" y="311" font-size="12" fill="#1a7f37" font-weight="700">8.7% — 스무 배 큰 large-v3에 거의 붙었다</text>
+</svg>
