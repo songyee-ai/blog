@@ -1,0 +1,23 @@
+<svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">몇 걸음 옮겨 찍으면 앞의 물건이 더 크게 자리를 바꾼다 — 시차</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">같은 장면을 두 자리에서 찍었다. 점선은 첫 장에서 그 물건이 있던 자리다.</text>
+
+  <rect x="24" y="66" width="340" height="200" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="40" y="90" font-size="12.5" font-weight="700" fill="#0969da">① 첫 자리에서 찍은 장</text>
+  <rect x="236" y="120" width="60" height="60" rx="6" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="266" y="200" font-size="11" text-anchor="middle" fill="#1a7f37">먼 액자</text>
+  <rect x="96" y="150" width="70" height="90" rx="6" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="131" y="258" font-size="11" text-anchor="middle" fill="#9a6700">가까운 화분</text>
+
+  <rect x="396" y="66" width="340" height="200" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="412" y="90" font-size="12.5" font-weight="700" fill="#0969da">② 몇 걸음 옮겨 찍은 장</text>
+  <rect x="608" y="120" width="60" height="60" rx="6" fill="none" stroke="#1a7f37" stroke-dasharray="4 3"/>
+  <rect x="592" y="120" width="60" height="60" rx="6" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="622" y="200" font-size="11" text-anchor="middle" fill="#1a7f37">조금 밀림</text>
+  <rect x="468" y="150" width="70" height="90" rx="6" fill="none" stroke="#9a6700" stroke-dasharray="4 3"/>
+  <rect x="412" y="150" width="70" height="90" rx="6" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="510" y="258" font-size="11" text-anchor="middle" fill="#9a6700">많이 밀림</text>
+
+  <text x="24" y="292" font-size="12.5" font-weight="700" fill="#1f2328">밀린 양이 물건마다 다르다 → 그 차이에서 거리가 나온다</text>
+  <text x="24" y="314" font-size="11.5" fill="#57606a">제자리에서 몸만 돌리면 렌즈가 안 움직여서 이 어긋남이 생기지 않는다. 그래서 "걸어 다니며" 찍는다.</text>
+</svg>

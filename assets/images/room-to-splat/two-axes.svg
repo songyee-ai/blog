@@ -1,0 +1,23 @@
+<svg viewBox="0 0 760 264" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">느리다고 할 때 어디를 손대야 하나 — 축이 둘이다</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">형식을 바꿔도 알갱이는 하나도 안 줄어든다. 바뀌는 건 적어 두는 방식뿐이다.</text>
+
+  <rect x="24" y="66" width="346" height="182" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="40" y="90" font-size="13" font-weight="700" fill="#0969da">① 첫 화면까지 오래 기다린다</text>
+  <text x="40" y="112" font-size="11.5" fill="#1f2328">= 파일이 크다 → <tspan font-weight="700">형식을 바꾼다</tspan></text>
+  <rect x="40" y="130" width="300" height="22" rx="4" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="48" y="146" font-size="11" fill="#1f2328">.ply 219 MiB — 깃허브 100MiB 한계 초과</text>
+  <rect x="40" y="162" width="19" height="22" rx="4" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="66" y="178" font-size="11" fill="#1f2328">.sog 13.9 MiB — 15.8배 작아짐</text>
+  <text x="40" y="210" font-size="11" fill="#57606a">둘 다 알갱이 3,377,115개로 같다</text>
+  <text x="40" y="228" font-size="11" fill="#57606a">(내 추모관 파일 기준)</text>
+
+  <rect x="390" y="66" width="346" height="182" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="406" y="90" font-size="13" font-weight="700" fill="#9a6700">② 뜬 뒤에 뚝뚝 끊긴다</text>
+  <text x="406" y="112" font-size="11.5" fill="#1f2328">= 그릴 알갱이가 많다 → <tspan font-weight="700">알갱이를 줄인다</tspan></text>
+  <text x="406" y="142" font-size="11" fill="#1f2328">화면을 그릴 때마다 알갱이 전부를</text>
+  <text x="406" y="160" font-size="11" fill="#1f2328">먼 것부터 가까운 것 순으로 줄 세워 바른다</text>
+  <text x="406" y="178" font-size="11" fill="#1f2328">(반투명이라 순서가 바뀌면 색이 달라진다)</text>
+  <text x="406" y="210" font-size="11" fill="#57606a">형식 변환으로는 해결되지 않는다</text>
+  <text x="406" y="228" font-size="11" fill="#57606a">줄이면 K(알갱이 크기)도 함께 올린다</text>
+</svg>

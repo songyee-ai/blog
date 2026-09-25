@@ -1,0 +1,28 @@
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">알갱이 하나 = 값 62개 = 248바이트</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">막대 길이가 바이트 수다. 모양과 색을 정하는 값보다 "각도별 색"이 훨씬 크다.</text>
+
+  <rect x="24" y="72" width="36" height="40" fill="#ddf4ff" stroke="#0969da"/>
+  <rect x="60" y="72" width="36" height="40" fill="#f6f8fa" stroke="#8c959f"/>
+  <rect x="96" y="72" width="36" height="40" fill="#ddf4ff" stroke="#0969da"/>
+  <rect x="132" y="72" width="540" height="40" fill="#fff8c5" stroke="#9a6700"/>
+  <rect x="672" y="72" width="12" height="40" fill="#ddf4ff" stroke="#0969da"/>
+  <rect x="684" y="72" width="36" height="40" fill="#ddf4ff" stroke="#0969da"/>
+  <rect x="720" y="72" width="16" height="40" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="402" y="97" font-size="13" font-weight="700" text-anchor="middle" fill="#9a6700">구면 조화(각도별 색) 45개 · 180바이트 · 73%</text>
+
+  <g font-size="11" fill="#1f2328">
+    <text x="24" y="132">자리 3</text>
+    <text x="60" y="148" fill="#57606a">법선 3 (안 씀)</text>
+    <text x="96" y="166">기본 색 3</text>
+    <text x="608" y="132">불투명도 1</text>
+    <text x="648" y="148">크기 3</text>
+    <text x="690" y="166">회전 4</text>
+  </g>
+
+  <rect x="24" y="190" width="712" height="94" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="40" y="214" font-size="12.5" font-weight="700" fill="#1a7f37">오늘 만든 파일은 45칸을 통째로 뺐다 → 값 17개 × 4바이트 = 68바이트</text>
+  <text x="40" y="238" font-size="11.5" fill="#1f2328">사진에서 잰 색 하나만 있을 뿐, 여러 각도에서 색이 어떻게 변하는지는 배운 적이 없어서다.</text>
+  <text x="40" y="260" font-size="11.5" fill="#1f2328">0을 45개 채워 두면 화면은 같은데 파일만 3.6배가 된다.</text>
+  <text x="40" y="276" font-size="10.5" fill="#57606a">파일 크기 ÷ 알갱이 수: 56~68이면 각도별 색이 비어 있고, 236~248이면 학습으로 채운 파일이다</text>
+</svg>
