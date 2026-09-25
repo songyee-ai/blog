@@ -1,0 +1,44 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="Windows 컴퓨터 안에 Linux 방인 Ubuntu가 하나 들어 있다. Windows 쪽에는 C 드라이브 폴더와 Windows용 Claude Code가 있고, Linux 방에는 home 폴더와 Ubuntu 안에 따로 설치한 Claude Code, 그리고 Colab CLI가 있다. 두 쪽은 wsl.localhost 경로라는 문으로 파일을 주고받는다. Colab CLI는 Linux 방 안에서만 돌고, 거기서 구글 코랩의 T4 GPU를 빌린다. 설치는 관리자 권한 터미널에서 wsl --install 한 줄이다">
+  <defs>
+    <marker id="wsl-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+  </defs>
+
+  <!-- 바깥: Windows 컴퓨터 -->
+  <rect x="20" y="20" width="720" height="290" rx="12" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="40" y="48" font-size="15" font-weight="700" fill="#1f2328">내 Windows 컴퓨터</text>
+
+  <!-- Windows 쪽 -->
+  <rect x="40" y="66" width="290" height="176" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="58" y="94" font-size="15" font-weight="700" fill="#0969da">Windows 쪽</text>
+  <text x="58" y="122" font-size="13" fill="#1f2328">폴더: C:\Users\&lt;이름&gt;\...</text>
+  <text x="58" y="148" font-size="13" fill="#1f2328">Claude Code (Windows용)</text>
+  <text x="58" y="174" font-size="13" fill="#1f2328">PowerShell 터미널</text>
+  <text x="58" y="210" font-size="13" fill="#57606a">Colab CLI는 여기서 안 돈다</text>
+  <text x="58" y="230" font-size="13" fill="#57606a">(대신 Colab MCP + 브라우저)</text>
+
+  <!-- Linux 방 -->
+  <rect x="430" y="66" width="290" height="176" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="448" y="94" font-size="15" font-weight="700" fill="#bc4c00">Linux 방 (Ubuntu)</text>
+  <text x="448" y="122" font-size="13" fill="#1f2328">폴더: /home/&lt;이름&gt;/...</text>
+  <text x="448" y="148" font-size="13" fill="#1f2328">Claude Code (Ubuntu에 따로 설치)</text>
+  <text x="448" y="174" font-size="13" fill="#1f2328">설정 · 대화 기록도 따로</text>
+  <text x="448" y="210" font-size="13" fill="#1f2328">colab 명령 (Colab CLI)</text>
+  <text x="448" y="230" font-size="13" fill="#57606a">방 안 파일일수록 빠르다</text>
+
+  <!-- 문 -->
+  <line x1="334" y1="150" x2="426" y2="150" stroke="#57606a" stroke-width="2" marker-start="url(#wsl-ar)" marker-end="url(#wsl-ar)"/>
+  <text x="380" y="140" font-size="13" font-weight="700" fill="#1f2328" text-anchor="middle">문</text>
+  <text x="380" y="276" font-size="13" fill="#1f2328" text-anchor="middle">Windows 탐색기에서 방 안 보기: \\wsl.localhost\Ubuntu\home\&lt;이름&gt;</text>
+  <text x="380" y="298" font-size="13" fill="#57606a" text-anchor="middle">VS Code는 WSL 연결(Remote-WSL)로 방 안에 들어가 작업한다</text>
+
+  <!-- 코랩 -->
+  <line x1="575" y1="312" x2="575" y2="352" stroke="#57606a" stroke-width="2" marker-end="url(#wsl-ar)"/>
+  <rect x="430" y="356" width="290" height="66" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="448" y="384" font-size="15" font-weight="700" fill="#1a7f37">구글 코랩 T4 GPU</text>
+  <text x="448" y="406" font-size="13" fill="#1f2328">colab new -s room --gpu T4</text>
+
+  <!-- 설치 메모 -->
+  <rect x="40" y="356" width="290" height="66" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="58" y="384" font-size="14" font-weight="700" fill="#1f2328">방 들이기는 한 줄</text>
+  <text x="58" y="406" font-size="13" fill="#1f2328">관리자 터미널에서 wsl --install</text>
+</svg>

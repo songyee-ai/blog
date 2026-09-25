@@ -1,0 +1,39 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="첫 자리와 몇 걸음 옮긴 자리에서 본 두 장면이다. 뒤쪽 건물은 거의 그대로이고 앞쪽 기둥은 크게 자리를 옮겼다. 움직여 보인 양의 차이가 시차이고, 많이 움직일수록 가깝다. 사진이 한 장뿐이면 크기, 가림, 흐림 같은 단서로 앞뒤를 짐작하는데, 이것이 단안 깊이 추정이다">
+  <!-- 첫 장 -->
+  <text x="190" y="36" font-size="15" font-weight="700" fill="#1f2328" text-anchor="middle">첫 자리에서 본 장면</text>
+  <rect x="30" y="50" width="320" height="190" rx="10" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+  <path d="M60,190 L120,110 L180,190 z" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <rect x="283" y="120" width="14" height="100" fill="#bc4c00"/>
+  <circle cx="290" cy="112" r="32" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+
+  <!-- 옮긴 장 -->
+  <text x="570" y="36" font-size="15" font-weight="700" fill="#1f2328" text-anchor="middle">몇 걸음 옮긴 뒤</text>
+  <rect x="410" y="50" width="320" height="190" rx="10" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+  <!-- 원래 자리(점선) -->
+  <path d="M440,190 L500,110 L560,190 z" fill="none" stroke="#0969da" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <circle cx="670" cy="112" r="32" fill="none" stroke="#bc4c00" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <!-- 새 자리 -->
+  <path d="M430,190 L490,110 L550,190 z" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <rect x="583" y="120" width="14" height="100" fill="#bc4c00"/>
+  <circle cx="590" cy="112" r="32" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+
+  <!-- 밀린 양 -->
+  <g stroke-width="2">
+    <line x1="664" y1="228" x2="608" y2="228" stroke="#bc4c00"/>
+    <path d="M608,222 L598,228 L608,234 z" fill="#bc4c00"/>
+    <line x1="502" y1="204" x2="496" y2="204" stroke="#0969da"/>
+    <path d="M496,199 L488,204 L496,209 z" fill="#0969da"/>
+  </g>
+
+  <!-- 설명 -->
+  <rect x="30" y="262" width="340" height="62" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.2"/>
+  <text x="48" y="288" font-size="14" font-weight="700" fill="#0969da">뒤쪽 건물: 거의 그대로</text>
+  <text x="48" y="310" font-size="13" fill="#1f2328">밀린 양이 작으면 멀다</text>
+  <rect x="390" y="262" width="340" height="62" rx="8" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.2"/>
+  <text x="408" y="288" font-size="14" font-weight="700" fill="#bc4c00">앞쪽 기둥: 크게 옮겨 감</text>
+  <text x="408" y="310" font-size="13" fill="#1f2328">밀린 양이 크면 가깝다. 이 어긋남이 시차</text>
+
+  <rect x="30" y="342" width="700" height="62" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="48" y="368" font-size="14" font-weight="700" fill="#1a7f37">사진이 한 장뿐이라면 — 단안 깊이 추정</text>
+  <text x="48" y="390" font-size="13" fill="#1f2328">시차가 없으니 크기 · 가림 · 흐림 같은 단서로 앞뒤를 짐작한다. 모델은 이 짐작을 배워 둔 것이다</text>
+</svg>

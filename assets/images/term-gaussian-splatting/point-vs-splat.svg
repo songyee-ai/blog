@@ -1,0 +1,51 @@
+<svg viewBox="0 0 760 410" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="왼쪽은 포인트 클라우드의 점으로, 위치와 색 여섯 개 값만 있고 크기가 없어서 점 사이가 벌어지면 틈으로 뒤가 비친다. 오른쪽은 가우시안 스플랫의 알갱이로, 위치와 색에 불투명도, 크기, 회전, 구면 조화까지 값 62개를 가진다. 가운데가 진하고 가장자리로 갈수록 옅어지는 반투명 타원이라 여럿을 겹쳐 바르면 틈이 메워진다">
+  <defs>
+    <radialGradient id="gs-b"><stop offset="0" stop-color="#0969da" stop-opacity="0.85"/><stop offset="1" stop-color="#0969da" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gs-o"><stop offset="0" stop-color="#bc4c00" stop-opacity="0.85"/><stop offset="1" stop-color="#bc4c00" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gs-g"><stop offset="0" stop-color="#1a7f37" stop-opacity="0.85"/><stop offset="1" stop-color="#1a7f37" stop-opacity="0"/></radialGradient>
+  </defs>
+
+  <!-- 왼쪽: 점 -->
+  <rect x="20" y="20" width="350" height="290" rx="10" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="40" y="50" font-size="15" font-weight="700" fill="#1f2328">포인트 클라우드의 점</text>
+  <text x="40" y="74" font-size="13" fill="#57606a">위치 3 + 색 3 = 값 6개. 크기가 없다</text>
+  <rect x="40" y="92" width="310" height="150" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <g>
+    <circle cx="80" cy="120" r="3" fill="#0969da"/><circle cx="124" cy="116" r="3" fill="#0969da"/><circle cx="170" cy="124" r="3" fill="#bc4c00"/>
+    <circle cx="214" cy="118" r="3" fill="#bc4c00"/><circle cx="258" cy="122" r="3" fill="#1a7f37"/><circle cx="304" cy="117" r="3" fill="#1a7f37"/>
+    <circle cx="96" cy="160" r="3" fill="#0969da"/><circle cx="146" cy="166" r="3" fill="#0969da"/><circle cx="192" cy="158" r="3" fill="#bc4c00"/>
+    <circle cx="238" cy="164" r="3" fill="#bc4c00"/><circle cx="284" cy="160" r="3" fill="#1a7f37"/><circle cx="326" cy="166" r="3" fill="#1a7f37"/>
+    <circle cx="74" cy="206" r="3" fill="#0969da"/><circle cx="122" cy="210" r="3" fill="#0969da"/><circle cx="168" cy="202" r="3" fill="#bc4c00"/>
+    <circle cx="216" cy="208" r="3" fill="#bc4c00"/><circle cx="262" cy="204" r="3" fill="#1a7f37"/><circle cx="308" cy="210" r="3" fill="#1a7f37"/>
+  </g>
+  <text x="40" y="270" font-size="13" fill="#1f2328">가까이 가면 점 사이가 벌어지고</text>
+  <text x="40" y="292" font-size="13" fill="#1f2328">그 틈으로 뒤가 그대로 비친다</text>
+
+  <!-- 오른쪽: 알갱이 -->
+  <rect x="390" y="20" width="350" height="290" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="410" y="50" font-size="15" font-weight="700" fill="#0969da">가우시안 스플랫의 알갱이</text>
+  <text x="410" y="74" font-size="13" fill="#1f2328">+ 불투명도 · 크기 · 회전 · 구면 조화 = 값 62개</text>
+  <rect x="410" y="92" width="310" height="150" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <g>
+    <ellipse cx="460" cy="130" rx="48" ry="26" fill="url(#gs-b)" transform="rotate(-18 460 130)"/>
+    <ellipse cx="520" cy="148" rx="44" ry="30" fill="url(#gs-b)" transform="rotate(12 520 148)"/>
+    <ellipse cx="580" cy="126" rx="50" ry="24" fill="url(#gs-o)" transform="rotate(-8 580 126)"/>
+    <ellipse cx="636" cy="152" rx="46" ry="28" fill="url(#gs-o)" transform="rotate(20 636 152)"/>
+    <ellipse cx="684" cy="130" rx="36" ry="26" fill="url(#gs-g)"/>
+    <ellipse cx="470" cy="200" rx="50" ry="28" fill="url(#gs-b)" transform="rotate(10 470 200)"/>
+    <ellipse cx="540" cy="208" rx="46" ry="24" fill="url(#gs-o)" transform="rotate(-14 540 208)"/>
+    <ellipse cx="606" cy="196" rx="52" ry="28" fill="url(#gs-g)" transform="rotate(6 606 196)"/>
+    <ellipse cx="672" cy="210" rx="44" ry="26" fill="url(#gs-g)" transform="rotate(-20 672 210)"/>
+  </g>
+  <text x="410" y="270" font-size="13" fill="#1f2328">가운데가 진하고 가장자리가 옅은 타원이라</text>
+  <text x="410" y="292" font-size="13" fill="#1f2328">겹쳐 바르면 틈이 메워져 표면처럼 보인다</text>
+
+  <!-- 화살표 -->
+  <line x1="352" y1="167" x2="404" y2="167" stroke="#57606a" stroke-width="2"/>
+  <path d="M404,161 L414,167 L404,173 z" fill="#57606a"/>
+
+  <!-- 아래 메모 -->
+  <rect x="20" y="330" width="720" height="62" rx="8" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="40" y="356" font-size="14" font-weight="700" fill="#1f2328">점 → 알갱이로 바꿀 때 붙는 세 가지</text>
+  <text x="40" y="380" font-size="13" fill="#1f2328">부피가 있다 · 반투명해서 뒤엣것과 섞인다 · 공이 아니라 눌리고 기울어진 타원이다</text>
+</svg>

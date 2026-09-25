@@ -37,6 +37,7 @@
 | 13 | 2026-09-15 | `ocr-detect-segment` |
 | 14 | 2026-09-16 | `image-generation` (작업물: `pose-image-tool`) |
 | 15 | 2026-09-17 | `multimodal-speech` |
+| 16 | 2026-09-18 | `room-to-splat` (작업물: `my-open-space`) |
 
 ## 참고 — 원본 정리 노트
 
