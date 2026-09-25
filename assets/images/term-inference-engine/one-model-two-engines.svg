@@ -1,0 +1,68 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="같은 gemma4 가중치 파일을 내 기기 혼자용 엔진인 Ollama나 llama.cpp로 돌리면 글과 이미지만 넣을 수 있고, 서버 여럿용 엔진인 vLLM이나 SGLang으로 돌리면 소리와 영상까지 넣을 수 있다. 어느 엔진이든 파일을 메모리에 올리고, 입력을 숫자로 바꾸고, GPU나 CPU로 계산하고, 나온 숫자를 글자로 되돌린다">
+  <defs>
+    <marker id="ie-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+  </defs>
+
+  <!-- 가중치 파일 -->
+  <rect x="20" y="30" width="210" height="255" rx="10" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="40" y="60" font-size="15" font-weight="700" fill="#1f2328">모델 가중치 파일</text>
+  <text x="40" y="82" font-size="13" fill="#57606a">= 요리 레시피</text>
+  <path d="M85,104 L145,104 L165,124 L165,196 L85,196 Z" fill="#ffffff" stroke="#8c959f" stroke-width="1.5"/>
+  <path d="M145,104 L145,124 L165,124" fill="none" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="125" y="140" font-size="12" fill="#57606a" text-anchor="middle">0.12 -1.8</text>
+  <text x="125" y="158" font-size="12" fill="#57606a" text-anchor="middle">3.07 0.44</text>
+  <text x="125" y="176" font-size="12" fill="#57606a" text-anchor="middle">-0.9 …</text>
+  <text x="40" y="230" font-size="14" font-weight="700" fill="#1f2328">gemma4 (같은 파일)</text>
+  <text x="40" y="254" font-size="13" fill="#57606a">혼자서는 아무것도</text>
+  <text x="40" y="272" font-size="13" fill="#57606a">하지 못한다</text>
+
+  <line x1="232" y1="150" x2="296" y2="92" stroke="#57606a" stroke-width="2" marker-end="url(#ie-ar)"/>
+  <line x1="232" y1="170" x2="296" y2="224" stroke="#57606a" stroke-width="2" marker-end="url(#ie-ar)"/>
+
+  <!-- 내 기기 혼자용 -->
+  <rect x="300" y="30" width="440" height="120" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="320" y="60" font-size="15" font-weight="700" fill="#1a7f37">내 기기 혼자용</text>
+  <text x="320" y="84" font-size="14" fill="#1f2328">Ollama · llama.cpp</text>
+  <text x="320" y="110" font-size="13" fill="#57606a">설치가 쉽다</text>
+  <text x="320" y="130" font-size="13" fill="#57606a">그래픽카드 없어도 돈다</text>
+  <text x="578" y="56" font-size="13" font-weight="700" fill="#1f2328">넣을 수 있는 입력</text>
+  <rect x="578" y="68" width="68" height="28" rx="14" fill="#ffffff" stroke="#1a7f37"/><text x="612" y="87" font-size="13" fill="#1a7f37" text-anchor="middle">글</text>
+  <rect x="654" y="68" width="68" height="28" rx="14" fill="#ffffff" stroke="#1a7f37"/><text x="688" y="87" font-size="13" fill="#1a7f37" text-anchor="middle">이미지</text>
+  <rect x="578" y="104" width="68" height="28" rx="14" fill="none" stroke="#8c959f" stroke-dasharray="4 3"/><text x="612" y="123" font-size="13" fill="#8c959f" text-anchor="middle">소리</text>
+  <rect x="654" y="104" width="68" height="28" rx="14" fill="none" stroke="#8c959f" stroke-dasharray="4 3"/><text x="688" y="123" font-size="13" fill="#8c959f" text-anchor="middle">영상</text>
+
+  <!-- 서버 여럿용 -->
+  <rect x="300" y="165" width="440" height="120" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="320" y="195" font-size="15" font-weight="700" fill="#0969da">서버 여럿용</text>
+  <text x="320" y="219" font-size="14" fill="#1f2328">vLLM · SGLang</text>
+  <text x="320" y="245" font-size="13" fill="#57606a">요청을 겹쳐 밀어 넣어</text>
+  <text x="320" y="265" font-size="13" fill="#57606a">GPU를 쉬지 않게 한다</text>
+  <text x="578" y="191" font-size="13" font-weight="700" fill="#1f2328">넣을 수 있는 입력</text>
+  <rect x="578" y="203" width="68" height="28" rx="14" fill="#ffffff" stroke="#0969da"/><text x="612" y="222" font-size="13" fill="#0969da" text-anchor="middle">글</text>
+  <rect x="654" y="203" width="68" height="28" rx="14" fill="#ffffff" stroke="#0969da"/><text x="688" y="222" font-size="13" fill="#0969da" text-anchor="middle">이미지</text>
+  <rect x="578" y="239" width="68" height="28" rx="14" fill="#ffffff" stroke="#0969da"/><text x="612" y="258" font-size="13" fill="#0969da" text-anchor="middle">소리</text>
+  <rect x="654" y="239" width="68" height="28" rx="14" fill="#ffffff" stroke="#0969da"/><text x="688" y="258" font-size="13" fill="#0969da" text-anchor="middle">영상</text>
+
+  <!-- 엔진이 하는 일 -->
+  <text x="20" y="328" font-size="15" font-weight="700" fill="#6e7781">어느 엔진이든 하는 일 (= 부엌)</text>
+  <g font-size="13">
+    <rect x="20" y="344" width="160" height="66" rx="8" fill="#fff1e5" stroke="#bc4c00"/>
+    <text x="100" y="372" fill="#bc4c00" font-weight="700" text-anchor="middle">① 메모리에 올리기</text>
+    <text x="100" y="394" fill="#57606a" text-anchor="middle">파일을 펼쳐 놓는다</text>
+    <line x1="182" y1="377" x2="210" y2="377" stroke="#57606a" stroke-width="2" marker-end="url(#ie-ar)"/>
+
+    <rect x="213" y="344" width="160" height="66" rx="8" fill="#fff1e5" stroke="#bc4c00"/>
+    <text x="293" y="372" fill="#bc4c00" font-weight="700" text-anchor="middle">② 입력을 숫자로</text>
+    <text x="293" y="394" fill="#57606a" text-anchor="middle">글·그림을 바꾼다</text>
+    <line x1="375" y1="377" x2="403" y2="377" stroke="#57606a" stroke-width="2" marker-end="url(#ie-ar)"/>
+
+    <rect x="406" y="344" width="160" height="66" rx="8" fill="#fff1e5" stroke="#bc4c00"/>
+    <text x="486" y="372" fill="#bc4c00" font-weight="700" text-anchor="middle">③ 계산 돌리기</text>
+    <text x="486" y="394" fill="#57606a" text-anchor="middle">GPU 또는 CPU에서</text>
+    <line x1="568" y1="377" x2="596" y2="377" stroke="#57606a" stroke-width="2" marker-end="url(#ie-ar)"/>
+
+    <rect x="599" y="344" width="141" height="66" rx="8" fill="#fff1e5" stroke="#bc4c00"/>
+    <text x="670" y="372" fill="#bc4c00" font-weight="700" text-anchor="middle">④ 숫자를 글자로</text>
+    <text x="670" y="394" fill="#57606a" text-anchor="middle">답으로 되돌린다</text>
+  </g>
+</svg>

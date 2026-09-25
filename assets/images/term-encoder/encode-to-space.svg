@@ -1,0 +1,51 @@
+<svg viewBox="0 0 760 380" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="개 사진은 이미지 인코더를 거쳐 숫자 목록이 되고, 개 사진이라는 문장은 텍스트 인코더를 거쳐 숫자 목록이 된다. 두 숫자 목록은 같은 공간에 놓이고 뜻이 맞으면 가까이 붙는다. 인코더의 출력은 원본을 복사한 것이 아니라 쓸모 있는 특징만 줄여 담은 표현이며, 디코더는 반대로 숫자를 글이나 그림, 소리로 되돌린다">
+  <defs>
+    <marker id="enc-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+  </defs>
+
+  <!-- 입력 -->
+  <rect x="20" y="30" width="140" height="80" rx="10" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="90" y="62" font-size="15" font-weight="700" fill="#1f2328" text-anchor="middle">개 사진</text>
+  <text x="90" y="86" font-size="13" fill="#57606a" text-anchor="middle">픽셀 수십만 개</text>
+  <rect x="20" y="150" width="140" height="80" rx="10" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="90" y="182" font-size="15" font-weight="700" fill="#1f2328" text-anchor="middle">"개 사진"</text>
+  <text x="90" y="206" font-size="13" fill="#57606a" text-anchor="middle">글자 몇 개</text>
+
+  <!-- 인코더 -->
+  <rect x="190" y="30" width="150" height="80" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="265" y="62" font-size="15" font-weight="700" fill="#0969da" text-anchor="middle">이미지 인코더</text>
+  <text x="265" y="86" font-size="13" fill="#1f2328" text-anchor="middle">특징만 골라 담기</text>
+  <rect x="190" y="150" width="150" height="80" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="265" y="182" font-size="15" font-weight="700" fill="#bc4c00" text-anchor="middle">텍스트 인코더</text>
+  <text x="265" y="206" font-size="13" fill="#1f2328" text-anchor="middle">뜻만 골라 담기</text>
+
+  <!-- 숫자 목록 -->
+  <rect x="370" y="30" width="160" height="80" rx="10" fill="#ffffff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="450" y="62" font-size="13" fill="#1f2328" text-anchor="middle">[0.8, 0.1, -0.3, …]</text>
+  <text x="450" y="86" font-size="13" fill="#57606a" text-anchor="middle">숫자 몇백 개</text>
+  <rect x="370" y="150" width="160" height="80" rx="10" fill="#ffffff" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="450" y="182" font-size="13" fill="#1f2328" text-anchor="middle">[0.7, 0.2, -0.4, …]</text>
+  <text x="450" y="206" font-size="13" fill="#57606a" text-anchor="middle">숫자 몇백 개</text>
+
+  <!-- 공간 -->
+  <rect x="560" y="30" width="180" height="200" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="650" y="58" font-size="15" font-weight="700" fill="#1a7f37" text-anchor="middle">같은 공간</text>
+  <circle cx="635" cy="120" r="8" fill="#0969da"/>
+  <circle cx="656" cy="130" r="8" fill="#bc4c00"/>
+  <text x="728" y="178" font-size="13" fill="#1f2328" text-anchor="end">뜻이 맞으면 가까이</text>
+  <circle cx="600" cy="200" r="6" fill="#8c959f"/>
+  <text x="614" y="205" font-size="13" fill="#57606a">"고양이" (멀리)</text>
+
+  <!-- 화살표 -->
+  <g stroke="#57606a" stroke-width="2" marker-end="url(#enc-ar)">
+    <line x1="162" y1="70" x2="187" y2="70"/><line x1="342" y1="70" x2="367" y2="70"/>
+    <line x1="162" y1="190" x2="187" y2="190"/><line x1="342" y1="190" x2="367" y2="190"/>
+    <line x1="532" y1="70" x2="626" y2="113"/><line x1="532" y1="190" x2="648" y2="138"/>
+  </g>
+
+  <!-- 아래 메모 -->
+  <rect x="20" y="258" width="720" height="104" rx="8" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="40" y="286" font-size="14" font-weight="700" fill="#1f2328">인코더가 내놓는 숫자 = 표현(representation)</text>
+  <text x="40" y="312" font-size="13" fill="#1f2328">원본을 줄여 넣은 압축 파일이 아니다. 쓸모 있는 특징만 담아서 원본으로 되돌릴 수 없다</text>
+  <text x="40" y="338" font-size="13" fill="#1f2328">디코더는 반대 방향이다. 숫자를 받아 글 · 그림 · 소리로 풀어낸다</text>
+</svg>

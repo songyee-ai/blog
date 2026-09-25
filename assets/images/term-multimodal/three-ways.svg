@@ -1,0 +1,74 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="멀티모달 모델이 여러 종류의 정보를 합치는 세 가지 방식. 연결형은 사진이나 소리를 전용 인코더가 숫자로 바꿔 언어 모델에 넘긴다. 공유 임베딩형은 사진과 문장을 각자의 인코더로 바꿔 같은 의미 공간에 놓고 거리로 짝을 찾는다. 네이티브형은 글, 그림, 소리를 처음부터 하나의 모델이 함께 받아 글이나 소리로 답한다">
+  <defs>
+    <marker id="mm-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+  </defs>
+
+  <!-- ① 연결형 -->
+  <rect x="20" y="20" width="230" height="380" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="38" y="50" font-size="16" font-weight="700" fill="#0969da">① 연결형</text>
+  <text x="38" y="72" font-size="13" fill="#1f2328">전용 인코더가 LLM에 넘긴다</text>
+  <g font-size="13" fill="#1f2328" text-anchor="middle">
+    <rect x="60" y="90" width="150" height="32" rx="6" fill="#ffffff" stroke="#8c959f"/><text x="135" y="111">사진 · 소리</text>
+    <rect x="60" y="140" width="150" height="32" rx="6" fill="#ffffff" stroke="#0969da"/><text x="135" y="161">전용 인코더</text>
+    <rect x="60" y="190" width="150" height="32" rx="6" fill="#ffffff" stroke="#0969da"/><text x="135" y="211">LLM (언어 모델)</text>
+    <rect x="60" y="240" width="150" height="32" rx="6" fill="#ffffff" stroke="#8c959f"/><text x="135" y="261">글로 된 답</text>
+  </g>
+  <g stroke="#57606a" stroke-width="1.5" marker-end="url(#mm-ar)">
+    <line x1="135" y1="123" x2="135" y2="137"/><line x1="135" y1="173" x2="135" y2="187"/><line x1="135" y1="223" x2="135" y2="237"/>
+  </g>
+  <text x="38" y="300" font-size="13" font-weight="700" fill="#1a7f37">강점</text>
+  <text x="38" y="320" font-size="13" fill="#1f2328">이미 있는 LLM을 살려 쓰기 쉽다</text>
+  <text x="38" y="346" font-size="13" font-weight="700" fill="#bc4c00">조심</text>
+  <text x="38" y="366" font-size="13" fill="#1f2328">넘기는 동안 작은 단서가</text>
+  <text x="38" y="384" font-size="13" fill="#1f2328">빠질 수 있다</text>
+
+  <!-- ② 공유 임베딩형 -->
+  <rect x="265" y="20" width="230" height="380" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="283" y="50" font-size="16" font-weight="700" fill="#bc4c00">② 공유 임베딩형</text>
+  <text x="283" y="72" font-size="13" fill="#1f2328">같은 의미 공간에 나란히 놓는다</text>
+  <g font-size="13" fill="#1f2328" text-anchor="middle">
+    <rect x="283" y="90" width="92" height="32" rx="6" fill="#ffffff" stroke="#8c959f"/><text x="329" y="111">개 사진</text>
+    <rect x="385" y="90" width="92" height="32" rx="6" fill="#ffffff" stroke="#8c959f"/><text x="431" y="111">"개 사진"</text>
+    <rect x="283" y="140" width="92" height="32" rx="6" fill="#ffffff" stroke="#bc4c00"/><text x="329" y="161">그림 인코더</text>
+    <rect x="385" y="140" width="92" height="32" rx="6" fill="#ffffff" stroke="#bc4c00"/><text x="431" y="161">글 인코더</text>
+  </g>
+  <rect x="283" y="190" width="194" height="82" rx="8" fill="#ffffff" stroke="#bc4c00" stroke-dasharray="5 3"/>
+  <text x="297" y="210" font-size="13" fill="#57606a">의미 공간</text>
+  <circle cx="370" cy="238" r="6" fill="#0969da"/>
+  <circle cx="386" cy="244" r="6" fill="#bc4c00"/>
+  <text x="400" y="248" font-size="13" fill="#1f2328">가까움 = 짝</text>
+  <circle cx="310" cy="258" r="5" fill="#8c959f"/>
+  <text x="320" y="262" font-size="12" fill="#57606a">고양이 (멀리)</text>
+  <g stroke="#57606a" stroke-width="1.5" marker-end="url(#mm-ar)">
+    <line x1="329" y1="123" x2="329" y2="137"/><line x1="431" y1="123" x2="431" y2="137"/>
+    <line x1="329" y1="173" x2="365" y2="228"/><line x1="431" y1="173" x2="392" y2="234"/>
+  </g>
+  <text x="283" y="300" font-size="13" font-weight="700" fill="#1a7f37">강점</text>
+  <text x="283" y="320" font-size="13" fill="#1f2328">사진으로 글 찾기, 글로 사진</text>
+  <text x="283" y="338" font-size="13" fill="#1f2328">찾기에 강하다</text>
+  <text x="283" y="362" font-size="13" font-weight="700" fill="#bc4c00">조심</text>
+  <text x="283" y="382" font-size="13" fill="#1f2328">가깝다고 정답은 아니다</text>
+
+  <!-- ③ 네이티브 -->
+  <rect x="510" y="20" width="230" height="380" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="528" y="50" font-size="16" font-weight="700" fill="#1a7f37">③ 네이티브 (옴니)</text>
+  <text x="528" y="72" font-size="13" fill="#1f2328">처음부터 한 모델이 다 받는다</text>
+  <g font-size="13" fill="#1f2328" text-anchor="middle">
+    <rect x="528" y="90" width="60" height="32" rx="6" fill="#ffffff" stroke="#8c959f"/><text x="558" y="111">글</text>
+    <rect x="595" y="90" width="60" height="32" rx="6" fill="#ffffff" stroke="#8c959f"/><text x="625" y="111">그림</text>
+    <rect x="662" y="90" width="60" height="32" rx="6" fill="#ffffff" stroke="#8c959f"/><text x="692" y="111">소리</text>
+    <rect x="528" y="146" width="194" height="70" rx="8" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5"/>
+    <text x="625" y="176" font-weight="700" fill="#1a7f37">하나의 모델</text>
+    <text x="625" y="198" fill="#57606a">예: GPT-4o, Gemma 4</text>
+    <rect x="550" y="240" width="150" height="32" rx="6" fill="#ffffff" stroke="#8c959f"/><text x="625" y="261">글 · 소리로 답</text>
+  </g>
+  <g stroke="#57606a" stroke-width="1.5" marker-end="url(#mm-ar)">
+    <line x1="558" y1="123" x2="580" y2="143"/><line x1="625" y1="123" x2="625" y2="143"/><line x1="692" y1="123" x2="670" y2="143"/>
+    <line x1="625" y1="217" x2="625" y2="237"/>
+  </g>
+  <text x="528" y="300" font-size="13" font-weight="700" fill="#1a7f37">강점</text>
+  <text x="528" y="320" font-size="13" fill="#1f2328">화면·소리·말투를 한 번에 본다</text>
+  <text x="528" y="346" font-size="13" font-weight="700" fill="#bc4c00">조심</text>
+  <text x="528" y="366" font-size="13" fill="#1f2328">비용·속도·검증이 복잡하고</text>
+  <text x="528" y="384" font-size="13" fill="#1f2328">중간 결과가 안 남는다</text>
+</svg>

@@ -36,6 +36,7 @@
 | 12 | 2026-09-14 | `local-llm-ollama` |
 | 13 | 2026-09-15 | `ocr-detect-segment` |
 | 14 | 2026-09-16 | `image-generation` (작업물: `pose-image-tool`) |
+| 15 | 2026-09-17 | `multimodal-speech` |
 
 ## 참고 — 원본 정리 노트
 

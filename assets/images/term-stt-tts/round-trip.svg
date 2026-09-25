@@ -1,0 +1,60 @@
+<svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="말소리를 스펙트로그램으로 바꿔 STT가 글자로 받아쓰고, 그 과정에서 억양과 침묵이 빠진다. TTS는 글자를 다시 말소리로 합성한다. 합성한 소리를 다시 STT에 넣어 원문과 대조하면 알아들을 수 있는지는 확인되지만 자연스러운지는 확인되지 않는다">
+  <defs>
+    <marker id="st-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0969da"/></marker>
+    <marker id="st-ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1a7f37"/></marker>
+  </defs>
+
+  <!-- 1. 말소리 입력 -->
+  <rect x="20" y="30" width="200" height="220" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="40" y="60" font-size="15" font-weight="700" fill="#0969da">말소리</text>
+  <text x="40" y="82" font-size="13" fill="#57606a">먼저 그림으로 바꾼다</text>
+  <!-- 미니 스펙트로그램 -->
+  <rect x="40" y="96" width="160" height="96" rx="4" fill="#ffffff" stroke="#d0d7de"/>
+  <g fill="#0969da">
+    <rect x="48" y="170" width="14" height="10" opacity="0.8"/><rect x="64" y="166" width="14" height="10" opacity="0.9"/><rect x="80" y="160" width="14" height="10" opacity="0.7"/><rect x="96" y="164" width="14" height="10" opacity="0.9"/><rect x="112" y="170" width="14" height="10" opacity="0.6"/><rect x="128" y="168" width="14" height="10" opacity="0.8"/><rect x="144" y="162" width="14" height="10" opacity="0.9"/><rect x="160" y="166" width="14" height="10" opacity="0.7"/><rect x="176" y="170" width="14" height="10" opacity="0.5"/>
+    <rect x="48" y="140" width="14" height="8" opacity="0.4"/><rect x="64" y="134" width="14" height="8" opacity="0.6"/><rect x="80" y="126" width="14" height="8" opacity="0.8"/><rect x="96" y="130" width="14" height="8" opacity="0.5"/><rect x="112" y="142" width="14" height="8" opacity="0.7"/><rect x="128" y="136" width="14" height="8" opacity="0.4"/><rect x="144" y="122" width="14" height="8" opacity="0.8"/><rect x="160" y="128" width="14" height="8" opacity="0.6"/><rect x="176" y="138" width="14" height="8" opacity="0.3"/>
+    <rect x="64" y="108" width="14" height="6" opacity="0.3"/><rect x="80" y="104" width="14" height="6" opacity="0.4"/><rect x="128" y="110" width="14" height="6" opacity="0.3"/><rect x="144" y="104" width="14" height="6" opacity="0.5"/>
+  </g>
+  <text x="40" y="214" font-size="13" fill="#57606a">가로 = 시간</text>
+  <text x="40" y="234" font-size="13" fill="#57606a">세로 = 소리의 높낮이</text>
+
+  <!-- 화살표 STT -->
+  <line x1="222" y1="140" x2="278" y2="140" stroke="#0969da" stroke-width="2" marker-end="url(#st-ar)"/>
+  <text x="250" y="128" font-size="15" font-weight="700" fill="#0969da" text-anchor="middle">STT</text>
+
+  <!-- 2. 글자 -->
+  <rect x="280" y="30" width="200" height="220" rx="10" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="300" y="60" font-size="15" font-weight="700" fill="#1f2328">글자</text>
+  <text x="300" y="82" font-size="13" fill="#57606a">받아쓴 결과</text>
+  <rect x="300" y="100" width="160" height="50" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="380" y="132" font-size="17" font-weight="700" fill="#1f2328" text-anchor="middle">안녕하세요</text>
+  <rect x="300" y="166" width="160" height="68" rx="6" fill="#fff1e5" stroke="#bc4c00"/>
+  <text x="314" y="190" font-size="13" font-weight="700" fill="#bc4c00">여기서 빠지는 것</text>
+  <text x="314" y="214" font-size="13" fill="#bc4c00">억양 · 침묵 · 망설임</text>
+
+  <!-- 화살표 TTS -->
+  <line x1="482" y1="140" x2="538" y2="140" stroke="#0969da" stroke-width="2" marker-end="url(#st-ar)"/>
+  <text x="510" y="128" font-size="15" font-weight="700" fill="#0969da" text-anchor="middle">TTS</text>
+
+  <!-- 3. 합성한 말소리 -->
+  <rect x="540" y="30" width="200" height="220" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="560" y="60" font-size="15" font-weight="700" fill="#0969da">새 말소리</text>
+  <text x="560" y="82" font-size="13" fill="#57606a">글자를 읽어 합성한다</text>
+  <rect x="560" y="96" width="160" height="96" rx="4" fill="#ffffff" stroke="#d0d7de"/>
+  <path d="M570,144 L580,144 L585,124 L590,164 L595,114 L600,174 L605,130 L610,158 L615,144 L625,144 L630,120 L635,168 L640,110 L645,178 L650,128 L655,160 L660,144 L670,144 L675,130 L680,158 L685,120 L690,168 L695,136 L700,152 L705,144 L712,144" fill="none" stroke="#0969da" stroke-width="2"/>
+  <text x="560" y="214" font-size="13" fill="#57606a">목소리를 고르거나</text>
+  <text x="560" y="234" font-size="13" fill="#57606a">(동의를 받아) 복제한다</text>
+
+  <!-- 되돌리기 확인 -->
+  <path d="M640,252 L640,300 L380,300 L380,256" fill="none" stroke="#1a7f37" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#st-ar2)"/>
+  <rect x="424" y="286" width="172" height="28" rx="6" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="510" y="305" font-size="13" font-weight="700" fill="#1a7f37" text-anchor="middle">다시 STT로 받아쓰기</text>
+
+  <rect x="20" y="336" width="350" height="74" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="40" y="364" font-size="14" font-weight="700" fill="#1a7f37">원문과 같으면 확인되는 것</text>
+  <text x="40" y="390" font-size="13" fill="#1f2328">발음을 알아들을 수 있다</text>
+
+  <rect x="390" y="336" width="350" height="74" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="410" y="364" font-size="14" font-weight="700" fill="#bc4c00">그래도 확인 안 되는 것</text>
+  <text x="410" y="390" font-size="13" fill="#1f2328">자연스럽게 들리는가 → 직접 들어 본다</text>
+</svg>
