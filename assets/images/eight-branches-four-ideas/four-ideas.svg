@@ -1,0 +1,39 @@
+<svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">달라 보이는 여덟 갈래, 밑에 깔린 발상은 넷</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">새 분야가 나오면 이 넷 중 어디에 서 있는지부터 본다. 한 갈래에 여러 발상이 겹치기도 한다.</text>
+
+  <g font-size="12">
+    <rect x="24" y="70" width="330" height="70" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="40" y="94" font-weight="700" fill="#0969da">① 기반 모델</text>
+    <text x="40" y="114" fill="#1f2328">남의 자료로 미리 넓게 배워 두고,</text>
+    <text x="40" y="130" fill="#1f2328">내 자료엔 학습 없이 바로 답한다</text>
+
+    <rect x="24" y="150" width="330" height="70" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+    <text x="40" y="174" font-weight="700" fill="#9a6700">② 확산</text>
+    <text x="40" y="194" fill="#1f2328">일부러 흩뜨린 것을 되돌리는 법을 배워,</text>
+    <text x="40" y="210" fill="#1f2328">잡음에서 없던 것을 꺼낸다</text>
+
+    <rect x="24" y="230" width="330" height="70" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="40" y="254" font-weight="700" fill="#1a7f37">③ 그래프 신경망</text>
+    <text x="40" y="274" fill="#1f2328">점과 선으로 보고,</text>
+    <text x="40" y="290" fill="#1f2328">이웃끼리 정보를 주고받는다</text>
+
+    <rect x="24" y="310" width="330" height="70" rx="10" fill="#fbefff" stroke="#8250df"/>
+    <text x="40" y="334" font-weight="700" fill="#8250df">④ 검증 가능한 보상</text>
+    <text x="40" y="354" fill="#1f2328">기계가 맞았는지 확인할 수 있는</text>
+    <text x="40" y="370" fill="#1f2328">문제에만 점수를 건다</text>
+
+    <text x="370" y="94" fill="#0969da">→ 표·시계열 (Chronos, TabICL)</text>
+    <text x="370" y="114" fill="#0969da">→ 유전체 (Geneformer) · 세포 영상 (cellpose)</text>
+    <text x="370" y="134" fill="#0969da">→ 단백질 구조 예측 (ColabFold)</text>
+    <text x="370" y="174" fill="#9a6700">→ 단백질 뼈대 (RFdiffusion)</text>
+    <text x="370" y="194" fill="#9a6700">→ 약이 될 분자 · 새 결정 (MatterGen)</text>
+    <text x="370" y="214" fill="#9a6700">→ 로봇의 동작 · 세계 모델의 다음 화면</text>
+    <text x="370" y="254" fill="#1a7f37">→ 원자 사이의 힘 (CHGNet)</text>
+    <text x="370" y="274" fill="#1a7f37">→ 전지구 기상 (GraphCast)</text>
+    <text x="370" y="294" fill="#1a7f37">→ 뼈대에 서열 입히기 (ProteinMPNN)</text>
+    <text x="370" y="334" fill="#8250df">→ 수학 풀이 강화학습 (GRPO)</text>
+    <text x="370" y="354" fill="#8250df">→ 기계가 검사하는 증명 (Lean)</text>
+    <text x="370" y="374" fill="#8250df">→ 기준선과 견주기, 설계를 예측기로 되돌려 거르기</text>
+  </g>
+</svg>

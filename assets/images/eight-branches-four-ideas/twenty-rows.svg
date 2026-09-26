@@ -1,0 +1,40 @@
+<svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">훈련 줄 수를 줄여 가며 잰 AUC — 스무 줄에서 하나만 주저앉는다</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">유방암 자료, 무료 코랩 CPU, 씨앗 0·1·2 평균(수업 자료의 실측값). 1.0이면 완벽, 0.5면 동전 던지기.</text>
+
+  <!-- axes: x 120..560, y: 0.5 -> 280, 1.0 -> 80 -->
+  <line x1="120" y1="80" x2="120" y2="280" stroke="#8c959f"/>
+  <line x1="120" y1="280" x2="560" y2="280" stroke="#8c959f"/>
+  <g font-size="11" fill="#57606a">
+    <text x="112" y="84" text-anchor="end">1.0</text>
+    <text x="112" y="184" text-anchor="end">0.75</text>
+    <text x="112" y="284" text-anchor="end">0.5</text>
+    <text x="140" y="300" text-anchor="middle">20줄</text>
+    <text x="280" y="300" text-anchor="middle">50줄</text>
+    <text x="420" y="300" text-anchor="middle">100줄</text>
+    <text x="540" y="300" text-anchor="middle">200줄</text>
+  </g>
+  <line x1="120" y1="180" x2="560" y2="180" stroke="#d0d7de" stroke-dasharray="3 3"/>
+
+  <!-- TabICL: .9847 .9845 .9919 .9943 -> y = 280 - (v-0.5)*400 -->
+  <polyline points="140,86.1 280,86.2 420,83.2 540,82.3" fill="none" stroke="#0969da" stroke-width="2.5"/>
+  <!-- RF: .9813 .9826 .9862 .9893 -->
+  <polyline points="140,87.5 280,87.0 420,85.5 540,84.3" fill="none" stroke="#1a7f37" stroke-width="2.5" stroke-dasharray="6 3"/>
+  <!-- GB: .500 .9261 .9853 .9898 -->
+  <polyline points="140,280 280,109.6 420,85.9 540,84.1" fill="none" stroke="#9a6700" stroke-width="2.5"/>
+  <circle cx="140" cy="280" r="5" fill="#9a6700"/>
+  <text x="152" y="272" font-size="11.5" font-weight="700" fill="#9a6700">0.500 — 나무가 한 번도 안 갈라졌다</text>
+
+  <g font-size="12">
+    <line x1="580" y1="90" x2="604" y2="90" stroke="#0969da" stroke-width="2.5"/>
+    <text x="612" y="94" fill="#0969da" font-weight="700">TabICL</text>
+    <text x="612" y="110" fill="#57606a" font-size="10.5">학습 없이 표를 통째로</text>
+    <line x1="580" y1="136" x2="604" y2="136" stroke="#1a7f37" stroke-width="2.5" stroke-dasharray="6 3"/>
+    <text x="612" y="140" fill="#1a7f37" font-weight="700">랜덤 포레스트</text>
+    <text x="612" y="156" fill="#57606a" font-size="10.5">그 줄들로 학습</text>
+    <line x1="580" y1="182" x2="604" y2="182" stroke="#9a6700" stroke-width="2.5"/>
+    <text x="612" y="186" fill="#9a6700" font-weight="700">그래디언트 부스팅</text>
+    <text x="612" y="202" fill="#57606a" font-size="10.5">잎 하나에 최소 20개 규칙</text>
+  </g>
+  <text x="24" y="322" font-size="11.5" fill="#1f2328">위의 두 선은 줄곧 붙어 있다. 기준선을 같이 돌리지 않았다면 0.500은 보이지도 않았다.</text>
+</svg>
