@@ -1,0 +1,28 @@
+<svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">순위는 언제나 나온다 — "없다"는 임계값에서 나온다</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">사진첩에 없는 "고양이 사진"을 검색했을 때 두 방식이 내놓는 답.</text>
+
+  <rect x="24" y="66" width="346" height="206" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="40" y="90" font-size="13" font-weight="700" fill="#9a6700">① 소프트맥스 — 합이 1이 되게 나눠 갖기</text>
+  <g font-size="12" fill="#1f2328">
+    <text x="40" y="118">배전반 사진</text><rect x="140" y="106" width="159" height="16" rx="3" fill="#d4a72c"/><text x="306" y="119">0.53</text>
+    <text x="40" y="146">천장 사진</text><rect x="140" y="134" width="90" height="16" rx="3" fill="#d4a72c"/><text x="237" y="147">0.30</text>
+    <text x="40" y="174">복도 사진</text><rect x="140" y="162" width="51" height="16" rx="3" fill="#d4a72c"/><text x="198" y="175">0.17</text>
+  </g>
+  <text x="40" y="208" font-size="11.5" fill="#1f2328">반장 선거처럼 누군가는 반드시 1등이 된다.</text>
+  <text x="40" y="228" font-size="11.5" fill="#1f2328">0.53을 보면 "53% 확률로 이 사진"이라고 읽게 된다.</text>
+  <text x="40" y="254" font-size="11" fill="#9a6700" font-weight="700">"전부 아니다"가 들어갈 자리가 없다</text>
+
+  <rect x="390" y="66" width="346" height="206" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="406" y="90" font-size="13" font-weight="700" fill="#1a7f37">② 짝마다 따로 맞다·아니다 + 임계값</text>
+  <g font-size="12" fill="#1f2328">
+    <text x="406" y="118">배전반 사진</text><rect x="506" y="106" width="36" height="16" rx="3" fill="#2da44e"/><text x="549" y="119">0.12</text>
+    <text x="406" y="146">천장 사진</text><rect x="506" y="134" width="24" height="16" rx="3" fill="#2da44e"/><text x="537" y="147">0.08</text>
+    <text x="406" y="174">복도 사진</text><rect x="506" y="162" width="15" height="16" rx="3" fill="#2da44e"/><text x="528" y="175">0.05</text>
+  </g>
+  <line x1="596" y1="98" x2="596" y2="186" stroke="#cf222e" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="602" y="112" font-size="11" fill="#cf222e">임계값</text>
+  <text x="406" y="208" font-size="11.5" fill="#1f2328">셋 다 선 아래라 결과를 비우고 "없다"고 답한다.</text>
+  <text x="406" y="228" font-size="11.5" fill="#1f2328">점수를 이렇게 학습한 모델이어야 가능하다(SigLIP 계열).</text>
+  <text x="406" y="254" font-size="11" fill="#1a7f37" font-weight="700">숫자는 설명용 예시다</text>
+</svg>
