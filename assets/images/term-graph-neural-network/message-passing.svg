@@ -1,0 +1,73 @@
+<svg viewBox="0 0 760 412" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="같은 그래프를 세 번 그렸다. 1겹에서는 가운데 점이 바로 이웃한 점들에게서만 정보를 받는다. 2겹에서는 이웃의 이웃까지, 3겹에서는 세 칸 떨어진 점까지 정보가 닿아 색이 번져 간다. 각 점은 매 겹마다 이웃이 보낸 정보를 모아 자기 상태를 고친다">
+  <rect x="16" y="16" width="216" height="300" rx="12" fill="#f6f8fa" fill-opacity="0.6" stroke="#8c959f" stroke-width="1.2"/>
+  <text x="124" y="44" font-size="16" font-weight="700" fill="#0969da" text-anchor="middle">1겹</text>
+  <line x1="128.8" y1="171.60000000000002" x2="87.2" y2="139.6" stroke="#bc4c00" stroke-width="3"/>
+  <line x1="128.8" y1="171.60000000000002" x2="170.4" y2="139.6" stroke="#bc4c00" stroke-width="3"/>
+  <line x1="128.8" y1="171.60000000000002" x2="128.8" y2="218" stroke="#bc4c00" stroke-width="3"/>
+  <line x1="87.2" y1="139.6" x2="56.8" y2="184.4" stroke="#afb8c1" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="170.4" y1="139.6" x2="200.8" y2="184.4" stroke="#afb8c1" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="128.8" y1="218" x2="176.8" y2="246.8" stroke="#afb8c1" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="56.8" y1="184.4" x2="63.2" y2="246.8" stroke="#afb8c1" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="200.8" y1="184.4" x2="200.8" y2="109.2" stroke="#afb8c1" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="87.2" y1="139.6" x2="170.4" y2="139.6" stroke="#0969da" stroke-width="1.5"/>
+  <circle cx="128.8" cy="171.60000000000002" r="13" fill="#0969da" stroke="#0969da" stroke-width="2"/>
+  <circle cx="87.2" cy="139.6" r="13" fill="#fff1e5" stroke="#bc4c00" stroke-width="2"/>
+  <circle cx="170.4" cy="139.6" r="13" fill="#fff1e5" stroke="#bc4c00" stroke-width="2"/>
+  <circle cx="128.8" cy="218" r="13" fill="#fff1e5" stroke="#bc4c00" stroke-width="2"/>
+  <circle cx="56.8" cy="184.4" r="13" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="200.8" cy="184.4" r="13" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="176.8" cy="246.8" r="13" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="63.2" cy="246.8" r="13" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="200.8" cy="109.2" r="13" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="124" y="300" font-size="14" fill="#57606a" text-anchor="middle">바로 옆 이웃까지</text>
+  <rect x="272" y="16" width="216" height="300" rx="12" fill="#f6f8fa" fill-opacity="0.6" stroke="#8c959f" stroke-width="1.2"/>
+  <text x="380" y="44" font-size="16" font-weight="700" fill="#0969da" text-anchor="middle">2겹</text>
+  <line x1="384.8" y1="171.60000000000002" x2="343.2" y2="139.6" stroke="#0969da" stroke-width="1.5"/>
+  <line x1="384.8" y1="171.60000000000002" x2="426.4" y2="139.6" stroke="#0969da" stroke-width="1.5"/>
+  <line x1="384.8" y1="171.60000000000002" x2="384.8" y2="218" stroke="#0969da" stroke-width="1.5"/>
+  <line x1="343.2" y1="139.6" x2="312.8" y2="184.4" stroke="#bc4c00" stroke-width="3"/>
+  <line x1="426.4" y1="139.6" x2="456.8" y2="184.4" stroke="#bc4c00" stroke-width="3"/>
+  <line x1="384.8" y1="218" x2="432.8" y2="246.8" stroke="#bc4c00" stroke-width="3"/>
+  <line x1="312.8" y1="184.4" x2="319.2" y2="246.8" stroke="#afb8c1" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="456.8" y1="184.4" x2="456.8" y2="109.2" stroke="#afb8c1" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="343.2" y1="139.6" x2="426.4" y2="139.6" stroke="#0969da" stroke-width="1.5"/>
+  <circle cx="384.8" cy="171.60000000000002" r="13" fill="#0969da" stroke="#0969da" stroke-width="2"/>
+  <circle cx="343.2" cy="139.6" r="13" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+  <circle cx="426.4" cy="139.6" r="13" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+  <circle cx="384.8" cy="218" r="13" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+  <circle cx="312.8" cy="184.4" r="13" fill="#fff1e5" stroke="#bc4c00" stroke-width="2"/>
+  <circle cx="456.8" cy="184.4" r="13" fill="#fff1e5" stroke="#bc4c00" stroke-width="2"/>
+  <circle cx="432.8" cy="246.8" r="13" fill="#fff1e5" stroke="#bc4c00" stroke-width="2"/>
+  <circle cx="319.2" cy="246.8" r="13" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <circle cx="456.8" cy="109.2" r="13" fill="#ffffff" stroke="#8c959f" stroke-width="2"/>
+  <text x="380" y="300" font-size="14" fill="#57606a" text-anchor="middle">이웃의 이웃까지</text>
+  <rect x="528" y="16" width="216" height="300" rx="12" fill="#f6f8fa" fill-opacity="0.6" stroke="#8c959f" stroke-width="1.2"/>
+  <text x="636" y="44" font-size="16" font-weight="700" fill="#0969da" text-anchor="middle">3겹</text>
+  <line x1="640.8" y1="171.60000000000002" x2="599.2" y2="139.6" stroke="#0969da" stroke-width="1.5"/>
+  <line x1="640.8" y1="171.60000000000002" x2="682.4" y2="139.6" stroke="#0969da" stroke-width="1.5"/>
+  <line x1="640.8" y1="171.60000000000002" x2="640.8" y2="218" stroke="#0969da" stroke-width="1.5"/>
+  <line x1="599.2" y1="139.6" x2="568.8" y2="184.4" stroke="#0969da" stroke-width="1.5"/>
+  <line x1="682.4" y1="139.6" x2="712.8" y2="184.4" stroke="#0969da" stroke-width="1.5"/>
+  <line x1="640.8" y1="218" x2="688.8" y2="246.8" stroke="#0969da" stroke-width="1.5"/>
+  <line x1="568.8" y1="184.4" x2="575.2" y2="246.8" stroke="#bc4c00" stroke-width="3"/>
+  <line x1="712.8" y1="184.4" x2="712.8" y2="109.2" stroke="#bc4c00" stroke-width="3"/>
+  <line x1="599.2" y1="139.6" x2="682.4" y2="139.6" stroke="#0969da" stroke-width="1.5"/>
+  <circle cx="640.8" cy="171.60000000000002" r="13" fill="#0969da" stroke="#0969da" stroke-width="2"/>
+  <circle cx="599.2" cy="139.6" r="13" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+  <circle cx="682.4" cy="139.6" r="13" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+  <circle cx="640.8" cy="218" r="13" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+  <circle cx="568.8" cy="184.4" r="13" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+  <circle cx="712.8" cy="184.4" r="13" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+  <circle cx="688.8" cy="246.8" r="13" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+  <circle cx="575.2" cy="246.8" r="13" fill="#fff1e5" stroke="#bc4c00" stroke-width="2"/>
+  <circle cx="712.8" cy="109.2" r="13" fill="#fff1e5" stroke="#bc4c00" stroke-width="2"/>
+  <text x="636" y="300" font-size="14" fill="#57606a" text-anchor="middle">세 칸 떨어진 곳까지</text>
+
+  <circle cx="150" cy="352" r="9" fill="#0969da" stroke="#0969da" stroke-width="2"/>
+  <text x="166" y="357" font-size="14" fill="#57606a">가운데 점</text>
+  <circle cx="276" cy="352" r="9" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+  <text x="292" y="357" font-size="14" fill="#57606a">이미 닿은 점</text>
+  <circle cx="416" cy="352" r="9" fill="#fff1e5" stroke="#bc4c00" stroke-width="2"/>
+  <text x="432" y="357" font-size="14" fill="#57606a">이번 겹에 새로 닿은 점</text>
+  <text x="380" y="392" font-size="14" fill="#57606a" text-anchor="middle">한 겹마다 각 점은 선으로 이어진 이웃의 숫자 목록을 모아 자기 것을 고친다</text>
+</svg>

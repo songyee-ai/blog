@@ -1,0 +1,61 @@
+<svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="왼쪽 보통의 학습은 훈련 자료로 모델 가중치를 여러 번 고친 다음 새 문제를 넣는다. 오른쪽 맥락 내 학습은 예시 행과 문제 행을 한 입력에 함께 넣고 한 번 계산해 답을 낸다. 가중치는 그대로이고, 답을 낸 뒤 예시는 잊힌다">
+  <defs>
+    <marker id="icl-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+  </defs>
+
+  <!-- 왼쪽: 보통의 학습 -->
+  <rect x="16" y="16" width="352" height="368" rx="12" fill="#fff1e5" fill-opacity="0.5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="192" y="46" font-size="16" font-weight="700" fill="#bc4c00" text-anchor="middle">보통의 학습</text>
+
+  <rect x="40" y="70" width="130" height="70" rx="10" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="105" y="100" font-size="15" font-weight="700" fill="#1f2328" text-anchor="middle">훈련 자료</text>
+  <text x="105" y="122" font-size="13" fill="#57606a" text-anchor="middle">20줄</text>
+
+  <rect x="214" y="70" width="130" height="70" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="279" y="100" font-size="15" font-weight="700" fill="#bc4c00" text-anchor="middle">모델</text>
+  <text x="279" y="122" font-size="13" fill="#1f2328" text-anchor="middle">가중치 고치기</text>
+  <line x1="172" y1="105" x2="210" y2="105" stroke="#57606a" stroke-width="1.5" marker-end="url(#icl-ar)"/>
+
+  <!-- 되풀이 고리 -->
+  <path d="M 300 142 C 330 180, 228 180, 258 144" fill="none" stroke="#bc4c00" stroke-width="1.5" marker-end="url(#icl-ar)"/>
+  <text x="279" y="196" font-size="13" fill="#bc4c00" text-anchor="middle">여러 번 되풀이</text>
+
+  <rect x="40" y="226" width="130" height="60" rx="10" fill="#f6f8fa" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="105" y="261" font-size="15" font-weight="700" fill="#1f2328" text-anchor="middle">새 문제 1줄</text>
+  <rect x="214" y="226" width="130" height="60" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="279" y="261" font-size="15" font-weight="700" fill="#bc4c00" text-anchor="middle">답</text>
+  <line x1="172" y1="256" x2="210" y2="256" stroke="#57606a" stroke-width="1.5" marker-end="url(#icl-ar)"/>
+
+  <text x="192" y="328" font-size="14" fill="#bc4c00" text-anchor="middle" font-weight="700">규칙이 가중치에 새겨진다</text>
+  <text x="192" y="352" font-size="13" fill="#57606a" text-anchor="middle">끝나도 모델에 남는다</text>
+
+  <!-- 오른쪽: 맥락 내 학습 -->
+  <rect x="392" y="16" width="352" height="368" rx="12" fill="#ddf4ff" fill-opacity="0.5" stroke="#0969da" stroke-width="1.5"/>
+  <text x="568" y="46" font-size="16" font-weight="700" fill="#0969da" text-anchor="middle">맥락 내 학습</text>
+
+  <!-- 한 입력 묶음 -->
+  <rect x="416" y="66" width="150" height="224" rx="10" fill="#f6f8fa" stroke="#0969da" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="491" y="88" font-size="13" fill="#0969da" text-anchor="middle" font-weight="700">입력 한 덩어리</text>
+  <rect x="432" y="100" width="118" height="26" rx="5" fill="#ffffff" stroke="#8c959f"/>
+  <text x="491" y="118" font-size="13" fill="#1f2328" text-anchor="middle">예시 행 · 답 있음</text>
+  <rect x="432" y="132" width="118" height="26" rx="5" fill="#ffffff" stroke="#8c959f"/>
+  <text x="491" y="150" font-size="13" fill="#1f2328" text-anchor="middle">예시 행 · 답 있음</text>
+  <text x="491" y="178" font-size="14" fill="#57606a" text-anchor="middle">⋮</text>
+  <rect x="432" y="190" width="118" height="26" rx="5" fill="#ffffff" stroke="#8c959f"/>
+  <text x="491" y="208" font-size="13" fill="#1f2328" text-anchor="middle">예시 행 · 답 있음</text>
+  <rect x="432" y="240" width="118" height="30" rx="5" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="491" y="260" font-size="13" fill="#1a7f37" text-anchor="middle" font-weight="700">문제 행 · 답 = ?</text>
+
+  <rect x="604" y="120" width="116" height="70" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="662" y="150" font-size="15" font-weight="700" fill="#0969da" text-anchor="middle">모델</text>
+  <text x="662" y="172" font-size="13" fill="#1f2328" text-anchor="middle">가중치 그대로</text>
+  <line x1="568" y1="155" x2="600" y2="155" stroke="#57606a" stroke-width="1.5" marker-end="url(#icl-ar)"/>
+  <text x="662" y="108" font-size="13" fill="#0969da" text-anchor="middle">계산 한 번</text>
+
+  <rect x="604" y="226" width="116" height="60" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="662" y="261" font-size="15" font-weight="700" fill="#1a7f37" text-anchor="middle">답</text>
+  <line x1="662" y1="192" x2="662" y2="222" stroke="#57606a" stroke-width="1.5" marker-end="url(#icl-ar)"/>
+
+  <text x="568" y="328" font-size="14" fill="#0969da" text-anchor="middle" font-weight="700">규칙은 입력에서 그 자리에서 읽는다</text>
+  <text x="568" y="352" font-size="13" fill="#57606a" text-anchor="middle">답을 내면 예시는 잊힌다</text>
+</svg>
