@@ -39,6 +39,7 @@
 | 15 | 2026-09-17 | `multimodal-speech` |
 | 16 | 2026-09-18 | `room-to-splat` (작업물: `my-open-space`) |
 | 17 | 2026-09-21 | `eight-branches-four-ideas` |
+| 18 | 2026-09-22 | `poc-from-work` (작업물: `ecommerce-cutout-poc`) |
 
 ## 참고 — 원본 정리 노트
 
