@@ -1,0 +1,57 @@
+<svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="질문이 들어오면 먼저 자료 더미에서 관련 있는 조각을 찾는다. 찾은 조각과 질문을 한 입력으로 묶어 모델에 넣고, 모델은 그 조각을 근거로 답하며 어느 자료에서 왔는지 함께 적는다">
+  <defs>
+    <marker id="rag-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8c959f"/></marker>
+  </defs>
+
+  <!-- 단계 이름 -->
+  <text x="110" y="34" font-size="16" font-weight="700" fill="#0969da" text-anchor="middle">① 찾기</text>
+  <text x="380" y="34" font-size="16" font-weight="700" fill="#bc4c00" text-anchor="middle">② 묶기</text>
+  <text x="650" y="34" font-size="16" font-weight="700" fill="#1a7f37" text-anchor="middle">③ 근거 대고 답하기</text>
+
+  <!-- 질문 -->
+  <rect x="12" y="54" width="196" height="56" rx="10" fill="#ddf4ff" fill-opacity="0.6" stroke="#0969da" stroke-width="1.5"/>
+  <text x="110" y="78" font-size="14" font-weight="700" fill="#0969da" text-anchor="middle">질문</text>
+  <text x="110" y="99" font-size="13" fill="#0969da" text-anchor="middle">"내일 취소해도 환불돼요?"</text>
+
+  <line x1="110" y1="112" x2="110" y2="146" stroke="#8c959f" stroke-width="1.5" marker-end="url(#rag-ar)"/>
+  <text x="122" y="134" font-size="13" fill="#8c959f">뜻이 가까운 조각 찾기</text>
+
+  <!-- 자료 더미 -->
+  <rect x="24" y="152" width="172" height="190" rx="10" fill="#8c959f" fill-opacity="0.08" stroke="#8c959f" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="110" y="176" font-size="14" font-weight="700" fill="#8c959f" text-anchor="middle">규정 문서 더미</text>
+  <rect x="42" y="190" width="136" height="28" rx="5" fill="none" stroke="#8c959f"/>
+  <text x="110" y="209" font-size="13" fill="#8c959f" text-anchor="middle">1조 회원 가입</text>
+  <rect x="42" y="226" width="136" height="28" rx="5" fill="none" stroke="#8c959f"/>
+  <text x="110" y="245" font-size="13" fill="#8c959f" text-anchor="middle">2조 포인트</text>
+  <rect x="42" y="262" width="136" height="28" rx="5" fill="#fff1e5" fill-opacity="0.8" stroke="#bc4c00" stroke-width="2"/>
+  <text x="110" y="281" font-size="13" font-weight="700" fill="#bc4c00" text-anchor="middle">3조 출고 전 환불</text>
+  <rect x="42" y="298" width="136" height="28" rx="5" fill="none" stroke="#8c959f"/>
+  <text x="110" y="317" font-size="13" fill="#8c959f" text-anchor="middle">4조 교환</text>
+
+  <line x1="182" y1="276" x2="270" y2="190" stroke="#8c959f" stroke-width="1.5" marker-end="url(#rag-ar)"/>
+  <line x1="210" y1="82" x2="270" y2="130" stroke="#8c959f" stroke-width="1.5" marker-end="url(#rag-ar)"/>
+
+  <!-- 묶은 입력 -->
+  <rect x="276" y="98" width="208" height="160" rx="12" fill="#fff1e5" fill-opacity="0.3" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="380" y="124" font-size="14" font-weight="700" fill="#bc4c00" text-anchor="middle">모델에 넣는 입력</text>
+  <rect x="294" y="136" width="172" height="30" rx="6" fill="#ddf4ff" fill-opacity="0.6" stroke="#0969da"/>
+  <text x="380" y="156" font-size="13" fill="#0969da" text-anchor="middle">질문</text>
+  <rect x="294" y="174" width="172" height="30" rx="6" fill="#fff1e5" fill-opacity="0.8" stroke="#bc4c00"/>
+  <text x="380" y="194" font-size="13" fill="#bc4c00" text-anchor="middle">찾아온 3조</text>
+  <rect x="294" y="212" width="172" height="30" rx="6" fill="none" stroke="#8c959f"/>
+  <text x="380" y="232" font-size="13" fill="#8c959f" text-anchor="middle">"규정에 있는 것만 근거로"</text>
+
+  <line x1="488" y1="178" x2="550" y2="178" stroke="#8c959f" stroke-width="1.5" marker-end="url(#rag-ar)"/>
+
+  <!-- 답 -->
+  <rect x="556" y="98" width="180" height="160" rx="12" fill="#dafbe1" fill-opacity="0.35" stroke="#1a7f37" stroke-width="2"/>
+  <text x="646" y="124" font-size="14" font-weight="700" fill="#1a7f37" text-anchor="middle">답</text>
+  <text x="646" y="156" font-size="13" fill="#1a7f37" text-anchor="middle">출고 전이면</text>
+  <text x="646" y="176" font-size="13" fill="#1a7f37" text-anchor="middle">전액 환불됩니다</text>
+  <text x="646" y="206" font-size="13" font-weight="700" fill="#1a7f37" text-anchor="middle">근거: 배송규정 3조</text>
+  <text x="646" y="236" font-size="12" fill="#8c959f" text-anchor="middle">내 주문 상태는 따로 조회</text>
+
+  <text x="520" y="306" font-size="14" fill="#8c959f" text-anchor="middle">모델의 가중치는 그대로, 바뀌는 건 입력뿐</text>
+  <text x="520" y="332" font-size="13" fill="#8c959f" text-anchor="middle">엉뚱한 조각을 찾아오면 답도 엉뚱해진다</text>
+  <text x="380" y="384" font-size="12" fill="#8c959f" text-anchor="middle">규정 내용은 설명을 위해 지어낸 예시</text>
+</svg>

@@ -1,0 +1,46 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="왼쪽은 예시에 문제와 답만 있어서 모델도 새 문제에 답만 바로 쓰고 틀린다. 오른쪽은 예시에 한 줄씩 풀이가 적혀 있어서 모델도 새 문제에서 풀이를 먼저 쓴 뒤 맞는 답을 낸다">
+  <defs>
+    <marker id="cot-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8c959f"/></marker>
+  </defs>
+
+  <!-- 왼쪽 -->
+  <rect x="16" y="16" width="352" height="388" rx="12" fill="#fff1e5" fill-opacity="0.3" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="192" y="46" font-size="16" font-weight="700" fill="#bc4c00" text-anchor="middle">답만 보여 준 예시</text>
+
+  <rect x="40" y="66" width="304" height="110" rx="10" fill="#8c959f" fill-opacity="0.08" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="58" y="92" font-size="13" font-weight="700" fill="#8c959f">예시</text>
+  <text x="58" y="118" font-size="14" fill="#8c959f">사과 8개, 3개 먹고 4개 더 삼</text>
+  <text x="58" y="150" font-size="14" font-weight="700" fill="#bc4c00">답: 9개</text>
+
+  <line x1="192" y1="182" x2="192" y2="206" stroke="#8c959f" stroke-width="1.5" marker-end="url(#cot-ar)"/>
+
+  <rect x="40" y="212" width="304" height="130" rx="10" fill="#8c959f" fill-opacity="0.08" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="58" y="238" font-size="13" font-weight="700" fill="#8c959f">새 문제 → 모델의 답</text>
+  <text x="58" y="264" font-size="14" fill="#8c959f">사탕 12개, 절반 주고 5개 받음</text>
+  <text x="58" y="300" font-size="14" font-weight="700" fill="#bc4c00">답: 17개</text>
+  <text x="326" y="300" font-size="15" font-weight="700" fill="#bc4c00" text-anchor="end">✗ 틀림</text>
+  <text x="58" y="326" font-size="13" fill="#8c959f">한 번에 떠올려서 단계를 건너뜀</text>
+
+  <text x="192" y="380" font-size="14" fill="#bc4c00" text-anchor="middle">모델도 답만 바로 쓴다</text>
+
+  <!-- 오른쪽 -->
+  <rect x="392" y="16" width="352" height="388" rx="12" fill="#dafbe1" fill-opacity="0.3" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="568" y="46" font-size="16" font-weight="700" fill="#1a7f37" text-anchor="middle">풀이를 보여 준 예시 (CoT)</text>
+
+  <rect x="416" y="66" width="304" height="110" rx="10" fill="#8c959f" fill-opacity="0.08" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="434" y="92" font-size="13" font-weight="700" fill="#8c959f">예시</text>
+  <text x="434" y="118" font-size="14" fill="#8c959f">사과 8개, 3개 먹고 4개 더 삼</text>
+  <text x="434" y="142" font-size="14" fill="#0969da">8 − 3 = 5,  5 + 4 = 9</text>
+  <text x="434" y="164" font-size="14" font-weight="700" fill="#1a7f37">답: 9개</text>
+
+  <line x1="568" y1="182" x2="568" y2="206" stroke="#8c959f" stroke-width="1.5" marker-end="url(#cot-ar)"/>
+
+  <rect x="416" y="212" width="304" height="130" rx="10" fill="#8c959f" fill-opacity="0.08" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="434" y="238" font-size="13" font-weight="700" fill="#8c959f">새 문제 → 모델의 답</text>
+  <text x="434" y="264" font-size="14" fill="#8c959f">사탕 12개, 절반 주고 5개 받음</text>
+  <text x="434" y="290" font-size="14" fill="#0969da">12 ÷ 2 = 6,  6 + 5 = 11</text>
+  <text x="434" y="318" font-size="14" font-weight="700" fill="#1a7f37">답: 11개</text>
+  <text x="702" y="318" font-size="15" font-weight="700" fill="#1a7f37" text-anchor="end">✓ 맞음</text>
+
+  <text x="568" y="380" font-size="14" fill="#1a7f37" text-anchor="middle">모델도 풀이부터 한 줄씩 쓴다</text>
+</svg>

@@ -1,0 +1,48 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="왼쪽에 넣을 수 있는 후보 자료들이 있고, 가운데 여섯 가지 점검을 거쳐 오른쪽 이번 호출의 입력으로 들어간다. 규칙과 질문은 그대로 넣고, 긴 대화는 요약해서 넣고, 지금 일과 상관없는 개인 설정 파일은 뺀다">
+  <defs>
+    <marker id="ce-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8c959f"/></marker>
+  </defs>
+
+  <!-- 왼쪽: 후보 -->
+  <text x="130" y="34" font-size="16" font-weight="700" fill="#8c959f" text-anchor="middle">후보 자료</text>
+  <rect x="24" y="52" width="212" height="44" rx="8" fill="#ddf4ff" fill-opacity="0.6" stroke="#0969da" stroke-width="1.5"/>
+  <text x="130" y="80" font-size="14" fill="#0969da" text-anchor="middle">기본 규칙 (system)</text>
+  <rect x="24" y="108" width="212" height="44" rx="8" fill="#ddf4ff" fill-opacity="0.6" stroke="#0969da" stroke-width="1.5"/>
+  <text x="130" y="136" font-size="14" fill="#0969da" text-anchor="middle">지금 받은 질문</text>
+  <rect x="24" y="164" width="212" height="44" rx="8" fill="#fff1e5" fill-opacity="0.6" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="130" y="192" font-size="14" fill="#bc4c00" text-anchor="middle">앞 대화 기록 (길다)</text>
+  <rect x="24" y="220" width="212" height="44" rx="8" fill="#fff1e5" fill-opacity="0.6" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="130" y="248" font-size="14" fill="#bc4c00" text-anchor="middle">정책 문서 전체 (크다)</text>
+  <rect x="24" y="276" width="212" height="44" rx="8" fill="#8c959f" fill-opacity="0.12" stroke="#8c959f" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="130" y="304" font-size="14" fill="#8c959f" text-anchor="middle">개인 설정 파일 (숨어 있음)</text>
+
+  <!-- 가운데: 점검 -->
+  <rect x="290" y="52" width="180" height="268" rx="12" fill="#8c959f" fill-opacity="0.08" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="380" y="84" font-size="15" font-weight="700" fill="#8c959f" text-anchor="middle">여섯 가지 점검</text>
+  <text x="380" y="122" font-size="14" fill="#8c959f" text-anchor="middle">관련성 · 출처</text>
+  <text x="380" y="152" font-size="14" fill="#8c959f" text-anchor="middle">최신성 · 길이</text>
+  <text x="380" y="182" font-size="14" fill="#8c959f" text-anchor="middle">격리 · 삭제·요약</text>
+  <line x1="314" y1="210" x2="446" y2="210" stroke="#8c959f" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="380" y="240" font-size="14" fill="#0969da" text-anchor="middle">그대로 넣기</text>
+  <text x="380" y="268" font-size="14" fill="#bc4c00" text-anchor="middle">줄여서 넣기</text>
+  <text x="380" y="296" font-size="14" fill="#8c959f" text-anchor="middle">빼기</text>
+
+  <line x1="240" y1="186" x2="284" y2="186" stroke="#8c959f" stroke-width="1.5" marker-end="url(#ce-ar)"/>
+  <line x1="474" y1="186" x2="518" y2="186" stroke="#8c959f" stroke-width="1.5" marker-end="url(#ce-ar)"/>
+
+  <!-- 오른쪽: 가방 -->
+  <rect x="524" y="52" width="212" height="268" rx="14" fill="#dafbe1" fill-opacity="0.35" stroke="#1a7f37" stroke-width="2"/>
+  <text x="630" y="84" font-size="15" font-weight="700" fill="#1a7f37" text-anchor="middle">이번 호출의 입력</text>
+  <rect x="544" y="102" width="172" height="38" rx="7" fill="#ddf4ff" fill-opacity="0.6" stroke="#0969da" stroke-width="1.5"/>
+  <text x="630" y="126" font-size="14" fill="#0969da" text-anchor="middle">기본 규칙</text>
+  <rect x="544" y="150" width="172" height="38" rx="7" fill="#fff1e5" fill-opacity="0.6" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="630" y="174" font-size="14" fill="#bc4c00" text-anchor="middle">대화 요약 몇 줄</text>
+  <rect x="544" y="198" width="172" height="38" rx="7" fill="#fff1e5" fill-opacity="0.6" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="630" y="222" font-size="14" fill="#bc4c00" text-anchor="middle">찾아온 정책 한 조항</text>
+  <rect x="544" y="246" width="172" height="38" rx="7" fill="#ddf4ff" fill-opacity="0.6" stroke="#0969da" stroke-width="1.5"/>
+  <text x="630" y="270" font-size="14" fill="#0969da" text-anchor="middle">지금 받은 질문</text>
+
+  <!-- 아래 설명 -->
+  <text x="380" y="366" font-size="14" fill="#8c959f" text-anchor="middle">숨은 설정을 막지 않았을 때 입력 약 2,100토큰 → 막은 뒤 약 480토큰 (19회차 실습)</text>
+  <text x="380" y="394" font-size="13" fill="#8c959f" text-anchor="middle">모델은 가방 안에 든 것만 읽는다. 무엇을 넣었는지 확인하는 것까지가 설계다</text>
+</svg>

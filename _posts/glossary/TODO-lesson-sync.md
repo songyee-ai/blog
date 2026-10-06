@@ -40,6 +40,7 @@
 | 16 | 2026-09-18 | `room-to-splat` (작업물: `my-open-space`) |
 | 17 | 2026-09-21 | `eight-branches-four-ideas` |
 | 18 | 2026-09-22 | `poc-from-work` (작업물: `ecommerce-cutout-poc`) |
+| 19 | 2026-10-06 | `prompt-to-harness` |
 
 ## 참고 — 원본 정리 노트
 

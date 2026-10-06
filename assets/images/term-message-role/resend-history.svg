@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="760" height="440" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="첫 번째 호출에는 system과 user 메시지 두 개가 들어간다. 두 번째 호출에는 앞의 두 개와 assistant 응답, 새 user 메시지까지 네 개를 다시 보낸다. 모델은 앞 호출을 기억하지 않으므로 앱이 이력을 다시 넣어 준다">
+  <defs>
+    <marker id="mr-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+  </defs>
+
+  <text x="30" y="30" font-size="16" font-weight="700" fill="#1f2328">부를 때마다 역할표가 붙은 대본 전체를 다시 보낸다</text>
+
+  <!-- 1번째 호출 -->
+  <rect x="30" y="50" width="330" height="220" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="48" y="76" font-size="15" font-weight="700" fill="#1f2328">1번째 호출</text>
+
+  <rect x="48" y="92" width="84" height="26" rx="6" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.2"/>
+  <text x="90" y="110" font-size="13" font-weight="700" fill="#bc4c00" text-anchor="middle">system</text>
+  <text x="146" y="110" font-size="14" fill="#1f2328">한국어로, 친절하게</text>
+
+  <rect x="48" y="132" width="84" height="26" rx="6" fill="#ddf4ff" stroke="#0969da" stroke-width="1.2"/>
+  <text x="90" y="150" font-size="13" font-weight="700" fill="#0969da" text-anchor="middle">user</text>
+  <text x="146" y="150" font-size="14" fill="#1f2328">택배 언제 와요?</text>
+  <text x="48" y="226" font-size="13" fill="#57606a">아직 앞 대화가 없다</text>
+
+  <!-- 2번째 호출 -->
+  <rect x="400" y="50" width="330" height="220" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="418" y="76" font-size="15" font-weight="700" fill="#1f2328">2번째 호출</text>
+  <text x="712" y="76" font-size="13" fill="#57606a" text-anchor="end">앞 대화를 통째로 다시</text>
+
+  <rect x="418" y="92" width="84" height="26" rx="6" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.2"/>
+  <text x="460" y="110" font-size="13" font-weight="700" fill="#bc4c00" text-anchor="middle">system</text>
+  <text x="516" y="110" font-size="14" fill="#1f2328">한국어로, 친절하게</text>
+
+  <rect x="418" y="132" width="84" height="26" rx="6" fill="#ddf4ff" stroke="#0969da" stroke-width="1.2"/>
+  <text x="460" y="150" font-size="13" font-weight="700" fill="#0969da" text-anchor="middle">user</text>
+  <text x="516" y="150" font-size="14" fill="#1f2328">택배 언제 와요?</text>
+
+  <rect x="418" y="172" width="84" height="26" rx="6" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.2"/>
+  <text x="460" y="190" font-size="13" font-weight="700" fill="#1a7f37" text-anchor="middle">assistant</text>
+  <text x="516" y="190" font-size="14" fill="#1f2328">주문번호를 알려 주세요</text>
+
+  <rect x="410" y="206" width="310" height="40" rx="8" fill="none" stroke="#0969da" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <rect x="418" y="213" width="84" height="26" rx="6" fill="#ddf4ff" stroke="#0969da" stroke-width="1.2"/>
+  <text x="460" y="231" font-size="13" font-weight="700" fill="#0969da" text-anchor="middle">user</text>
+  <text x="516" y="231" font-size="14" fill="#1f2328">아직 없어요 <tspan font-size="12" fill="#57606a">← 새로 친 말</tspan></text>
+
+  <!-- 모델 -->
+  <line x1="195" y1="272" x2="195" y2="302" stroke="#57606a" stroke-width="1.5" marker-end="url(#mr-ar)"/>
+  <line x1="565" y1="272" x2="565" y2="302" stroke="#57606a" stroke-width="1.5" marker-end="url(#mr-ar)"/>
+
+  <rect x="90" y="306" width="210" height="44" rx="8" fill="#f6f8fa" stroke="#57606a" stroke-width="1.5"/>
+  <text x="195" y="333" font-size="14" font-weight="700" fill="#1f2328" text-anchor="middle">모델 — 2줄 읽음</text>
+  <rect x="460" y="306" width="210" height="44" rx="8" fill="#f6f8fa" stroke="#57606a" stroke-width="1.5"/>
+  <text x="565" y="333" font-size="14" font-weight="700" fill="#1f2328" text-anchor="middle">모델 — 4줄 처음부터</text>
+
+  <text x="30" y="386" font-size="14" fill="#1f2328">모델은 1번째 호출을 기억하지 않는다. 앱이 이력을 다시 넣어 줘야</text>
+  <text x="30" y="408" font-size="14" fill="#1f2328">"아직 없어요"가 <tspan font-weight="700">주문번호가 아직 없다</tspan>는 뜻인 줄 안다.</text>
+</svg>
