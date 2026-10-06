@@ -1,0 +1,26 @@
+<svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">챗봇이 폴더를 지우지 못하게 하려면 — 내가 시험해 본 네 겹</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">위로 갈수록 확실하다. 맨 아래 프롬프트는 모델에게 하는 "부탁"이고, 위 셋은 코드에서 정하는 설정이다.</text>
+
+  <g font-size="12">
+    <rect x="24" y="66" width="712" height="62" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="40" y="90" font-size="13" font-weight="700" fill="#1a7f37">① tools=[] — 도구 자체를 주지 않는다</text>
+    <text x="40" y="112" fill="#1f2328">만들기·지우기·읽기 모두 실제 변화 0건. 대신 "완료했습니다"라는 거짓 보고가 남았다</text>
+    <text x="720" y="100" text-anchor="end" font-weight="700" fill="#1a7f37">확실</text>
+
+    <rect x="24" y="138" width="712" height="62" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="40" y="162" font-size="13" font-weight="700" fill="#0969da">② can_use_tool — 쓰려는 순간 프로그램이 가로채 y/n</text>
+    <text x="40" y="184" fill="#1f2328">쓰기·삭제는 막았지만, 읽기 도구는 이 창구를 거치지 않아 메모 파일 내용이 그대로 나왔다</text>
+    <text x="720" y="172" text-anchor="end" font-weight="700" fill="#0969da">부분</text>
+
+    <rect x="24" y="210" width="712" height="62" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+    <text x="40" y="234" font-size="13" font-weight="700" fill="#9a6700">③ allowed_tools — 묻지 않고 자동 허락할 목록</text>
+    <text x="40" y="256" fill="#1f2328">"쓸 수 있는 도구 목록"이 아니다. 목록 밖 도구도 그대로 있고, 쓰려 하면 거부될 뿐이다</text>
+    <text x="720" y="244" text-anchor="end" font-weight="700" fill="#9a6700">허락용</text>
+
+    <rect x="24" y="282" width="712" height="62" rx="10" fill="#ffebe9" stroke="#cf222e"/>
+    <text x="40" y="306" font-size="13" font-weight="700" fill="#cf222e">④ system_prompt — "삭제는 꼭 승인받아"라고 부탁</text>
+    <text x="40" y="328" fill="#1f2328">한 번은 지켜 물었지만 기억이 없어 "응"을 못 알아들었고, "대화로 묻지 마"라고 쓴 뒤에도 대화로 물었다</text>
+    <text x="720" y="316" text-anchor="end" font-weight="700" fill="#cf222e">보장 없음</text>
+  </g>
+</svg>
