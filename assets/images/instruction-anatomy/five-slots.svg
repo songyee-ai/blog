@@ -1,0 +1,39 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">지시의 다섯 칸 — 심부름 쪽지로 읽기</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">칸마다 정하는 것이 다르고, 빈칸마다 틀리는 모양도 다르다. 틀린 답을 보면 어느 칸이 비었는지부터 찾는다.</text>
+
+  <g font-size="12">
+    <text x="150" y="80" font-weight="700" fill="#57606a">쪽지의 예</text>
+    <text x="430" y="80" font-weight="700" fill="#57606a">비었을 때 생기는 일</text>
+
+    <rect x="24" y="90" width="712" height="56" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="40" y="115" font-size="14" font-weight="700" fill="#0969da">역할</text>
+    <text x="40" y="134" fill="#57606a">누가 읽나</text>
+    <text x="150" y="124" fill="#1f2328">"동생이 먹을 거니까"</text>
+    <text x="430" y="124" fill="#1f2328">맞는 내용인데 읽는 사람에게 안 맞는다</text>
+
+    <rect x="24" y="154" width="712" height="56" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="40" y="179" font-size="14" font-weight="700" fill="#1a7f37">과업</text>
+    <text x="40" y="198" fill="#57606a">할 일·끝</text>
+    <text x="150" y="188" fill="#1f2328">"우유 한 통 사 와"</text>
+    <text x="430" y="188" fill="#1f2328">할 일을 모델이 스스로 골라 버린다</text>
+
+    <rect x="24" y="218" width="712" height="56" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+    <text x="40" y="243" font-size="14" font-weight="700" fill="#9a6700">맥락</text>
+    <text x="40" y="262" fill="#57606a">볼 자료</text>
+    <text x="150" y="252" fill="#1f2328">"냉장고 옆 전단지 보고"</text>
+    <text x="430" y="252" fill="#1f2328">자료 대신 그럴듯한 일반 상식으로 채운다</text>
+
+    <rect x="24" y="282" width="712" height="56" rx="10" fill="#fbefff" stroke="#8250df"/>
+    <text x="40" y="307" font-size="14" font-weight="700" fill="#8250df">형식</text>
+    <text x="40" y="326" fill="#57606a">넘길 모양</text>
+    <text x="150" y="316" fill="#1f2328">"영수증은 봉투에 넣어 와"</text>
+    <text x="430" y="316" fill="#1f2328">매번 모양이 달라 다시 옮겨 적어야 한다</text>
+
+    <rect x="24" y="346" width="712" height="56" rx="10" fill="#ffebe9" stroke="#cf222e"/>
+    <text x="40" y="371" font-size="14" font-weight="700" fill="#cf222e">제약</text>
+    <text x="40" y="390" fill="#57606a">금지·모를 때</text>
+    <text x="150" y="380" fill="#1f2328">"저지방 말고, 돈 모자라면 그냥 와"</text>
+    <text x="430" y="380" fill="#1f2328">빈칸을 추측으로 메우고 묻지 않은 걸 덧붙인다</text>
+  </g>
+</svg>

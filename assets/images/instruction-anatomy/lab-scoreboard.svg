@@ -1,0 +1,56 @@
+<svg viewBox="0 0 760 408" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">스텝 6 채점표 — "배송일은 언제인가요?"에 지시 다섯 개, 각 3회</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">기준은 실행 전에 정했다. 실패한 기준마다 문장 하나만 더해(B′, C′) 같은 조건으로 다시 쟀다. 모델: Claude Haiku 4.5</text>
+
+  <g font-size="12" fill="#57606a" font-weight="700" text-anchor="middle">
+    <text x="300" y="86">① 날짜 안 지어냄</text>
+    <text x="430" y="86">② 정보 딱 하나 요청</text>
+    <text x="560" y="86">③ 고객용 문체</text>
+    <text x="680" y="86">④ JSON 형식</text>
+  </g>
+
+  <g font-size="12">
+    <!-- A -->
+    <text x="24" y="122" font-size="14" font-weight="700" fill="#1f2328">A 최소안</text>
+    <text x="24" y="139" fill="#57606a">"답변 초안을 작성하라"</text>
+    <rect x="250" y="104" width="100" height="40" rx="8" fill="#ffebe9" stroke="#cf222e"/><text x="300" y="129" text-anchor="middle" font-weight="700" fill="#cf222e">0/3</text>
+    <rect x="380" y="104" width="100" height="40" rx="8" fill="#ffebe9" stroke="#cf222e"/><text x="430" y="129" text-anchor="middle" font-weight="700" fill="#cf222e">0/3</text>
+    <rect x="510" y="104" width="100" height="40" rx="8" fill="#dafbe1" stroke="#1a7f37"/><text x="560" y="129" text-anchor="middle" font-weight="700" fill="#1a7f37">3/3</text>
+    <text x="680" y="129" text-anchor="middle" fill="#8c959f">–</text>
+
+    <!-- B -->
+    <text x="24" y="176" font-size="14" font-weight="700" fill="#1f2328">B 보강안</text>
+    <text x="24" y="193" fill="#57606a">+ 날짜 금지, 한 가지만 요청</text>
+    <rect x="250" y="158" width="100" height="40" rx="8" fill="#dafbe1" stroke="#1a7f37"/><text x="300" y="183" text-anchor="middle" font-weight="700" fill="#1a7f37">3/3</text>
+    <rect x="380" y="158" width="100" height="40" rx="8" fill="#ffebe9" stroke="#cf222e"/><text x="430" y="183" text-anchor="middle" font-weight="700" fill="#cf222e">0/3</text>
+    <rect x="510" y="158" width="100" height="40" rx="8" fill="#dafbe1" stroke="#1a7f37"/><text x="560" y="183" text-anchor="middle" font-weight="700" fill="#1a7f37">3/3</text>
+    <text x="680" y="183" text-anchor="middle" fill="#8c959f">–</text>
+
+    <!-- C -->
+    <text x="24" y="230" font-size="14" font-weight="700" fill="#1f2328">C 형식안</text>
+    <text x="24" y="247" fill="#57606a">+ reply·question JSON</text>
+    <rect x="250" y="212" width="100" height="40" rx="8" fill="#dafbe1" stroke="#1a7f37"/><text x="300" y="237" text-anchor="middle" font-weight="700" fill="#1a7f37">3/3</text>
+    <rect x="380" y="212" width="100" height="40" rx="8" fill="#dafbe1" stroke="#1a7f37"/><text x="430" y="237" text-anchor="middle" font-weight="700" fill="#1a7f37">3/3</text>
+    <rect x="510" y="212" width="100" height="40" rx="8" fill="#dafbe1" stroke="#1a7f37"/><text x="560" y="237" text-anchor="middle" font-weight="700" fill="#1a7f37">3/3</text>
+    <rect x="630" y="212" width="100" height="40" rx="8" fill="#ffebe9" stroke="#cf222e"/><text x="680" y="237" text-anchor="middle" font-weight="700" fill="#cf222e">0/3</text>
+
+    <line x1="24" y1="268" x2="736" y2="268" stroke="#d0d7de" stroke-dasharray="4 4"/>
+
+    <!-- B' -->
+    <text x="24" y="298" font-size="14" font-weight="700" fill="#1f2328">B′</text>
+    <text x="24" y="315" fill="#57606a">+ "'또는'으로 함께 제시하지 말고"</text>
+    <rect x="250" y="280" width="100" height="40" rx="8" fill="#dafbe1" stroke="#1a7f37"/><text x="300" y="305" text-anchor="middle" font-weight="700" fill="#1a7f37">3/3</text>
+    <rect x="380" y="280" width="100" height="40" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="2.5"/><text x="430" y="305" text-anchor="middle" font-weight="700" fill="#1a7f37">3/3</text>
+    <rect x="510" y="280" width="100" height="40" rx="8" fill="#dafbe1" stroke="#1a7f37"/><text x="560" y="305" text-anchor="middle" font-weight="700" fill="#1a7f37">3/3</text>
+    <text x="680" y="305" text-anchor="middle" fill="#8c959f">–</text>
+
+    <!-- C' -->
+    <text x="24" y="352" font-size="14" font-weight="700" fill="#1f2328">C′</text>
+    <text x="24" y="369" fill="#57606a">+ "코드 펜스 없이 중괄호로"</text>
+    <rect x="250" y="334" width="100" height="40" rx="8" fill="#dafbe1" stroke="#1a7f37"/><text x="300" y="359" text-anchor="middle" font-weight="700" fill="#1a7f37">3/3</text>
+    <rect x="380" y="334" width="100" height="40" rx="8" fill="#dafbe1" stroke="#1a7f37"/><text x="430" y="359" text-anchor="middle" font-weight="700" fill="#1a7f37">3/3</text>
+    <rect x="510" y="334" width="100" height="40" rx="8" fill="#dafbe1" stroke="#1a7f37"/><text x="560" y="359" text-anchor="middle" font-weight="700" fill="#1a7f37">3/3</text>
+    <rect x="630" y="334" width="100" height="40" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="2.5"/><text x="680" y="359" text-anchor="middle" font-weight="700" fill="#1a7f37">3/3</text>
+  </g>
+  <text x="24" y="398" font-size="11" fill="#57606a">각 3회뿐이라 3/3은 "이 조건에서 세 번 관측됐다"까지만 뜻한다. 이 경로에서는 temperature를 정할 수 없었다.</text>
+</svg>
