@@ -1,0 +1,63 @@
+<svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="16" font-weight="700" fill="#1f2328">뽑기 전에 후보를 줄이는 두 방법</text>
+  <text x="24" y="50" font-size="13" fill="#57606a">“점심으로 ___ 먹자”, 로짓 김밥 2.0 · 라면 1.2 · 떡볶이 0.8 · 비빔밥 0.3 · 돌멩이 -2.0, 온도 1</text>
+  <rect x="24" y="68" width="228" height="236" rx="10" fill="#57606a" fill-opacity="0.06" stroke="#57606a"/>
+  <text x="38" y="94" font-size="15" font-weight="700" fill="#57606a">원래 확률</text>
+  <text x="38" y="114" font-size="12.5" fill="#57606a">다섯 후보 모두 뽑힐 수 있다</text>
+  <text x="38" y="146" font-size="13" fill="#1f2328">김밥</text>
+  <rect x="90" y="134" width="41.0" height="16" rx="3" fill="#57606a" opacity="1"/>
+  <text x="137.0" y="146" font-size="12.5" fill="#57606a">51.2%</text>
+  <text x="238" y="146" font-size="12" text-anchor="end" fill="#57606a">누적 51.2</text>
+  <text x="38" y="174" font-size="13" fill="#1f2328">라면</text>
+  <rect x="90" y="162" width="18.4" height="16" rx="3" fill="#57606a" opacity="0.55"/>
+  <text x="114.4" y="174" font-size="12.5" fill="#57606a">23.0%</text>
+  <text x="238" y="174" font-size="12" text-anchor="end" fill="#57606a">누적 74.3</text>
+  <text x="38" y="202" font-size="13" fill="#1f2328">떡볶이</text>
+  <rect x="90" y="190" width="12.3" height="16" rx="3" fill="#57606a" opacity="0.55"/>
+  <text x="108.3" y="202" font-size="12.5" fill="#57606a">15.4%</text>
+  <text x="238" y="202" font-size="12" text-anchor="end" fill="#57606a">누적 89.7</text>
+  <text x="38" y="230" font-size="13" fill="#1f2328">비빔밥</text>
+  <rect x="90" y="218" width="7.5" height="16" rx="3" fill="#57606a" opacity="0.55"/>
+  <text x="103.5" y="230" font-size="12.5" fill="#57606a">9.4%</text>
+  <text x="238" y="230" font-size="12" text-anchor="end" fill="#57606a">누적 99.1</text>
+  <text x="38" y="258" font-size="13" fill="#1f2328">돌멩이</text>
+  <rect x="90" y="246" width="0.7" height="16" rx="3" fill="#57606a" opacity="0.55"/>
+  <text x="96.7" y="258" font-size="12.5" fill="#57606a">0.9%</text>
+  <text x="238" y="258" font-size="12" text-anchor="end" fill="#57606a">누적 100.0</text>
+  <rect x="266" y="68" width="228" height="236" rx="10" fill="#0969da" fill-opacity="0.06" stroke="#0969da"/>
+  <text x="280" y="94" font-size="15" font-weight="700" fill="#0969da">top_k = 2</text>
+  <text x="280" y="114" font-size="12.5" fill="#57606a">위에서 2개만 남긴다</text>
+  <text x="280" y="146" font-size="13" fill="#1f2328">김밥</text>
+  <rect x="332" y="134" width="96.6" height="16" rx="3" fill="#0969da" opacity="1"/>
+  <text x="434.6" y="146" font-size="12.5" fill="#57606a">69.0%</text>
+  <text x="280" y="174" font-size="13" fill="#1f2328">라면</text>
+  <rect x="332" y="162" width="43.4" height="16" rx="3" fill="#0969da" opacity="0.55"/>
+  <text x="381.4" y="174" font-size="12.5" fill="#57606a">31.0%</text>
+  <text x="280" y="202" font-size="13" fill="#8c959f" text-decoration="line-through">떡볶이</text>
+  <text x="332" y="202" font-size="12.5" fill="#8c959f">빠짐 (0%)</text>
+  <text x="280" y="230" font-size="13" fill="#8c959f" text-decoration="line-through">비빔밥</text>
+  <text x="332" y="230" font-size="12.5" fill="#8c959f">빠짐 (0%)</text>
+  <text x="280" y="258" font-size="13" fill="#8c959f" text-decoration="line-through">돌멩이</text>
+  <text x="332" y="258" font-size="12.5" fill="#8c959f">빠짐 (0%)</text>
+  <rect x="508" y="68" width="228" height="236" rx="10" fill="#1a7f37" fill-opacity="0.06" stroke="#1a7f37"/>
+  <text x="522" y="94" font-size="15" font-weight="700" fill="#1a7f37">top_p = 0.8</text>
+  <text x="522" y="114" font-size="12.5" fill="#57606a">누적이 80%를 넘을 때까지 남긴다</text>
+  <text x="522" y="146" font-size="13" fill="#1f2328">김밥</text>
+  <rect x="574" y="134" width="80.0" height="16" rx="3" fill="#1a7f37" opacity="1"/>
+  <text x="660.0" y="146" font-size="12.5" fill="#57606a">57.1%</text>
+  <text x="522" y="174" font-size="13" fill="#1f2328">라면</text>
+  <rect x="574" y="162" width="35.9" height="16" rx="3" fill="#1a7f37" opacity="0.55"/>
+  <text x="615.9" y="174" font-size="12.5" fill="#57606a">25.7%</text>
+  <text x="522" y="202" font-size="13" fill="#1f2328">떡볶이</text>
+  <rect x="574" y="190" width="24.1" height="16" rx="3" fill="#1a7f37" opacity="0.55"/>
+  <text x="604.1" y="202" font-size="12.5" fill="#57606a">17.2%</text>
+  <text x="522" y="230" font-size="13" fill="#8c959f" text-decoration="line-through">비빔밥</text>
+  <text x="574" y="230" font-size="12.5" fill="#8c959f">빠짐 (0%)</text>
+  <text x="522" y="258" font-size="13" fill="#8c959f" text-decoration="line-through">돌멩이</text>
+  <text x="574" y="258" font-size="12.5" fill="#8c959f">빠짐 (0%)</text>
+  <text x="24" y="330" font-size="13" fill="#57606a">남은 후보끼리 합이 100%가 되게 다시 나눈 뒤 뽑는다. 이 분포에서는 top_p가 3개를 남겼다(51.2 → 74.3 → 89.7%).</text>
+  <rect x="24" y="348" width="712" height="94" rx="10" fill="#fff8c5" fill-opacity="0.5" stroke="#9a6700"/>
+  <text x="40" y="374" font-size="14" font-weight="700" fill="#9a6700">분포가 한쪽으로 쏠리면 (같은 로짓, 온도 0.3 → 김밥 91.6%, 라면 6.4% …)</text>
+  <text x="40" y="402" font-size="13" fill="#1f2328">top_k = 2 → 여전히 2개: 김밥 93.5%, 라면 6.5%</text>
+  <text x="40" y="428" font-size="13" fill="#1f2328">top_p = 0.8 → 김밥 하나로 이미 80%를 넘어 1개만 남는다: 김밥 100%</text>
+</svg>

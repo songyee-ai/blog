@@ -1,0 +1,62 @@
+<svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="16" font-weight="700" fill="#1f2328">같은 로짓, 온도만 바꿨을 때</text>
+  <text x="24" y="50" font-size="13" fill="#57606a">문장 “점심으로 ___ 먹자”의 빈칸 후보. 모델이 준 로짓은 세 칸 모두 똑같다.</text>
+  <rect x="24" y="64" width="712" height="40" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="40" y="89" font-size="13.5" fill="#1f2328">로짓:  김밥 <tspan font-family="monospace">2.0</tspan>   ·   라면 <tspan font-family="monospace">1.2</tspan>   ·   떡볶이 <tspan font-family="monospace">0.8</tspan>   ·   비빔밥 <tspan font-family="monospace">0.3</tspan>   ·   돌멩이 <tspan font-family="monospace">-2.0</tspan></text>
+  <rect x="24" y="120" width="228" height="200" rx="10" fill="#0969da" fill-opacity="0.06" stroke="#0969da"/>
+  <text x="38" y="146" font-size="15" font-weight="700" fill="#0969da">온도 0.5</text>
+  <text x="38" y="166" font-size="12.5" fill="#57606a">낮음 — 1등 쪽으로 쏠린다</text>
+  <text x="38" y="202" font-size="13" fill="#1f2328">김밥</text>
+  <rect x="90" y="190" width="105.6" height="16" rx="3" fill="#0969da" opacity="1"/>
+  <text x="201.6" y="202" font-size="12.5" fill="#57606a">75.4%</text>
+  <text x="38" y="228" font-size="13" fill="#1f2328">라면</text>
+  <rect x="90" y="216" width="21.3" height="16" rx="3" fill="#0969da" opacity="0.55"/>
+  <text x="117.3" y="228" font-size="12.5" fill="#57606a">15.2%</text>
+  <text x="38" y="254" font-size="13" fill="#1f2328">떡볶이</text>
+  <rect x="90" y="242" width="9.6" height="16" rx="3" fill="#0969da" opacity="0.55"/>
+  <text x="105.6" y="254" font-size="12.5" fill="#57606a">6.8%</text>
+  <text x="38" y="280" font-size="13" fill="#1f2328">비빔밥</text>
+  <rect x="90" y="268" width="3.5" height="16" rx="3" fill="#0969da" opacity="0.55"/>
+  <text x="99.5" y="280" font-size="12.5" fill="#57606a">2.5%</text>
+  <text x="38" y="306" font-size="13" fill="#1f2328">돌멩이</text>
+  <rect x="90" y="294" width="1.5" height="16" rx="3" fill="#0969da" opacity="0.55"/>
+  <text x="97.5" y="306" font-size="12.5" fill="#57606a">0.03%</text>
+  <rect x="266" y="120" width="228" height="200" rx="10" fill="#1a7f37" fill-opacity="0.06" stroke="#1a7f37"/>
+  <text x="280" y="146" font-size="15" font-weight="700" fill="#1a7f37">온도 1</text>
+  <text x="280" y="166" font-size="12.5" fill="#57606a">기준 — 로짓 그대로</text>
+  <text x="280" y="202" font-size="13" fill="#1f2328">김밥</text>
+  <rect x="332" y="190" width="71.7" height="16" rx="3" fill="#1a7f37" opacity="1"/>
+  <text x="409.7" y="202" font-size="12.5" fill="#57606a">51.2%</text>
+  <text x="280" y="228" font-size="13" fill="#1f2328">라면</text>
+  <rect x="332" y="216" width="32.2" height="16" rx="3" fill="#1a7f37" opacity="0.55"/>
+  <text x="370.2" y="228" font-size="12.5" fill="#57606a">23.0%</text>
+  <text x="280" y="254" font-size="13" fill="#1f2328">떡볶이</text>
+  <rect x="332" y="242" width="21.6" height="16" rx="3" fill="#1a7f37" opacity="0.55"/>
+  <text x="359.6" y="254" font-size="12.5" fill="#57606a">15.4%</text>
+  <text x="280" y="280" font-size="13" fill="#1f2328">비빔밥</text>
+  <rect x="332" y="268" width="13.1" height="16" rx="3" fill="#1a7f37" opacity="0.55"/>
+  <text x="351.1" y="280" font-size="12.5" fill="#57606a">9.4%</text>
+  <text x="280" y="306" font-size="13" fill="#1f2328">돌멩이</text>
+  <rect x="332" y="294" width="1.5" height="16" rx="3" fill="#1a7f37" opacity="0.55"/>
+  <text x="339.5" y="306" font-size="12.5" fill="#57606a">0.9%</text>
+  <rect x="508" y="120" width="228" height="200" rx="10" fill="#bc4c00" fill-opacity="0.06" stroke="#bc4c00"/>
+  <text x="522" y="146" font-size="15" font-weight="700" fill="#bc4c00">온도 1.5</text>
+  <text x="522" y="166" font-size="12.5" fill="#57606a">높음 — 고르게 퍼진다</text>
+  <text x="522" y="202" font-size="13" fill="#1f2328">김밥</text>
+  <rect x="574" y="190" width="57.7" height="16" rx="3" fill="#bc4c00" opacity="1"/>
+  <text x="637.7" y="202" font-size="12.5" fill="#57606a">41.2%</text>
+  <text x="522" y="228" font-size="13" fill="#1f2328">라면</text>
+  <rect x="574" y="216" width="33.8" height="16" rx="3" fill="#bc4c00" opacity="0.55"/>
+  <text x="613.8" y="228" font-size="12.5" fill="#57606a">24.2%</text>
+  <text x="522" y="254" font-size="13" fill="#1f2328">떡볶이</text>
+  <rect x="574" y="242" width="25.9" height="16" rx="3" fill="#bc4c00" opacity="0.55"/>
+  <text x="605.9" y="254" font-size="12.5" fill="#57606a">18.5%</text>
+  <text x="522" y="280" font-size="13" fill="#1f2328">비빔밥</text>
+  <rect x="574" y="268" width="18.6" height="16" rx="3" fill="#bc4c00" opacity="0.55"/>
+  <text x="598.6" y="280" font-size="12.5" fill="#57606a">13.3%</text>
+  <text x="522" y="306" font-size="13" fill="#1f2328">돌멩이</text>
+  <rect x="574" y="294" width="4.0" height="16" rx="3" fill="#bc4c00" opacity="0.55"/>
+  <text x="584.0" y="306" font-size="12.5" fill="#57606a">2.9%</text>
+  <text x="24" y="350" font-size="13.5" fill="#1f2328">순위는 세 칸 모두 같다(김밥 → 라면 → 떡볶이 → 비빔밥 → 돌멩이). 바뀌는 것은 1등과 나머지의 격차뿐이다.</text>
+  <text x="24" y="374" font-size="13" fill="#57606a">온도를 0 쪽으로 내리면 거의 늘 김밥이 뽑혀 같은 답이 되풀이되고, 올리면 아래 후보도 자주 뽑혀 답이 그때그때 달라진다.</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">JSON을 받는 세 가지 약속</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">위로 갈수록 모양에 대한 약속이 단단해진다. 그래도 내용이 사실인지는 셋 다 따로 본다.</text>
+
+  <g font-size="12.5">
+    <!-- 3단: 구조화 출력 -->
+    <rect x="24" y="72" width="500" height="88" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="42" y="98" font-size="14" font-weight="700" fill="#1a7f37">3. 구조화 출력 (strict schema)</text>
+    <text x="42" y="121" fill="#1f2328">JSON Schema를 호출에 함께 넘긴다</text>
+    <text x="42" y="143" fill="#57606a">지원 범위 안에서 필수 키·자료형까지 맞춘다</text>
+
+    <!-- 2단: JSON 모드 -->
+    <rect x="24" y="172" width="500" height="88" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="42" y="198" font-size="14" font-weight="700" fill="#0969da">2. JSON 모드</text>
+    <text x="42" y="221" fill="#1f2328">호출 설정에서 켠다</text>
+    <text x="42" y="243" fill="#57606a">대개 파싱은 되지만, 원하는 키가 다 있는지는 모른다</text>
+
+    <!-- 1단: 부탁 -->
+    <rect x="24" y="272" width="500" height="88" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+    <text x="42" y="298" font-size="14" font-weight="700" fill="#9a6700">1. 프롬프트로 부탁하기</text>
+    <text x="42" y="321" fill="#1f2328">"JSON 객체만 출력하라" + 예시</text>
+    <text x="42" y="343" fill="#57606a">문법도 깨질 수 있다 (실습: 코드 펜스 때문에 0/3)</text>
+
+    <!-- 오른쪽 띠: 내용 검사 -->
+    <rect x="548" y="72" width="188" height="288" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-dasharray="6 4"/>
+    <text x="642" y="186" font-size="14" font-weight="700" text-anchor="middle" fill="#bc4c00">내용 검사는 따로</text>
+    <text x="642" y="212" text-anchor="middle" fill="#1f2328">값이 사실인가?</text>
+    <text x="642" y="234" text-anchor="middle" fill="#1f2328">원문에 있는가?</text>
+    <text x="642" y="268" font-size="12" text-anchor="middle" fill="#57606a">["강남강", …] 도</text>
+    <text x="642" y="288" font-size="12" text-anchor="middle" fill="#57606a">모양은 통과한다</text>
+  </g>
+
+  <text x="24" y="388" font-size="11.5" fill="#57606a">기능 이름과 지원 범위는 회사마다 다르다. 쓰기 전에 공식 문서로 확인한다.</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">내 코드는 SDK만 부르고, SDK가 API 규칙대로 요청을 만든다</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">편지 쓰기 세트(SDK)를 쓰면 우체국 규칙(API)을 직접 조립하지 않아도 된다. 대신 세트에 든 것만 쓸 수 있다.</text>
+
+  <g font-size="12.5">
+    <rect x="24" y="80" width="150" height="96" rx="10" fill="#f6f8fa" stroke="#57606a"/>
+    <text x="99" y="110" font-size="14" font-weight="700" text-anchor="middle" fill="#1f2328">내 코드</text>
+    <text x="99" y="134" text-anchor="middle" fill="#57606a">query(prompt,</text>
+    <text x="99" y="154" text-anchor="middle" fill="#57606a">options)</text>
+
+    <rect x="210" y="80" width="190" height="96" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="305" y="110" font-size="14" font-weight="700" text-anchor="middle" fill="#0969da">SDK</text>
+    <text x="305" y="134" text-anchor="middle" fill="#1f2328">함수 · 문서 · 예제</text>
+    <text x="305" y="154" text-anchor="middle" fill="#57606a">요청을 대신 조립</text>
+
+    <rect x="436" y="80" width="140" height="96" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+    <text x="506" y="110" font-size="14" font-weight="700" text-anchor="middle" fill="#9a6700">API</text>
+    <text x="506" y="134" text-anchor="middle" fill="#1f2328">주고받는 규칙</text>
+    <text x="506" y="154" text-anchor="middle" fill="#57606a">주소 · 요청 모양</text>
+
+    <rect x="612" y="80" width="124" height="96" rx="10" fill="#f6f8fa" stroke="#57606a"/>
+    <text x="674" y="110" font-size="14" font-weight="700" text-anchor="middle" fill="#1f2328">서비스</text>
+    <text x="674" y="134" text-anchor="middle" fill="#57606a">모델 서버 등</text>
+  </g>
+
+  <g stroke="#57606a" stroke-width="1.6" fill="none" marker-end="url(#arr)">
+    <path d="M174 128 L 206 128"/>
+    <path d="M400 128 L 432 128"/>
+    <path d="M576 128 L 608 128"/>
+  </g>
+
+  <path d="M305 176 L 305 204" stroke="#0969da" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <g font-size="12.5">
+    <rect x="24" y="204" width="346" height="122" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="40" y="230" font-size="13.5" font-weight="700" fill="#1a7f37">열려 있던 손잡이</text>
+    <text x="40" y="254" fill="#1f2328">tools=[] → 도구 끄기</text>
+    <text x="40" y="276" fill="#1f2328">max_turns=1 → 한 번만 답하기</text>
+    <text x="40" y="298" fill="#1f2328">setting_sources=[] → 개인 설정 안 읽기</text>
+
+    <rect x="390" y="204" width="346" height="122" rx="10" fill="#fff1e5" stroke="#bc4c00"/>
+    <text x="406" y="230" font-size="13.5" font-weight="700" fill="#bc4c00">이 경로에 없던 손잡이</text>
+    <text x="406" y="254" fill="#1f2328">temperature, top_k</text>
+    <text x="406" y="276" fill="#57606a">기록에는 숫자 대신</text>
+    <text x="406" y="298" fill="#57606a">"조절 불가"라고 적었다</text>
+  </g>
+
+  <text x="24" y="350" font-size="11.5" fill="#57606a">20회차 실습: Claude Agent SDK 0.2.164의 query(). 열리는 옵션은 SDK·함수·버전마다 다르다.</text>
+</svg>

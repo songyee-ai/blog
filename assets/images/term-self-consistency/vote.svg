@@ -1,0 +1,64 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="연필 3자루짜리 묶음 4개에서 5자루를 나눠 주면 몇 자루가 남는지 같은 질문을 다섯 번 풀게 한다. 풀이 다섯 개 중 세 개는 7, 하나는 2, 하나는 10이 나왔다. 최종 답만 모아 세어 가장 많은 7을 고른다">
+  <defs>
+    <marker id="sc-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8c959f"/></marker>
+  </defs>
+
+  <text x="24" y="30" font-size="16" font-weight="700" fill="#0969da">같은 질문을 여러 번 풀게 하고, 최종 답만 모아 센다</text>
+
+  <!-- 질문 -->
+  <rect x="16" y="150" width="160" height="120" rx="10" fill="#8c959f" fill-opacity="0.08" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="96" y="176" font-size="13" font-weight="700" fill="#8c959f" text-anchor="middle">질문 (한 개)</text>
+  <text x="32" y="204" font-size="13" fill="#8c959f">연필 3자루 묶음 4개,</text>
+  <text x="32" y="226" font-size="13" fill="#8c959f">5자루를 나눠 주면</text>
+  <text x="32" y="248" font-size="13" fill="#8c959f">몇 자루 남을까?</text>
+
+  <!-- 풀이 다섯 개 -->
+  <g font-size="14">
+    <rect x="212" y="56" width="300" height="50" rx="8" fill="#ddf4ff" fill-opacity="0.35" stroke="#0969da" stroke-width="1.2"/>
+    <text x="228" y="86" fill="#0969da" font-weight="700">풀이 1</text><text x="290" y="86" fill="#8c959f">3×4=12, 12−5=7</text>
+    <text x="496" y="86" fill="#1a7f37" font-weight="700" text-anchor="end">7</text>
+
+    <rect x="212" y="122" width="300" height="50" rx="8" fill="#ddf4ff" fill-opacity="0.35" stroke="#0969da" stroke-width="1.2"/>
+    <text x="228" y="152" fill="#0969da" font-weight="700">풀이 2</text><text x="290" y="152" fill="#8c959f">4×3=12, 12−5=7</text>
+    <text x="496" y="152" fill="#1a7f37" font-weight="700" text-anchor="end">7</text>
+
+    <rect x="212" y="188" width="300" height="50" rx="8" fill="#fff1e5" fill-opacity="0.35" stroke="#bc4c00" stroke-width="1.2"/>
+    <text x="228" y="218" fill="#0969da" font-weight="700">풀이 3</text><text x="290" y="218" fill="#8c959f">3+4=7, 7−5=2</text>
+    <text x="496" y="218" fill="#bc4c00" font-weight="700" text-anchor="end">2</text>
+
+    <rect x="212" y="254" width="300" height="50" rx="8" fill="#ddf4ff" fill-opacity="0.35" stroke="#0969da" stroke-width="1.2"/>
+    <text x="228" y="284" fill="#0969da" font-weight="700">풀이 4</text><text x="290" y="284" fill="#8c959f">12자루에서 5 빼면 7</text>
+    <text x="496" y="284" fill="#1a7f37" font-weight="700" text-anchor="end">7</text>
+
+    <rect x="212" y="320" width="300" height="50" rx="8" fill="#fff1e5" fill-opacity="0.35" stroke="#bc4c00" stroke-width="1.2"/>
+    <text x="228" y="350" fill="#0969da" font-weight="700">풀이 5</text><text x="290" y="350" fill="#8c959f">3×5=15, 15−5=10</text>
+    <text x="496" y="350" fill="#bc4c00" font-weight="700" text-anchor="end">10</text>
+  </g>
+  <text x="362" y="400" font-size="12.5" fill="#8c959f" text-anchor="middle">temperature를 0보다 높여 풀이가 여러 갈래로 나오게 한다</text>
+
+  <!-- 질문 → 풀이 -->
+  <g stroke="#8c959f" stroke-width="1.2" fill="none" marker-end="url(#sc-ar)">
+    <line x1="176" y1="210" x2="208" y2="81"/>
+    <line x1="176" y1="210" x2="208" y2="147"/>
+    <line x1="176" y1="210" x2="208" y2="213"/>
+    <line x1="176" y1="210" x2="208" y2="279"/>
+    <line x1="176" y1="210" x2="208" y2="345"/>
+  </g>
+
+  <!-- 풀이 → 개표 -->
+  <line x1="516" y1="213" x2="552" y2="213" stroke="#8c959f" stroke-width="1.5" marker-end="url(#sc-ar)"/>
+
+  <rect x="558" y="110" width="186" height="206" rx="12" fill="#dafbe1" fill-opacity="0.3" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="651" y="140" font-size="14" font-weight="700" fill="#1a7f37" text-anchor="middle">답만 모아 세기</text>
+  <g font-size="14">
+    <text x="580" y="176" fill="#1a7f37" font-weight="700">7</text>
+    <text x="722" y="176" fill="#1a7f37" font-weight="700" text-anchor="end">●●●  3표</text>
+    <text x="580" y="204" fill="#bc4c00">2</text>
+    <text x="722" y="204" fill="#bc4c00" text-anchor="end">●  1표</text>
+    <text x="580" y="232" fill="#bc4c00">10</text>
+    <text x="722" y="232" fill="#bc4c00" text-anchor="end">●  1표</text>
+  </g>
+  <line x1="578" y1="250" x2="724" y2="250" stroke="#1a7f37" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="651" y="282" font-size="15" font-weight="700" fill="#1a7f37" text-anchor="middle">최종 답: 7</text>
+  <text x="651" y="302" font-size="12" fill="#8c959f" text-anchor="middle">풀이 과정은 세지 않는다</text>
+</svg>

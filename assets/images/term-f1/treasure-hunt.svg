@@ -1,0 +1,57 @@
+<svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="보물 쪽지 10장을 찾는 세 아이의 정밀도, 재현율, F1. 하늘은 0.75, 0.60, 0.67. 도윤은 0.20, 1.00, 0.33. 서아는 1.00, 0.10, 0.18. 그냥 평균은 셋 다 0.55 이상이지만 F1은 한쪽이 무너진 아이를 낮게 매긴다">
+  <text x="24" y="28" font-size="16" font-weight="700" fill="#1f2328">보물 쪽지 10장을 숨겼다 — 세 아이가 가져온 것</text>
+  <text x="24" y="50" font-size="13" fill="#57606a">정밀도 = 가져온 것 중 진짜 비율 · 재현율 = 진짜 10장 중 찾아온 비율</text>
+
+  <g font-size="13">
+    <rect x="24" y="68" width="226" height="250" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+    <text x="40" y="94" font-size="14" font-weight="700" fill="#1f2328">하늘</text>
+    <text x="40" y="116" fill="#57606a">8장 가져옴 · 그중 진짜 6장</text>
+    <text x="40" y="150" fill="#0969da">정밀도</text>
+    <rect x="96" y="138" width="75" height="15" rx="3" fill="#0969da"/>
+    <text x="178" y="150" fill="#1f2328">0.75</text>
+    <text x="40" y="180" fill="#bc4c00">재현율</text>
+    <rect x="96" y="168" width="60" height="15" rx="3" fill="#bc4c00"/>
+    <text x="163" y="180" fill="#1f2328">0.60</text>
+    <line x1="40" y1="200" x2="234" y2="200" stroke="#d0d7de"/>
+    <text x="40" y="228" font-weight="700" fill="#1a7f37">F1</text>
+    <rect x="96" y="216" width="66.7" height="15" rx="3" fill="#1a7f37"/>
+    <text x="169" y="228" font-weight="700" fill="#1a7f37">0.67</text>
+    <text x="40" y="262" fill="#57606a">그냥 평균이면 0.68</text>
+    <text x="40" y="298" font-weight="700" fill="#1f2328">둘 다 무난하다</text>
+
+    <rect x="267" y="68" width="226" height="250" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+    <text x="283" y="94" font-size="14" font-weight="700" fill="#1f2328">도윤</text>
+    <text x="283" y="116" fill="#57606a">50장 쓸어 옴 · 그중 진짜 10장</text>
+    <text x="283" y="150" fill="#0969da">정밀도</text>
+    <rect x="339" y="138" width="20" height="15" rx="3" fill="#0969da"/>
+    <text x="366" y="150" fill="#1f2328">0.20</text>
+    <text x="283" y="180" fill="#bc4c00">재현율</text>
+    <rect x="339" y="168" width="100" height="15" rx="3" fill="#bc4c00"/>
+    <text x="446" y="180" fill="#1f2328">1.00</text>
+    <line x1="283" y1="200" x2="477" y2="200" stroke="#d0d7de"/>
+    <text x="283" y="228" font-weight="700" fill="#1a7f37">F1</text>
+    <rect x="339" y="216" width="33.3" height="15" rx="3" fill="#1a7f37"/>
+    <text x="379" y="228" font-weight="700" fill="#1a7f37">0.33</text>
+    <text x="283" y="262" fill="#57606a">그냥 평균이면 0.60</text>
+    <text x="283" y="298" font-weight="700" fill="#1f2328">다 찾았지만 쓰레기가 40장</text>
+
+    <rect x="510" y="68" width="226" height="250" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+    <text x="526" y="94" font-size="14" font-weight="700" fill="#1f2328">서아</text>
+    <text x="526" y="116" fill="#57606a">1장만 가져옴 · 그 1장이 진짜</text>
+    <text x="526" y="150" fill="#0969da">정밀도</text>
+    <rect x="582" y="138" width="100" height="15" rx="3" fill="#0969da"/>
+    <text x="689" y="150" fill="#1f2328">1.00</text>
+    <text x="526" y="180" fill="#bc4c00">재현율</text>
+    <rect x="582" y="168" width="10" height="15" rx="3" fill="#bc4c00"/>
+    <text x="599" y="180" fill="#1f2328">0.10</text>
+    <line x1="526" y1="200" x2="720" y2="200" stroke="#d0d7de"/>
+    <text x="526" y="228" font-weight="700" fill="#1a7f37">F1</text>
+    <rect x="582" y="216" width="18.2" height="15" rx="3" fill="#1a7f37"/>
+    <text x="607" y="228" font-weight="700" fill="#1a7f37">0.18</text>
+    <text x="526" y="262" fill="#57606a">그냥 평균이면 0.55</text>
+    <text x="526" y="298" font-weight="700" fill="#1f2328">틀린 건 없지만 9장을 놓침</text>
+  </g>
+
+  <text x="24" y="350" font-size="13" fill="#57606a">그냥 평균은 세 아이를 0.55~0.68로 비슷하게 보이게 한다.</text>
+  <text x="24" y="374" font-size="13" fill="#1f2328">F1은 둘 중 <tspan font-weight="700">낮은 쪽으로 끌려가서</tspan>, 한쪽이 무너진 도윤과 서아를 낮게 매긴다.</text>
+</svg>

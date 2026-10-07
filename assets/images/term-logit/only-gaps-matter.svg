@@ -1,0 +1,67 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="세 메뉴의 로짓 2, 1, -1에 모두 10을 더하면 확률이 그대로이고, 0.5나 2로 나누면 간격이 바뀌어 확률도 바뀐다">
+  <text x="24" y="28" font-size="16" font-weight="700" fill="#1f2328">확률을 움직이는 것은 점수의 '간격'뿐이다</text>
+  <text x="24" y="50" font-size="13" fill="#57606a">같은 세 로짓에 손질을 해 보고, 소프트맥스로 바꾼 확률을 막대로 그렸다.</text>
+
+  <rect x="24" y="66" width="712" height="122" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="44" y="92" font-size="14" font-weight="700" fill="#0969da">처음 로짓</text>
+  <text x="150" y="92" font-size="13" fill="#57606a">합은 2 — 100도 1도 아니다</text>
+  <g font-size="13" fill="#1f2328">
+    <text x="44" y="122">떡볶이</text><text x="130" y="122" font-family="monospace">2.0</text>
+    <text x="44" y="148">카레</text><text x="130" y="148" font-family="monospace">1.0</text>
+    <text x="44" y="174">나물</text><text x="124" y="174" font-family="monospace">-1.0</text>
+  </g>
+  <rect x="200" y="110" width="211.5" height="15" rx="3" fill="#0969da"/>
+  <rect x="200" y="136" width="78" height="15" rx="3" fill="#0969da" opacity="0.6"/>
+  <rect x="200" y="162" width="10.5" height="15" rx="3" fill="#0969da" opacity="0.35"/>
+  <g font-size="13" fill="#1f2328">
+    <text x="420" y="122">70.5%</text>
+    <text x="286" y="148">26.0%</text>
+    <text x="218" y="174">3.5%</text>
+  </g>
+  <text x="520" y="136" font-size="13" fill="#57606a">점수 사이 간격</text>
+  <text x="520" y="158" font-size="13" fill="#1f2328">떡볶이–카레 1 · 카레–나물 2</text>
+
+  <rect x="24" y="206" width="226" height="180" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="40" y="232" font-size="14" font-weight="700" fill="#1a7f37">① 모두 +10</text>
+  <text x="40" y="252" font-size="13" fill="#57606a">12 · 11 · 9 — 간격 그대로</text>
+  <g font-size="13" fill="#1f2328">
+    <text x="40" y="284">떡볶이</text><text x="40" y="310">카레</text><text x="40" y="336">나물</text>
+  </g>
+  <rect x="100" y="272" width="49.4" height="15" rx="3" fill="#1a7f37"/>
+  <rect x="100" y="298" width="18.2" height="15" rx="3" fill="#1a7f37" opacity="0.6"/>
+  <rect x="100" y="324" width="2.5" height="15" rx="1" fill="#1a7f37" opacity="0.35"/>
+  <g font-size="13" fill="#1f2328">
+    <text x="156" y="284">70.5%</text><text x="125" y="310">26.0%</text><text x="109" y="336">3.5%</text>
+  </g>
+  <text x="40" y="370" font-size="13" font-weight="700" fill="#1a7f37">확률 그대로</text>
+
+  <rect x="267" y="206" width="226" height="180" rx="10" fill="#fff1e5" stroke="#bc4c00"/>
+  <text x="283" y="232" font-size="14" font-weight="700" fill="#bc4c00">② 모두 ÷0.5 (온도 0.5)</text>
+  <text x="283" y="252" font-size="13" fill="#57606a">4 · 2 · -2 — 간격 두 배</text>
+  <g font-size="13" fill="#1f2328">
+    <text x="283" y="284">떡볶이</text><text x="283" y="310">카레</text><text x="283" y="336">나물</text>
+  </g>
+  <rect x="343" y="272" width="61.5" height="15" rx="3" fill="#bc4c00"/>
+  <rect x="343" y="298" width="8.3" height="15" rx="2" fill="#bc4c00" opacity="0.6"/>
+  <rect x="343" y="324" width="2" height="15" rx="1" fill="#bc4c00" opacity="0.35"/>
+  <g font-size="13" fill="#1f2328">
+    <text x="411" y="284">87.9%</text><text x="358" y="310">11.9%</text><text x="352" y="336">0.2%</text>
+  </g>
+  <text x="283" y="370" font-size="13" font-weight="700" fill="#bc4c00">1등이 더 세진다</text>
+
+  <rect x="510" y="206" width="226" height="180" rx="10" fill="#fff1e5" stroke="#bc4c00"/>
+  <text x="526" y="232" font-size="14" font-weight="700" fill="#bc4c00">③ 모두 ÷2 (온도 2)</text>
+  <text x="526" y="252" font-size="13" fill="#57606a">1 · 0.5 · -0.5 — 간격 절반</text>
+  <g font-size="13" fill="#1f2328">
+    <text x="526" y="284">떡볶이</text><text x="526" y="310">카레</text><text x="526" y="336">나물</text>
+  </g>
+  <rect x="586" y="272" width="38.3" height="15" rx="3" fill="#bc4c00"/>
+  <rect x="586" y="298" width="23.2" height="15" rx="3" fill="#bc4c00" opacity="0.6"/>
+  <rect x="586" y="324" width="8.5" height="15" rx="2" fill="#bc4c00" opacity="0.35"/>
+  <g font-size="13" fill="#1f2328">
+    <text x="631" y="284">54.7%</text><text x="616" y="310">33.1%</text><text x="601" y="336">12.2%</text>
+  </g>
+  <text x="526" y="370" font-size="13" font-weight="700" fill="#bc4c00">고르게 퍼진다</text>
+
+  <text x="24" y="418" font-size="13" fill="#57606a">세 경우 모두 순서(떡볶이 &gt; 카레 &gt; 나물)는 그대로다. 온도는 간격만 바꾸고 1등을 바꾸지 않는다.</text>
+</svg>

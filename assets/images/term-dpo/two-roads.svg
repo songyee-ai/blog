@@ -1,0 +1,63 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8c959f"/>
+    </marker>
+  </defs>
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">같은 선호 쌍, 두 갈래 길</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">재료는 같다. RLHF는 채점 모델을 따로 만들어 반복해서 맞춰 가고, DPO는 그 단계를 건너뛴다.</text>
+
+  <!-- RLHF 줄 -->
+  <text x="24" y="84" font-size="13.5" font-weight="700" fill="#9a6700">RLHF (InstructGPT 방식)</text>
+  <g font-size="12.5">
+    <rect x="24" y="96" width="160" height="76" rx="10" fill="#f6f8fa" stroke="#57606a"/>
+    <text x="104" y="122" text-anchor="middle" font-weight="700" fill="#1f2328">선호 쌍</text>
+    <text x="104" y="142" text-anchor="middle" fill="#57606a">질문 + 고른 답</text>
+    <text x="104" y="160" text-anchor="middle" fill="#57606a">+ 안 고른 답</text>
+
+    <rect x="214" y="96" width="160" height="76" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+    <text x="294" y="122" text-anchor="middle" font-weight="700" fill="#9a6700">보상 모델 학습</text>
+    <text x="294" y="142" text-anchor="middle" fill="#1f2328">점수 매기는 모델을</text>
+    <text x="294" y="160" text-anchor="middle" fill="#1f2328">따로 만든다</text>
+
+    <rect x="404" y="96" width="160" height="76" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+    <text x="484" y="122" text-anchor="middle" font-weight="700" fill="#9a6700">강화학습 (PPO)</text>
+    <text x="484" y="142" text-anchor="middle" fill="#1f2328">답 만들기 → 채점</text>
+    <text x="484" y="160" text-anchor="middle" fill="#1f2328">→ 고치기</text>
+
+    <rect x="594" y="96" width="142" height="76" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="665" y="128" text-anchor="middle" font-weight="700" fill="#1a7f37">조정된 모델</text>
+    <text x="665" y="150" text-anchor="middle" fill="#1f2328">선호를 반영</text>
+  </g>
+  <line x1="184" y1="134" x2="211" y2="134" stroke="#8c959f" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="374" y1="134" x2="401" y2="134" stroke="#8c959f" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="564" y1="134" x2="591" y2="134" stroke="#8c959f" stroke-width="1.5" marker-end="url(#arr)"/>
+  <path d="M444,172 C444,200 524,200 524,176" fill="none" stroke="#9a6700" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="484" y="210" font-size="11.5" text-anchor="middle" fill="#9a6700">여러 번 되풀이</text>
+
+  <!-- DPO 줄 -->
+  <text x="24" y="246" font-size="13.5" font-weight="700" fill="#0969da">DPO (Rafailov 등, 2023)</text>
+  <text x="736" y="246" font-size="12" text-anchor="end" fill="#0969da">보상 모델 없음 · 되풀이하는 강화학습 없음</text>
+  <g font-size="12.5">
+    <rect x="24" y="258" width="160" height="76" rx="10" fill="#f6f8fa" stroke="#57606a"/>
+    <text x="104" y="284" text-anchor="middle" font-weight="700" fill="#1f2328">선호 쌍</text>
+    <text x="104" y="304" text-anchor="middle" fill="#57606a">질문 + 고른 답</text>
+    <text x="104" y="322" text-anchor="middle" fill="#57606a">+ 안 고른 답</text>
+
+    <rect x="214" y="258" width="350" height="76" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="389" y="284" text-anchor="middle" font-weight="700" fill="#0969da">직접 조정 (보통의 학습처럼)</text>
+    <text x="389" y="304" text-anchor="middle" fill="#1f2328">고른 답이 나올 확률은 올리고</text>
+    <text x="389" y="322" text-anchor="middle" fill="#1f2328">안 고른 답이 나올 확률은 내린다</text>
+
+    <rect x="594" y="258" width="142" height="76" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="665" y="290" text-anchor="middle" font-weight="700" fill="#1a7f37">조정된 모델</text>
+    <text x="665" y="312" text-anchor="middle" fill="#1f2328">선호를 반영</text>
+
+    <rect x="214" y="352" width="350" height="52" rx="10" fill="none" stroke="#0969da" stroke-dasharray="5 4"/>
+    <text x="389" y="374" text-anchor="middle" fill="#1f2328">기준 모델 = 조정 전 모델을 얼려 둔 사본</text>
+    <text x="389" y="393" text-anchor="middle" fill="#57606a">이것과 견주어 너무 멀리 바뀌지 않게 붙잡는다</text>
+  </g>
+  <line x1="184" y1="296" x2="211" y2="296" stroke="#8c959f" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="564" y1="296" x2="591" y2="296" stroke="#8c959f" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="389" y1="352" x2="389" y2="337" stroke="#0969da" stroke-width="1.5" marker-end="url(#arr)"/>
+</svg>

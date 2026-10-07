@@ -1,0 +1,66 @@
+<svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="왼쪽 사전학습만 한 모델은 고양이 이름 세 개를 지어 달라는 입력 뒤에 비슷한 부탁을 계속 이어 쓴다. 가운데 SFT 단계에서는 사람이 쓴 지시와 모범 답 짝으로 연습시킨다. 오른쪽 SFT를 거친 모델은 같은 입력에 이름 세 개를 답하고 멈춘다">
+  <defs>
+    <marker id="sft-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8c959f"/></marker>
+  </defs>
+
+  <!-- 왼쪽: 사전학습만 -->
+  <rect x="16" y="16" width="220" height="368" rx="12" fill="#fff1e5" fill-opacity="0.3" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="126" y="46" font-size="15" font-weight="700" fill="#bc4c00" text-anchor="middle">사전학습만 한 모델</text>
+
+  <rect x="34" y="64" width="184" height="80" rx="10" fill="#8c959f" fill-opacity="0.08" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="50" y="88" font-size="13" font-weight="700" fill="#8c959f">입력</text>
+  <text x="50" y="112" font-size="14" fill="#8c959f">고양이 이름</text>
+  <text x="50" y="132" font-size="14" fill="#8c959f">세 개 지어 줘</text>
+
+  <rect x="34" y="158" width="184" height="148" rx="10" fill="#8c959f" fill-opacity="0.08" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="50" y="182" font-size="13" font-weight="700" fill="#8c959f">출력</text>
+  <text x="50" y="206" font-size="14" fill="#bc4c00">강아지 이름도</text>
+  <text x="50" y="226" font-size="14" fill="#bc4c00">세 개 지어 줘.</text>
+  <text x="50" y="254" font-size="14" fill="#bc4c00">토끼 이름도</text>
+  <text x="50" y="274" font-size="14" fill="#bc4c00">세 개 지어 줘. …</text>
+
+  <text x="126" y="338" font-size="13" fill="#bc4c00" text-anchor="middle">부탁 목록처럼</text>
+  <text x="126" y="358" font-size="13" fill="#bc4c00" text-anchor="middle">글을 그럴듯하게 이어 쓴다</text>
+
+  <line x1="240" y1="200" x2="266" y2="200" stroke="#8c959f" stroke-width="1.5" marker-end="url(#sft-ar)"/>
+
+  <!-- 가운데: SFT -->
+  <rect x="270" y="16" width="220" height="368" rx="12" fill="#ddf4ff" fill-opacity="0.3" stroke="#0969da" stroke-width="1.5"/>
+  <text x="380" y="46" font-size="15" font-weight="700" fill="#0969da" text-anchor="middle">SFT: 짝으로 연습</text>
+
+  <rect x="288" y="64" width="184" height="72" rx="10" fill="#0969da" fill-opacity="0.06" stroke="#0969da" stroke-width="1.2"/>
+  <text x="304" y="90" font-size="13" fill="#8c959f">지시</text>
+  <text x="340" y="90" font-size="14" fill="#0969da">과일 두 개 말해 줘</text>
+  <text x="304" y="118" font-size="13" fill="#8c959f">모범</text>
+  <text x="340" y="118" font-size="14" font-weight="700" fill="#0969da">사과, 배</text>
+
+  <rect x="288" y="148" width="184" height="72" rx="10" fill="#0969da" fill-opacity="0.06" stroke="#0969da" stroke-width="1.2"/>
+  <text x="304" y="174" font-size="13" fill="#8c959f">지시</text>
+  <text x="340" y="174" font-size="14" fill="#0969da">한 단어로 인사해</text>
+  <text x="304" y="202" font-size="13" fill="#8c959f">모범</text>
+  <text x="340" y="202" font-size="14" font-weight="700" fill="#0969da">안녕!</text>
+
+  <rect x="288" y="232" width="184" height="52" rx="10" fill="#0969da" fill-opacity="0.06" stroke="#0969da" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="380" y="263" font-size="14" fill="#0969da" text-anchor="middle">… 이런 짝이 아주 많이</text>
+
+  <text x="380" y="338" font-size="13" fill="#0969da" text-anchor="middle">사람이 쓴 모범 답을</text>
+  <text x="380" y="358" font-size="13" fill="#0969da" text-anchor="middle">정답으로 놓고 따라 쓰게 한다</text>
+
+  <line x1="494" y1="200" x2="520" y2="200" stroke="#8c959f" stroke-width="1.5" marker-end="url(#sft-ar)"/>
+
+  <!-- 오른쪽: SFT 후 -->
+  <rect x="524" y="16" width="220" height="368" rx="12" fill="#dafbe1" fill-opacity="0.3" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="634" y="46" font-size="15" font-weight="700" fill="#1a7f37" text-anchor="middle">SFT를 거친 모델</text>
+
+  <rect x="542" y="64" width="184" height="80" rx="10" fill="#8c959f" fill-opacity="0.08" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="558" y="88" font-size="13" font-weight="700" fill="#8c959f">입력 (같은 문장)</text>
+  <text x="558" y="112" font-size="14" fill="#8c959f">고양이 이름</text>
+  <text x="558" y="132" font-size="14" fill="#8c959f">세 개 지어 줘</text>
+
+  <rect x="542" y="158" width="184" height="148" rx="10" fill="#8c959f" fill-opacity="0.08" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="558" y="182" font-size="13" font-weight="700" fill="#8c959f">출력</text>
+  <text x="558" y="214" font-size="15" font-weight="700" fill="#1a7f37">나비, 구름, 보리</text>
+
+  <text x="634" y="338" font-size="13" fill="#1a7f37" text-anchor="middle">부탁받은 만큼 답하고</text>
+  <text x="634" y="358" font-size="13" fill="#1a7f37" text-anchor="middle">거기서 멈춘다</text>
+</svg>

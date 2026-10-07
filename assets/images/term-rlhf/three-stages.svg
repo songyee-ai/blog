@@ -1,0 +1,62 @@
+<svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="InstructGPT의 세 단계. 1단계 SFT는 사람이 쓴 모범 답을 따라 쓰게 한다. 2단계는 모델이 낸 여러 답에 사람이 순위를 매기고, 그 순위로 점수를 대신 매기는 보상 모델을 만든다. 3단계 PPO는 보상 모델 점수가 높아지는 쪽으로 모델을 고치되 원래 모습에서 너무 멀어지지 않게 한다. 아래에는 DPO가 2단계와 3단계를 따로 두지 않고 고른 답과 안 고른 답의 짝으로 모델을 바로 고친다는 지름길이 점선으로 그려져 있다">
+  <defs>
+    <marker id="rl-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8c959f"/></marker>
+  </defs>
+
+  <!-- 1단계 -->
+  <rect x="16" y="16" width="220" height="290" rx="12" fill="#ddf4ff" fill-opacity="0.3" stroke="#0969da" stroke-width="1.5"/>
+  <text x="126" y="44" font-size="13" font-weight="700" fill="#8c959f" text-anchor="middle">1단계</text>
+  <text x="126" y="68" font-size="16" font-weight="700" fill="#0969da" text-anchor="middle">SFT</text>
+  <text x="126" y="90" font-size="13" fill="#0969da" text-anchor="middle">보고 따라 하기</text>
+
+  <rect x="34" y="108" width="184" height="118" rx="10" fill="#8c959f" fill-opacity="0.08" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="50" y="134" font-size="13" fill="#8c959f">사람이 쓴 것</text>
+  <text x="50" y="160" font-size="14" fill="#0969da">질문</text>
+  <text x="50" y="184" font-size="14" fill="#0969da">+ 모범 답</text>
+  <text x="50" y="210" font-size="13" fill="#8c959f">→ 그대로 따라 쓰게</text>
+
+  <text x="126" y="256" font-size="13" fill="#0969da" text-anchor="middle">"이렇게 답한다"를</text>
+  <text x="126" y="276" font-size="13" fill="#0969da" text-anchor="middle">시범으로 배운다</text>
+
+  <line x1="240" y1="166" x2="266" y2="166" stroke="#8c959f" stroke-width="1.5" marker-end="url(#rl-ar)"/>
+
+  <!-- 2단계 -->
+  <rect x="270" y="16" width="220" height="290" rx="12" fill="#fff1e5" fill-opacity="0.3" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="380" y="44" font-size="13" font-weight="700" fill="#8c959f" text-anchor="middle">2단계</text>
+  <text x="380" y="68" font-size="16" font-weight="700" fill="#bc4c00" text-anchor="middle">보상 모델</text>
+  <text x="380" y="90" font-size="13" fill="#bc4c00" text-anchor="middle">사람 취향을 배운 채점자</text>
+
+  <rect x="288" y="108" width="184" height="118" rx="10" fill="#8c959f" fill-opacity="0.08" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="304" y="134" font-size="13" fill="#8c959f">모델이 낸 답 여러 개</text>
+  <text x="304" y="160" font-size="14" font-weight="700" fill="#bc4c00">1등  답 C</text>
+  <text x="304" y="184" font-size="14" fill="#bc4c00">2등  답 A</text>
+  <text x="304" y="208" font-size="14" fill="#bc4c00">3등  답 B</text>
+
+  <text x="380" y="256" font-size="13" fill="#bc4c00" text-anchor="middle">사람이 매긴 순위로</text>
+  <text x="380" y="276" font-size="13" fill="#bc4c00" text-anchor="middle">점수 매기는 모델을 만든다</text>
+
+  <line x1="494" y1="166" x2="520" y2="166" stroke="#8c959f" stroke-width="1.5" marker-end="url(#rl-ar)"/>
+
+  <!-- 3단계 -->
+  <rect x="524" y="16" width="220" height="290" rx="12" fill="#dafbe1" fill-opacity="0.3" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="634" y="44" font-size="13" font-weight="700" fill="#8c959f" text-anchor="middle">3단계</text>
+  <text x="634" y="68" font-size="16" font-weight="700" fill="#1a7f37" text-anchor="middle">PPO 강화학습</text>
+  <text x="634" y="90" font-size="13" fill="#1a7f37" text-anchor="middle">점수 보며 연습</text>
+
+  <rect x="542" y="108" width="184" height="118" rx="10" fill="#8c959f" fill-opacity="0.08" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="558" y="134" font-size="13" fill="#8c959f">새 질문에 답을 쓰면</text>
+  <text x="558" y="160" font-size="14" fill="#1a7f37">보상 모델이 점수</text>
+  <text x="558" y="184" font-size="14" fill="#1a7f37">→ 점수가 오르는 쪽</text>
+  <text x="558" y="208" font-size="14" fill="#1a7f37">으로 조금씩 고침</text>
+
+  <text x="634" y="256" font-size="13" fill="#1a7f37" text-anchor="middle">원래 모습에서</text>
+  <text x="634" y="276" font-size="13" fill="#1a7f37" text-anchor="middle">너무 멀어지지 않게 묶는다</text>
+
+  <!-- RLHF 묶음 표시 -->
+  <path d="M276 318 L276 330 L738 330 L738 318" fill="none" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="507" y="352" font-size="14" font-weight="700" fill="#bc4c00" text-anchor="middle">좁은 뜻의 RLHF = 2단계 + 3단계</text>
+
+  <!-- DPO 지름길 -->
+  <rect x="270" y="370" width="474" height="44" rx="10" fill="none" stroke="#8c959f" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="507" y="397" font-size="13" fill="#8c959f" text-anchor="middle">DPO: 채점자와 강화학습 없이, 고른 답 · 안 고른 답 짝으로 바로 고친다</text>
+</svg>
