@@ -1,0 +1,32 @@
+<svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">통제 실험의 첫 질문 — 두 조건 사이에 바뀐 것이 하나뿐인가</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">21회차 반품 질문 실습에서 실제로 비교한 두 쌍. 왼쪽은 원인을 가를 수 없고, 오른쪽은 가를 수 있다.</text>
+
+  <g font-size="13">
+    <rect x="24" y="68" width="348" height="250" rx="10" fill="#ffebe9" stroke="#cf222e"/>
+    <text x="40" y="94" font-size="14" font-weight="700" fill="#cf222e">실습 1 → 실습 2</text>
+    <text x="40" y="114" font-size="12" fill="#57606a">모델·온도·네 조건의 정책 문장은 같았다</text>
+    <text x="40" y="142" fill="#1f2328">함께 바뀐 것</text>
+    <text x="52" y="166" fill="#1f2328">① 질문 문장 (풀어 씀 → 압축)</text>
+    <text x="52" y="190" fill="#1f2328">② 단정 금지 지시의 위치</text>
+    <text x="52" y="214" fill="#1f2328">③ 프롬프트 틀 ([정책] / [질문])</text>
+    <text x="52" y="238" fill="#1f2328">④ 출력 형식 (줄글 → JSON)</text>
+    <text x="40" y="276" font-weight="700" fill="#cf222e">답이 달라졌지만</text>
+    <text x="40" y="298" fill="#1f2328">"JSON 때문"이라고 말할 수 없다</text>
+
+    <rect x="388" y="68" width="348" height="250" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="404" y="94" font-size="14" font-weight="700" fill="#1a7f37">selected → selected_cited</text>
+    <text x="404" y="114" font-size="12" fill="#57606a">고친 코드. 질문·모델·온도·문장 두 줄은 같다</text>
+    <text x="404" y="142" fill="#1f2328">바뀐 것</text>
+    <text x="416" y="166" fill="#1f2328">① 문장 앞의 출처 표식만</text>
+    <text x="416" y="190" font-size="12" fill="#57606a">상품은 수령 후 14일 이내에 …</text>
+    <text x="416" y="210" font-size="12" fill="#1a7f37">[반품 정책 v2.1 §1] 상품은 수령 후 …</text>
+    <text x="404" y="276" font-weight="700" fill="#1a7f37">차이가 나면</text>
+    <text x="404" y="298" fill="#1f2328">표식과 짝지어 말할 수 있다</text>
+  </g>
+
+  <rect x="24" y="334" width="712" height="88" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="40" y="360" font-size="14" font-weight="700" fill="#9a6700">노드 원본 코드에서는</text>
+  <text x="40" y="384" font-size="13" fill="#1f2328">selected에도 이미 [반품 정책 v2.1 §1] 표식이 붙어 있었다.</text>
+  <text x="40" y="406" font-size="13" fill="#1f2328">두 조건의 차이는 머리 줄 하나뿐이라, "표식이 있느냐 없느냐"를 비교한 실험이 되지 못했다.</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg viewBox="0 0 760 520" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">같은 질문이 모델까지 가는 두 길</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">LangChain 길은 층이 하나 더 있다. 대신 맨 위 손잡이의 모양이 모델 회사와 상관없이 같다.</text>
+
+  <text x="198" y="84" font-size="13" font-weight="700" fill="#0969da" text-anchor="middle">LangChain 길 (21회차 실습)</text>
+  <text x="562" y="84" font-size="13" font-weight="700" fill="#bc4c00" text-anchor="middle">직접 부르는 길 (REST)</text>
+
+  <!-- 1층: 내 코드 -->
+  <rect x="24" y="96" width="348" height="58" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="40" y="120" font-size="14" font-weight="700" fill="#0969da">내 코드</text>
+  <text x="40" y="141" font-size="12" fill="#1f2328">resp = llm.invoke(질문)  →  resp.content</text>
+
+  <rect x="388" y="96" width="348" height="58" rx="10" fill="#fff1e5" stroke="#bc4c00"/>
+  <text x="404" y="120" font-size="14" font-weight="700" fill="#bc4c00">내 코드</text>
+  <text x="404" y="141" font-size="12" fill="#1f2328">requests.post(".../api/chat", json=본문)</text>
+
+  <!-- 2층 -->
+  <rect x="24" y="176" width="348" height="58" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="40" y="200" font-size="14" font-weight="700" fill="#0969da">LangChain 손잡이 — ChatOllama</text>
+  <text x="40" y="221" font-size="12" fill="#1f2328">temperature=0, reasoning=False 로 설정</text>
+
+  <rect x="388" y="176" width="348" height="58" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-dasharray="5 4"/>
+  <text x="404" y="200" font-size="14" font-weight="700" fill="#bc4c00">본문을 손으로 조립</text>
+  <text x="404" y="221" font-size="12" fill="#1f2328">"options": {"temperature": 0}, "think": false</text>
+
+  <!-- 3층 -->
+  <rect x="24" y="256" width="348" height="58" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="40" y="280" font-size="14" font-weight="700" fill="#0969da">ollama 파이썬 패키지</text>
+  <text x="40" y="301" font-size="12" fill="#1f2328">LangChain이 안에서 대신 부른다</text>
+
+  <rect x="388" y="256" width="306" height="58" rx="10" fill="none" stroke="#8c959f" stroke-dasharray="5 4"/>
+  <text x="541" y="290" font-size="12" fill="#57606a" text-anchor="middle">거치지 않는다</text>
+
+  <!-- 화살표 -->
+  <line x1="198" y1="154" x2="198" y2="174" stroke="#57606a" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="198" y1="234" x2="198" y2="254" stroke="#57606a" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="198" y1="314" x2="198" y2="334" stroke="#57606a" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="562" y1="154" x2="562" y2="174" stroke="#57606a" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M 720 234 L 720 334" stroke="#57606a" stroke-width="1.5" fill="none" marker-end="url(#ar)"/>
+
+  <!-- 공통: 서버와 모델 -->
+  <rect x="24" y="336" width="712" height="54" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="40" y="360" font-size="14" font-weight="700" fill="#1a7f37">Ollama 서버 — HTTP API (localhost:11434)</text>
+  <text x="40" y="380" font-size="12" fill="#1f2328">두 길이 여기서 만난다. 서버가 꺼져 있으면 어느 길로 불러도 답이 오지 않는다</text>
+
+  <line x1="380" y1="390" x2="380" y2="410" stroke="#57606a" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <rect x="24" y="412" width="712" height="46" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="40" y="440" font-size="14" font-weight="700" fill="#1a7f37">모델 qwen3.5:2b</text>
+  <text x="200" y="440" font-size="12" fill="#1f2328">답을 실제로 만드는 곳. LangChain은 여기에 손대지 않는다</text>
+
+  <text x="24" y="488" font-size="12" fill="#57606a">바꿔 끼우기: ChatOllama 자리에 다른 회사용 Chat 클래스를 넣으면 invoke를 부르는 줄은 그대로 둘 수 있다.</text>
+  <text x="24" y="508" font-size="12" fill="#57606a">다만 옵션 이름(reasoning·think 등)은 층마다, 회사마다 다르다.</text>
+</svg>
