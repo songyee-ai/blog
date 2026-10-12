@@ -43,6 +43,7 @@
 | 19 | 2026-10-06 | `prompt-to-harness` |
 | 20 | 2026-10-07 | `instruction-anatomy` |
 | 21 | 2026-10-08 | `context-select-and-state` |
+| 22 | 2026-10-12 | `tool-contract-and-harness` |
 
 ## 참고 — 원본 정리 노트
 
