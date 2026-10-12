@@ -1,0 +1,53 @@
+<svg viewBox="0 0 760 450" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">에이전트 안티패턴 넷과 세 가지 실패 순간</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">진하게 칠한 칸이 그 습관이 특히 크게 만드는 실패다. 권한 방치는 한 칸이 아니라 세 순간 모두의 피해를 키운다.</text>
+
+  <g font-size="12">
+    <rect x="232" y="66" width="160" height="34" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="312" y="88" text-anchor="middle" font-weight="700" fill="#0969da">잘못 고름</text>
+    <rect x="400" y="66" width="160" height="34" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="480" y="88" text-anchor="middle" font-weight="700" fill="#0969da">잘못 읽음</text>
+    <rect x="568" y="66" width="168" height="34" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="652" y="88" text-anchor="middle" font-weight="700" fill="#0969da">같은 실수 반복</text>
+
+    <!-- 1 도구 남발 -->
+    <rect x="24" y="106" width="200" height="64" rx="8" fill="#f6f8fa" stroke="#8c959f"/>
+    <text x="40" y="132" font-weight="700" fill="#1f2328">도구 남발</text>
+    <text x="40" y="152" fill="#57606a">비슷한 색연필 마흔 자루</text>
+    <rect x="232" y="106" width="160" height="64" rx="8" fill="#ffd8b5" stroke="#bc4c00"/>
+    <text x="312" y="134" text-anchor="middle" font-weight="700" fill="#953800">크게 키움</text>
+    <text x="312" y="154" text-anchor="middle" fill="#953800">겹친 도구 사이에서 헷갈림</text>
+    <rect x="400" y="106" width="160" height="64" rx="8" fill="none" stroke="#d0d7de" stroke-dasharray="4 4"/>
+    <rect x="568" y="106" width="168" height="64" rx="8" fill="none" stroke="#d0d7de" stroke-dasharray="4 4"/>
+
+    <!-- 2 데이터 덤프 -->
+    <rect x="24" y="182" width="200" height="64" rx="8" fill="#f6f8fa" stroke="#8c959f"/>
+    <text x="40" y="208" font-weight="700" fill="#1f2328">반환값 데이터 덤프</text>
+    <text x="40" y="228" fill="#57606a">"몇 시?"에 일기장을 통째로</text>
+    <rect x="232" y="182" width="160" height="64" rx="8" fill="none" stroke="#d0d7de" stroke-dasharray="4 4"/>
+    <rect x="400" y="182" width="160" height="64" rx="8" fill="#ffd8b5" stroke="#bc4c00"/>
+    <text x="480" y="210" text-anchor="middle" font-weight="700" fill="#953800">크게 키움</text>
+    <text x="480" y="230" text-anchor="middle" fill="#953800">잡음 속 엉뚱한 값을 집음</text>
+    <rect x="568" y="182" width="168" height="64" rx="8" fill="none" stroke="#d0d7de" stroke-dasharray="4 4"/>
+
+    <!-- 3 권한 방치 -->
+    <rect x="24" y="258" width="200" height="64" rx="8" fill="#f6f8fa" stroke="#8c959f"/>
+    <text x="40" y="284" font-weight="700" fill="#1f2328">권한 방치</text>
+    <text x="40" y="304" fill="#57606a">출석 확인 부탁에 볼펜까지</text>
+    <rect x="232" y="258" width="504" height="64" rx="8" fill="#ffd8b5" stroke="#bc4c00"/>
+    <text x="484" y="286" text-anchor="middle" font-weight="700" fill="#953800">세 순간 모두의 피해를 키움</text>
+    <text x="484" y="306" text-anchor="middle" fill="#953800">잘못 고르고, 잘못 읽고, 되풀이한 것이 곧바로 실제 변경이 된다</text>
+
+    <!-- 4 중단 없는 순환 -->
+    <rect x="24" y="334" width="200" height="64" rx="8" fill="#f6f8fa" stroke="#8c959f"/>
+    <text x="40" y="360" font-weight="700" fill="#1f2328">중단 없는 순환</text>
+    <text x="40" y="380" fill="#57606a">잠긴 문 손잡이를 계속 돌리기</text>
+    <rect x="232" y="334" width="160" height="64" rx="8" fill="none" stroke="#d0d7de" stroke-dasharray="4 4"/>
+    <rect x="400" y="334" width="160" height="64" rx="8" fill="none" stroke="#d0d7de" stroke-dasharray="4 4"/>
+    <rect x="568" y="334" width="168" height="64" rx="8" fill="#ffd8b5" stroke="#bc4c00"/>
+    <text x="652" y="362" text-anchor="middle" font-weight="700" fill="#953800">크게 키움</text>
+    <text x="652" y="382" text-anchor="middle" fill="#953800">멈출 조건 없이 같은 호출</text>
+  </g>
+
+  <text x="24" y="430" font-size="12" fill="#57606a">점선 칸도 "전혀 상관없음"은 아니다. 습관 하나가 여러 실패에 섞여 들 수 있고, 그림은 가장 큰 쪽만 칠했다.</text>
+</svg>

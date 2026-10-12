@@ -1,0 +1,46 @@
+<svg viewBox="0 0 760 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6e7781"/>
+    </marker>
+  </defs>
+  <text x="24" y="28" font-size="16" font-weight="700" fill="#57606a">Qdrant를 에이전트에 붙였을 때 — 세 층</text>
+  <text x="24" y="50" font-size="12" fill="#6e7781">22회차 실습 구성. 에이전트는 Qdrant를 직접 보지 않고, 가운데 연결 서버가 내놓은 도구 두 개만 본다.</text>
+
+  <!-- 1층: 에이전트 -->
+  <rect x="24" y="68" width="712" height="84" rx="12" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="44" y="96" font-size="15" font-weight="700" fill="#0969da">에이전트</text>
+  <text x="44" y="118" font-size="13" fill="#57606a">Claude Code 2.1.296 · opencode 1.19.0 (WSL)</text>
+  <text x="44" y="138" font-size="13" fill="#57606a">모델이 도구 정의를 읽고, 어떤 도구를 어떤 인자로 부를지 요청을 쓴다</text>
+
+  <!-- 화살표 1 -->
+  <line x1="250" y1="156" x2="250" y2="194" stroke="#6e7781" stroke-width="2" marker-start="url(#ah)"/>
+  <text x="262" y="180" font-size="12" fill="#6e7781">도구 정의 2개를 건넨다</text>
+  <line x1="510" y1="156" x2="510" y2="194" stroke="#6e7781" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="522" y="180" font-size="12" fill="#6e7781">호출 요청을 보낸다</text>
+
+  <!-- 2층: 연결 서버 -->
+  <rect x="24" y="198" width="712" height="128" rx="12" fill="#fff1e5" stroke="#bc4c00"/>
+  <text x="44" y="226" font-size="15" font-weight="700" fill="#bc4c00">연결 서버 — mcp-server-qdrant 0.8.1</text>
+  <text x="44" y="248" font-size="13" fill="#57606a">uvx 한 줄로 받아서 실행한다</text>
+  <rect x="44" y="262" width="320" height="48" rx="8" fill="none" stroke="#bc4c00"/>
+  <text x="60" y="283" font-size="13" font-weight="700" fill="#bc4c00">qdrant-store</text>
+  <text x="60" y="301" font-size="12" fill="#57606a">문장을 벡터로 바꿔 저장</text>
+  <rect x="396" y="262" width="320" height="48" rx="8" fill="none" stroke="#bc4c00"/>
+  <text x="412" y="283" font-size="13" font-weight="700" fill="#bc4c00">qdrant-find</text>
+  <text x="412" y="301" font-size="12" fill="#57606a">질문과 가까운 문장을 순서대로 찾기</text>
+
+  <!-- 화살표 2 -->
+  <line x1="250" y1="330" x2="250" y2="366" stroke="#6e7781" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="262" y="353" font-size="12" fill="#6e7781">임베딩 모델로 숫자 목록을 만든다</text>
+  <line x1="510" y1="330" x2="510" y2="366" stroke="#6e7781" stroke-width="2" marker-start="url(#ah)"/>
+  <text x="522" y="353" font-size="12" fill="#6e7781">가까운 순서로 돌려준다</text>
+
+  <!-- 3층: Qdrant -->
+  <rect x="24" y="370" width="712" height="84" rx="12" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="44" y="398" font-size="15" font-weight="700" fill="#1a7f37">Qdrant 저장소 (QDRANT_URL = ":memory:")</text>
+  <text x="44" y="420" font-size="13" fill="#57606a">연결 서버 프로세스의 메모리 안에만 있다 — 프로세스가 끝나면 함께 사라진다</text>
+  <text x="44" y="440" font-size="13" fill="#57606a">컬렉션 이름은 모델이 인자로 채웠다: Claude는 policies, opencode는 memories</text>
+
+  <text x="24" y="482" font-size="12" fill="#cf222e">설정에 적은 이름이 서버가 읽는 이름과 다르면, 오류 없이 무시되고 기본값으로 돈다 (실습에서는 임베딩 모델이 그랬다)</text>
+</svg>

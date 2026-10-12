@@ -1,0 +1,75 @@
+<svg viewBox="0 0 760 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">도구 정의서의 여섯 칸 — 심부름 카드와 재고 조회 도구</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">왼쪽은 친구에게 쥐여 주는 심부름 카드, 오른쪽은 내 실습의 get_inventory 정의서다. 칸 이름이 같다.</text>
+
+  <g font-size="12">
+    <rect x="24" y="66" width="132" height="34" rx="8" fill="#f6f8fa" stroke="#8c959f"/>
+    <text x="40" y="88" font-weight="700" fill="#1f2328">칸</text>
+    <rect x="164" y="66" width="268" height="34" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="180" y="88" font-weight="700" fill="#0969da">심부름 카드 (비유)</text>
+    <rect x="440" y="66" width="296" height="34" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="456" y="88" font-weight="700" fill="#1a7f37">get_inventory (실제)</text>
+
+    <!-- 1 이름 -->
+    <rect x="24" y="106" width="132" height="54" rx="8" fill="#f6f8fa" stroke="#8c959f"/>
+    <text x="40" y="138" font-weight="700" fill="#1f2328">① 이름</text>
+    <rect x="164" y="106" width="268" height="54" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="180" y="138" fill="#1f2328">우유 사 오기</text>
+    <rect x="440" y="106" width="296" height="54" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="456" y="138" fill="#1f2328">get_inventory</text>
+
+    <!-- 2 하는 일 -->
+    <rect x="24" y="166" width="132" height="54" rx="8" fill="#f6f8fa" stroke="#8c959f"/>
+    <text x="40" y="198" font-weight="700" fill="#1f2328">② 하는 일 한 문장</text>
+    <rect x="164" y="166" width="268" height="54" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="180" y="189" fill="#1f2328">매점에서 우유 한 개를 사 온다.</text>
+    <text x="180" y="207" fill="#57606a">다른 물건은 사지 않는다.</text>
+    <rect x="440" y="166" width="296" height="54" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="456" y="189" fill="#1f2328">허용된 창고 한 곳의 상품 하나 재고를</text>
+    <text x="456" y="207" fill="#57606a">읽기만 한다. 수량은 바꾸지 않는다.</text>
+
+    <!-- 3 쓰는 때 -->
+    <rect x="24" y="226" width="132" height="54" rx="8" fill="#f6f8fa" stroke="#8c959f"/>
+    <text x="40" y="249" font-weight="700" fill="#1f2328">③ 쓰는 때</text>
+    <text x="40" y="267" font-weight="700" fill="#1f2328">   안 쓰는 때</text>
+    <rect x="164" y="226" width="268" height="54" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="180" y="249" fill="#1f2328">쓰는 때: 선생님이 부탁했을 때</text>
+    <text x="180" y="267" fill="#57606a">안 쓰는 때: 매점 문이 닫혔을 때</text>
+    <rect x="440" y="226" width="296" height="54" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="456" y="249" fill="#1f2328">쓰는 때: 상품 코드·창고가 둘 다 분명할 때</text>
+    <text x="456" y="267" fill="#57606a">안 쓰는 때: 수량 변경, 창고를 말하지 않음</text>
+
+    <!-- 4 인자 -->
+    <rect x="24" y="286" width="132" height="54" rx="8" fill="#f6f8fa" stroke="#8c959f"/>
+    <text x="40" y="318" font-weight="700" fill="#1f2328">④ 인자 스키마</text>
+    <rect x="164" y="286" width="268" height="54" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="180" y="309" fill="#1f2328">종류: 흰우유·초코우유 중 하나</text>
+    <text x="180" y="327" fill="#57606a">돈: 1,000원</text>
+    <rect x="440" y="286" width="296" height="54" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="456" y="309" fill="#1f2328">sku: 문자열 3~32자, 필수</text>
+    <text x="456" y="327" fill="#57606a">warehouse_id: SEOUL-01 · BUSAN-02</text>
+
+    <!-- 5 반환 -->
+    <rect x="24" y="346" width="132" height="54" rx="8" fill="#f6f8fa" stroke="#8c959f"/>
+    <text x="40" y="378" font-weight="700" fill="#1f2328">⑤ 반환 형식</text>
+    <rect x="164" y="346" width="268" height="54" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="180" y="369" fill="#1f2328">우유와 거스름돈만 돌려준다.</text>
+    <text x="180" y="387" fill="#57606a">매점 장부를 통째로 들고 오지 않는다.</text>
+    <rect x="440" y="346" width="296" height="54" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="456" y="369" fill="#1f2328">sku, warehouse_id,</text>
+    <text x="456" y="387" fill="#57606a">available_quantity, checked_at 네 가지만</text>
+
+    <!-- 6 실패 -->
+    <rect x="24" y="406" width="132" height="54" rx="8" fill="#f6f8fa" stroke="#8c959f"/>
+    <text x="40" y="429" font-weight="700" fill="#1f2328">⑥ 실패 정의와</text>
+    <text x="40" y="447" font-weight="700" fill="#1f2328">   뒤 행동</text>
+    <rect x="164" y="406" width="268" height="54" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="180" y="429" fill="#1f2328">품절이면 다른 것을 사지 않고</text>
+    <text x="180" y="447" fill="#57606a">돌아와서 무엇으로 할지 묻는다.</text>
+    <rect x="440" y="406" width="296" height="54" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="456" y="429" fill="#1f2328">WAREHOUSE_NOT_ALLOWED → 창고를 묻는다</text>
+    <text x="456" y="447" fill="#57606a">TEMPORARY_ERROR → 한 번 재시도 뒤 중단</text>
+  </g>
+
+  <text x="24" y="486" font-size="12" fill="#9a6700">칸이 모두 차 있어도 "딸기우유"를 부탁받고 초코우유를 사 오는 일은 카드 검사로 걸러지지 않는다 (본문 2절).</text>
+</svg>
