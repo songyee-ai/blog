@@ -1,0 +1,55 @@
+<svg viewBox="0 0 760 400" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7f6e"/>
+    </marker>
+  </defs>
+
+  <!-- 처음 한 번 -->
+  <text x="24" y="34" font-size="15" font-weight="700" fill="#6b7f6e">처음 한 번</text>
+  <g font-size="14" fill="#2b2a28">
+    <rect x="24" y="50" width="150" height="76" rx="12" fill="#eef3ef" stroke="#6b7f6e"/>
+    <text x="99" y="82" text-anchor="middle" font-weight="700">인트로 3장</text>
+    <text x="99" y="104" text-anchor="middle" font-size="13" fill="#5a5853">건너뛸 수 있음</text>
+
+    <rect x="214" y="50" width="150" height="76" rx="12" fill="#eef3ef" stroke="#6b7f6e"/>
+    <text x="289" y="82" text-anchor="middle" font-weight="700">아이 등록</text>
+    <text x="289" y="104" text-anchor="middle" font-size="13" fill="#5a5853">이름 · 나이만 필수</text>
+
+    <rect x="404" y="50" width="150" height="76" rx="12" fill="#eef3ef" stroke="#6b7f6e"/>
+    <text x="479" y="82" text-anchor="middle" font-weight="700">준비됐어요</text>
+    <text x="479" y="104" text-anchor="middle" font-size="13" fill="#5a5853">의료 고지 1회</text>
+  </g>
+  <line x1="174" y1="88" x2="210" y2="88" stroke="#6b7f6e" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="364" y1="88" x2="400" y2="88" stroke="#6b7f6e" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M479 126 L479 176 L289 176 L289 206" fill="none" stroke="#6b7f6e" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- 매일 -->
+  <text x="24" y="196" font-size="15" font-weight="700" fill="#c07a2c">매일</text>
+  <g font-size="14" fill="#2b2a28">
+    <rect x="164" y="210" width="250" height="110" rx="12" fill="#fbf2e6" stroke="#c07a2c"/>
+    <text x="289" y="242" text-anchor="middle" font-weight="700">홈</text>
+    <text x="289" y="266" text-anchor="middle" font-size="13" fill="#5a5853">함께한 N일 · 이번 주 좋은 날</text>
+    <text x="289" y="288" text-anchor="middle" font-size="13" fill="#5a5853">점 일곱 개 · [10초면 돼요]</text>
+
+    <rect x="490" y="210" width="246" height="110" rx="12" fill="#fbf2e6" stroke="#c07a2c"/>
+    <text x="613" y="242" text-anchor="middle" font-weight="700">기록 카드 5장</text>
+    <text x="613" y="266" text-anchor="middle" font-size="13" fill="#5a5853">밥 · 물 · 기운 · 화장실 · 오늘 우리는</text>
+    <text x="613" y="288" text-anchor="middle" font-size="13" fill="#5a5853">다섯 번 누르면 저장 끝</text>
+  </g>
+  <line x1="414" y1="248" x2="486" y2="248" stroke="#c07a2c" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="490" y1="284" x2="418" y2="284" stroke="#c07a2c" stroke-width="2" marker-end="url(#a)"/>
+  <text x="452" y="238" text-anchor="middle" font-size="12" fill="#8a6a3e">기록</text>
+  <text x="452" y="302" text-anchor="middle" font-size="12" fill="#8a6a3e">완료</text>
+
+  <!-- 가끔 -->
+  <text x="24" y="356" font-size="15" font-weight="700" fill="#5b7a99">가끔</text>
+  <g font-size="13" fill="#2b2a28">
+    <rect x="164" y="340" width="120" height="44" rx="10" fill="#eef2f6" stroke="#5b7a99"/>
+    <text x="224" y="367" text-anchor="middle">아이 정보 고치기</text>
+    <rect x="300" y="340" width="120" height="44" rx="10" fill="#eef2f6" stroke="#5b7a99"/>
+    <text x="360" y="367" text-anchor="middle">백업 내보내기</text>
+  </g>
+  <line x1="260" y1="320" x2="236" y2="338" stroke="#5b7a99" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <line x1="318" y1="320" x2="342" y2="338" stroke="#5b7a99" stroke-width="1.5" stroke-dasharray="4 3"/>
+</svg>

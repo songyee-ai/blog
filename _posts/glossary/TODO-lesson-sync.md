@@ -29,7 +29,7 @@
 | 5 | 2026-09-03 | `backend-network-deploy` |
 | 6 | 2026-09-04 | `database-sql-backup` (작업물: `todo-app`) |
 | 7 | 2026-09-07 | `agent-mcp-skill` |
-| 8 | 2026-09-08 | `mvp-scope-five-steps` |
+| 8 | 2026-09-08 | `mvp-scope-five-steps` (작업물: `more-good-days-lite`) |
 | 9 | 2026-09-09 | `code-peer-review-and-recap` |
 | 10 | 2026-09-10 | `how-machines-learn` |
 | 11 | 2026-09-11 | `transformer-token-context` |
