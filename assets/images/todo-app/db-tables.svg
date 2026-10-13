@@ -1,0 +1,59 @@
+<svg viewBox="0 0 760 500" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="26" font-size="15" font-weight="700" fill="#1f2328">코드보다 DB 구조 먼저 — 표 다섯 개와 그 관계</text>
+  <text x="24" y="48" font-size="12" fill="#57606a">할 일과 반복 규칙을 따로 두고, 태그는 연결 표로 잇는다. 규칙 하나가 날짜마다 할 일을 만든다.</text>
+
+  <!-- repeat_rules -->
+  <rect x="24" y="72" width="300" height="160" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="40" y="96" font-size="12.5" font-weight="700" fill="#1f2328">repeat_rules — 반복 규칙</text>
+  <text x="40" y="122" font-size="11" fill="#57606a"><tspan font-family="Consolas,monospace" fill="#0969da">title</tspan>  할 일 이름</text>
+  <text x="40" y="144" font-size="11" fill="#57606a"><tspan font-family="Consolas,monospace" fill="#0969da">freq</tspan>  매일 · 매주 · 매월</text>
+  <text x="40" y="166" font-size="11" fill="#57606a"><tspan font-family="Consolas,monospace" fill="#0969da">byweekday</tspan>  요일 (1=월 … 7=일)</text>
+  <text x="40" y="188" font-size="11" fill="#57606a"><tspan font-family="Consolas,monospace" fill="#0969da">start_date · end_date</tspan>  시작일 · 종료일</text>
+  <text x="40" y="210" font-size="11" fill="#57606a"><tspan font-family="Consolas,monospace" fill="#0969da">last_generated_date</tspan>  어디까지 만들었나</text>
+
+  <!-- todos -->
+  <rect x="436" y="72" width="300" height="182" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="452" y="96" font-size="12.5" font-weight="700" fill="#1f2328">todos — 할 일</text>
+  <text x="452" y="122" font-size="11" fill="#57606a"><tspan font-family="Consolas,monospace" fill="#0969da">title · notes</tspan>  제목 · 메모</text>
+  <text x="452" y="144" font-size="11" fill="#57606a"><tspan font-family="Consolas,monospace" fill="#0969da">due_date</tspan>  마감일</text>
+  <text x="452" y="166" font-size="11" fill="#57606a"><tspan font-family="Consolas,monospace" fill="#0969da">completed_at</tspan>  완료한 시각 (비면 아직)</text>
+  <text x="452" y="188" font-size="11" fill="#57606a"><tspan font-family="Consolas,monospace" fill="#0969da">deleted_at</tspan>  휴지통에 넣은 시각</text>
+  <text x="452" y="210" font-size="11" fill="#57606a"><tspan font-family="Consolas,monospace" fill="#0969da">repeat_rule_id</tspan>  어느 규칙에서 왔나</text>
+  <text x="452" y="232" font-size="11" fill="#57606a"><tspan font-family="Consolas,monospace" fill="#0969da">occurrence_date</tspan>  며칠 치 회차인가</text>
+
+  <!-- repeat_rules -> todos -->
+  <path d="M332 150 L428 150" stroke="#57606a" stroke-width="1.6"/>
+  <path d="M428 150 l-9 -4 l0 8 z" fill="#57606a"/>
+  <text x="380" y="140" font-size="10.5" fill="#57606a" text-anchor="middle">규칙 하나가</text>
+  <text x="380" y="168" font-size="10.5" fill="#57606a" text-anchor="middle">할 일 여러 개</text>
+
+  <!-- repeat_rule_tags -->
+  <rect x="24" y="320" width="220" height="70" rx="8" fill="#fff1e5" stroke="#bc4c00"/>
+  <text x="40" y="344" font-size="12" font-weight="700" fill="#1f2328">repeat_rule_tags</text>
+  <text x="40" y="368" font-size="11" fill="#57606a">연결 표 · <tspan font-family="Consolas,monospace" fill="#bc4c00">rule_id + tag_id</tspan></text>
+
+  <!-- tags -->
+  <rect x="290" y="320" width="180" height="92" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="306" y="344" font-size="12.5" font-weight="700" fill="#1f2328">tags — 태그</text>
+  <text x="306" y="368" font-size="11" fill="#57606a"><tspan font-family="Consolas,monospace" fill="#0969da">name</tspan>  이름 (겹치면 안 됨)</text>
+  <text x="306" y="390" font-size="11" fill="#57606a"><tspan font-family="Consolas,monospace" fill="#0969da">color</tspan>  #RRGGBB</text>
+
+  <!-- todo_tags -->
+  <rect x="516" y="320" width="220" height="70" rx="8" fill="#fff1e5" stroke="#bc4c00"/>
+  <text x="532" y="344" font-size="12" font-weight="700" fill="#1f2328">todo_tags</text>
+  <text x="532" y="368" font-size="11" fill="#57606a">연결 표 · <tspan font-family="Consolas,monospace" fill="#bc4c00">todo_id + tag_id</tspan></text>
+
+  <!-- 세로 연결선 -->
+  <path d="M134 240 L134 312" stroke="#bc4c00" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <path d="M626 262 L626 312" stroke="#bc4c00" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <!-- 가로 연결선 -->
+  <path d="M252 355 L282 355" stroke="#bc4c00" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <path d="M508 355 L478 355" stroke="#bc4c00" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <text x="146" y="282" font-size="10.5" fill="#bc4c00">규칙 ↔ 태그 (다대다)</text>
+  <text x="614" y="290" font-size="10.5" fill="#bc4c00" text-anchor="end">할 일 ↔ 태그 (다대다)</text>
+
+  <!-- 핵심 규칙 -->
+  <rect x="24" y="430" width="712" height="56" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="40" y="453" font-size="11.5" font-weight="700" fill="#1f2328">규칙과 날짜의 짝은 겹칠 수 없게 묶었다 <tspan font-weight="400" font-family="Consolas,monospace" fill="#1a7f37">(repeat_rule_id, occurrence_date)</tspan></text>
+  <text x="40" y="474" font-size="11" fill="#57606a">앱을 몇 번 열어도 같은 날 회차는 한 번만 생기고, 휴지통에 보낸 회차도 다시 생기지 않는다.</text>
+</svg>
