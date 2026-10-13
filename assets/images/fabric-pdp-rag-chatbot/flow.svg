@@ -1,0 +1,73 @@
+<svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">질문 하나가 지나가는 길</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">자료는 미리 벡터로 바꿔 두고, 질문이 오면 가장 가까운 조각 3개만 골라 모델에게 건넨다.</text>
+
+  <g font-size="12">
+    <!-- 미리 한 번 -->
+    <text x="24" y="84" font-weight="700" fill="#57606a">미리 한 번 — build-index.mjs</text>
+    <rect x="24" y="94" width="200" height="56" rx="10" fill="#f6f8fa" stroke="#8c959f"/>
+    <text x="124" y="117" text-anchor="middle" font-weight="700" fill="#1f2328">고시 4개 원문</text>
+    <text x="124" y="137" text-anchor="middle" fill="#57606a">국가법령정보센터</text>
+
+    <rect x="280" y="94" width="220" height="56" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="390" y="117" text-anchor="middle" font-weight="700" fill="#0969da">청크 17개 + 메타데이터</text>
+    <text x="390" y="137" text-anchor="middle" fill="#1f2328">DC-001 ~ DC-017 · 품목 · 직무</text>
+
+    <rect x="556" y="94" width="180" height="56" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="646" y="117" text-anchor="middle" font-weight="700" fill="#0969da">벡터 17 × 768</text>
+    <text x="646" y="137" text-anchor="middle" fill="#1f2328">vectors.json</text>
+
+    <line x1="224" y1="122" x2="278" y2="122" stroke="#57606a" stroke-width="1.5" marker-end="url(#a)"/>
+    <line x1="500" y1="122" x2="554" y2="122" stroke="#57606a" stroke-width="1.5" marker-end="url(#a)"/>
+
+    <!-- 질문할 때마다 -->
+    <text x="24" y="184" font-weight="700" fill="#57606a">질문할 때마다 — ask.mjs</text>
+    <rect x="24" y="194" width="200" height="66" rx="10" fill="#f6f8fa" stroke="#8c959f"/>
+    <text x="124" y="222" text-anchor="middle" font-weight="700" fill="#1f2328">질문</text>
+    <text x="124" y="242" text-anchor="middle" fill="#57606a">한국어 한 줄</text>
+
+    <rect x="280" y="194" width="220" height="66" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="390" y="222" text-anchor="middle" font-weight="700" fill="#0969da">질문 벡터</text>
+    <text x="390" y="242" text-anchor="middle" fill="#1f2328">EmbeddingGemma-300m</text>
+
+    <rect x="556" y="194" width="180" height="66" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="646" y="214" text-anchor="middle" font-weight="700" fill="#0969da">가까운 청크 3개</text>
+    <text x="646" y="233" text-anchor="middle" fill="#1f2328">코사인 유사도 상위 3</text>
+    <text x="646" y="251" text-anchor="middle" fill="#cf222e">0.55 미만이면 ⚠</text>
+
+    <line x1="224" y1="227" x2="278" y2="227" stroke="#57606a" stroke-width="1.5" marker-end="url(#a)"/>
+    <line x1="500" y1="227" x2="554" y2="227" stroke="#57606a" stroke-width="1.5" marker-end="url(#a)"/>
+    <line x1="646" y1="150" x2="646" y2="192" stroke="#57606a" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#a)"/>
+
+    <!-- 갈래 -->
+    <polyline points="646,260 646,286 144,286 144,310" fill="none" stroke="#57606a" stroke-width="1.5" marker-end="url(#a)"/>
+    <line x1="410" y1="286" x2="410" y2="310" stroke="#57606a" stroke-width="1.5" marker-end="url(#a)"/>
+
+    <rect x="24" y="312" width="240" height="72" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="144" y="336" text-anchor="middle" font-weight="700" fill="#0969da">체크리스트</text>
+    <text x="144" y="356" text-anchor="middle" fill="#1f2328">청크의 품목·직무 표시로</text>
+    <text x="144" y="374" text-anchor="middle" fill="#1f2328">프로그램이 만든다</text>
+
+    <rect x="290" y="312" width="240" height="72" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+    <text x="410" y="336" text-anchor="middle" font-weight="700" fill="#9a6700">답변 · qwen3.5:2b</text>
+    <text x="410" y="356" text-anchor="middle" fill="#1f2328">시스템 메시지 + 근거 3개</text>
+    <text x="410" y="374" text-anchor="middle" fill="#1f2328">+ "그대로 인용" 지시</text>
+
+    <rect x="566" y="312" width="170" height="72" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+    <text x="651" y="336" text-anchor="middle" font-weight="700" fill="#9a6700">판정 · 같은 모델</text>
+    <text x="651" y="356" text-anchor="middle" fill="#1f2328">6칸 JSON 채점</text>
+    <text x="651" y="374" text-anchor="middle" fill="#57606a">(거친 신호)</text>
+    <line x1="530" y1="348" x2="564" y2="348" stroke="#57606a" stroke-width="1.5" marker-end="url(#a)"/>
+
+    <!-- 범례 -->
+    <rect x="24" y="404" width="12" height="12" rx="2" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="42" y="414" fill="#57606a">프로그램이 계산 (LLM 없음)</text>
+    <rect x="230" y="404" width="12" height="12" rx="2" fill="#fff8c5" stroke="#9a6700"/>
+    <text x="248" y="414" fill="#57606a">LLM이 글을 만듦 (Ollama, 내 컴퓨터)</text>
+  </g>
+</svg>
