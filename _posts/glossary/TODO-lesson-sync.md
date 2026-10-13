@@ -27,7 +27,7 @@
 | 3 | 2026-09-01 | `path-process-thread` |
 | 4 | 2026-09-02 | `framework-prd-api` |
 | 5 | 2026-09-03 | `backend-network-deploy` |
-| 6 | 2026-09-04 | `database-sql-backup` |
+| 6 | 2026-09-04 | `database-sql-backup` (작업물: `todo-app`) |
 | 7 | 2026-09-07 | `agent-mcp-skill` |
 | 8 | 2026-09-08 | `mvp-scope-five-steps` |
 | 9 | 2026-09-09 | `code-peer-review-and-recap` |
@@ -56,7 +56,7 @@
 글을 만들면 자동으로 링크가 걸린다. `term` 값을 아래 표기와 정확히 맞출 것.
 
 **개발환경** — 터미널 · 셸 · PowerShell
-**웹 / 데이터** — 데이터베이스 · SQL
+**웹 / 데이터** — 데이터베이스 · SQL · CRUD (6회차 작업물 글에서 링크)
 **Git** — 저장소
 **에이전트** — PRD · 바이브 코딩 · 스코프 크립 · 최소 권한
 **AI / 검색** — 청크 · 코사인 유사도 · LLM-as-a-Judge (23회차 작업물 글에서 링크)
