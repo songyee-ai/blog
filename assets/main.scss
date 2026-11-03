@@ -161,27 +161,66 @@ $grey-color-dark:  #4d4d4d !default;
   font-size: 0.9em;
 }
 
+.glossary-search {
+  margin: 1em 0 1.4em;
+
+  input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.6em 0.9em;
+    border: 1px solid rgba(128, 128, 128, 0.45);
+    border-radius: 6px;
+    font: inherit;
+    font-size: 0.95em;
+
+    &:focus {
+      outline: none;
+      border-color: $brand-color;
+      box-shadow: 0 0 0 3px rgba(42, 122, 226, 0.15);
+    }
+  }
+}
+
+.glossary-search-status {
+  min-height: 1.2em;
+  margin: 0.4em 0 0;
+  font-size: 0.85em;
+  color: $grey-color;
+}
+
 .table-scroll {
   overflow-x: auto;
   margin-bottom: 1.6em;
 }
 
+/* 칸 너비를 표마다 같게 고정 — 내용 길이에 따라 분류별로 달라지지 않도록 */
 .glossary-table {
   width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
   font-size: 0.92em;
+
+  .col-term   { width: 30%; }
+  .col-lesson { width: 5em; }
 
   th, td {
     padding: 0.6em 0.8em;
     border: 1px solid rgba(128, 128, 128, 0.25);
     text-align: left;
     vertical-align: top;
+    overflow-wrap: break-word;
+    word-break: keep-all;
   }
 
   th { background: rgba(128, 128, 128, 0.08); }
 
   td:first-child {
     font-weight: 600;
+  }
+
+  th:last-child,
+  td:last-child {
+    text-align: center;
     white-space: nowrap;
   }
 
@@ -322,6 +361,9 @@ $grey-color-dark:  #4d4d4d !default;
 
   .glossary-table {
     font-size: 0.85em;
+
+    .col-term   { width: 34%; }
+    .col-lesson { width: 4.2em; }
 
     th, td { padding: 0.45em 0.55em; }
   }
