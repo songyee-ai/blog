@@ -25,6 +25,8 @@ status: "완성"
 
 **코드 보기** → [github.com/songyee-ai/fabric-pdp-rag-chatbot](https://github.com/songyee-ai/fabric-pdp-rag-chatbot)
 
+**이 과제를 받은 수업** → [23회차 — RAG 안내 챗봇 한 바퀴]({{ site.baseurl }}/2026/10/13/rag-chatbot-evidence-and-judge/)
+
 ---
 
 ## 1. 만들기 전 스케치

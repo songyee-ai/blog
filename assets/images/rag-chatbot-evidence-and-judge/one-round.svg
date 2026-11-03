@@ -1,0 +1,57 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+  </defs>
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">질문에서 판정까지 한 바퀴 — 모두콘 안내 챗봇</text>
+  <text x="24" y="50" font-size="12" fill="#57606a">파란 칸은 검색, 노란 칸은 생성, 초록 칸은 사용자가 보는 근거. 빨간 글씨는 그 칸이 빠지면 사라지는 것.</text>
+
+  <g font-size="12">
+    <rect x="24" y="74" width="160" height="112" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="40" y="98" font-size="14" font-weight="700" fill="#0969da">① 임베딩</text>
+    <text x="40" y="120" fill="#1f2328">"모두콘이 뭐야?"</text>
+    <text x="40" y="140" fill="#57606a">→ 숫자 768개</text>
+    <text x="40" y="172" fill="#cf222e" font-weight="700">비교할 좌표</text>
+
+    <rect x="208" y="74" width="168" height="112" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="224" y="98" font-size="14" font-weight="700" fill="#0969da">② 하이브리드 검색</text>
+    <text x="224" y="120" fill="#1f2328">코사인 상위 10</text>
+    <text x="224" y="140" fill="#1f2328">+ BM25 상위 5</text>
+    <text x="224" y="172" fill="#cf222e" font-weight="700">근거 후보</text>
+
+    <rect x="400" y="74" width="160" height="112" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+    <text x="416" y="98" font-size="14" font-weight="700" fill="#9a6700">③ 프롬프트 조립</text>
+    <text x="416" y="120" fill="#1f2328">근거 원칙·[ID] 규칙</text>
+    <text x="416" y="140" fill="#1f2328">KST 시각·약한 근거</text>
+    <text x="416" y="172" fill="#cf222e" font-weight="700">답의 범위</text>
+
+    <rect x="584" y="74" width="152" height="112" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+    <text x="600" y="98" font-size="14" font-weight="700" fill="#9a6700">④ 스트리밍 답</text>
+    <text x="600" y="120" fill="#1f2328">Ollama</text>
+    <text x="600" y="140" fill="#1f2328">qwen3.5:2b</text>
+    <text x="600" y="172" fill="#cf222e" font-weight="700">진행 상태·중지</text>
+
+    <line x1="184" y1="130" x2="206" y2="130" stroke="#57606a" stroke-width="1.5" marker-end="url(#ar)"/>
+    <line x1="376" y1="130" x2="398" y2="130" stroke="#57606a" stroke-width="1.5" marker-end="url(#ar)"/>
+    <line x1="560" y1="130" x2="582" y2="130" stroke="#57606a" stroke-width="1.5" marker-end="url(#ar)"/>
+
+    <rect x="208" y="206" width="352" height="34" rx="8" fill="#f6f8fa" stroke="#8c959f" stroke-dasharray="5 4"/>
+    <text x="224" y="228" fill="#1f2328">넘기는 것: <tspan font-weight="700">MC-xxx</tspan> · 주소 · 섹션 · 점수 · vector/bm25</text>
+
+    <line x1="660" y1="186" x2="660" y2="266" stroke="#57606a" stroke-width="1.5" marker-end="url(#ar)"/>
+
+    <rect x="24" y="270" width="712" height="128" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="40" y="294" font-size="14" font-weight="700" fill="#1a7f37">⑤ 사용자가 보는 화면 — 답 아래에 근거가 남는다</text>
+    <rect x="40" y="310" width="210" height="72" rx="8" fill="#ffffff" fill-opacity="0.6" stroke="#1a7f37"/>
+    <text x="54" y="332" font-weight="700" fill="#1f2328">출처 칩</text>
+    <text x="54" y="352" fill="#57606a">ID · 섹션 · 방식 · 점수</text>
+    <text x="54" y="370" fill="#57606a">누르면 원문 주소로</text>
+    <rect x="266" y="310" width="210" height="72" rx="8" fill="#ffffff" fill-opacity="0.6" stroke="#1a7f37"/>
+    <text x="280" y="332" font-weight="700" fill="#1f2328">약한 근거 경고</text>
+    <text x="280" y="352" fill="#57606a">최고 유사도 0.55 미만</text>
+    <text x="280" y="370" fill="#57606a">결과는 버리지 않는다</text>
+    <rect x="492" y="310" width="228" height="72" rx="8" fill="#ffffff" fill-opacity="0.6" stroke="#1a7f37"/>
+    <text x="506" y="332" font-weight="700" fill="#1f2328">판정 배지 (6칸 JSON)</text>
+    <text x="506" y="352" fill="#57606a">grounded · noHalluc · cited</text>
+    <text x="506" y="370" fill="#57606a">refusal · score · comment</text>
+  </g>
+</svg>
