@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 340" width="760" height="340" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="좌표 평면에 질문 Q(4,3)과 문서 A(8,6), B(3,4), C(-3,4) 화살표를 그렸다. A는 길이가 두 배지만 방향이 같아 코사인 1.00, B는 0.96, C는 직각이라 0.00이다">
+  <defs>
+    <marker id="cs-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0969da"/></marker>
+    <marker id="cs-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1a7f37"/></marker>
+    <marker id="cs-g2" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="3" markerHeight="3" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1a7f37" fill-opacity="0.5"/></marker>
+    <marker id="cs-o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#bc4c00"/></marker>
+  </defs>
+
+  <!-- 왼쪽: 좌표 평면 -->
+  <rect x="20" y="20" width="380" height="300" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="36" y="48" font-size="15" font-weight="700" fill="#1f2328">화살표 네 개 (좌표 평면)</text>
+  <line x1="36" y1="262" x2="384" y2="262" stroke="#8c959f" stroke-width="1"/>
+  <line x1="140" y1="276" x2="140" y2="68" stroke="#8c959f" stroke-width="1"/>
+  <text x="146" y="280" font-size="13" fill="#57606a">0</text>
+
+  <line x1="140" y1="262" x2="344" y2="109" stroke="#1a7f37" stroke-width="8" stroke-opacity="0.3" marker-end="url(#cs-g2)"/>
+  <line x1="140" y1="262" x2="217" y2="159" stroke="#1a7f37" stroke-width="2.5" marker-end="url(#cs-g)"/>
+  <line x1="140" y1="262" x2="63" y2="159" stroke="#bc4c00" stroke-width="2.5" marker-end="url(#cs-o)"/>
+  <line x1="140" y1="262" x2="243" y2="185" stroke="#0969da" stroke-width="3" marker-end="url(#cs-b)"/>
+  <polyline points="151.2,253.6 142.8,242.4 131.6,250.8" fill="none" stroke="#57606a" stroke-width="1"/>
+
+  <text x="300" y="96" font-size="13" font-weight="700" fill="#1a7f37">A (8, 6)</text>
+  <text x="176" y="146" font-size="13" font-weight="700" fill="#1a7f37">B (3, 4)</text>
+  <text x="44" y="146" font-size="13" font-weight="700" fill="#bc4c00">C (−3, 4)</text>
+  <text x="252" y="200" font-size="13" font-weight="700" fill="#0969da">질문 Q (4, 3)</text>
+  <text x="36" y="304" font-size="13" fill="#57606a">A는 Q보다 두 배 길지만 방향은 똑같다</text>
+
+  <!-- 오른쪽: 계산 -->
+  <rect x="416" y="20" width="324" height="300" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="432" y="48" font-size="15" font-weight="700" fill="#1f2328">Q와 같은 쪽을 보는 정도</text>
+  <text x="432" y="72" font-size="13" fill="#57606a">(곱해서 더한 값) ÷ (두 길이의 곱)</text>
+
+  <text x="432" y="110" font-size="14" font-weight="700" fill="#1a7f37">A → 1.00  완전히 같은 방향</text>
+  <text x="432" y="132" font-size="13" font-family="Consolas,monospace" fill="#1f2328">(4×8 + 3×6) ÷ (5×10) = 50 ÷ 50</text>
+
+  <text x="432" y="176" font-size="14" font-weight="700" fill="#1a7f37">B → 0.96  거의 같은 방향</text>
+  <text x="432" y="198" font-size="13" font-family="Consolas,monospace" fill="#1f2328">(4×3 + 3×4) ÷ (5×5) = 24 ÷ 25</text>
+
+  <text x="432" y="242" font-size="14" font-weight="700" fill="#bc4c00">C → 0.00  직각, 상관없음</text>
+  <text x="432" y="264" font-size="13" font-family="Consolas,monospace" fill="#1f2328">(4×(−3) + 3×4) ÷ (5×5) = 0 ÷ 25</text>
+
+  <text x="432" y="302" font-size="13" fill="#57606a">길이: Q=5, A=10, B=5, C=5</text>
+</svg>

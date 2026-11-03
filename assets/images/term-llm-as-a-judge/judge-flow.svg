@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" width="760" height="500" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="질문, 근거자료, 답변 세 가지를 평가자 LLM에게 함께 건네면 평가자가 여섯 칸짜리 JSON 채점표를 돌려준다. 답한 모델과 채점한 모델이 같으면 독립 심사가 아니라 거친 신호다">
+  <defs>
+    <marker id="jg-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8c959f"/></marker>
+  </defs>
+
+  <text x="20" y="28" font-size="16" font-weight="700" fill="#0969da">답 하나를 채점하는 길 — 세 가지를 넣고, 여섯 칸을 받는다</text>
+
+  <rect x="20" y="46" width="226" height="96" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="38" y="74" font-size="15" font-weight="700" fill="#0969da">[질문]</text>
+  <text x="38" y="100" font-size="13" fill="#1f2328">사용자가 물은 말</text>
+  <text x="38" y="122" font-size="13" fill="#1f2328">"커튼도 성적서가 필요해?"</text>
+
+  <rect x="267" y="46" width="226" height="96" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="285" y="74" font-size="15" font-weight="700" fill="#0969da">[근거자료]</text>
+  <text x="285" y="100" font-size="13" fill="#1f2328">검색이 찾아 건넨 조각</text>
+  <text x="285" y="122" font-size="13" fill="#1f2328">= 받아쓰기의 정답지</text>
+
+  <rect x="514" y="46" width="226" height="96" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="532" y="74" font-size="15" font-weight="700" fill="#0969da">[답변]</text>
+  <text x="532" y="100" font-size="13" fill="#1f2328">챗봇이 쓴 답</text>
+  <text x="532" y="122" font-size="13" fill="#1f2328">= 채점할 시험지</text>
+
+  <line x1="133" y1="146" x2="300" y2="182" stroke="#8c959f" stroke-width="1.5" marker-end="url(#jg-ar)"/>
+  <line x1="380" y1="146" x2="380" y2="182" stroke="#8c959f" stroke-width="1.5" marker-end="url(#jg-ar)"/>
+  <line x1="627" y1="146" x2="460" y2="182" stroke="#8c959f" stroke-width="1.5" marker-end="url(#jg-ar)"/>
+
+  <rect x="150" y="186" width="460" height="84" rx="8" fill="#fff8c5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="380" y="216" font-size="15" font-weight="700" fill="#bc4c00" text-anchor="middle">평가자 LLM</text>
+  <text x="380" y="240" font-size="13" fill="#1f2328" text-anchor="middle">채점 기준표 + "JSON만 출력"</text>
+  <text x="380" y="259" font-size="13" fill="#1f2328" text-anchor="middle">스트리밍 끔 · 생각 끔 · 온도 0</text>
+
+  <line x1="380" y1="274" x2="380" y2="300" stroke="#8c959f" stroke-width="1.5" marker-end="url(#jg-ar)"/>
+
+  <rect x="20" y="304" width="720" height="104" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="38" y="330" font-size="15" font-weight="700" fill="#1a7f37">돌려받는 채점표 (JSON 여섯 칸)</text>
+  <text x="38" y="358" font-size="13" fill="#1f2328"><tspan font-family="monospace" font-weight="700">grounded</tspan>  근거에서 나왔나</text>
+  <text x="278" y="358" font-size="13" fill="#1f2328"><tspan font-family="monospace" font-weight="700">noHalluc</tspan>  지어내지 않았나</text>
+  <text x="518" y="358" font-size="13" fill="#1f2328"><tspan font-family="monospace" font-weight="700">cited</tspan>  [ID]를 적었나</text>
+  <text x="38" y="388" font-size="13" fill="#1f2328"><tspan font-family="monospace" font-weight="700">refusal</tspan>  없다고 말했나</text>
+  <text x="278" y="388" font-size="13" fill="#1f2328"><tspan font-family="monospace" font-weight="700">score</tspan>  0~100 점수</text>
+  <text x="518" y="388" font-size="13" fill="#1f2328"><tspan font-family="monospace" font-weight="700">comment</tspan>  한두 문장 평</text>
+
+  <rect x="20" y="424" width="720" height="62" rx="8" fill="#ffebe9" stroke="#cf222e" stroke-width="1.5"/>
+  <text x="38" y="450" font-size="14" font-weight="700" fill="#cf222e">답한 모델 = 채점한 모델이면 (23회차: 둘 다 qwen3.5:2b)</text>
+  <text x="38" y="472" font-size="13" fill="#1f2328">자기 시험지를 자기가 채점하는 셈이다. 독립 심사가 아니라 거친 신호로 읽는다.</text>
+</svg>

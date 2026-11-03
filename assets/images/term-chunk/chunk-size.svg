@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 370" width="760" height="370" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="긴 원문을 청크로 자르는 세 가지 크기 비교. 너무 크게 자르면 사실 넷이 한 덩어리로 따라오고, 알맞게 자르면 사실 하나와 id·출처 이름표가 붙고, 너무 잘게 자르면 주어가 사라진다">
+  <!-- 카드 1: 너무 크게 -->
+  <rect x="20" y="20" width="228" height="330" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="36" y="50" font-size="15" font-weight="700" fill="#bc4c00">① 너무 크게 자르면</text>
+  <rect x="36" y="68" width="196" height="124" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="50" y="94" font-size="13" fill="#1f2328">침구 정보 항목은 …</text>
+  <text x="50" y="118" font-size="13" fill="#1f2328">커튼은 기타 제품류 …</text>
+  <text x="50" y="142" font-size="13" fill="#1f2328">"항균 99.9%" 광고는 …</text>
+  <text x="50" y="166" font-size="13" fill="#1f2328">우모 혼용률은 …</text>
+  <text x="36" y="226" font-size="13" fill="#1f2328">질문 하나에 사실 넷이</text>
+  <text x="36" y="248" font-size="13" fill="#1f2328">통째로 따라온다</text>
+  <text x="36" y="284" font-size="13" fill="#bc4c00">→ 답과 상관없는 문장이</text>
+  <text x="36" y="306" font-size="13" fill="#bc4c00">섞여 모델이 헷갈린다</text>
+
+  <!-- 카드 2: 알맞게 -->
+  <rect x="266" y="20" width="228" height="330" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="282" y="50" font-size="15" font-weight="700" fill="#1a7f37">② 알맞게 자르면</text>
+  <rect x="282" y="68" width="196" height="138" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="296" y="94" font-size="13" fill="#1f2328">커튼은 기타 제품류라</text>
+  <text x="296" y="116" font-size="13" fill="#1f2328">유해물질 안전요건을</text>
+  <text x="296" y="138" font-size="13" fill="#1f2328">적용하지 않는다.</text>
+  <line x1="296" y1="152" x2="464" y2="152" stroke="#d0d7de"/>
+  <text x="296" y="174" font-size="13" fill="#1a7f37" font-weight="700">id  DC-010</text>
+  <text x="296" y="194" font-size="13" fill="#1a7f37">+ 출처 url · section</text>
+  <text x="282" y="240" font-size="13" font-weight="700" fill="#1f2328">사실 하나 + 이름표</text>
+  <text x="282" y="284" font-size="13" fill="#1a7f37">→ 찾기 쉽고, 답의</text>
+  <text x="282" y="306" font-size="13" fill="#1a7f37">출처를 되짚을 수 있다</text>
+
+  <!-- 카드 3: 너무 잘게 -->
+  <rect x="512" y="20" width="228" height="330" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="528" y="50" font-size="15" font-weight="700" fill="#bc4c00">③ 너무 잘게 자르면</text>
+  <rect x="528" y="68" width="196" height="52" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="542" y="99" font-size="13" fill="#1f2328">"안전요건 미적용"</text>
+  <text x="528" y="152" font-size="13" font-weight="700" fill="#bc4c00">무엇이? 커튼? 침구?</text>
+  <text x="528" y="226" font-size="13" fill="#1f2328">앞뒤 맥락이 잘려</text>
+  <text x="528" y="248" font-size="13" fill="#1f2328">주어가 사라진다</text>
+  <text x="528" y="284" font-size="13" fill="#bc4c00">→ 낱말은 걸려도 모델이</text>
+  <text x="528" y="306" font-size="13" fill="#bc4c00">대상을 짐작해 답한다</text>
+</svg>
