@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="760" height="440" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="Stop 훅의 고리. 모델이 답을 쓰고 끝내려 하면 등록해 둔 korean_guard.py가 돈다. 통과면 답이 끝나고, 막으면 이유가 모델에게 돌아가 모델이 이어서 다시 쓴다. 다시 끝내려 할 때는 이미 한 번 돌려보냈으므로 통과시킨다. 다만 검사 전에 쓴 글은 이미 화면에 나가 있다">
+  <defs>
+    <marker id="hk-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0969da"/>
+    </marker>
+    <marker id="hk-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#bc4c00"/>
+    </marker>
+    <marker id="hk-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1a7f37"/>
+    </marker>
+  </defs>
+  <text x="20" y="34" font-size="16" font-weight="700" fill="#0969da">Stop 훅 — 답을 끝내려는 순간에 한 번 검사한다</text>
+
+  <!-- ① 모델이 답을 쓴다 -->
+  <rect x="20" y="70" width="200" height="96" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="120" y="100" font-size="15" font-weight="700" fill="#0969da" text-anchor="middle">① 모델이 답을 쓴다</text>
+  <rect x="36" y="114" width="168" height="38" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="120" y="138" font-size="13" fill="#1f2328" text-anchor="middle">쓰는 대로 화면에 나간다</text>
+
+  <!-- ② 훅 실행 -->
+  <rect x="280" y="70" width="200" height="96" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="2"/>
+  <text x="380" y="100" font-size="15" font-weight="700" fill="#bc4c00" text-anchor="middle">② 끝내려 하면 훅이 돈다</text>
+  <rect x="296" y="114" width="168" height="38" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="380" y="138" font-size="13" fill="#1f2328" text-anchor="middle">korean_guard.py</text>
+
+  <!-- ③ 통과 -->
+  <rect x="540" y="70" width="200" height="96" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="640" y="100" font-size="15" font-weight="700" fill="#1a7f37" text-anchor="middle">③ 통과 → 답 끝</text>
+  <rect x="556" y="114" width="168" height="38" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="640" y="138" font-size="13" fill="#1f2328" text-anchor="middle">기준에 걸리지 않음</text>
+
+  <line x1="222" y1="118" x2="276" y2="118" stroke="#0969da" stroke-width="2" marker-end="url(#hk-blue)"/>
+  <line x1="482" y1="118" x2="536" y2="118" stroke="#1a7f37" stroke-width="2" marker-end="url(#hk-green)"/>
+
+  <!-- ④ 막음 -->
+  <rect x="280" y="222" width="200" height="96" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="380" y="252" font-size="15" font-weight="700" fill="#bc4c00" text-anchor="middle">④ 막음 + 이유</text>
+  <rect x="296" y="266" width="168" height="38" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="380" y="290" font-size="13" fill="#1f2328" text-anchor="middle">"한국어로 다시 써라"</text>
+
+  <line x1="380" y1="168" x2="380" y2="218" stroke="#bc4c00" stroke-width="2" marker-end="url(#hk-orange)"/>
+  <text x="392" y="198" font-size="13" fill="#bc4c00">영어 줄 2개 이상 등</text>
+
+  <!-- 이유가 모델에게 돌아간다 -->
+  <path d="M278,270 L120,270 L120,170" fill="none" stroke="#bc4c00" stroke-width="2" marker-end="url(#hk-orange)"/>
+  <text x="136" y="260" font-size="13" fill="#bc4c00">이유를 읽고 이어서 쓴다</text>
+
+  <!-- 아래 설명 -->
+  <rect x="20" y="346" width="720" height="78" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1"/>
+  <text x="38" y="374" font-size="14" font-weight="700" fill="#0969da">검사는 ①이 끝난 뒤에 한다 — 이미 나간 글은 거둬들이지 못한다</text>
+  <text x="38" y="400" font-size="13" fill="#0969da">한 번 돌려보낸 뒤 다시 끝내려 할 때는 통과시킨다(stop_hook_active). 고리가 끝없이 돌지 않게 하려는 것이다</text>
+</svg>

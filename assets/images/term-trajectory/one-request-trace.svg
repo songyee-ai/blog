@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" width="760" height="470" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="on-2 시도의 요청 1 실행 궤적을 위에서 아래로 늘어놓았다. 한국어 예고, 도구 호출 세 번, 영어 진행 문장 한 줄, 도구 호출 두 번, 한국어 최종 답 순서다. 최종 답만 보면 한국어지만, 궤적을 보면 중간에 영어 한 줄이 있었다">
+  <text x="20" y="34" font-size="16" font-weight="700" fill="#0969da">요청 1(조사)의 궤적 — on-2 시도, 약 61초</text>
+
+  <!-- 세로 줄 -->
+  <line x1="46" y1="62" x2="46" y2="420" stroke="#0969da" stroke-width="2"/>
+
+  <!-- 1 -->
+  <circle cx="46" cy="76" r="7" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+  <rect x="66" y="60" width="440" height="32" rx="6" fill="#ddf4ff" stroke="#0969da" stroke-width="1"/>
+  <text x="80" y="81" font-size="13" fill="#0969da">글  "브랜치 목록과 커밋 기록을 읽기 전용으로 살펴보겠습니다"</text>
+
+  <!-- 2 -->
+  <circle cx="46" cy="122" r="7" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+  <rect x="66" y="106" width="440" height="32" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="80" y="127" font-size="13" fill="#1f2328">도구  Bash — 브랜치 목록과 전체 커밋 그래프 보기</text>
+
+  <!-- 3 -->
+  <circle cx="46" cy="168" r="7" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+  <rect x="66" y="152" width="440" height="32" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="80" y="173" font-size="13" fill="#1f2328">도구  Bash — 브랜치별 미반영 커밋과 변경 파일 요약</text>
+
+  <!-- 4 -->
+  <circle cx="46" cy="214" r="7" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+  <rect x="66" y="198" width="440" height="32" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="80" y="219" font-size="13" fill="#1f2328">도구  Bash — develop의 문서·파일 목록 보기</text>
+
+  <!-- 5 영어 한 줄 -->
+  <circle cx="46" cy="260" r="8" fill="#fff1e5" stroke="#bc4c00" stroke-width="2.5"/>
+  <rect x="66" y="244" width="440" height="32" rx="6" fill="#fff1e5" stroke="#bc4c00" stroke-width="2"/>
+  <text x="80" y="265" font-size="13" fill="#bc4c00">글  "Branch rules are in README; let me read it …"</text>
+
+  <!-- 6 -->
+  <circle cx="46" cy="306" r="7" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+  <rect x="66" y="290" width="440" height="32" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="80" y="311" font-size="13" fill="#1f2328">도구  Bash — README 규칙과 브랜치별 실제 변경 내용 보기</text>
+
+  <!-- 7 -->
+  <circle cx="46" cy="352" r="7" fill="#ffffff" stroke="#57606a" stroke-width="2"/>
+  <rect x="66" y="336" width="440" height="32" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="80" y="357" font-size="13" fill="#1f2328">도구  Bash — 각 브랜치를 임시 폴더에 꺼내 테스트 실행</text>
+
+  <!-- 8 최종 답 -->
+  <circle cx="46" cy="404" r="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="2.5"/>
+  <rect x="66" y="386" width="440" height="36" rx="6" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="80" y="409" font-size="13" font-weight="700" fill="#1a7f37">최종 답  "조사를 마쳤습니다. 아무것도 바꾸지 않았고 …"</text>
+
+  <!-- 오른쪽 카드 -->
+  <rect x="530" y="60" width="210" height="150" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="546" y="88" font-size="14" font-weight="700" fill="#1a7f37">결과만 보면</text>
+  <text x="546" y="116" font-size="13" fill="#1a7f37">최종 답은 한국어</text>
+  <text x="546" y="140" font-size="13" fill="#1a7f37">훅도 통과</text>
+  <text x="546" y="164" font-size="13" fill="#1a7f37">→ 문제없어 보인다</text>
+
+  <rect x="530" y="230" width="210" height="192" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="546" y="258" font-size="14" font-weight="700" fill="#bc4c00">궤적을 펴 보면</text>
+  <text x="546" y="286" font-size="13" fill="#bc4c00">도구 사이에 영어</text>
+  <text x="546" y="308" font-size="13" fill="#bc4c00">진행 문장 한 줄</text>
+  <text x="546" y="336" font-size="13" fill="#bc4c00">한 줄이라 훅 문턱</text>
+  <text x="546" y="358" font-size="13" fill="#bc4c00">(2줄)에 걸리지 않음</text>
+  <text x="546" y="386" font-size="13" fill="#bc4c00">→ 최종 답 판정에는</text>
+  <text x="546" y="408" font-size="13" fill="#bc4c00">안 잡히는 새는 지점</text>
+
+  <text x="20" y="456" font-size="12" fill="#57606a">도구 결과 줄은 그림에서 뺐다. 실제 기록에는 도구 호출마다 결과 한 줄이 바로 뒤에 붙는다.</text>
+</svg>

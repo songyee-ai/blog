@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 476" width="760" height="476" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="make_fixture.sh 하나가 시도 여섯 번마다 같은 깃 저장소를 새로 만든다. 여섯 폴더 모두 첫 커밋 해시가 05f3a78이고 브랜치 9개, 커밋 18개다. 훅 끔 세 번과 훅 켬 세 번은 출발점이 같고 훅만 다르다">
+  <defs>
+    <marker id="fx-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1a7f37"/>
+    </marker>
+  </defs>
+  <text x="20" y="34" font-size="16" font-weight="700" fill="#1a7f37">스크립트 하나로, 시도마다 똑같은 출발점을 다시 만든다</text>
+
+  <!-- 왼쪽: 스크립트 -->
+  <rect x="20" y="110" width="188" height="216" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="114" y="142" font-size="15" font-weight="700" fill="#1a7f37" text-anchor="middle">make_fixture.sh</text>
+  <rect x="34" y="158" width="160" height="150" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="50" y="184" font-size="13" fill="#1f2328">작성자 이름 고정</text>
+  <text x="50" y="210" font-size="13" fill="#1f2328">커밋 날짜 고정</text>
+  <text x="50" y="236" font-size="13" fill="#1f2328">같은 파일·같은 순서</text>
+  <text x="50" y="262" font-size="13" fill="#1f2328">충돌 2곳</text>
+  <text x="50" y="288" font-size="13" fill="#1f2328">실패 테스트 3곳</text>
+
+  <line x1="212" y1="218" x2="236" y2="218" stroke="#1a7f37" stroke-width="2" marker-end="url(#fx-arrow)"/>
+
+  <!-- 오른쪽: 시도 여섯 개 -->
+  <rect x="240" y="64" width="500" height="308" rx="10" fill="none" stroke="#1a7f37" stroke-width="1" stroke-dasharray="5 4"/>
+
+  <text x="256" y="92" font-size="14" font-weight="700" fill="#0969da">훅 끔</text>
+  <rect x="256" y="104" width="148" height="106" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="330" y="130" font-size="14" font-weight="700" fill="#0969da" text-anchor="middle">off-1</text>
+  <rect x="272" y="142" width="116" height="30" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="330" y="162" font-size="13" fill="#1f2328" text-anchor="middle">05f3a78</text>
+  <text x="330" y="192" font-size="13" fill="#57606a" text-anchor="middle">브랜치 9 · 커밋 18</text>
+
+  <rect x="416" y="104" width="148" height="106" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="490" y="130" font-size="14" font-weight="700" fill="#0969da" text-anchor="middle">off-2</text>
+  <rect x="432" y="142" width="116" height="30" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="490" y="162" font-size="13" fill="#1f2328" text-anchor="middle">05f3a78</text>
+  <text x="490" y="192" font-size="13" fill="#57606a" text-anchor="middle">브랜치 9 · 커밋 18</text>
+
+  <rect x="576" y="104" width="148" height="106" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="650" y="130" font-size="14" font-weight="700" fill="#0969da" text-anchor="middle">off-3</text>
+  <rect x="592" y="142" width="116" height="30" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="650" y="162" font-size="13" fill="#1f2328" text-anchor="middle">05f3a78</text>
+  <text x="650" y="192" font-size="13" fill="#57606a" text-anchor="middle">브랜치 9 · 커밋 18</text>
+
+  <text x="256" y="238" font-size="14" font-weight="700" fill="#bc4c00">훅 켬</text>
+  <rect x="256" y="250" width="148" height="106" rx="8" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="330" y="276" font-size="14" font-weight="700" fill="#bc4c00" text-anchor="middle">on-1</text>
+  <rect x="272" y="288" width="116" height="30" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="330" y="308" font-size="13" fill="#1f2328" text-anchor="middle">05f3a78</text>
+  <text x="330" y="338" font-size="13" fill="#57606a" text-anchor="middle">브랜치 9 · 커밋 18</text>
+
+  <rect x="416" y="250" width="148" height="106" rx="8" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="490" y="276" font-size="14" font-weight="700" fill="#bc4c00" text-anchor="middle">on-2</text>
+  <rect x="432" y="288" width="116" height="30" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="490" y="308" font-size="13" fill="#1f2328" text-anchor="middle">05f3a78</text>
+  <text x="490" y="338" font-size="13" fill="#57606a" text-anchor="middle">브랜치 9 · 커밋 18</text>
+
+  <rect x="576" y="250" width="148" height="106" rx="8" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="650" y="276" font-size="14" font-weight="700" fill="#bc4c00" text-anchor="middle">on-3</text>
+  <rect x="592" y="288" width="116" height="30" rx="5" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="650" y="308" font-size="13" fill="#1f2328" text-anchor="middle">05f3a78</text>
+  <text x="650" y="338" font-size="13" fill="#57606a" text-anchor="middle">브랜치 9 · 커밋 18</text>
+
+  <!-- 아래 설명 -->
+  <rect x="20" y="392" width="720" height="66" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1"/>
+  <text x="38" y="420" font-size="14" font-weight="700" fill="#1a7f37">여섯 폴더의 첫 커밋 해시가 모두 05f3a78 — 글자 하나까지 같은 저장소다</text>
+  <text x="38" y="444" font-size="13" fill="#1a7f37">출발점이 같으니, 끔과 켬의 차이는 저장소가 아니라 훅 쪽에서 찾을 수 있다</text>
+</svg>

@@ -46,6 +46,7 @@
 | 22 | 2026-10-12 | `tool-contract-and-harness` |
 | 23 | 2026-10-13 | `rag-chatbot-evidence-and-judge` (작업물: `fabric-pdp-rag-chatbot`) |
 | 24 | 2026-10-15 | `who-picks-next-step` |
+| 25 | 2026-10-16 | `harness-seven-functions` (과제: `my-harness-experiment`, 작업물 글 없음) |
 
 ## 참고 — 원본 정리 노트
 

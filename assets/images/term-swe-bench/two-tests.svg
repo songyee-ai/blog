@@ -1,0 +1,59 @@
+<svg viewBox="0 0 760 452" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <marker id="sb-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6e7781"/>
+    </marker>
+  </defs>
+  <text x="24" y="28" font-size="16" font-weight="700" fill="#57606a">SWE-bench 한 문제가 채점되는 길</text>
+  <text x="24" y="50" font-size="12" fill="#6e7781">25회차 노드 3·9의 설명을 풀어 그렸다. 문제 수는 [학술] Jimenez et al.과 [공식 문서] OpenAI 기준</text>
+
+  <!-- 문제 -->
+  <rect x="24" y="76" width="196" height="150" rx="12" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="42" y="104" font-size="15" font-weight="700" fill="#0969da">① 문제</text>
+  <text x="42" y="130" font-size="13" fill="#57606a">실제 GitHub 이슈</text>
+  <text x="42" y="152" font-size="13" fill="#57606a">+ 그때의 저장소</text>
+  <text x="42" y="182" font-size="12" fill="#6e7781">"이 값을 넣으면</text>
+  <text x="42" y="200" font-size="12" fill="#6e7781">틀린 답이 나와요"</text>
+
+  <line x1="224" y1="151" x2="262" y2="151" stroke="#6e7781" stroke-width="2" marker-end="url(#sb-ah)"/>
+
+  <!-- 에이전트 -->
+  <rect x="266" y="76" width="196" height="150" rx="12" fill="#fff1e5" stroke="#bc4c00"/>
+  <text x="284" y="104" font-size="15" font-weight="700" fill="#bc4c00">② 에이전트</text>
+  <text x="284" y="130" font-size="13" fill="#57606a">코드를 찾아 읽고</text>
+  <text x="284" y="152" font-size="13" fill="#57606a">고쳐 본 뒤</text>
+  <text x="284" y="174" font-size="13" fill="#57606a">패치 하나를 낸다</text>
+
+  <line x1="466" y1="151" x2="504" y2="151" stroke="#6e7781" stroke-width="2" marker-end="url(#sb-ah)"/>
+
+  <!-- 채점 -->
+  <rect x="508" y="68" width="228" height="234" rx="12" fill="none" stroke="#1a7f37" stroke-dasharray="5 4"/>
+  <text x="524" y="92" font-size="15" font-weight="700" fill="#1a7f37">③ 채점 — 테스트 두 묶음</text>
+  <rect x="522" y="104" width="200" height="74" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="536" y="128" font-size="13" font-weight="700" font-family="monospace" fill="#1a7f37">FAIL_TO_PASS</text>
+  <text x="536" y="150" font-size="12.5" fill="#57606a">고치기 전에 실패하던 테스트가</text>
+  <text x="536" y="168" font-size="12.5" fill="#57606a">이제 통과하나? (이슈 해결)</text>
+  <rect x="522" y="188" width="200" height="74" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="536" y="212" font-size="13" font-weight="700" font-family="monospace" fill="#1a7f37">PASS_TO_PASS</text>
+  <text x="536" y="234" font-size="12.5" fill="#57606a">원래 통과하던 테스트가</text>
+  <text x="536" y="252" font-size="12.5" fill="#57606a">여전히 통과하나? (기존 유지)</text>
+  <text x="524" y="290" font-size="13" font-weight="700" fill="#1a7f37">둘 다 통과해야 "해결"</text>
+
+  <!-- 문제 모음 -->
+  <text x="24" y="268" font-size="14" font-weight="700" fill="#57606a">같은 이름, 다른 문제 모음</text>
+  <rect x="24" y="282" width="150" height="62" rx="10" fill="none" stroke="#0969da"/>
+  <text x="38" y="306" font-size="13" font-weight="700" fill="#0969da">SWE-bench</text>
+  <text x="38" y="328" font-size="12" fill="#57606a">파이썬 저장소 12개</text>
+  <rect x="186" y="282" width="140" height="62" rx="10" fill="none" stroke="#0969da"/>
+  <text x="200" y="306" font-size="13" font-weight="700" fill="#0969da">Lite</text>
+  <text x="200" y="328" font-size="12" fill="#57606a">300문제 축소판</text>
+  <rect x="338" y="282" width="150" height="62" rx="10" fill="none" stroke="#0969da"/>
+  <text x="352" y="306" font-size="13" font-weight="700" fill="#0969da">Verified</text>
+  <text x="352" y="328" font-size="12" fill="#57606a">사람이 검토한 500문제</text>
+  <text x="24" y="366" font-size="12" fill="#6e7781">전체 2,294문제 · Lite 300문제 · Verified 500문제(개발자 93명 검토). 모음이 다르면 점수를 나란히 놓지 않는다.</text>
+
+  <!-- 아래 설명 -->
+  <line x1="24" y1="388" x2="736" y2="388" stroke="#d0d7de"/>
+  <text x="24" y="414" font-size="13" fill="#57606a">채점은 마지막 패치만 본다. 어떤 길로 거기까지 왔는지(실행 궤적)는 따로 봐야 한다.</text>
+  <text x="24" y="436" font-size="13" fill="#57606a">공개된 문제라서 모델이 학습 중에 이미 봤을 위험(오염)도 남는다.</text>
+</svg>
