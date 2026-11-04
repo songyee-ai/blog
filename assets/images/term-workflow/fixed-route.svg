@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" width="760" height="330" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="메일 요약 워크플로의 네 칸. 트리거, Gmail, AI Agent, Google Sheets가 화살표로 이어져 있고, 화살표 순서는 사람이 미리 그렸으며 AI Agent 칸 안에서만 모델이 요약 문장을 만든다">
+  <defs>
+    <marker id="wf-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0969da"/>
+    </marker>
+  </defs>
+  <text x="20" y="34" font-size="16" font-weight="700" fill="#0969da">순서는 사람이 미리 그린 화살표가 정한다</text>
+
+  <!-- 칸 1 -->
+  <rect x="20" y="60" width="150" height="104" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="95" y="92" font-size="15" font-weight="700" fill="#0969da" text-anchor="middle">① 트리거</text>
+  <rect x="34" y="108" width="122" height="40" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="95" y="133" font-size="13" fill="#1f2328" text-anchor="middle">시작 신호</text>
+
+  <!-- 칸 2 -->
+  <rect x="208" y="60" width="150" height="104" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="283" y="92" font-size="15" font-weight="700" fill="#0969da" text-anchor="middle">② Gmail</text>
+  <rect x="222" y="108" width="122" height="40" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="283" y="133" font-size="13" fill="#1f2328" text-anchor="middle">오늘 메일 가져오기</text>
+
+  <!-- 칸 3 (모델) -->
+  <rect x="396" y="60" width="150" height="104" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="2"/>
+  <text x="471" y="92" font-size="15" font-weight="700" fill="#bc4c00" text-anchor="middle">③ AI Agent</text>
+  <rect x="410" y="108" width="122" height="40" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="471" y="133" font-size="13" fill="#1f2328" text-anchor="middle">메일 요약하기</text>
+
+  <!-- 칸 4 -->
+  <rect x="584" y="60" width="156" height="104" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="662" y="92" font-size="15" font-weight="700" fill="#0969da" text-anchor="middle">④ Google Sheets</text>
+  <rect x="598" y="108" width="128" height="40" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="662" y="133" font-size="13" fill="#1f2328" text-anchor="middle">표에 한 줄 추가</text>
+
+  <!-- 화살표 -->
+  <line x1="172" y1="128" x2="204" y2="128" stroke="#0969da" stroke-width="2" marker-end="url(#wf-arrow)"/>
+  <line x1="360" y1="128" x2="392" y2="128" stroke="#0969da" stroke-width="2" marker-end="url(#wf-arrow)"/>
+  <line x1="548" y1="128" x2="580" y2="128" stroke="#0969da" stroke-width="2" marker-end="url(#wf-arrow)"/>
+
+  <!-- 설명 카드 -->
+  <rect x="20" y="194" width="352" height="116" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1"/>
+  <text x="38" y="224" font-size="14" font-weight="700" fill="#0969da">파란 칸과 화살표 = 사람이 정한 것</text>
+  <rect x="38" y="238" width="316" height="58" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="54" y="262" font-size="13" fill="#1f2328">어느 칸 다음에 어느 칸이 오는지는</text>
+  <text x="54" y="284" font-size="13" fill="#1f2328">몇 번을 실행해도 바뀌지 않는다</text>
+
+  <rect x="388" y="194" width="352" height="116" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="1"/>
+  <text x="406" y="224" font-size="14" font-weight="700" fill="#bc4c00">주황 칸 = 모델이 판단하는 곳</text>
+  <rect x="406" y="238" width="316" height="58" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="422" y="262" font-size="13" fill="#1f2328">요약 문장은 모델이 만들지만, 그다음</text>
+  <text x="422" y="284" font-size="13" fill="#1f2328">어디로 갈지는 여전히 화살표가 정한다</text>
+</svg>

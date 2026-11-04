@@ -1,0 +1,47 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <marker id="n8-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6e7781"/>
+    </marker>
+  </defs>
+  <text x="24" y="28" font-size="16" font-weight="700" fill="#57606a">n8n 워크플로 하나가 만들어지고 실행되기까지</text>
+  <text x="24" y="50" font-size="12" fill="#6e7781">24회차 노드 3·4 실습 구성. 만드는 길은 두 갈래이고, 실행은 화면의 버튼으로 했다.</text>
+
+  <!-- 만드는 길 1: 화면 -->
+  <rect x="24" y="68" width="340" height="96" rx="12" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="44" y="96" font-size="15" font-weight="700" fill="#0969da">길 ① 화면에서 직접</text>
+  <text x="44" y="120" font-size="13" fill="#57606a">노드(칸)를 끌어다 놓고</text>
+  <text x="44" y="140" font-size="13" fill="#57606a">연결선으로 순서를 잇는다</text>
+
+  <!-- 만드는 길 2: 코딩 에이전트 -->
+  <rect x="396" y="68" width="340" height="96" rx="12" fill="#fff1e5" stroke="#bc4c00"/>
+  <text x="416" y="96" font-size="15" font-weight="700" fill="#bc4c00">길 ② 코딩 에이전트에게 맡겨서</text>
+  <text x="416" y="120" font-size="13" fill="#57606a">wf.json을 먼저 보여 주고, 확인받은 뒤</text>
+  <text x="416" y="142" font-size="12.5" font-family="monospace" fill="#bc4c00">n8n-cli workflow create</text>
+
+  <line x1="194" y1="168" x2="194" y2="204" stroke="#6e7781" stroke-width="2" marker-end="url(#n8-ah)"/>
+  <line x1="566" y1="168" x2="566" y2="204" stroke="#6e7781" stroke-width="2" marker-end="url(#n8-ah)"/>
+
+  <!-- 워크플로(그래프) -->
+  <rect x="24" y="208" width="712" height="112" rx="12" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="44" y="234" font-size="15" font-weight="700" fill="#1a7f37">n8n 안의 워크플로 — 순서는 그래프가 정한다</text>
+  <rect x="44" y="250" width="190" height="54" rx="8" fill="none" stroke="#1a7f37"/>
+  <text x="60" y="273" font-size="13" font-weight="700" fill="#1a7f37">Manual Trigger</text>
+  <text x="60" y="292" font-size="12" fill="#57606a">버튼을 누르면 시작</text>
+  <line x1="238" y1="277" x2="282" y2="277" stroke="#6e7781" stroke-width="2" marker-end="url(#n8-ah)"/>
+  <rect x="286" y="250" width="230" height="54" rx="8" fill="none" stroke="#1a7f37"/>
+  <text x="302" y="273" font-size="13" font-weight="700" fill="#1a7f37">HTTP Request</text>
+  <text x="302" y="292" font-size="12" fill="#57606a">위키백과 공개 요약을 읽는다</text>
+  <text x="540" y="268" font-size="12.5" font-weight="700" fill="#1a7f37">실행은 Execute workflow</text>
+  <text x="540" y="288" font-size="12" fill="#57606a">CLI에는 실행 명령이 없어</text>
+  <text x="540" y="304" font-size="12" fill="#57606a">화면에서 눌렀다</text>
+
+  <line x1="380" y1="324" x2="380" y2="360" stroke="#6e7781" stroke-width="2" marker-end="url(#n8-ah)"/>
+  <text x="392" y="347" font-size="12" fill="#6e7781">한 번 실행할 때마다</text>
+
+  <!-- 실행 기록 -->
+  <rect x="24" y="364" width="712" height="92" rx="12" fill="none" stroke="#6e7781" stroke-dasharray="5 4"/>
+  <text x="44" y="390" font-size="15" font-weight="700" fill="#57606a">실행 기록(Executions) 1건 = execution 1회</text>
+  <text x="44" y="414" font-size="13" fill="#57606a">칸마다 무엇을 받고 무엇을 내보냈는지 남는다 — 상태 코드, 원본 응답(title, description …)</text>
+  <text x="44" y="436" font-size="13" fill="#57606a">화면의 Executions 탭에서 열거나, CLI의 <tspan dx="4" font-family="monospace" font-size="12.5">execution list / get</tspan><tspan dx="2">으로 다시</tspan> 꺼낸다</text>
+</svg>

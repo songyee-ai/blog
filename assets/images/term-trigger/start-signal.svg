@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 350" width="760" height="350" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="세 가지 트리거가 같은 워크플로를 출발시킨다. 사람이 버튼을 누르면, 정해진 시각이 되면, 다른 서비스에서 일이 생기면 신호가 가고, 그 신호를 받은 첫 칸부터 흐름이 시작된다. 버튼 트리거는 누를 때만, 나머지 둘은 워크플로를 켜 둔 동안 저절로 반복된다">
+  <defs>
+    <marker id="tg-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <text x="20" y="34" font-size="16" font-weight="700" fill="#1a7f37">어떤 신호로 출발하나</text>
+  <text x="470" y="34" font-size="16" font-weight="700" fill="#0969da">출발한 뒤</text>
+
+  <!-- 트리거 1 -->
+  <rect x="20" y="54" width="360" height="74" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="38" y="82" font-size="15" font-weight="700" fill="#1a7f37">버튼을 누르면</text>
+  <text x="38" y="108" font-size="13" fill="#1a7f37">Manual Trigger · 누를 때만 한 번</text>
+
+  <!-- 트리거 2 -->
+  <rect x="20" y="144" width="360" height="74" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="38" y="172" font-size="15" font-weight="700" fill="#bc4c00">정해진 시각이 되면</text>
+  <text x="38" y="198" font-size="13" fill="#bc4c00">예: 매일 아침 9시 · 켜 둔 동안 반복</text>
+
+  <!-- 트리거 3 -->
+  <rect x="20" y="234" width="360" height="74" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="38" y="262" font-size="15" font-weight="700" fill="#bc4c00">다른 곳에서 일이 생기면</text>
+  <text x="38" y="288" font-size="13" fill="#bc4c00">예: 새 메일, 폼 제출 · 켜 둔 동안 반복</text>
+
+  <!-- 화살표 -->
+  <line x1="382" y1="91" x2="462" y2="170" stroke="#57606a" stroke-width="2" marker-end="url(#tg-arrow)"/>
+  <line x1="382" y1="181" x2="462" y2="181" stroke="#57606a" stroke-width="2" marker-end="url(#tg-arrow)"/>
+  <line x1="382" y1="271" x2="462" y2="192" stroke="#57606a" stroke-width="2" marker-end="url(#tg-arrow)"/>
+
+  <!-- 워크플로 -->
+  <rect x="470" y="54" width="270" height="254" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="488" y="84" font-size="15" font-weight="700" fill="#0969da">같은 워크플로</text>
+  <rect x="488" y="102" width="234" height="40" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="605" y="127" font-size="13" fill="#1f2328" text-anchor="middle">트리거 칸 (신호를 받음)</text>
+  <text x="605" y="160" font-size="14" fill="#0969da" text-anchor="middle">↓</text>
+  <rect x="488" y="170" width="234" height="40" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="605" y="195" font-size="13" fill="#1f2328" text-anchor="middle">다음 칸들이 순서대로</text>
+  <text x="488" y="244" font-size="13" fill="#0969da">출발할 때마다</text>
+  <text x="488" y="266" font-size="13" fill="#0969da">실행 기록이 한 건씩 쌓인다</text>
+  <text x="20" y="334" font-size="13" fill="#57606a">초록 = 사람이 직접 출발시킴 · 주황 = 사람이 없어도 저절로 출발함</text>
+</svg>

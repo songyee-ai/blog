@@ -10,7 +10,7 @@ oneliner: "목표를 달성하기 위해 상황을 판단하고 필요한 작업
 lesson: 0
 tags: [AI, 에이전트, LLM]
 summary: "목표를 달성하기 위해 상황을 판단하고 필요한 작업을 스스로 수행하는 AI 시스템"
-related: ["LLM", "프롬프트", "툴", "API", "워크플로우"]
+related: ["LLM", "프롬프트", "툴", "API", "워크플로"]
 ---
 
 ## 한 줄 정의
@@ -107,4 +107,4 @@ LLM은 에이전트를 구성하는 핵심 기술이 될 수 있지만, LLM 자�
 {% include term.html name="프롬프트" %} ·
 {% include term.html name="툴" %} ·
 {% include term.html name="API" %} ·
-{% include term.html name="워크플로우" %}
+{% include term.html name="워크플로" %}

@@ -45,6 +45,7 @@
 | 21 | 2026-10-08 | `context-select-and-state` |
 | 22 | 2026-10-12 | `tool-contract-and-harness` |
 | 23 | 2026-10-13 | `rag-chatbot-evidence-and-judge` (작업물: `fabric-pdp-rag-chatbot`) |
+| 24 | 2026-10-15 | `who-picks-next-step` |
 
 ## 참고 — 원본 정리 노트
 
