@@ -1,0 +1,41 @@
+<svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+  </defs>
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">나눌까, 말까 — 두 질문으로 정한다</text>
+  <text x="24" y="50" font-size="13" fill="#57606a">모양부터 고르지 않는다. 작업이 바뀌면 다시 묻는다.</text>
+
+  <g font-size="13">
+    <rect x="24" y="72" width="300" height="60" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="40" y="98" font-size="14" font-weight="700" fill="#0969da">① 따로 찾아볼 수 있는 일인가?</text>
+    <text x="40" y="120" fill="#57606a">서로의 중간 결과 없이 시작할 수 있나</text>
+
+    <rect x="24" y="162" width="300" height="60" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="40" y="188" font-size="14" font-weight="700" fill="#0969da">② 결과를 따로 검증할 수 있는가?</text>
+    <text x="40" y="210" fill="#57606a">각 결과의 근거를 대조할 기준이 있나</text>
+
+    <line x1="174" y1="132" x2="174" y2="160" stroke="#57606a" stroke-width="1.5" marker-end="url(#ar)"/>
+    <text x="182" y="151" fill="#57606a">예</text>
+
+    <line x1="174" y1="222" x2="174" y2="250" stroke="#1a7f37" stroke-width="1.5" marker-end="url(#ar)"/>
+    <text x="182" y="241" fill="#1a7f37">예</text>
+    <rect x="24" y="252" width="300" height="56" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="40" y="276" font-size="14" font-weight="700" fill="#1a7f37">둘 다 예 → 나눌 후보</text>
+    <text x="40" y="296" fill="#1f2328">예: 독립된 조사 질문이 여럿</text>
+
+    <path d="M324,102 L370,102 L370,150" fill="none" stroke="#cf222e" stroke-width="1.5"/>
+    <path d="M324,192 L370,192 L370,150 L396,150" fill="none" stroke="#cf222e" stroke-width="1.5" marker-end="url(#ar)"/>
+    <text x="334" y="94" fill="#cf222e">아니오</text>
+    <text x="334" y="184" fill="#cf222e">아니오</text>
+    <rect x="398" y="112" width="338" height="76" rx="10" fill="#f6f8fa" stroke="#8c959f"/>
+    <text x="414" y="138" font-size="14" font-weight="700" fill="#1f2328">하나라도 아니오 → 에이전트 하나</text>
+    <text x="414" y="160" fill="#1f2328">한 흐름으로 이어서 보는 게 기본</text>
+    <text x="414" y="178" fill="#57606a">앞 결과가 다음 질문을 정하는 일</text>
+
+    <rect x="398" y="208" width="338" height="100" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+    <text x="414" y="232" font-size="14" font-weight="700" fill="#9a6700">이번 SymPy 문제 셋은</text>
+    <text x="414" y="254" fill="#1f2328">원인이 파일 하나, 함수 하나에 모여 있었다</text>
+    <text x="414" y="274" fill="#1f2328">→ 짧은 확인으로 충분, 나눌 이득이 작았다</text>
+    <text x="414" y="294" fill="#57606a">결과: 나눈 B만 비용 약 2배, 판정은 폐기</text>
+  </g>
+</svg>

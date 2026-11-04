@@ -1,0 +1,55 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+  </defs>
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">같은 버그 셋, 세 방식 — 바꾼 건 "다음 행동을 누가 정하나"뿐</text>
+  <text x="24" y="50" font-size="13" fill="#57606a">모델 haiku, SymPy 문제 3개, 방식마다 1회 실행</text>
+
+  <g font-size="13">
+    <rect x="24" y="70" width="224" height="200" rx="10" fill="#f6f8fa" stroke="#8c959f"/>
+    <text x="40" y="96" font-size="14" font-weight="700" fill="#1f2328">A 기준선</text>
+    <text x="40" y="118" fill="#57606a">정하는 쪽: 에이전트 하나</text>
+    <rect x="40" y="134" width="192" height="40" rx="8" fill="#ffffff" fill-opacity="0.7" stroke="#8c959f"/>
+    <text x="56" y="159" fill="#1f2328">읽기 → 재현 → 수정 → 확인</text>
+    <text x="40" y="206" fill="#1f2328">턴 예산 25</text>
+    <text x="40" y="228" fill="#1f2328">턴 합 17</text>
+
+    <rect x="268" y="70" width="224" height="200" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="284" y="96" font-size="14" font-weight="700" fill="#0969da">B 워크플로</text>
+    <text x="284" y="118" fill="#57606a">정하는 쪽: 파이썬 코드</text>
+    <rect x="284" y="134" width="84" height="40" rx="8" fill="#ffffff" fill-opacity="0.7" stroke="#0969da"/>
+    <text x="298" y="159" fill="#1f2328">locator</text>
+    <line x1="368" y1="154" x2="390" y2="154" stroke="#57606a" stroke-width="1.5" marker-end="url(#ar)"/>
+    <rect x="392" y="134" width="84" height="40" rx="8" fill="#ffffff" fill-opacity="0.7" stroke="#0969da"/>
+    <text x="414" y="159" fill="#1f2328">fixer</text>
+    <text x="284" y="196" fill="#57606a">보고서가 그대로 넘어감</text>
+    <text x="284" y="222" fill="#1f2328">턴 예산 12 + 18</text>
+    <text x="284" y="244" fill="#1f2328">턴 합 31</text>
+
+    <rect x="512" y="70" width="224" height="200" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+    <text x="528" y="96" font-size="14" font-weight="700" fill="#9a6700">C 오케스트레이션</text>
+    <text x="528" y="118" fill="#57606a">정하는 쪽: 리드 모델</text>
+    <rect x="528" y="134" width="84" height="40" rx="8" fill="#ffffff" fill-opacity="0.7" stroke="#9a6700"/>
+    <text x="552" y="159" fill="#1f2328">리드</text>
+    <line x1="612" y1="154" x2="634" y2="154" stroke="#cf222e" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <rect x="636" y="134" width="84" height="40" rx="8" fill="#ffffff" fill-opacity="0.4" stroke="#9a6700" stroke-dasharray="4 3"/>
+    <text x="650" y="159" fill="#57606a">locator</text>
+    <text x="528" y="196" fill="#cf222e" font-weight="700">세 문제 모두 부르지 않음</text>
+    <text x="528" y="222" fill="#1f2328">턴 예산 40</text>
+    <text x="528" y="244" fill="#1f2328">턴 합 20</text>
+
+    <text x="24" y="306" font-size="14" font-weight="700" fill="#1f2328">세 문제 합계 비용 (달러, API 요금 환산)</text>
+    <text x="24" y="340" fill="#1f2328">A</text>
+    <rect x="60" y="326" width="234" height="20" rx="3" fill="#8c959f"/>
+    <text x="302" y="341" fill="#1f2328">0.0135</text>
+    <text x="24" y="374" fill="#1f2328">B</text>
+    <rect x="60" y="360" width="454" height="20" rx="3" fill="#0969da" fill-opacity="0.8"/>
+    <text x="522" y="375" fill="#0969da" font-weight="700">0.0262 (A의 1.94배)</text>
+    <text x="24" y="408" fill="#1f2328">C</text>
+    <rect x="60" y="394" width="289" height="20" rx="3" fill="#9a6700" fill-opacity="0.75"/>
+    <text x="357" y="409" fill="#1f2328">0.0167 (1.24배)</text>
+
+    <rect x="24" y="428" width="712" height="34" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="40" y="450" fill="#1a7f37" font-weight="700">세 방식 모두 2/3 해결 · 문제마다 고친 내용이 사실상 같음 · 24909는 셋 다 같은 곳(1 대 S.One)에서 실패</text>
+  </g>
+</svg>
