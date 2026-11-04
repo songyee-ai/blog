@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="리드가 지시문과 할 일을 서브에이전트 locator에게 맡기면, locator는 자기 컨텍스트에서 읽기 도구만으로 여러 번 탐색하고 보고서만 돌려준 뒤 끝난다. 리드의 컨텍스트에는 보고서 한 장만 들어온다">
+  <defs>
+    <marker id="sa-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0969da"/>
+    </marker>
+    <marker id="sa-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6e7781"/>
+    </marker>
+  </defs>
+  <text x="20" y="34" font-size="16" font-weight="700" fill="#0969da">서브에이전트 — 따로 일하고, 결과만 돌려준다</text>
+
+  <!-- 리드 -->
+  <rect x="20" y="60" width="230" height="214" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="135" y="90" font-size="15" font-weight="700" fill="#bc4c00" text-anchor="middle">리드 (주 에이전트)</text>
+  <rect x="40" y="106" width="190" height="32" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="135" y="127" font-size="13" fill="#1f2328" text-anchor="middle">대화 기록</text>
+  <rect x="40" y="146" width="190" height="32" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="135" y="167" font-size="13" fill="#1f2328" text-anchor="middle">버그를 고치는 내 작업</text>
+  <rect x="40" y="218" width="190" height="38" rx="6" fill="#ffffff" stroke="#6e7781" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="135" y="242" font-size="13" font-weight="700" fill="#57606a" text-anchor="middle">돌아온 보고서 1장</text>
+
+  <!-- 서브에이전트 -->
+  <rect x="510" y="60" width="230" height="214" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="625" y="90" font-size="15" font-weight="700" fill="#0969da" text-anchor="middle">서브에이전트 locator</text>
+  <rect x="530" y="106" width="190" height="32" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="625" y="127" font-size="13" fill="#1f2328" text-anchor="middle">자기 컨텍스트에서</text>
+  <rect x="530" y="146" width="190" height="32" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="625" y="167" font-size="13" fill="#1f2328" text-anchor="middle">검색 · 파일 읽기 여러 번</text>
+  <rect x="530" y="186" width="190" height="70" rx="6" fill="#ffffff" stroke="#0969da"/>
+  <text x="625" y="214" font-size="13" fill="#0969da" text-anchor="middle">쓸 수 있는 도구</text>
+  <text x="625" y="238" font-size="13" font-weight="700" fill="#0969da" text-anchor="middle">Read · Grep · Glob</text>
+
+  <!-- 화살표 -->
+  <line x1="254" y1="124" x2="504" y2="124" stroke="#0969da" stroke-width="2" marker-end="url(#sa-blue)"/>
+  <text x="380" y="112" font-size="13" fill="#0969da" text-anchor="middle">① 맡김: 지시문과 할 일</text>
+  <line x1="506" y1="236" x2="236" y2="236" stroke="#6e7781" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#sa-gray)"/>
+  <text x="380" y="224" font-size="13" fill="#57606a" text-anchor="middle">② 보고서만 돌려주고 끝</text>
+  <text x="380" y="262" font-size="13" fill="#57606a" text-anchor="middle">경로 · 함수 이름 · 진단</text>
+
+  <!-- 아래 설명 -->
+  <rect x="20" y="300" width="720" height="104" rx="10" fill="#f6f8fa" stroke="#6e7781" stroke-width="1"/>
+  <text x="40" y="330" font-size="14" font-weight="700" fill="#57606a">탐색 과정은 리드에게 들어오지 않는다 — 리드의 컨텍스트에는 보고서만 쌓인다</text>
+  <text x="40" y="358" font-size="13" fill="#57606a">부를지 말지는 리드가 정한다. 정의해 둬도 부르지 않으면 일하지 않는다</text>
+  <text x="40" y="384" font-size="13" fill="#bc4c00">내 실험 C: locator가 에이전트 목록에 있었지만 리드는 3문제 모두 부르지 않았다 (0/3)</text>
+</svg>

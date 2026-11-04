@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480" width="760" height="480" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="리드가 위에서 워커 A, B, C에게 일을 나눠 맡기고, 워커들의 결과는 아래 '리드가 합친다' 상자로 모인다. 워커끼리는 직접 주고받지 않는다">
+  <defs>
+    <marker id="ow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0969da"/>
+    </marker>
+    <marker id="ow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6e7781"/>
+    </marker>
+  </defs>
+  <text x="20" y="34" font-size="16" font-weight="700" fill="#0969da">오케스트레이터-워커 — 모든 연락이 리드를 거친다</text>
+
+  <!-- 리드 -->
+  <rect x="250" y="56" width="260" height="66" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="2"/>
+  <text x="380" y="84" font-size="15" font-weight="700" fill="#bc4c00" text-anchor="middle">리드 (오케스트레이터)</text>
+  <text x="380" y="108" font-size="13" fill="#bc4c00" text-anchor="middle">① 일을 나눠 맡긴다</text>
+
+  <!-- 워커 -->
+  <rect x="20" y="196" width="200" height="74" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="120" y="226" font-size="15" font-weight="700" fill="#0969da" text-anchor="middle">워커 A</text>
+  <text x="120" y="250" font-size="13" fill="#0969da" text-anchor="middle">② 자기 몫만 탐색</text>
+  <rect x="280" y="196" width="200" height="74" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="380" y="226" font-size="15" font-weight="700" fill="#0969da" text-anchor="middle">워커 B</text>
+  <text x="380" y="250" font-size="13" fill="#0969da" text-anchor="middle">② 자기 몫만 탐색</text>
+  <rect x="540" y="196" width="200" height="74" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="640" y="226" font-size="15" font-weight="700" fill="#0969da" text-anchor="middle">워커 C</text>
+  <text x="640" y="250" font-size="13" fill="#0969da" text-anchor="middle">② 자기 몫만 탐색</text>
+
+  <!-- 맡김 화살표 -->
+  <line x1="330" y1="124" x2="140" y2="192" stroke="#0969da" stroke-width="2" marker-end="url(#ow-blue)"/>
+  <line x1="380" y1="124" x2="380" y2="192" stroke="#0969da" stroke-width="2" marker-end="url(#ow-blue)"/>
+  <line x1="430" y1="124" x2="620" y2="192" stroke="#0969da" stroke-width="2" marker-end="url(#ow-blue)"/>
+  <text x="236" y="140" font-size="13" fill="#0969da" text-anchor="end">목표 · 형식 · 도구 · 범위</text>
+
+  <!-- 합치기 -->
+  <rect x="230" y="324" width="300" height="56" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="2"/>
+  <text x="380" y="358" font-size="15" font-weight="700" fill="#bc4c00" text-anchor="middle">③ 리드가 결과를 합친다</text>
+
+  <line x1="140" y1="272" x2="290" y2="320" stroke="#6e7781" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ow-gray)"/>
+  <line x1="380" y1="272" x2="380" y2="320" stroke="#6e7781" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ow-gray)"/>
+  <line x1="620" y1="272" x2="470" y2="320" stroke="#6e7781" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ow-gray)"/>
+  <text x="590" y="312" font-size="13" fill="#57606a" text-anchor="middle">결과 + 근거</text>
+
+  <!-- 아래 설명 -->
+  <rect x="20" y="400" width="720" height="66" rx="10" fill="#f6f8fa" stroke="#6e7781" stroke-width="1"/>
+  <text x="40" y="426" font-size="13" fill="#57606a">워커끼리는 직접 주고받지 않는다. 맡길지, 혼자 할지도 리드가 정한다</text>
+  <text x="40" y="450" font-size="13" fill="#bc4c00">내 실험 C는 워커가 locator 하나인 이 구조였지만, 리드가 3문제 모두 직접 처리했다</text>
+</svg>

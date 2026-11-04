@@ -1,0 +1,61 @@
+<svg viewBox="0 0 760 470" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <marker id="a2a-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6e7781"/>
+    </marker>
+  </defs>
+  <text x="24" y="28" font-size="16" font-weight="700" fill="#57606a">A2A로 일 하나를 맡기는 길</text>
+  <text x="24" y="50" font-size="13" fill="#6e7781">26회차 노드 2 "깊이 보기"의 요청 순서를 풀어 그렸다</text>
+
+  <!-- 의뢰 에이전트 -->
+  <rect x="24" y="76" width="180" height="310" rx="12" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="42" y="104" font-size="15" font-weight="700" fill="#0969da">의뢰 에이전트</text>
+  <text x="42" y="128" font-size="13" fill="#57606a">우리 팀 · 프레임워크 X</text>
+  <text x="42" y="164" font-size="13" fill="#57606a">"인용 검토를</text>
+  <text x="42" y="184" font-size="13" fill="#57606a">맡기고 싶다"</text>
+  <rect x="38" y="296" width="152" height="76" rx="10" fill="none" stroke="#0969da" stroke-dasharray="4 3"/>
+  <text x="52" y="320" font-size="13" font-weight="700" fill="#0969da">⑤ 결과물 검증</text>
+  <text x="52" y="342" font-size="13" fill="#57606a">믿을지, 다음에</text>
+  <text x="52" y="362" font-size="13" fill="#57606a">무엇을 할지 정한다</text>
+
+  <!-- 수행 에이전트 -->
+  <rect x="556" y="76" width="180" height="310" rx="12" fill="#fff1e5" stroke="#bc4c00"/>
+  <text x="574" y="104" font-size="15" font-weight="700" fill="#bc4c00">수행 에이전트</text>
+  <text x="574" y="128" font-size="13" fill="#57606a">다른 회사 · 프레임워크 Y</text>
+  <text x="574" y="164" font-size="13" fill="#57606a">안쪽 구현·도구·</text>
+  <text x="574" y="184" font-size="13" fill="#57606a">기억은 밖에서</text>
+  <text x="574" y="204" font-size="13" fill="#57606a">보이지 않는다</text>
+
+  <!-- ① 카드 -->
+  <text x="236" y="102" font-size="13" font-weight="700" fill="#bc4c00">① Agent Card를 읽는다</text>
+  <text x="236" y="120" font-size="13" fill="#57606a">이름·주소·인증 방식·할 수 있는 일</text>
+  <line x1="548" y1="134" x2="212" y2="134" stroke="#6e7781" stroke-width="2" marker-end="url(#a2a-ah)"/>
+
+  <!-- ② task -->
+  <text x="236" y="166" font-size="13" font-weight="700" fill="#0969da">② task를 보낸다</text>
+  <text x="236" y="184" font-size="13" fill="#57606a">할 일과 입력</text>
+  <line x1="212" y1="198" x2="548" y2="198" stroke="#6e7781" stroke-width="2" marker-end="url(#a2a-ah)"/>
+
+  <!-- ③ 상태 -->
+  <text x="236" y="230" font-size="13" font-weight="700" fill="#bc4c00">③ 상태를 알린다</text>
+  <line x1="548" y1="242" x2="212" y2="242" stroke="#6e7781" stroke-width="2" marker-end="url(#a2a-ah)"/>
+  <rect x="236" y="254" width="88" height="26" rx="13" fill="#f6f8fa" stroke="#8c959f"/>
+  <text x="280" y="272" font-size="13" font-family="monospace" text-anchor="middle" fill="#57606a">submitted</text>
+  <text x="338" y="272" font-size="13" text-anchor="middle" fill="#6e7781">→</text>
+  <rect x="352" y="254" width="76" height="26" rx="13" fill="#f6f8fa" stroke="#8c959f"/>
+  <text x="390" y="272" font-size="13" font-family="monospace" text-anchor="middle" fill="#57606a">working</text>
+  <text x="442" y="272" font-size="13" text-anchor="middle" fill="#6e7781">→</text>
+  <rect x="456" y="254" width="88" height="26" rx="13" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="500" y="272" font-size="13" font-family="monospace" text-anchor="middle" fill="#1a7f37">completed</text>
+  <text x="236" y="300" font-size="13" fill="#6e7781">중간에 input-required, 끝에 failed도 있다</text>
+
+  <!-- ④ artifact -->
+  <text x="236" y="332" font-size="13" font-weight="700" fill="#bc4c00">④ artifact를 돌려준다</text>
+  <text x="236" y="350" font-size="13" fill="#57606a">답 문장 대신 파일·구조화 데이터</text>
+  <line x1="548" y1="364" x2="212" y2="364" stroke="#6e7781" stroke-width="2" marker-end="url(#a2a-ah)"/>
+
+  <!-- 아래 설명 -->
+  <line x1="24" y1="408" x2="736" y2="408" stroke="#d0d7de"/>
+  <text x="24" y="434" font-size="13" fill="#57606a">서로 속은 몰라도 된다. 카드·task·상태·artifact라는 약속한 형식만 맞추면 일을 주고받는다.</text>
+  <text x="24" y="456" font-size="13" fill="#57606a">카드는 "이런 일을 할 수 있다"는 선언일 뿐이라, 권한과 품질은 의뢰하는 쪽이 따로 확인한다.</text>
+</svg>
