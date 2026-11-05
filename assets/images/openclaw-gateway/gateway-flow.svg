@@ -1,0 +1,48 @@
+<svg viewBox="0 0 760 380" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#57606a"/></marker>
+  </defs>
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">문은 여러 개, 행정실은 하나 — OpenClaw의 메시지 길</text>
+  <text x="24" y="50" font-size="13" fill="#57606a">점선 상자 안은 모두 내 컴퓨터(WSL)다</text>
+
+  <g font-size="13">
+    <rect x="24" y="76" width="170" height="56" rx="10" fill="#f6f8fa" stroke="#8c959f"/>
+    <text x="40" y="100" font-weight="700" fill="#1f2328">WebChat</text>
+    <text x="40" y="120" fill="#57606a">브라우저 대화 화면</text>
+    <rect x="24" y="146" width="170" height="56" rx="10" fill="#f6f8fa" stroke="#8c959f"/>
+    <text x="40" y="170" font-weight="700" fill="#1f2328">터미널 채팅 화면</text>
+    <text x="40" y="190" fill="#57606a">온보딩 뒤 바로 열림</text>
+    <rect x="24" y="216" width="170" height="56" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+    <text x="40" y="240" font-weight="700" fill="#9a6700">Telegram</text>
+    <text x="40" y="260" fill="#57606a">휴대폰에서</text>
+
+    <rect x="214" y="64" width="522" height="296" rx="12" fill="none" stroke="#8c959f" stroke-dasharray="6 4"/>
+
+    <rect x="250" y="120" width="200" height="110" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="266" y="146" font-size="14" font-weight="700" fill="#0969da">게이트웨이 (데몬)</text>
+    <text x="266" y="168" fill="#1f2328">127.0.0.1:18789</text>
+    <text x="266" y="190" fill="#1f2328">받을 세션·도구를 정함</text>
+    <text x="266" y="212" fill="#57606a">꺼지면 아무것도 안 감</text>
+
+    <line x1="194" y1="104" x2="248" y2="150" stroke="#57606a" stroke-width="1.5" marker-end="url(#ar)"/>
+    <line x1="194" y1="174" x2="248" y2="174" stroke="#57606a" stroke-width="1.5" marker-end="url(#ar)"/>
+    <line x1="194" y1="244" x2="248" y2="200" stroke="#9a6700" stroke-width="1.5" marker-end="url(#ar)"/>
+
+    <rect x="500" y="100" width="216" height="76" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="516" y="126" font-size="14" font-weight="700" fill="#1a7f37">에이전트 실행 부분</text>
+    <text x="516" y="148" fill="#1f2328">모델 부르기 · 도구 실행</text>
+    <text x="516" y="166" fill="#57606a">권한 모드 안에서만</text>
+
+    <rect x="500" y="196" width="216" height="76" rx="10" fill="#f6f8fa" stroke="#8c959f"/>
+    <text x="516" y="222" font-size="14" font-weight="700" fill="#1f2328">에이전트별 SQLite</text>
+    <text x="516" y="244" fill="#1f2328">말한 줄 · 호출 줄 · 결과 줄</text>
+    <text x="516" y="262" fill="#57606a">이 남는 곳</text>
+
+    <line x1="450" y1="160" x2="498" y2="140" stroke="#57606a" stroke-width="1.5" marker-end="url(#ar)"/>
+    <line x1="608" y1="176" x2="608" y2="194" stroke="#57606a" stroke-width="1.5" marker-end="url(#ar)"/>
+
+    <rect x="250" y="290" width="466" height="54" rx="10" fill="#fff8c5" fill-opacity="0.6" stroke="#9a6700"/>
+    <text x="266" y="314" font-weight="700" fill="#9a6700">Telegram만 한 번 더 확인 — 페어링</text>
+    <text x="266" y="334" fill="#1f2328">첫 메시지를 보낸 계정은 대기 목록에, 주인이 승인해야 대화가 열린다</text>
+  </g>
+</svg>

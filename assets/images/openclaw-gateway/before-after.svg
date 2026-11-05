@@ -1,0 +1,31 @@
+<svg viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <text x="24" y="28" font-size="15" font-weight="700" fill="#1f2328">WebChat 메시지 한 번 전후 — 무엇이 바뀌었나</text>
+  <text x="24" y="50" font-size="13" fill="#57606a">ls -laR 결과를 보내기 전후로 저장해 diff로 비교 (agentId: main)</text>
+
+  <g font-size="13">
+    <rect x="24" y="70" width="712" height="150" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="40" y="94" font-size="14" font-weight="700" fill="#1a7f37">바뀜 — agents/main/agent/</text>
+    <text x="40" y="122" fill="#1f2328">openclaw-agent.sqlite</text>
+    <text x="300" y="122" fill="#1f2328">720,896 → 753,664바이트</text>
+    <text x="540" y="122" fill="#1a7f37" font-weight="700">+32KB, 시각 바뀜</text>
+    <text x="40" y="150" fill="#1f2328">openclaw-agent.sqlite-wal</text>
+    <text x="300" y="150" fill="#57606a">크기 그대로</text>
+    <text x="540" y="150" fill="#1f2328">시각만 바뀜</text>
+    <text x="40" y="178" fill="#1f2328">openclaw-agent.sqlite-shm</text>
+    <text x="300" y="178" fill="#57606a">크기 그대로</text>
+    <text x="540" y="178" fill="#1f2328">시각만 바뀜</text>
+    <text x="40" y="204" fill="#57606a">wal = 먼저 적어 두는 임시 기록, shm = 그 색인</text>
+
+    <rect x="24" y="236" width="346" height="104" rx="10" fill="#f6f8fa" stroke="#8c959f"/>
+    <text x="40" y="260" font-size="14" font-weight="700" fill="#1f2328">그대로</text>
+    <text x="40" y="284" fill="#1f2328">agents/main/sessions/ (비어 있음)</text>
+    <text x="40" y="306" fill="#1f2328">workspace/ (AGENTS.md, SOUL.md …)</text>
+    <text x="40" y="326" fill="#57606a">MEMORY.md, memory/ 는 생기지 않음</text>
+
+    <rect x="390" y="236" width="346" height="104" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+    <text x="406" y="260" font-size="14" font-weight="700" fill="#9a6700">memory status로 본 기억</text>
+    <text x="406" y="284" fill="#1f2328">색인 0/2 파일 · 0 청크 · Dirty</text>
+    <text x="406" y="306" fill="#1f2328">→ 저장은 됐지만 검색되는 기억은 없음</text>
+    <text x="406" y="326" fill="#57606a">색인 만들기는 임베딩 비용 경고로 보류</text>
+  </g>
+</svg>
