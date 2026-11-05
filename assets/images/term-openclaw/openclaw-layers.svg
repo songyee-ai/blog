@@ -1,0 +1,44 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <marker id="oc-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6e7781"/>
+    </marker>
+  </defs>
+  <text x="24" y="28" font-size="16" font-weight="700" fill="#57606a">OpenClaw 한 대를 위에서 아래로 잘라 보면</text>
+  <text x="24" y="50" font-size="13" fill="#6e7781">27회차 실습 환경(WSL2 Ubuntu) 기준. 어느 창구로 말해도 같은 길을 따라 내려간다.</text>
+
+  <!-- 창구(채널) -->
+  <rect x="24" y="70" width="220" height="66" rx="12" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="44" y="98" font-size="15" font-weight="700" fill="#0969da">터미널 채팅 화면</text>
+  <text x="44" y="120" font-size="13" fill="#57606a">온보딩이 끝나면 열린 TUI</text>
+  <rect x="270" y="70" width="220" height="66" rx="12" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="290" y="98" font-size="15" font-weight="700" fill="#0969da">WebChat</text>
+  <text x="290" y="120" font-size="13" fill="#57606a">브라우저로 여는 대화 화면</text>
+  <rect x="516" y="70" width="220" height="66" rx="12" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="536" y="98" font-size="15" font-weight="700" fill="#0969da">Telegram 봇</text>
+  <text x="536" y="120" font-size="13" fill="#57606a">휴대폰에서 보내는 메시지</text>
+
+  <line x1="134" y1="140" x2="300" y2="172" stroke="#6e7781" stroke-width="2" marker-end="url(#oc-ah)"/>
+  <line x1="380" y1="140" x2="380" y2="172" stroke="#6e7781" stroke-width="2" marker-end="url(#oc-ah)"/>
+  <line x1="626" y1="140" x2="460" y2="172" stroke="#6e7781" stroke-width="2" marker-end="url(#oc-ah)"/>
+
+  <!-- Gateway -->
+  <rect x="24" y="176" width="712" height="84" rx="12" fill="#fff1e5" stroke="#bc4c00"/>
+  <text x="44" y="204" font-size="15" font-weight="700" fill="#bc4c00">Gateway — 늘 켜져 있는 접수처</text>
+  <text x="44" y="228" font-size="13" fill="#57606a">127.0.0.1:18789에서 기다리다가, 들어온 메시지를 어느 세션·어느 에이전트로 보낼지 정한다</text>
+  <text x="44" y="248" font-size="13" fill="#57606a">데몬(systemd 사용자 서비스)으로 등록돼 있어 터미널 창과 상관없이 돈다</text>
+
+  <line x1="380" y1="264" x2="380" y2="292" stroke="#6e7781" stroke-width="2" marker-end="url(#oc-ah)"/>
+
+  <!-- 런타임 -->
+  <rect x="24" y="296" width="712" height="74" rx="12" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="44" y="324" font-size="15" font-weight="700" fill="#1a7f37">에이전트 런타임 — 모델을 부르고 도구를 실행한다</text>
+  <text x="44" y="348" font-size="13" fill="#57606a">모델: Claude (claude-cli 경로, 구독 로그인 재사용) · 도구: 명령 실행, 파일 읽기 …</text>
+
+  <line x1="380" y1="374" x2="380" y2="402" stroke="#6e7781" stroke-width="2" marker-end="url(#oc-ah)"/>
+
+  <!-- 기록 -->
+  <rect x="24" y="406" width="712" height="62" rx="12" fill="none" stroke="#6e7781" stroke-dasharray="5 4"/>
+  <text x="44" y="432" font-size="15" font-weight="700" fill="#57606a">~/.openclaw — 설정·대화 기록·워크스페이스</text>
+  <text x="44" y="454" font-size="13" fill="#57606a">openclaw.json, 에이전트별 SQLite 파일. 화면이 달라도 같은 main 세션에 쌓인다</text>
+</svg>

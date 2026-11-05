@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" width="760" height="400" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="페어링의 흐름. 처음 말을 건 계정은 대기 목록에 오르고 봇은 답하지 않는다. 주인이 터미널에서 목록을 보고 승인하면, 그 뒤부터는 코드 없이 대화가 이어진다. 대기 코드는 1시간이 지나면 무효가 된다">
+  <defs>
+    <marker id="pr-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <text x="20" y="34" font-size="16" font-weight="700" fill="#0969da">처음 온 계정이 대화 상대가 되기까지</text>
+
+  <!-- 1 -->
+  <rect x="20" y="58" width="220" height="230" rx="10" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+  <text x="38" y="88" font-size="15" font-weight="700" fill="#bc4c00">① 처음 말을 건다</text>
+  <text x="38" y="120" font-size="13" fill="#bc4c00">휴대폰에서 봇에게</text>
+  <text x="38" y="142" font-size="13" fill="#bc4c00">인사말 하나를 보낸다</text>
+  <rect x="38" y="164" width="184" height="64" rx="6" fill="none" stroke="#bc4c00" stroke-dasharray="4 3"/>
+  <text x="130" y="191" font-size="13" fill="#bc4c00" text-anchor="middle">대기 목록에 오르고</text>
+  <text x="130" y="213" font-size="13" fill="#bc4c00" text-anchor="middle">대기 코드가 생긴다</text>
+  <text x="38" y="260" font-size="13" fill="#bc4c00">봇은 아직 답하지 않는다</text>
+
+  <!-- 2 -->
+  <rect x="270" y="58" width="220" height="230" rx="10" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="288" y="88" font-size="15" font-weight="700" fill="#0969da">② 주인이 확인한다</text>
+  <text x="288" y="120" font-size="13" fill="#0969da">Gateway가 도는 컴퓨터의</text>
+  <text x="288" y="142" font-size="13" fill="#0969da">터미널에서</text>
+  <text x="288" y="176" font-size="13" fill="#0969da">pairing list → 누가 왔나</text>
+  <text x="288" y="200" font-size="13" fill="#0969da">pairing approve → 들여보냄</text>
+  <text x="288" y="260" font-size="13" fill="#0969da">코드는 1시간 뒤 무효</text>
+
+  <!-- 3 -->
+  <rect x="520" y="58" width="220" height="230" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="538" y="88" font-size="15" font-weight="700" fill="#1a7f37">③ 대화가 이어진다</text>
+  <text x="538" y="120" font-size="13" fill="#1a7f37">승인된 계정의 메시지는</text>
+  <text x="538" y="142" font-size="13" fill="#1a7f37">에이전트에게 전달된다</text>
+  <text x="538" y="176" font-size="13" fill="#1a7f37">다음부터는</text>
+  <text x="538" y="198" font-size="13" fill="#1a7f37">코드 없이 바로</text>
+  <text x="538" y="260" font-size="13" fill="#1a7f37">승인 안 된 계정은 그대로 대기</text>
+
+  <line x1="242" y1="173" x2="266" y2="173" stroke="#57606a" stroke-width="2" marker-end="url(#pr-arrow)"/>
+  <line x1="492" y1="173" x2="516" y2="173" stroke="#57606a" stroke-width="2" marker-end="url(#pr-arrow)"/>
+
+  <rect x="20" y="308" width="720" height="64" rx="10" fill="none" stroke="#57606a" stroke-width="1.2"/>
+  <text x="38" y="335" font-size="13" fill="#57606a">페어링이 정하는 것은 "누구와 대화하나"까지다.</text>
+  <text x="38" y="357" font-size="13" fill="#57606a">에이전트가 무엇을 할 수 있는지, 기기를 등록할 수 있는지는 다른 칸에서 따로 정한다.</text>
+</svg>

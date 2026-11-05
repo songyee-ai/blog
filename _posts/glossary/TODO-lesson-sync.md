@@ -48,6 +48,7 @@
 | 24 | 2026-10-15 | `who-picks-next-step` |
 | 25 | 2026-10-16 | `harness-seven-functions` (과제: `my-harness-experiment`, 작업물 글 없음) |
 | 26 | 2026-10-19 | `single-vs-multi-agent` (작업물 글 없음) |
+| 27 | 2026-10-20 | `openclaw-gateway` (작업물 글 없음) |
 
 ## 참고 — 원본 정리 노트
 

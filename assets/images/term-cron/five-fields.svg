@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif" role="img" aria-label="cron 표기는 분, 시, 일, 월, 요일 다섯 칸이다. 별표는 아무 때나라는 뜻이다. 별표 슬래시 5를 분 칸에 쓰면 5분마다, 분 칸 0과 시 칸 3을 쓰면 매일 3시 0분이 된다">
+  <text x="20" y="34" font-size="16" font-weight="700" fill="#0969da">다섯 칸을 왼쪽부터 읽는다</text>
+
+  <g font-size="15" font-weight="700" fill="#0969da" text-anchor="middle">
+    <rect x="200" y="54" width="100" height="44" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+    <text x="250" y="82">분</text>
+    <rect x="310" y="54" width="100" height="44" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+    <text x="360" y="82">시</text>
+    <rect x="420" y="54" width="100" height="44" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+    <text x="470" y="82">일</text>
+    <rect x="530" y="54" width="100" height="44" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+    <text x="580" y="82">월</text>
+    <rect x="640" y="54" width="100" height="44" rx="8" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+    <text x="690" y="82">요일</text>
+  </g>
+
+  <text x="20" y="140" font-size="15" font-weight="700" fill="#bc4c00">*/5 * * * *</text>
+  <text x="20" y="162" font-size="13" fill="#bc4c00">5분마다</text>
+  <g font-size="14" fill="#bc4c00" text-anchor="middle">
+    <rect x="200" y="116" width="100" height="56" rx="8" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.5"/>
+    <text x="250" y="140" font-weight="700">*/5</text>
+    <text x="250" y="160" font-size="13">5분마다</text>
+    <rect x="310" y="116" width="100" height="56" rx="8" fill="none" stroke="#bc4c00" stroke-dasharray="4 3"/>
+    <text x="360" y="140" font-weight="700">*</text>
+    <text x="360" y="160" font-size="13">아무 시</text>
+    <rect x="420" y="116" width="100" height="56" rx="8" fill="none" stroke="#bc4c00" stroke-dasharray="4 3"/>
+    <text x="470" y="140" font-weight="700">*</text>
+    <text x="470" y="160" font-size="13">아무 날</text>
+    <rect x="530" y="116" width="100" height="56" rx="8" fill="none" stroke="#bc4c00" stroke-dasharray="4 3"/>
+    <text x="580" y="140" font-weight="700">*</text>
+    <text x="580" y="160" font-size="13">아무 달</text>
+    <rect x="640" y="116" width="100" height="56" rx="8" fill="none" stroke="#bc4c00" stroke-dasharray="4 3"/>
+    <text x="690" y="140" font-weight="700">*</text>
+    <text x="690" y="160" font-size="13">아무 요일</text>
+  </g>
+
+  <text x="20" y="216" font-size="15" font-weight="700" fill="#1a7f37">0 3 * * *</text>
+  <text x="20" y="238" font-size="13" fill="#1a7f37">매일 3시 0분</text>
+  <g font-size="14" fill="#1a7f37" text-anchor="middle">
+    <rect x="200" y="192" width="100" height="56" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+    <text x="250" y="216" font-weight="700">0</text>
+    <text x="250" y="236" font-size="13">0분에</text>
+    <rect x="310" y="192" width="100" height="56" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+    <text x="360" y="216" font-weight="700">3</text>
+    <text x="360" y="236" font-size="13">3시에</text>
+    <rect x="420" y="192" width="100" height="56" rx="8" fill="none" stroke="#1a7f37" stroke-dasharray="4 3"/>
+    <text x="470" y="216" font-weight="700">*</text>
+    <text x="470" y="236" font-size="13">아무 날</text>
+    <rect x="530" y="192" width="100" height="56" rx="8" fill="none" stroke="#1a7f37" stroke-dasharray="4 3"/>
+    <text x="580" y="216" font-weight="700">*</text>
+    <text x="580" y="236" font-size="13">아무 달</text>
+    <rect x="640" y="192" width="100" height="56" rx="8" fill="none" stroke="#1a7f37" stroke-dasharray="4 3"/>
+    <text x="690" y="216" font-weight="700">*</text>
+    <text x="690" y="236" font-size="13">아무 요일</text>
+  </g>
+
+  <rect x="20" y="272" width="720" height="64" rx="10" fill="none" stroke="#57606a" stroke-width="1.2"/>
+  <text x="38" y="299" font-size="13" fill="#57606a">채운 칸(실선) = 그 값일 때만 · 별표 칸(점선) = 아무 때나</text>
+  <text x="38" y="321" font-size="13" fill="#57606a">모든 칸이 동시에 맞는 순간마다 작업이 한 번 출발한다</text>
+</svg>

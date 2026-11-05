@@ -1,0 +1,52 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <marker id="dm-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6e7781"/>
+    </marker>
+  </defs>
+  <text x="24" y="28" font-size="16" font-weight="700" fill="#57606a">Gateway 데몬이 돌기까지 거치는 칸</text>
+  <text x="24" y="50" font-size="13" fill="#6e7781">27회차 실습 환경. 서비스는 윈도우가 아니라 WSL 안의 systemd에 등록돼 있다.</text>
+
+  <rect x="24" y="72" width="160" height="96" rx="12" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="40" y="100" font-size="15" font-weight="700" fill="#0969da">① 윈도우</text>
+  <text x="40" y="124" font-size="13" fill="#57606a">컴퓨터를 켜고</text>
+  <text x="40" y="144" font-size="13" fill="#57606a">로그인한다</text>
+
+  <line x1="188" y1="120" x2="204" y2="120" stroke="#6e7781" stroke-width="2" marker-end="url(#dm-ah)"/>
+
+  <rect x="208" y="72" width="160" height="96" rx="12" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="224" y="100" font-size="15" font-weight="700" fill="#1a7f37">② WSL 시작</text>
+  <text x="224" y="124" font-size="13" fill="#57606a">Ubuntu가</text>
+  <text x="224" y="144" font-size="13" fill="#57606a">깨어난다</text>
+
+  <line x1="372" y1="120" x2="388" y2="120" stroke="#6e7781" stroke-width="2" marker-end="url(#dm-ah)"/>
+
+  <rect x="392" y="72" width="160" height="96" rx="12" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="408" y="100" font-size="15" font-weight="700" fill="#1a7f37">③ systemd</text>
+  <text x="408" y="124" font-size="13" fill="#57606a">등록된 사용자</text>
+  <text x="408" y="144" font-size="13" fill="#57606a">서비스를 켠다</text>
+
+  <line x1="556" y1="120" x2="572" y2="120" stroke="#6e7781" stroke-width="2" marker-end="url(#dm-ah)"/>
+
+  <rect x="576" y="72" width="160" height="96" rx="12" fill="#fff1e5" stroke="#bc4c00"/>
+  <text x="592" y="100" font-size="15" font-weight="700" fill="#bc4c00">④ Gateway</text>
+  <text x="592" y="124" font-size="13" fill="#57606a">18789번 문에서</text>
+  <text x="592" y="144" font-size="13" fill="#57606a">기다린다</text>
+
+  <!-- 괄호 -->
+  <path d="M28,182 L28,192 L180,192 L180,182" fill="none" stroke="#0969da" stroke-width="2"/>
+  <text x="28" y="216" font-size="13" fill="#0969da" font-weight="700">여기서 멈추면</text>
+  <text x="28" y="236" font-size="13" fill="#57606a">Gateway는 아직 없다</text>
+  <path d="M212,182 L212,192 L732,192 L732,182" fill="none" stroke="#1a7f37" stroke-width="2"/>
+  <text x="212" y="216" font-size="13" fill="#1a7f37" font-weight="700">WSL이 시작돼야 이어지는 칸</text>
+  <text x="212" y="236" font-size="13" fill="#57606a">서비스 파일 ~/.config/systemd/user/openclaw-gateway.service</text>
+
+  <!-- 두 가지 관찰 -->
+  <rect x="24" y="262" width="712" height="64" rx="12" fill="none" stroke="#6e7781" stroke-dasharray="5 4"/>
+  <text x="44" y="288" font-size="14" font-weight="700" fill="#57606a">에이전트 답변 "컴퓨터를 켜면 저절로 실행됩니다"</text>
+  <text x="44" y="310" font-size="13" fill="#57606a">정확하지 않다. ①만으로는 ④까지 가지 않는다. 답변 문장은 근거가 아니다.</text>
+
+  <rect x="24" y="340" width="712" height="64" rx="12" fill="none" stroke="#6e7781" stroke-dasharray="5 4"/>
+  <text x="44" y="366" font-size="14" font-weight="700" fill="#57606a">④가 기대는 것: nvm으로 설치한 Node</text>
+  <text x="44" y="388" font-size="13" fill="#57606a">gateway status 지적 — 그 Node를 지우거나 올리면 서비스가 깨질 수 있다. 시스템 Node는 없다.</text>
+</svg>
